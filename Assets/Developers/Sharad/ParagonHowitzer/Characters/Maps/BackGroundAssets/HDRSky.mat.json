@@ -1,0 +1,11 @@
+{
+  "name": "HDRSky",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Maps/BackGroundAssets/HDRSky.HDRSky",
+  "textures": {},
+  "scalars": {
+    "EVC": 1.25,
+    "envRot": 0.10000000149011612
+  },
+  "vectors": {}
+}

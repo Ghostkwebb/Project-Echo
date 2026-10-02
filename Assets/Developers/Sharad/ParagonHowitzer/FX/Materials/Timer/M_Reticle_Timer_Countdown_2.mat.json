@@ -1,0 +1,24 @@
+{
+  "name": "M_Reticle_Timer_Countdown_2",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Timer/M_Reticle_Timer_Countdown_2.M_Reticle_Timer_Countdown_2",
+  "textures": {},
+  "scalars": {
+    "DebugSpeed": 0.20000000298023224,
+    "PulseBrightness": 2.0
+  },
+  "vectors": {
+    "Hot Color_A": [
+      1.5,
+      0.12324687838554382,
+      0.09340283274650574,
+      1.0
+    ],
+    "Cool Color_B": [
+      1.0,
+      0.16500002145767212,
+      0.263053834438324,
+      1.0
+    ]
+  }
+}

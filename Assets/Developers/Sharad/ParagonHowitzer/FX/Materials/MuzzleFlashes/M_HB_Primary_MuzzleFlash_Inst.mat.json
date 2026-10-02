@@ -1,0 +1,9 @@
+{
+  "name": "M_HB_Primary_MuzzleFlash_Inst",
+  "ue_class": "MaterialInstanceConstant",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/MuzzleFlashes/M_HB_Primary_MuzzleFlash_Inst.M_HB_Primary_MuzzleFlash_Inst",
+  "textures": {},
+  "scalars": {},
+  "vectors": {},
+  "meta_extract_error": "MaterialEditingLibrary: Failed to convert parameter 'material' when calling function 'MaterialEditingLibrary.GetMaterialDefaultVectorParameterValue' on 'Default__MaterialEditingLibrary'\n  TypeError: NativizeProperty: Cannot nativize 'MaterialInstanceConstant' as 'Material' (ObjectProperty)\n    TypeError: NativizeObject: Cannot nativize 'MaterialInstanceConstant' as 'Object' (allowed Class type: 'Material')"
+}

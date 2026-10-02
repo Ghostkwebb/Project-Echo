@@ -1,0 +1,12 @@
+{
+  "name": "M_AddGlow",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Flares/M_AddGlow.M_AddGlow",
+  "textures": {
+    "FlareTexture": "T_LensFlare14"
+  },
+  "scalars": {
+    "FadeDistance": 100.0
+  },
+  "vectors": {}
+}

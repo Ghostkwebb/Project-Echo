@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Lore_Phase_020",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.609999895095825,
+  "sound_files": []
+}

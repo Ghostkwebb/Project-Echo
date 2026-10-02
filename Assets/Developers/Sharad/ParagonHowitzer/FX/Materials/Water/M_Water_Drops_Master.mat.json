@@ -1,0 +1,14 @@
+{
+  "name": "M_Water_Drops_Master",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Water/M_Water_Drops_Master.M_Water_Drops_Master",
+  "textures": {
+    "Mask": "T_Drop_Hard_Mask"
+  },
+  "scalars": {
+    "Spec Brightness": 50.0,
+    "Mask Opacity": 0.17431199550628662,
+    "ParticleSpeed": 150.0
+  },
+  "vectors": {}
+}

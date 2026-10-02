@@ -1,0 +1,46 @@
+{
+  "name": "M_Debris",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Debris/M_Debris.M_Debris",
+  "textures": {
+    "Sharp_N": "T_Debris",
+    "Blur_N": "T_Debris_Blur"
+  },
+  "scalars": {
+    "PowEXP": 4.0,
+    "Speed": 80.0,
+    "ParticleColorStrength": 0.0
+  },
+  "vectors": {
+    "SmokeColor": [
+      0.7900000214576721,
+      0.72080397605896,
+      0.5987600088119507,
+      1.0
+    ],
+    "ShadowColor": [
+      0.10360000282526016,
+      0.13327200710773468,
+      0.14000000059604645,
+      1.0
+    ],
+    "LightDirection": [
+      0.0,
+      0.800000011920929,
+      1.0,
+      0.0
+    ],
+    "LightColor": [
+      0.8100000023841858,
+      0.7759439945220947,
+      0.7176460027694702,
+      1.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "M_Jets_Core",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Fire/JetFlames/M_Jets_Core.M_Jets_Core",
+  "textures": {},
+  "scalars": {},
+  "vectors": {
+    "ColorCool": [
+      0.14499999582767487,
+      0.03888599947094917,
+      0.0,
+      0.0
+    ],
+    "ColorHot": [
+      1.0,
+      0.6872090101242065,
+      0.377344012260437,
+      0.0
+    ]
+  }
+}

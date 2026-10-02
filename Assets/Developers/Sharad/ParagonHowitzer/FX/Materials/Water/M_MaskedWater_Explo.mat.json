@@ -1,0 +1,33 @@
+{
+  "name": "M_MaskedWater_Explo",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Water/M_MaskedWater_Explo.M_MaskedWater_Explo",
+  "textures": {},
+  "scalars": {
+    "UVflow": 0.02500000037252903,
+    "Roughness": 0.10000000149011612,
+    "EmissiveScale": 0.30000001192092896,
+    "Distort2": 0.10000000149011612,
+    "DistortMask": 0.02500000037252903
+  },
+  "vectors": {
+    "Color": [
+      0.019999999552965164,
+      0.019999999552965164,
+      0.019999999552965164,
+      0.0
+    ],
+    "ScaleBubbleN": [
+      1.0,
+      1.0,
+      0.5,
+      0.0
+    ],
+    "SphereNormalHeight": [
+      1.0,
+      1.0,
+      1.2000000476837158,
+      0.0
+    ]
+  }
+}

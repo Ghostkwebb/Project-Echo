@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Effort_Frustration",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 1.7400000095367432,
+  "sound_files": []
+}

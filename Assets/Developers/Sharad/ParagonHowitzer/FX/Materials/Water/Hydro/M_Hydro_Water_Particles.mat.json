@@ -1,0 +1,26 @@
+{
+  "name": "M_Hydro_Water_Particles",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Water/Hydro/M_Hydro_Water_Particles.M_Hydro_Water_Particles",
+  "textures": {
+    "ParticleSubUV_Normal": "T_SM_WaterTests_BF_01E_N",
+    "ParticleSubUV_DiffuseAlpha": "T_SM_WaterTests_BF_01E_D"
+  },
+  "scalars": {
+    "Roughness": 0.05000000074505806
+  },
+  "vectors": {
+    "BaseColor": [
+      0.5,
+      0.5,
+      0.5,
+      0.0
+    ],
+    "ScaleAlongX": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

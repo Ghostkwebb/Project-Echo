@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Effort_LandHeavy",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 1.6699999570846558,
+  "sound_files": []
+}

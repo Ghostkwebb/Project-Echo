@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Ability_UsedLastCharge",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.130000114440918,
+  "sound_files": []
+}

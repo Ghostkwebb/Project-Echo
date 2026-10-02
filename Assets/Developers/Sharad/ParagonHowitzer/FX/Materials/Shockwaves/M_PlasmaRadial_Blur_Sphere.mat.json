@@ -1,0 +1,30 @@
+{
+  "name": "M_PlasmaRadial_Blur_Sphere",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Shockwaves/M_PlasmaRadial_Blur_Sphere.M_PlasmaRadial_Blur_Sphere",
+  "textures": {},
+  "scalars": {
+    "scaleSmokeTile2": 3.0,
+    "TileX2": 3.0,
+    "ScaleUVDistort2": 0.029999999329447746,
+    "Flatten": 0.10000000149011612,
+    "s": 1.0,
+    "TileX": 2.0,
+    "CameraFadeDistance": 64.0,
+    "AlphaTweak": 0.25
+  },
+  "vectors": {
+    "PlasmaColor2": [
+      0.059787001460790634,
+      0.18653999269008636,
+      1.0,
+      0.0
+    ],
+    "PlasmaColor1": [
+      1.600000023841858,
+      0.4064429998397827,
+      0.05163300037384033,
+      0.0
+    ]
+  }
+}

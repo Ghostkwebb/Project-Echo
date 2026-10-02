@@ -1,0 +1,30 @@
+{
+  "name": "M_Explosion_Smoke_Spears",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Smoke/M_Explosion_Smoke_Spears.M_Explosion_Smoke_Spears",
+  "textures": {},
+  "scalars": {
+    "FaeDistance": 140.0,
+    "CamDistanceFace": 800.0
+  },
+  "vectors": {
+    "DepthBasedEmissiveColor": [
+      12.972993850708008,
+      1.991868019104004,
+      40.0,
+      1.0
+    ],
+    "CloudColor0": [
+      40.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CloudColor1": [
+      100.0,
+      20.881378173828125,
+      0.0,
+      1.0
+    ]
+  }
+}

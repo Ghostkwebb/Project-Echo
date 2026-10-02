@@ -1,0 +1,10 @@
+{
+  "name": "M_Shockwave_FresnelBaseOnSphere",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Shockwaves/M_Shockwave_FresnelBaseOnSphere.M_Shockwave_FresnelBaseOnSphere",
+  "textures": {},
+  "scalars": {
+    "RefractionIntensity": 2.5
+  },
+  "vectors": {}
+}

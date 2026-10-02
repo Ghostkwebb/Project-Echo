@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Kill_Revenge",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.4549999237060547,
+  "sound_files": []
+}

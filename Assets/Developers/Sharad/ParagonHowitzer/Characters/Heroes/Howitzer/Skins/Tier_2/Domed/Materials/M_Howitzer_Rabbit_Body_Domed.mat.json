@@ -1,0 +1,85 @@
+{
+  "name": "M_Howitzer_Rabbit_Body_Domed",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Heroes/Howitzer/Skins/Tier_2/Domed/Materials/M_Howitzer_Rabbit_Body_Domed.M_Howitzer_Rabbit_Body_Domed",
+  "textures": {
+    "FadeMask": "T_AtmosphericCloudNoise03",
+    "BakedNormalMap": "T_Howitzer_Rabbit_N"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "ColorBrightness": 0.42339399456977844,
+    "SkinRoughness": 0.30183500051498413,
+    "LeatherRoughness": 0.471560001373291,
+    "Skin Hue Shift": 0.0,
+    "Skin Desaturation": 0.0
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "PaintColorB": [
+      1.0,
+      0.9140710234642029,
+      0.7977449893951416,
+      1.0
+    ],
+    "PaintColorA": [
+      1.0,
+      0.22533200681209564,
+      0.004513000138103962,
+      1.0
+    ],
+    "FabricColor": [
+      0.15000000596046448,
+      0.15000000596046448,
+      0.15000000596046448,
+      1.0
+    ],
+    "ShirtGrimeColor": [
+      0.054999999701976776,
+      0.05126899853348732,
+      0.0416250005364418,
+      1.0
+    ]
+  }
+}

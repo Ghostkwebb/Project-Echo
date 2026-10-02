@@ -1,0 +1,27 @@
+{
+  "name": "M_ResidualMuzzleSmoke_Master",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Smoke/DirectionalLit/M_ResidualMuzzleSmoke_Master.M_ResidualMuzzleSmoke_Master",
+  "textures": {
+    "SubUV_Normal": "T_FireBall_07D_N",
+    "SubUV_Depth": "T_FireBall_07D_Depth"
+  },
+  "scalars": {
+    "0_Distance": 200.0,
+    "1_Distance": 10.0
+  },
+  "vectors": {
+    "BaseColor": [
+      0.4000000059604645,
+      0.4000000059604645,
+      0.4000000059604645,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      1.5,
+      0.0
+    ]
+  }
+}

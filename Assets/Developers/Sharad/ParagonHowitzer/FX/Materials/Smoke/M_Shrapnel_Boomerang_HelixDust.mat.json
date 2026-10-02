@@ -1,0 +1,10 @@
+{
+  "name": "M_Shrapnel_Boomerang_HelixDust",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Smoke/M_Shrapnel_Boomerang_HelixDust.M_Shrapnel_Boomerang_HelixDust",
+  "textures": {},
+  "scalars": {
+    "Power": 1.2000000476837158
+  },
+  "vectors": {}
+}

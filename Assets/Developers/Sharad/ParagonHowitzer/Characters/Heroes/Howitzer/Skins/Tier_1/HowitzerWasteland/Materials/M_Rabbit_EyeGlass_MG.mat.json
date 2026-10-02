@@ -1,0 +1,73 @@
+{
+  "name": "M_Rabbit_EyeGlass_MG",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Heroes/Howitzer/Skins/Tier_1/HowitzerWasteland/Materials/M_Rabbit_EyeGlass_MG.M_Rabbit_EyeGlass_MG",
+  "textures": {
+    "FadeMask": "T_AtmosphericCloudNoise03"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "GlassTint3": [
+      0.009999999776482582,
+      0.0027890000492334366,
+      0.001690999954007566,
+      1.0
+    ],
+    "GlassTint2": [
+      0.6862750053405762,
+      0.5411739945411682,
+      0.5112749934196472,
+      1.0
+    ],
+    "DarkGlassTint": [
+      0.18000000715255737,
+      0.13488300144672394,
+      0.12223900109529495,
+      1.0
+    ]
+  }
+}

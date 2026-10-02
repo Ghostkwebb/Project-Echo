@@ -1,0 +1,6 @@
+{
+  "name": "T_HDR_LUT_Gadget_01",
+  "class": "Texture2D",
+  "compression": "<TextureCompressionSettings.TC_HDR: 6>",
+  "path": "/Game/ParagonHowitzer/FX/Textures/Gradients/LUT/T_HDR_LUT_Gadget_01.T_HDR_LUT_Gadget_01"
+}

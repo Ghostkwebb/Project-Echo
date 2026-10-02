@@ -1,0 +1,29 @@
+{
+  "name": "M_Smoke_Offset_Particles_SubUV_Details_UNLIT",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Smoke/Howitzer/M_Smoke_Offset_Particles_SubUV_Details_UNLIT.M_Smoke_Offset_Particles_SubUV_Details_UNLIT",
+  "textures": {},
+  "scalars": {
+    "Param": 1.2000000476837158
+  },
+  "vectors": {
+    "ColorCool": [
+      0.25,
+      0.11239799857139587,
+      0.0491890013217926,
+      0.0
+    ],
+    "ColorHot": [
+      60.0,
+      19.890472412109375,
+      8.91183853149414,
+      0.0
+    ],
+    "HDRTint": [
+      8.0,
+      0.5864940285682678,
+      0.0,
+      0.0
+    ]
+  }
+}

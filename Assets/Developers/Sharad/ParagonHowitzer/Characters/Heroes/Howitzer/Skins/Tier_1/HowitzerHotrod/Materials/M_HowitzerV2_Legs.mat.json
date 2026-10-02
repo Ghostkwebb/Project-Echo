@@ -1,0 +1,77 @@
+{
+  "name": "M_HowitzerV2_Legs",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Heroes/Howitzer/Skins/Tier_1/HowitzerHotrod/Materials/M_HowitzerV2_Legs.M_HowitzerV2_Legs",
+  "textures": {
+    "FadeMask": "T_AtmosphericCloudNoise03"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "SteelBrightness": 1.0,
+    "DecalDesaturation": 0.10000000149011612,
+    "DecalBrightness": 1.0,
+    "Flame Hue Shift": 0.0
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "PrimerTint": [
+      0.75,
+      0.75,
+      0.75,
+      1.0
+    ],
+    "LeatherTint": [
+      0.18000000715255737,
+      0.14191100001335144,
+      0.11789999902248383,
+      1.0
+    ],
+    "GrimeColor": [
+      0.009999999776482582,
+      0.008628999814391136,
+      0.007540000136941671,
+      1.0
+    ]
+  }
+}

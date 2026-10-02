@@ -1,0 +1,11 @@
+{
+  "name": "M_HowitzerMuzzle_01",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/MuzzleFlashes/M_HowitzerMuzzle_01.M_HowitzerMuzzle_01",
+  "textures": {},
+  "scalars": {
+    "FresnelExponent": 1.0,
+    "FresnelReflectFrac": 0.05000000074505806
+  },
+  "vectors": {}
+}

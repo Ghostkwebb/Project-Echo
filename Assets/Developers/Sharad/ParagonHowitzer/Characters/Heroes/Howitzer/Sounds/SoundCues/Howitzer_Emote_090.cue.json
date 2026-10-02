@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Emote_090",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 4.545000076293945,
+  "sound_files": []
+}

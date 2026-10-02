@@ -1,0 +1,49 @@
+{
+  "name": "M_Eye_Occlusion",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Global/Eyes/Materials/M_Eye_Occlusion.M_Eye_Occlusion",
+  "textures": {},
+  "scalars": {
+    "Shadow top exponent": 4.0,
+    "DepthOffset": 1.0,
+    "Blur Size": 0.20000000298023224,
+    "Opacity": 10.0,
+    "Shadow amount": 0.699999988079071,
+    "Opacity power": 12.0,
+    "Shadow outer corner exponent": 5.0,
+    "Duct shift": 0.7799999713897705,
+    "Duct scale": 5.0,
+    "Duct transition power": 8.0,
+    "Duct vert offset": -0.10000000149011612,
+    "Fade distance": 0.4000000059604645,
+    "Top vert offset": 0.20000000298023224,
+    "Corner vert offset": 0.0,
+    "Perimeter blur": 20.0,
+    "Bottom vert offset": 0.07000000029802322,
+    "Shadow top": 2.200000047683716,
+    "Shadow inner corner exponent": 4.0,
+    "Shadow bottom": 0.800000011920929,
+    "Shadow bottom exponent": 3.0,
+    "Blur bottom": 1.0,
+    "Blur bottom exponent": 5.0,
+    "Shadow inner corner": 1.0,
+    "Shadow outer corner": 1.0,
+    "Blur outer corner": 1.0,
+    "Blur outer corner exponent": 5.0,
+    "Visibility": 1.0
+  },
+  "vectors": {
+    "Blur color": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "Blur Color Cheap": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

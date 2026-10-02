@@ -1,0 +1,177 @@
+{
+  "name": "M_EyeRefractive",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Global/Eyes/Materials/M_EyeRefractive.M_EyeRefractive",
+  "textures": {
+    "FadeMask": "T_AtmosphericCloudNoise03",
+    "NormalMap": "T_Eye_Wet_Normal",
+    "IrisColor": "T_EyeIrisBaseColor_Example_2",
+    "ScleraColor": "T_EyeScleraBaseColor_Example_2",
+    "SecondaryEnv": "EpicQuadPanorama_CC"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "ShadowRadius": 0.6499999761581421,
+    "ShadowHardness": 0.3451330065727234,
+    "IrisBrightness": 1.0,
+    "ScleraBrightness": 0.8999999761581421,
+    "ScaleByCenter": 1.0,
+    "IoR": 1.3359999656677246,
+    "Refraction On/Off": 1.0,
+    "Iris UV Radius": 0.15000000596046448,
+    "FlattenNormal": 0.949999988079071,
+    "SpecularityIris": 1.0,
+    "SpecularityScelera": 1.0,
+    "LimbusUVWidthColor": 0.03500000014901161,
+    "DepthScale": 1.2000000476837158,
+    "Iris Concavity Power": 0.27674400806427,
+    "Iris Concavity Scale": 0.11162800341844559,
+    "PupilScale": 0.699999988079071,
+    "LimbusUVWidthShading": 0.04500000178813934,
+    "LimbusPow": 8.0,
+    "LimbusDarkScale": 2.1500000953674316,
+    "NormalUVScale": 2.4000000953674316,
+    "SecondaryEnvRotation": 0.0,
+    "TacticiaUltEmissive": 0.0,
+    "ScleraRoughness": 0.10000000149011612,
+    "IrisRoughness": 0.10000000149011612,
+    "ShineJobPower": 0.05999999865889549,
+    "ShineExponantNone": 5.0,
+    "ShineBaseReflect": 0.03999999910593033,
+    "ShineBreakColor": 0.0,
+    "ShineJobAmount": 1.0,
+    "Scale": 1.0,
+    "SideMin": 0.5,
+    "Power": 0.5,
+    "DesatLume": 0.0,
+    "NoiseLerp": 0.10000000149011612,
+    "MIPBIas": 2.0,
+    "RangeMax": 1.0,
+    "RangeMin": 0.0,
+    "HDR_Range": 50.0,
+    "Exponent": 0.12091699987649918,
+    "EyeRoughness": 0.0,
+    "EyeSpecular": 1.0,
+    "Emissive": 0.0,
+    "Glow": 0.0,
+    "IrisHueShift": 0.0,
+    "Visibility": 1.0,
+    "ShineJobAmount_Sclera": 1.0
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "EyeCornerDarknessColor": [
+      0.23000000417232513,
+      0.08304200321435928,
+      0.03190600126981735,
+      1.0
+    ],
+    "SecondaryEnvRotationAxis": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "SecondaryEnvBalance": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "UltEmissiveColor": [
+      0.0,
+      3.493652105331421,
+      5.0,
+      1.0
+    ],
+    "EyeGlowColor": [
+      0.6000000238418579,
+      0.6000000238418579,
+      0.6000000238418579,
+      1.0
+    ],
+    "ShineJobColor": [
+      0.23000000417232513,
+      0.08304200321435928,
+      0.03190600126981735,
+      1.0
+    ],
+    "SideTint": [
+      1.5,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "HDR_Tint2": [
+      2.449381113052368,
+      3.0,
+      0.0,
+      1.0
+    ],
+    "HDR_Tint": [
+      1.43231201171875,
+      5.0,
+      0.07323499768972397,
+      1.0
+    ],
+    "BaseColor": [
+      0.019999999552965164,
+      0.0,
+      0.019067000597715378,
+      1.0
+    ],
+    "ScleraTint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "IrisHueTint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

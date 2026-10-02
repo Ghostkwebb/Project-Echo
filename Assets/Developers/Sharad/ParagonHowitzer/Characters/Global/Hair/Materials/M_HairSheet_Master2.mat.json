@@ -1,0 +1,241 @@
+{
+  "name": "M_HairSheet_Master2",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Global/Hair/Materials/M_HairSheet_Master2.M_HairSheet_Master2",
+  "textures": {
+    "FadeMask": "T_AtmosphericCloudNoise03",
+    "Root": "T_HairClump02_Roots",
+    "Unique_Hair_Value": "T_HairClump02_ID",
+    "Alpha": "T_HairClump02_Alpha",
+    "Depth": "T_HairClump02_Depth",
+    "2ndUVRootColor": "CASC_Solo_On",
+    "2ndUVTipColor": "CASC_Solo_On",
+    "FlowMapTexture": "T_Black_Linear",
+    "Diffuse": "Black",
+    "DyeMask": "T_HairClump02_DyeMask",
+    "AO_2ndUV": "T_HairClump02_Depth",
+    "FlameTexture": "T_Fire_Tiled_D",
+    "FlameCausticsTexture": "T_Caustics_2",
+    "T_HairVariation": "Black",
+    "Color Mask_1": "T_Black_Linear",
+    "Color Mask_2": "T_Black_Linear"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "Scatter": 0.20000000298023224,
+    "Roughness": 0.3799999952316284,
+    "OcclusionAmtRoot": 0.0,
+    "PixelDepthOffset": 1.0,
+    "Brightness": 0.800000011920929,
+    "Noisetiling": 24.0,
+    "MipBias": -1.0,
+    "EdgeMaskContrast": 1.0,
+    "EdgeMaskMin": 0.0,
+    "OcclusionAmtRootTip": 0.800000011920929,
+    "RandomValueVariation": 0.0,
+    "RandomHueVariation": 0.0,
+    "VertexColorStrength": 1.0,
+    "TipPower": 1.0,
+    "DyeRoughness": 0.5,
+    "DyeScatter": 0.15000000596046448,
+    "HairEmissiveBrightness": 0.0,
+    "PixelDepthOffset_Root": 1.0,
+    "Specular": 0.5,
+    "SpecMaskMin": 0.0,
+    "SpecMaskMax": 1.0,
+    "SpecMaskBias": 0.0,
+    "FlameCaustics Tiling": 1.0,
+    "AO_Min": 0.0,
+    "AO_power": 1.0,
+    "AO_Max": 1.0,
+    "AO_FacingExponent": 1.0,
+    "AODepthMasking": 0.699999988079071,
+    "BlendHairColor": 0.0,
+    "AO_DepthMax": 1.0,
+    "LowQualityScatter": 0.20000000298023224,
+    "DyeMaskHairGlow_Intensity": 0.0,
+    "DyeMaskHairGlow_TintFresnelMult": 2.0,
+    "FlameCaustics Panner Direction": 1.0,
+    "FlamePanner Direction": 1.0,
+    "WindAdveFreq": 0.10000000149011612,
+    "HairMin": 0.800000011920929,
+    "HairMax": 1.2000000476837158,
+    "HairWindInt": 0.33000001311302185,
+    "HairWindWeight": 0.10000000149011612,
+    "HairWindIntensityMin": -0.33000001311302185,
+    "HairWindVariationDiv": 18.0,
+    "Visibility": 1.0,
+    "Opacity": 0.0,
+    "FlameTiling": 1.0
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "RootColor": [
+      0.1098039299249649,
+      0.07450980693101883,
+      0.0470588281750679,
+      1.0
+    ],
+    "TipColor": [
+      0.1098039299249649,
+      0.07450980693101883,
+      0.05098039656877518,
+      1.0
+    ],
+    "TangentA": [
+      0.0,
+      0.0,
+      0.30000001192092896,
+      1.0
+    ],
+    "TangentB": [
+      0.0,
+      0.0,
+      -0.30000001192092896,
+      1.0
+    ],
+    "Tangent": [
+      0.0,
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "DyeColor": [
+      0.0524509996175766,
+      0.3186500072479248,
+      0.41499999165534973,
+      1.0
+    ],
+    "FlameTint": [
+      1.0,
+      0.8615819811820984,
+      0.23000000417232513,
+      1.0
+    ],
+    "FlameCaustics Tint": [
+      8.0,
+      6.546938896179199,
+      2.5199999809265137,
+      1.0
+    ],
+    "HairEmissiveColor": [
+      20.0,
+      17.232892990112305,
+      11.0,
+      1.0
+    ],
+    "DyeColorB": [
+      0.7799999713897705,
+      0.0,
+      0.7377880215644836,
+      1.0
+    ],
+    "HairEmissiveColorAO": [
+      20.0,
+      17.232892990112305,
+      11.0,
+      1.0
+    ],
+    "RootColorBlended": [
+      0.10980399698019028,
+      0.07451000064611435,
+      0.04705899953842163,
+      1.0
+    ],
+    "TipColorBlended": [
+      0.10980399698019028,
+      0.07451000064611435,
+      0.05098000168800354,
+      1.0
+    ],
+    "HairEmissiveColorAOBlended": [
+      20.0,
+      17.232892990112305,
+      11.0,
+      1.0
+    ],
+    "HairEmissiveColorBlended": [
+      20.0,
+      17.232892990112305,
+      11.0,
+      1.0
+    ],
+    "DyeMaskHairGlow_Tint": [
+      5.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "FlameCaustics Panner Speed": [
+      -0.05000000074505806,
+      0.30000001192092896,
+      0.0,
+      1.0
+    ],
+    "FlamePanner Speed": [
+      0.30000001192092896,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "C: Custom Mask Red Channel Color_1": [
+      1.0,
+      0.875,
+      0.875,
+      1.0
+    ],
+    "C: Custom Mask Green Channel Color_1": [
+      1.2000000476837158,
+      0.25,
+      0.0,
+      1.0
+    ],
+    "DetailPatternTint": [
+      1.2000000476837158,
+      0.25,
+      0.0,
+      1.0
+    ]
+  }
+}

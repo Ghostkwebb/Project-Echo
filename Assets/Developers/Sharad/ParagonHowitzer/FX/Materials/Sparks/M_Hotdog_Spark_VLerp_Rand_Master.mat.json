@@ -1,0 +1,13 @@
+{
+  "name": "M_Hotdog_Spark_VLerp_Rand_Master",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Sparks/M_Hotdog_Spark_VLerp_Rand_Master.M_Hotdog_Spark_VLerp_Rand_Master",
+  "textures": {
+    "SlowTexture": "T_Spark_Soft",
+    "FastTexture": "T_Spark_Soft"
+  },
+  "scalars": {
+    "MaxSpeed": 200.0
+  },
+  "vectors": {}
+}

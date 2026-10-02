@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Status_Idle",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 7.085000038146973,
+  "sound_files": []
+}

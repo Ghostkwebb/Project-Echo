@@ -1,0 +1,51 @@
+{
+  "name": "M_SplineThickenSmoke_Trails_Cine_Master",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Smoke/Howitzer/M_SplineThickenSmoke_Trails_Cine_Master.M_SplineThickenSmoke_Trails_Cine_Master",
+  "textures": {},
+  "scalars": {
+    "BaseWidth": 150.0,
+    "TipWidth": 4.0,
+    "PowEXP": 0.800000011920929,
+    "scaleFlameColor": 4.0,
+    "TileX": 1.0
+  },
+  "vectors": {
+    "FlameCool": [
+      120.0,
+      21.103628158569336,
+      0.0,
+      0.0
+    ],
+    "SmokeColor": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "ShadowColor": [
+      0.12319999933242798,
+      0.13689477741718292,
+      0.14000000059604645,
+      1.0
+    ],
+    "LightDirection": [
+      0.0,
+      0.800000011920929,
+      1.0,
+      0.0
+    ],
+    "LightColor": [
+      0.8100000023841858,
+      0.7759439945220947,
+      0.7176460027694702,
+      1.0
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "MI_Reticle_Timer_Countdown_VampBlink",
+  "ue_class": "MaterialInstanceConstant",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Timer/MI_Reticle_Timer_Countdown_VampBlink.MI_Reticle_Timer_Countdown_VampBlink",
+  "textures": {},
+  "scalars": {},
+  "vectors": {},
+  "meta_extract_error": "MaterialEditingLibrary: Failed to convert parameter 'material' when calling function 'MaterialEditingLibrary.GetMaterialDefaultScalarParameterValue' on 'Default__MaterialEditingLibrary'\n  TypeError: NativizeProperty: Cannot nativize 'MaterialInstanceConstant' as 'Material' (ObjectProperty)\n    TypeError: NativizeObject: Cannot nativize 'MaterialInstanceConstant' as 'Object' (allowed Class type: 'Material')"
+}

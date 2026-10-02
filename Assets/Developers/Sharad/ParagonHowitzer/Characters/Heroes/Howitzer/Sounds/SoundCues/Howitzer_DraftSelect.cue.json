@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_DraftSelect",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.634999990463257,
+  "sound_files": []
+}

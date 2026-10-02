@@ -1,0 +1,31 @@
+{
+  "name": "M_Explosion_RockChunks_Rand",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Debris/M_Explosion_RockChunks_Rand.M_Explosion_RockChunks_Rand",
+  "textures": {},
+  "scalars": {
+    "ScaleShadow": 0.5,
+    "RandomSizeMax": 2.5,
+    "UseParticleColor": 0.0
+  },
+  "vectors": {
+    "FlameHot": [
+      250.0,
+      95.53746795654297,
+      15.039875984191895,
+      0.0
+    ],
+    "FlameCool": [
+      0.17499999701976776,
+      0.012249999679625034,
+      0.012249999679625034,
+      0.0
+    ],
+    "BaseColor": [
+      0.6399999856948853,
+      0.6081011295318604,
+      0.5827566385269165,
+      0.0
+    ]
+  }
+}

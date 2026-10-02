@@ -1,0 +1,12 @@
+{
+  "name": "M_CleanseFlare",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Flares/M_CleanseFlare.M_CleanseFlare",
+  "textures": {
+    "TextureR": "T_Flare_Spikeball",
+    "TextureG": "T_Flare_Spikeball",
+    "TextureB": "T_Flare_Spikeball"
+  },
+  "scalars": {},
+  "vectors": {}
+}

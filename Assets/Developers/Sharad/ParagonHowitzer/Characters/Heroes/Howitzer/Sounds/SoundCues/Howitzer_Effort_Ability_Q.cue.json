@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Effort_Ability_Q",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 1.840000033378601,
+  "sound_files": []
+}

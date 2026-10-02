@@ -1,0 +1,22 @@
+{
+  "name": "M_Water_Footfall",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Water/M_Water_Footfall.M_Water_Footfall",
+  "textures": {},
+  "scalars": {
+    "Mask U Scale": 0.25,
+    "Mask V Scale": 1.5,
+    "Spec Brightness": 200.0,
+    "Smooth Step Min": 0.0,
+    "Softness": 0.05000000074505806,
+    "Mask Opacity": 0.5
+  },
+  "vectors": {
+    "BASE COLOR": [
+      0.31587499380111694,
+      0.5559629797935486,
+      0.4749999940395355,
+      1.0
+    ]
+  }
+}

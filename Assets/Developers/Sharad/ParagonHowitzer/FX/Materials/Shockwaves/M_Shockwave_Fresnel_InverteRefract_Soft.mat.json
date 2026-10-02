@@ -1,0 +1,21 @@
+{
+  "name": "M_Shockwave_Fresnel_InverteRefract_Soft",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Shockwaves/M_Shockwave_Fresnel_InverteRefract_Soft.M_Shockwave_Fresnel_InverteRefract_Soft",
+  "textures": {
+    "DepthFadeNoiseTex": "T_Noise_LoFreq_RGBA_Pack"
+  },
+  "scalars": {
+    "Reverse Depth Fade Distance": 800.0,
+    "Brightness Opacity Bias": 0.20000000298023224,
+    "Camera Fade Distance": 20000.0,
+    "Power": 3.0,
+    "Depth Fade Distance High": 1.0,
+    "DepthFadeNoiseTileU": 1.0,
+    "DepthFadeNoiseTileV": 1.0,
+    "DepthFadeNoisePanU": 0.0,
+    "DepthFadeNoisePanV": 0.0,
+    "DepthFadeDistanceLow": 1.0
+  },
+  "vectors": {}
+}

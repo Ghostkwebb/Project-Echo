@@ -1,0 +1,50 @@
+{
+  "name": "M_TrailSmoke",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Smoke/Trails/M_TrailSmoke.M_TrailSmoke",
+  "textures": {},
+  "scalars": {
+    "PowEXP": 0.800000011920929,
+    "scaleFlameColor": 1.0,
+    "CameraFadeDistance0": 200.0,
+    "CameraFadeDistance1": 6.0
+  },
+  "vectors": {
+    "FlameCool": [
+      12.0,
+      2.098297119140625,
+      0.0,
+      0.0
+    ],
+    "SmokeColor": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "ShadowColor": [
+      0.10360000282526016,
+      0.13327200710773468,
+      0.14000000059604645,
+      1.0
+    ],
+    "LightDirection": [
+      0.0,
+      0.800000011920929,
+      1.0,
+      0.0
+    ],
+    "LightColor": [
+      0.8100000023841858,
+      0.7759439945220947,
+      0.7176460027694702,
+      1.0
+    ]
+  }
+}

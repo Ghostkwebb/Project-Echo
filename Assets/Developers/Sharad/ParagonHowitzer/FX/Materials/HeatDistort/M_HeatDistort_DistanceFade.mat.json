@@ -1,0 +1,36 @@
+{
+  "name": "M_HeatDistort_DistanceFade",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/HeatDistort/M_HeatDistort_DistanceFade.M_HeatDistort_DistanceFade",
+  "textures": {
+    "HeatNormal": "T_SmokeTile_N",
+    "HeatMask": "T_DecalMask_Radial01",
+    "HeatDitherMask": "T_2ndInfectedMapLinear"
+  },
+  "scalars": {
+    "PanSpeedScalar": 1.0,
+    "TextureScale": 3.0,
+    "FadeDistance": 600.0,
+    "NormalScaleDistance": 600.0
+  },
+  "vectors": {
+    "NormalScale": [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "EmissiveColor": [
+      0.5,
+      0.5,
+      0.5,
+      0.0
+    ],
+    "ScaleDistantNormal": [
+      1.0,
+      1.0,
+      32.0,
+      0.0
+    ]
+  }
+}

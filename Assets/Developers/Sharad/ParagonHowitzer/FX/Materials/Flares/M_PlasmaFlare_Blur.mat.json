@@ -1,0 +1,21 @@
+{
+  "name": "M_PlasmaFlare_Blur",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Flares/M_PlasmaFlare_Blur.M_PlasmaFlare_Blur",
+  "textures": {},
+  "scalars": {
+    "scaleSmokeTile2": 0.5,
+    "TileX2": 2.0,
+    "ScaleUVDistort2": 0.00800000037997961,
+    "CameraFadeDistance": 16.0,
+    "FadeSensitivity": 4.0
+  },
+  "vectors": {
+    "PlasmaColor2": [
+      0.059787001460790634,
+      0.18653999269008636,
+      1.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "M_Fireball_Directional_Lit_Master",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Explosions/M_Fireball_Directional_Lit_Master.M_Fireball_Directional_Lit_Master",
+  "textures": {
+    "SubUV_Normal": "T_FireBall_07D_N",
+    "SubUV_Depth": "T_FireBall_07D_Depth",
+    "SubUV_Emissive": "T_FireBall_07D_E"
+  },
+  "scalars": {
+    "0_Distance": 200.0,
+    "1_Distance": 10.0
+  },
+  "vectors": {
+    "HDR_Tint": [
+      128.0,
+      52.56129455566406,
+      11.288185119628906,
+      0.0
+    ],
+    "BaseColor": [
+      0.4000000059604645,
+      0.4000000059604645,
+      0.4000000059604645,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      1.5,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "M_Smoke_Offset_Particles",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Smoke/Howitzer/M_Smoke_Offset_Particles.M_Smoke_Offset_Particles",
+  "textures": {},
+  "scalars": {
+    "cameraFadeBias": 16.0,
+    "CameraFadeScale": 60.0,
+    "DepthFadeDistance": 64.0,
+    "OffsetAmount": 11.0
+  },
+  "vectors": {
+    "ScaleNormal": [
+      3.0,
+      3.0,
+      3.0,
+      0.0
+    ]
+  }
+}

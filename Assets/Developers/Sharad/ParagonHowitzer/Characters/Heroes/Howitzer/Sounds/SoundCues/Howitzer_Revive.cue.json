@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Revive",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.434999942779541,
+  "sound_files": []
+}

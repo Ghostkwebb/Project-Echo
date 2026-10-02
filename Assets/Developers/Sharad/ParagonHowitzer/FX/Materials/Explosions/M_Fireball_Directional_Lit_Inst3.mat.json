@@ -1,0 +1,9 @@
+{
+  "name": "M_Fireball_Directional_Lit_Inst3",
+  "ue_class": "MaterialInstanceConstant",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Explosions/M_Fireball_Directional_Lit_Inst3.M_Fireball_Directional_Lit_Inst3",
+  "textures": {},
+  "scalars": {},
+  "vectors": {},
+  "meta_extract_error": "MaterialEditingLibrary: Failed to convert parameter 'material' when calling function 'MaterialEditingLibrary.GetMaterialDefaultTextureParameterValue' on 'Default__MaterialEditingLibrary'\n  TypeError: NativizeProperty: Cannot nativize 'MaterialInstanceConstant' as 'Material' (ObjectProperty)\n    TypeError: NativizeObject: Cannot nativize 'MaterialInstanceConstant' as 'Object' (allowed Class type: 'Material')"
+}

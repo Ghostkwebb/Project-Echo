@@ -1,0 +1,8 @@
+{
+  "name": "M_ParticleHeatDistortion",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/HeatDistort/M_ParticleHeatDistortion.M_ParticleHeatDistortion",
+  "textures": {},
+  "scalars": {},
+  "vectors": {}
+}

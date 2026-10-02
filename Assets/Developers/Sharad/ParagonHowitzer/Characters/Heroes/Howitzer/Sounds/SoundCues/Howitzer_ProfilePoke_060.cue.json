@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_ProfilePoke_060",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 11.520000457763672,
+  "sound_files": []
+}

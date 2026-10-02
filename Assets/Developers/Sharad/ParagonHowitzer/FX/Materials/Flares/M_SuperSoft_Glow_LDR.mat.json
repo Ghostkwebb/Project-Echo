@@ -1,0 +1,18 @@
+{
+  "name": "M_SuperSoft_Glow_LDR",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Flares/M_SuperSoft_Glow_LDR.M_SuperSoft_Glow_LDR",
+  "textures": {},
+  "scalars": {
+    "BaseHDRRange": 100.0,
+    "Param": 0.5
+  },
+  "vectors": {
+    "HDRTint": [
+      3.0,
+      1.393396019935608,
+      0.2088710069656372,
+      0.0
+    ]
+  }
+}

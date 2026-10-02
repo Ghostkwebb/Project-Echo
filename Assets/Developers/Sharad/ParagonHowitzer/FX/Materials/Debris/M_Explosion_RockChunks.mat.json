@@ -1,0 +1,29 @@
+{
+  "name": "M_Explosion_RockChunks",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Debris/M_Explosion_RockChunks.M_Explosion_RockChunks",
+  "textures": {},
+  "scalars": {
+    "ScaleShadow": 0.6499999761581421
+  },
+  "vectors": {
+    "FlameHot": [
+      250.0,
+      95.53746795654297,
+      15.039875984191895,
+      0.0
+    ],
+    "FlameCool": [
+      0.17499999701976776,
+      0.012249999679625034,
+      0.012249999679625034,
+      0.0
+    ],
+    "BaseColorTint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

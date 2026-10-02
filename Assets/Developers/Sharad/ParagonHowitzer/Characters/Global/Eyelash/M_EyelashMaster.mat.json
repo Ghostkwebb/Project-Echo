@@ -1,0 +1,69 @@
+{
+  "name": "M_EyelashMaster",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Global/Eyelash/M_EyelashMaster.M_EyelashMaster",
+  "textures": {
+    "FadeMask": "T_AtmosphericCloudNoise03",
+    "Eyelash Texture": "T_Universal_Eyelashes_D"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "Lash Opacity": 10.0,
+    "Depth Fade Distance": 0.009999999776482582,
+    "Visibility": 1.0,
+    "OpacityPower": 1.0,
+    "Metallic": 0.0,
+    "Specular": 0.4000000059604645,
+    "Roughness": 0.5
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "Eyelash Color": [
+      0.0010000000474974513,
+      0.0010000000474974513,
+      0.0010000000474974513,
+      1.0
+    ]
+  }
+}

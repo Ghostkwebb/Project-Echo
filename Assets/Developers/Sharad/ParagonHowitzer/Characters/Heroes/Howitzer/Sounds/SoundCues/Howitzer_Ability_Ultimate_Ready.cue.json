@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Ability_Ultimate_Ready",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.2149999141693115,
+  "sound_files": []
+}

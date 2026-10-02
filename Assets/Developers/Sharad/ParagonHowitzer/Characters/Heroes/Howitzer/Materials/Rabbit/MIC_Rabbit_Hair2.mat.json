@@ -1,0 +1,9 @@
+{
+  "name": "MIC_Rabbit_Hair2",
+  "ue_class": "MaterialInstanceConstant",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Heroes/Howitzer/Materials/Rabbit/MIC_Rabbit_Hair2.MIC_Rabbit_Hair2",
+  "textures": {},
+  "scalars": {},
+  "vectors": {},
+  "meta_extract_error": "MaterialEditingLibrary: Failed to convert parameter 'material' when calling function 'MaterialEditingLibrary.GetMaterialDefaultTextureParameterValue' on 'Default__MaterialEditingLibrary'\n  TypeError: NativizeProperty: Cannot nativize 'MaterialInstanceConstant' as 'Material' (ObjectProperty)\n    TypeError: NativizeObject: Cannot nativize 'MaterialInstanceConstant' as 'Object' (allowed Class type: 'Material')"
+}

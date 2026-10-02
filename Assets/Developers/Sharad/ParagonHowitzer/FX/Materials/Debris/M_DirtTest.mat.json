@@ -1,0 +1,20 @@
+{
+  "name": "M_DirtTest",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Debris/M_DirtTest.M_DirtTest",
+  "textures": {
+    "SubUV_Alpha": "T_Dirt_01_A",
+    "SubUV_N": "T_Dirt_01_N"
+  },
+  "scalars": {
+    "Param": 0.20000000298023224
+  },
+  "vectors": {
+    "BaseColor": [
+      0.1550000011920929,
+      0.11968199908733368,
+      0.10152500122785568,
+      1.0
+    ]
+  }
+}

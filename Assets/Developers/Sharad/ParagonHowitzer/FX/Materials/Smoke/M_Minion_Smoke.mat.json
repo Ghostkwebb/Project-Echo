@@ -1,0 +1,12 @@
+{
+  "name": "M_Minion_Smoke",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Smoke/M_Minion_Smoke.M_Minion_Smoke",
+  "textures": {},
+  "scalars": {
+    "CameraFadeBias": 64.0,
+    "CameraFalloff": 2.0,
+    "scaleSmokeTile": 0.5
+  },
+  "vectors": {}
+}

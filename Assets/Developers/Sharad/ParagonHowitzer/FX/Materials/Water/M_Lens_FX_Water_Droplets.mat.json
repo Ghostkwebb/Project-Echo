@@ -1,0 +1,13 @@
+{
+  "name": "M_Lens_FX_Water_Droplets",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Water/M_Lens_FX_Water_Droplets.M_Lens_FX_Water_Droplets",
+  "textures": {},
+  "scalars": {
+    "RefracStr": 0.5,
+    "PanSpeedV": 0.0,
+    "PanSpeedU": 0.0,
+    "DistortUV": 0.05000000074505806
+  },
+  "vectors": {}
+}

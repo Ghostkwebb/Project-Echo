@@ -1,0 +1,113 @@
+{
+  "name": "M_HowitzerV2_Legs_MG",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Heroes/Howitzer/Skins/Tier_1/HowitzerWasteland/Materials/M_HowitzerV2_Legs_MG.M_HowitzerV2_Legs_MG",
+  "textures": {
+    "FadeMask": "T_AtmosphericCloudNoise03"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "zxczc": 1.967519998550415,
+    "xcx": 0.4000000059604645,
+    "PaintRoughness": 0.800000011920929,
+    "Rust02": 2.0,
+    "Scratch Roughness": 0.5,
+    "RustOpacity": 1.0,
+    "RustBrightness": 8.190101623535156,
+    "RustDesat": 0.0,
+    "RustFlatness": 0.800000011920929,
+    "CLothGrimeInt": 229.17788696289062
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "PrimaryPaint": [
+      0.024000000208616257,
+      0.07000000029802322,
+      0.11999999731779099,
+      1.0
+    ],
+    "PaintGrimeColor": [
+      0.029999999329447746,
+      0.02743300050497055,
+      0.024000000208616257,
+      1.0
+    ],
+    "ClothColor": [
+      0.03500000014901161,
+      0.03500000014901161,
+      0.03500000014901161,
+      1.0
+    ],
+    "PaintScratchColor": [
+      0.20000000298023224,
+      0.20000000298023224,
+      0.20000000298023224,
+      1.0
+    ],
+    "PaintColorB": [
+      0.019999999552965164,
+      0.019999999552965164,
+      0.019999999552965164,
+      1.0
+    ],
+    "CLothGrime": [
+      0.35499998927116394,
+      0.35499998927116394,
+      0.35499998927116394,
+      1.0
+    ],
+    "GunmetalTint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "GoldTint": [
+      0.7250000238418579,
+      0.6385679841041565,
+      0.5836250185966492,
+      1.0
+    ]
+  }
+}

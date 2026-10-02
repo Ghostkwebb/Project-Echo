@@ -1,0 +1,19 @@
+{
+  "name": "M_Howitzer_Smoke_Cheaper",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Smoke/M_Howitzer_Smoke_Cheaper.M_Howitzer_Smoke_Cheaper",
+  "textures": {
+    "NormalParticle_SubUV": "T_FluidSmoke_03_N",
+    "HeightMaskParticle_SubUV": "T_FluidSmoke_03_D",
+    "AlphaParticle_SubUV": "T_FluidSmoke_03_D"
+  },
+  "scalars": {
+    "DepthFadeDistance_Far": 150.0,
+    "DepthFadeDistance_Near": 22.0,
+    "CameraFadeDistance_Far": 512.0,
+    "CameraFadeDistance_Near": 32.0,
+    "MipLevel_ParticleLifetime": 4.0,
+    "CameraFadeDistance": 100.0
+  },
+  "vectors": {}
+}

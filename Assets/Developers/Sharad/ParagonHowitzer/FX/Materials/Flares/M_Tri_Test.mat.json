@@ -1,0 +1,18 @@
+{
+  "name": "M_Tri_Test",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Flares/M_Tri_Test.M_Tri_Test",
+  "textures": {},
+  "scalars": {
+    "Metallic": 0.800000011920929,
+    "Roughness": 0.5
+  },
+  "vectors": {
+    "BaseColor": [
+      0.03999999910593033,
+      0.03999999910593033,
+      0.03999999910593033,
+      1.0
+    ]
+  }
+}

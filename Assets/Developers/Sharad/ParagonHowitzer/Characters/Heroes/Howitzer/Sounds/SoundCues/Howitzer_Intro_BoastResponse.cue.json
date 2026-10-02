@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Intro_BoastResponse",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 4.135000228881836,
+  "sound_files": []
+}

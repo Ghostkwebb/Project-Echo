@@ -1,0 +1,21 @@
+{
+  "name": "M_Howitzer_Muzzle_Flash",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/MuzzleFlashes/M_Howitzer_Muzzle_Flash.M_Howitzer_Muzzle_Flash",
+  "textures": {},
+  "scalars": {},
+  "vectors": {
+    "MuzzleColor_0": [
+      0.10999999940395355,
+      0.010193999856710434,
+      0.009999999776482582,
+      1.0
+    ],
+    "MuzzleColor_1": [
+      1.0,
+      0.15620000660419464,
+      0.009999999776482582,
+      1.0
+    ]
+  }
+}

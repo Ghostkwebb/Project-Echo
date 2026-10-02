@@ -1,0 +1,106 @@
+{
+  "name": "M_HowitzerV2_Arms_DomeWhite",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Heroes/Howitzer/Skins/Tier_2/Domed/Materials/M_HowitzerV2_Arms_DomeWhite.M_HowitzerV2_Arms_DomeWhite",
+  "textures": {
+    "FadeMask": "T_AtmosphericCloudNoise03"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "DecalBrightness": 0.800000011920929,
+    "MetalRoughness": 0.30000001192092896,
+    "MetalBrightness": 0.6000000238418579
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "TeamColor": [
+      0.8399999737739563,
+      0.5706070065498352,
+      0.14951199293136597,
+      1.0
+    ],
+    "PaintColorB": [
+      0.7350000143051147,
+      0.6898790001869202,
+      0.632099986076355,
+      1.0
+    ],
+    "PaintColorA": [
+      1.0,
+      0.22322799265384674,
+      0.008023000322282314,
+      1.0
+    ],
+    "MetallicScratch": [
+      0.0966000035405159,
+      0.10324499756097794,
+      0.10499999672174454,
+      1.0
+    ],
+    "PaintGrimeColor": [
+      0.10000000149011612,
+      0.0808430016040802,
+      0.05999999865889549,
+      1.0
+    ],
+    "MetalGrimeCOlor": [
+      0.019999999552965164,
+      0.019999999552965164,
+      0.019999999552965164,
+      1.0
+    ],
+    "EmissiveColorB": [
+      0.003748999908566475,
+      0.0004920000210404396,
+      0.019999999552965164,
+      1.0
+    ],
+    "EmissiveColor": [
+      0.0,
+      1.0,
+      0.750452995300293,
+      1.0
+    ]
+  }
+}

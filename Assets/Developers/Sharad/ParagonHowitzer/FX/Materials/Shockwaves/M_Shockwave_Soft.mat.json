@@ -1,0 +1,32 @@
+{
+  "name": "M_Shockwave_Soft",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Shockwaves/M_Shockwave_Soft.M_Shockwave_Soft",
+  "textures": {},
+  "scalars": {
+    "DepthFadeDist": 80.0,
+    "AngleFade": 1.0,
+    "RefractionAmount": 1.2000000476837158,
+    "PanSpeed": 1.0
+  },
+  "vectors": {
+    "DarkColor": [
+      0.12796249985694885,
+      0.11092499643564224,
+      0.14499999582767487,
+      1.0
+    ],
+    "LightColor": [
+      1.0499999523162842,
+      1.3499997854232788,
+      1.5,
+      1.0
+    ],
+    "HDRTint": [
+      3.6368486881256104,
+      3.9424633979797363,
+      5.0,
+      1.0
+    ]
+  }
+}

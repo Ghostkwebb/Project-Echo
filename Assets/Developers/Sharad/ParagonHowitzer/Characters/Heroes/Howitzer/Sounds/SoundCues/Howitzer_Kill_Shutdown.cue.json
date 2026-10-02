@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Kill_Shutdown",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.7899999618530273,
+  "sound_files": []
+}

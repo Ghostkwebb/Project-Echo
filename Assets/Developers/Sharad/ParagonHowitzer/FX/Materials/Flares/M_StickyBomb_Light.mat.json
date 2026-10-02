@@ -1,0 +1,14 @@
+{
+  "name": "M_StickyBomb_Light",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Flares/M_StickyBomb_Light.M_StickyBomb_Light",
+  "textures": {
+    "Texture": "T_Flare_Spikeball"
+  },
+  "scalars": {
+    "p": 3.0,
+    "m": 8.0,
+    "b": 0.0
+  },
+  "vectors": {}
+}

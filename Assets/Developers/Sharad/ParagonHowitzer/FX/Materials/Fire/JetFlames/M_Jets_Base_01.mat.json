@@ -1,0 +1,32 @@
+{
+  "name": "M_Jets_Base_01",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Fire/JetFlames/M_Jets_Base_01.M_Jets_Base_01",
+  "textures": {},
+  "scalars": {
+    "TileFlame_Y": 0.20000000298023224,
+    "TileFlame_X": 2.200000047683716,
+    "Div": 6.0,
+    "TweakRefraction": 0.30000001192092896
+  },
+  "vectors": {
+    "ColorCool": [
+      0.14499999582767487,
+      0.03888599947094917,
+      0.0,
+      0.0
+    ],
+    "ColorHot": [
+      1.0,
+      0.6872090101242065,
+      0.377344012260437,
+      0.0
+    ],
+    "ColorBase": [
+      0.0061240000650286674,
+      0.023180000483989716,
+      0.054999999701976776,
+      0.0
+    ]
+  }
+}

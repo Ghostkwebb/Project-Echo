@@ -1,0 +1,21 @@
+{
+  "name": "M_Howitzer_Glow_DomeWhite",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Heroes/Howitzer/Skins/Tier_2/Domed/Materials/M_Howitzer_Glow_DomeWhite.M_Howitzer_Glow_DomeWhite",
+  "textures": {},
+  "scalars": {},
+  "vectors": {
+    "EmissiveColor": [
+      0.0,
+      1.5,
+      1.1256790161132812,
+      1.0
+    ],
+    "EmissiveColorB": [
+      0.0748710036277771,
+      0.03875499963760376,
+      0.15000000596046448,
+      1.0
+    ]
+  }
+}

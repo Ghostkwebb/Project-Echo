@@ -1,0 +1,24 @@
+{
+  "name": "M_ThickSmoke_MASTER",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Smoke/M_ThickSmoke_MASTER.M_ThickSmoke_MASTER",
+  "textures": {
+    "NormalTex": "T_FluidSmoke_04_N",
+    "DiffuseTex": "T_FluidSmoke_04",
+    "HeightTex": "T_FluidSmoke_04_Depth"
+  },
+  "scalars": {
+    "NearFade": 30.0,
+    "FarFade": 120.0,
+    "NearDepth": 50.0,
+    "FarDepth": 150.0
+  },
+  "vectors": {
+    "NormalStr": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

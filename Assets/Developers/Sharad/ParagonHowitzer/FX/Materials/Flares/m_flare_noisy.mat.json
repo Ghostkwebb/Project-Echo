@@ -1,0 +1,13 @@
+{
+  "name": "m_flare_noisy",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Flares/m_flare_noisy.m_flare_noisy",
+  "textures": {
+    "Noise Tex": "T_soft_noise_even_distribution"
+  },
+  "scalars": {
+    "CameraDistFade": 100.0,
+    "CameraDistOffset": 0.0
+  },
+  "vectors": {}
+}

@@ -1,0 +1,28 @@
+{
+  "character": "Paragon: Howitzer",
+  "export_date": "2026-10-03 00:46:56",
+  "total_assets": 1790,
+  "statistics": {
+    "Already_Exists": 1579,
+    "Other_MaterialFunction": 109,
+    "Other_SubsurfaceProfile": 4,
+    "Other_MaterialParameterCollection": 3,
+    "Other_AimOffsetBlendSpace": 1,
+    "Other_BlendSpace1D": 3,
+    "Other_BlendSpace": 1,
+    "Other_AnimMontage": 2,
+    "Other_World": 3,
+    "Other_Object": 4,
+    "Other_AnimBlueprint": 1,
+    "Other_Blueprint": 1,
+    "Other_Skeleton": 1,
+    "Other_PhysicsAsset": 2,
+    "Failed_To_Load": 1,
+    "Other_DialogueVoice": 1,
+    "Other_PhysicalMaterial": 2,
+    "Other_ParticleSystem": 61,
+    "Texture2D_PNG": 5,
+    "Other_VectorField": 6
+  },
+  "manifest_entries_count": 1789
+}

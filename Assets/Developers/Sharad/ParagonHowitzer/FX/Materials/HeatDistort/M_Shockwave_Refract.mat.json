@@ -1,0 +1,20 @@
+{
+  "name": "M_Shockwave_Refract",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/HeatDistort/M_Shockwave_Refract.M_Shockwave_Refract",
+  "textures": {},
+  "scalars": {
+    "Depth Fade Distance": 100.0,
+    "Billboard Spherical Normal Strength": 1.0,
+    "CamDistFadeLength": 120.0,
+    "CamDistFadeOffset": 180.0
+  },
+  "vectors": {
+    "EmissiveColor": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "name": "M_HowitzerV2_Body",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Heroes/Howitzer/Materials/M_HowitzerV2_Body.M_HowitzerV2_Body",
+  "textures": {
+    "FadeMask": "T_AtmosphericCloudNoise03"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "EmissiveValue": 0.20000000298023224
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "Flat Paint Tint": [
+      0.10700000077486038,
+      0.125,
+      0.07400000095367432,
+      1.0
+    ],
+    "Flat_Paint_Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "fgsdg": [
+      0.03500000014901161,
+      0.03500000014901161,
+      0.03500000014901161,
+      1.0
+    ],
+    "Leather_Tint": [
+      1.0,
+      0.6963880062103271,
+      0.5049999952316284,
+      1.0
+    ],
+    "Rubber_Tint": [
+      0.14499999582767487,
+      0.14499999582767487,
+      0.14499999582767487,
+      0.0
+    ]
+  }
+}

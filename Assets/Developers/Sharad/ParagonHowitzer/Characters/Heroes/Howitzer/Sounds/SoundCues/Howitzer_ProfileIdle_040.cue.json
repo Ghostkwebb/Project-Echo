@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_ProfileIdle_040",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 20.790000915527344,
+  "sound_files": []
+}

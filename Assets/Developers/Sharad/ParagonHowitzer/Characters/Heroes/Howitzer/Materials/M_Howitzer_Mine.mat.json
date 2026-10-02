@@ -1,0 +1,50 @@
+{
+  "name": "M_Howitzer_Mine",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/Characters/Heroes/Howitzer/Materials/M_Howitzer_Mine.M_Howitzer_Mine",
+  "textures": {
+    "Glow Mip Edging": "T_ML_HyperGlowPattern"
+  },
+  "scalars": {
+    "Comb Edge Power": 100.0,
+    "Comb Fill Power": 100.0
+  },
+  "vectors": {
+    "Comb Edge Color": [
+      0.026100000366568565,
+      0.2661569118499756,
+      0.4350000023841858,
+      1.0
+    ],
+    "Comb Fill Color": [
+      0.023624999448657036,
+      0.3866040110588074,
+      0.675000011920929,
+      1.0
+    ],
+    "Edging and Diffuse Color": [
+      0.033858999609947205,
+      0.04142700135707855,
+      0.5049999952316284,
+      1.0
+    ],
+    "Flat Paint Tint": [
+      0.10700000077486038,
+      0.125,
+      0.07400000095367432,
+      1.0
+    ],
+    "Flat_Paint_Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Color": [
+      0.9649999737739563,
+      0.6330310106277466,
+      0.0,
+      1.0
+    ]
+  }
+}

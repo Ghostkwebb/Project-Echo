@@ -1,0 +1,27 @@
+{
+  "name": "M_SphereChromaWisps",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Chroma/M_SphereChromaWisps.M_SphereChromaWisps",
+  "textures": {
+    "UVDistTex": "T_Perlin_Soft_Packed",
+    "GrayscaleTex": "T_Howitzer_Poster_Tendrils_v2_Seamless",
+    "ColorTex": "T_Cloud_Wisp_Chromatic_Tile"
+  },
+  "scalars": {
+    "CenterOpacity": 0.0,
+    "DepthFadeDistance": 100.0,
+    "RefractionStr": 1.100000023841858,
+    "ChromaShiftDistance": 0.004999999888241291,
+    "UVWarpStr": 0.012500000186264515,
+    "PanSpeedU": 0.0,
+    "PanSpeedV": 0.25,
+    "BaseTilingU": 1.0,
+    "BaseTilingV": 0.5,
+    "WarpTexTilingU": 2.0,
+    "WarpTexTilingV": 1.0,
+    "WarpPanSpeedU": 0.0,
+    "WarpPanSpeedV": 0.25,
+    "SaturationFactor": -3.0
+  },
+  "vectors": {}
+}

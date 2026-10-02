@@ -1,0 +1,17 @@
+{
+  "name": "M_Hotdog_Spark_VLerp_DOF_Rand_Master",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Sparks/M_Hotdog_Spark_VLerp_DOF_Rand_Master.M_Hotdog_Spark_VLerp_DOF_Rand_Master",
+  "textures": {
+    "SlowTexture": "T_Spark_Soft",
+    "FastTexture": "T_Spark_Soft"
+  },
+  "scalars": {
+    "MinPixelRadius": 1.0,
+    "MaxSpeed": 20.0,
+    "Param": 20.0,
+    "SizeRandom": 2.0,
+    "FadeDistance": 30.0
+  },
+  "vectors": {}
+}

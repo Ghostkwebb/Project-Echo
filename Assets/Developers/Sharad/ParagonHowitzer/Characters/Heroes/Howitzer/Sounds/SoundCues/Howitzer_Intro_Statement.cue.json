@@ -1,0 +1,8 @@
+{
+  "name": "Howitzer_Intro_Statement",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 5.835000038146973,
+  "sound_files": []
+}

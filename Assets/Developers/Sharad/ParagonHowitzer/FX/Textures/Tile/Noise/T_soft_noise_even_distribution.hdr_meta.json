@@ -1,0 +1,6 @@
+{
+  "name": "T_soft_noise_even_distribution",
+  "class": "Texture2D",
+  "compression": "<TextureCompressionSettings.TC_HDR_COMPRESSED: 10>",
+  "path": "/Game/ParagonHowitzer/FX/Textures/Tile/Noise/T_soft_noise_even_distribution.T_soft_noise_even_distribution"
+}

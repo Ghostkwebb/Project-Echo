@@ -1,0 +1,32 @@
+{
+  "name": "M_Flare_Procedural_Noise_Tex_Glow",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonHowitzer/FX/Materials/Flares/M_Flare_Procedural_Noise_Tex_Glow.M_Flare_Procedural_Noise_Tex_Glow",
+  "textures": {
+    "Noise Tex": "T_FireNoiseTile_02"
+  },
+  "scalars": {
+    "Particle Color Strength": 0.8999999761581421,
+    "Fade Distance": 100.0,
+    "Core Strength": 1.0,
+    "Tile V": 0.05000000074505806,
+    "Contrast": 0.0,
+    "Preview Random": 0.0,
+    "PanSpeed": -0.10000000149011612,
+    "EatAwayRampPower": 1.0,
+    "EatAwayOuterBound": 3.0,
+    "EatAwayHardness": 2.0,
+    "Round Fade Dist Low": 0.0,
+    "Round Fade Dist High": 0.0,
+    "CameraOffsetStrength": 0.0,
+    "FadeBasedOnViewAngle": 1.0
+  },
+  "vectors": {
+    "Glow Color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}
