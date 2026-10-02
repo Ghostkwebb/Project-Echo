@@ -1,0 +1,25 @@
+{
+  "name": "Wraith_Status_TeamDead",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 4.431708335876465,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_TeamDead_020_Dialogue",
+      "wav_file": "Wraith_Status_TeamDead_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_TeamDead_030_Dialogue",
+      "wav_file": "Wraith_Status_TeamDead_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_TeamDead_010_Dialogue",
+      "wav_file": "Wraith_Status_TeamDead_010.wav"
+    }
+  ]
+}

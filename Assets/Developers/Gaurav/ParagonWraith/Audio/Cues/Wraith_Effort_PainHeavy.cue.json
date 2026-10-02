@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Effort_PainHeavy",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 1.869854211807251,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_PainHeavy_010_Dialogue",
+      "wav_file": "Wraith_Effort_PainHeavy_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_PainHeavy_011_Dialogue",
+      "wav_file": "Wraith_Effort_PainHeavy_011.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_PainHeavy_014_Dialogue",
+      "wav_file": "Wraith_Effort_PainHeavy_014.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_PainHeavy_013_Dialogue",
+      "wav_file": "Wraith_Effort_PainHeavy_013.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_PainHeavy_012_Dialogue",
+      "wav_file": "Wraith_Effort_PainHeavy_012.wav"
+    }
+  ]
+}

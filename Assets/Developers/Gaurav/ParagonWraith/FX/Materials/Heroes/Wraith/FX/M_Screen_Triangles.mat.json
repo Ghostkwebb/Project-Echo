@@ -1,0 +1,30 @@
+{
+  "name": "M_Screen_Triangles",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/Wraith/FX/M_Screen_Triangles.M_Screen_Triangles",
+  "textures": {},
+  "scalars": {
+    "HDR Intensity": 5.0,
+    "RefractionMult": 1.600000023841858
+  },
+  "vectors": {
+    "Color1": [
+      0.19582253694534302,
+      0.7780857086181641,
+      1.0,
+      1.0
+    ],
+    "Color2": [
+      0.008038541302084923,
+      0.00967339240014553,
+      0.014999999664723873,
+      1.0
+    ],
+    "FlickerColor": [
+      4.0,
+      0.6400001049041748,
+      1.8859410285949707,
+      1.0
+    ]
+  }
+}

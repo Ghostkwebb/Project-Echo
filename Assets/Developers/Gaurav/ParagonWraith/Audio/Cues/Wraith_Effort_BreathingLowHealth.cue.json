@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Effort_BreathingLowHealth",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 22.200000762939453,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_BreathingLowHealth_010_Dialogue",
+      "wav_file": "Wraith_Effort_BreathingLowHealth_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_BreathingLowHealth_011_Dialogue",
+      "wav_file": "Wraith_Effort_BreathingLowHealth_011.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_BreathingLowHealth_014_Dialogue",
+      "wav_file": "Wraith_Effort_BreathingLowHealth_014.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_BreathingLowHealth_013_Dialogue",
+      "wav_file": "Wraith_Effort_BreathingLowHealth_013.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_BreathingLowHealth_012_Dialogue",
+      "wav_file": "Wraith_Effort_BreathingLowHealth_012.wav"
+    }
+  ]
+}

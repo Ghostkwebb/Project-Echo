@@ -1,0 +1,23 @@
+{
+  "name": "M_Wraith_Tech_Holo_Spline",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Tech/M_Wraith_Tech_Holo_Spline.M_Wraith_Tech_Holo_Spline",
+  "textures": {
+    "PanTexture1": "T_Vertical_Gradient_Bits",
+    "PanTexture2": "T_Wraith_Swirl_Grad"
+  },
+  "scalars": {
+    "SplineWidth": 4.0,
+    "HDR Intensity": 10.0,
+    "UV1 V Tiling": 0.30000001192092896,
+    "UV0 V Tiling": 1.0
+  },
+  "vectors": {
+    "EgeColor": [
+      0.01335373055189848,
+      0.004949998576194048,
+      0.054999999701976776,
+      0.0
+    ]
+  }
+}

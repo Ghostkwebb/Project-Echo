@@ -1,0 +1,17 @@
+{
+  "name": "M_Hotdog_VLerp_DirectionTint",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Sparks/M_Hotdog_VLerp_DirectionTint.M_Hotdog_VLerp_DirectionTint",
+  "textures": {
+    "SlowTexture": "T_Spark_Soft",
+    "FastTexture": "T_Spark_Soft"
+  },
+  "scalars": {
+    "MaxSpeed": 400.0,
+    "Speed": 20.0,
+    "DesatFraction": 0.30000001192092896,
+    "Param": 2.0,
+    "MinBrightness": 0.20000000298023224
+  },
+  "vectors": {}
+}

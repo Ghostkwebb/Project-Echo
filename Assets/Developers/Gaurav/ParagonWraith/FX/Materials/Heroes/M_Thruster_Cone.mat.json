@@ -1,0 +1,8 @@
+{
+  "name": "M_Thruster_Cone",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/M_Thruster_Cone.M_Thruster_Cone",
+  "textures": {},
+  "scalars": {},
+  "vectors": {}
+}

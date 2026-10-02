@@ -1,0 +1,14 @@
+{
+  "name": "M_Hotdog_Spline_Laser",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Tech/M_Hotdog_Spline_Laser.M_Hotdog_Spline_Laser",
+  "textures": {
+    "SplineMask": "T_Spark_Soft"
+  },
+  "scalars": {
+    "SplineWidth": 30.0,
+    "RefractionAmount": 1.100000023841858,
+    "SplineLengthScale": 1.0
+  },
+  "vectors": {}
+}

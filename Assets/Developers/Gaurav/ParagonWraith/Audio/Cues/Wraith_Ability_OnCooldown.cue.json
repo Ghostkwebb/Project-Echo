@@ -1,0 +1,29 @@
+{
+  "name": "Wraith_Ability_OnCooldown",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.407437562942505,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_OnCooldown_010_Dialogue",
+      "wav_file": "Wraith_Ability_OnCooldown_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_OnCooldown_040_Dialogue",
+      "wav_file": "Wraith_Ability_OnCooldown_040.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_OnCooldown_030_Dialogue",
+      "wav_file": "Wraith_Ability_OnCooldown_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_OnCooldown_020_Dialogue",
+      "wav_file": "Wraith_Ability_OnCooldown_020.wav"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Wraith_Status_OrbPrimeActivated",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.796854257583618,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_OrbPrimeActivated_010_Dialogue",
+      "wav_file": "Wraith_Status_OrbPrimeActivated_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_OrbPrimeActivated_020_Dialogue",
+      "wav_file": "Wraith_Status_OrbPrimeActivated_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_OrbPrimeActivated_030_Dialogue",
+      "wav_file": "Wraith_Status_OrbPrimeActivated_030.wav"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Status_Recall",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.452333450317383,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Recall_040_Dialogue",
+      "wav_file": "Wraith_Status_Recall_040.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Recall_050_Dialogue",
+      "wav_file": "Wraith_Status_Recall_050.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Recall_010_Dialogue",
+      "wav_file": "Wraith_Status_Recall_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Recall_020_Dialogue",
+      "wav_file": "Wraith_Status_Recall_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Recall_030_Dialogue",
+      "wav_file": "Wraith_Status_Recall_030.wav"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "M_Hotdog_Spark_VLerp_MASTER",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Sparks/M_Hotdog_Spark_VLerp_MASTER.M_Hotdog_Spark_VLerp_MASTER",
+  "textures": {
+    "SlowTexture": "T_Spark_Soft",
+    "FastTexture": "T_Spark_Soft"
+  },
+  "scalars": {
+    "MaxSpeed": 200.0,
+    "MinBrightness": 0.699999988079071,
+    "HDR_Intensity": 1.0
+  },
+  "vectors": {}
+}

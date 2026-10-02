@@ -1,0 +1,12 @@
+{
+  "name": "M_Ult_Bullet_Pyramid",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/M_Ult_Bullet_Pyramid.M_Ult_Bullet_Pyramid",
+  "textures": {},
+  "scalars": {
+    "asdf": 0.0,
+    "sdfg": 0.10000000149011612,
+    "Brightness": 85.0
+  },
+  "vectors": {}
+}

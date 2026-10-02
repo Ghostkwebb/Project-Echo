@@ -1,0 +1,25 @@
+{
+  "name": "Wraith_Intro_BoastResponse",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 4.433021068572998,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Intro_BoastResponse_030_Dialogue",
+      "wav_file": "Wraith_Intro_BoastResponse_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Intro_BoastResponse_020_Dialogue",
+      "wav_file": "Wraith_Intro_BoastResponse_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Intro_BoastResponse_010_Dialogue",
+      "wav_file": "Wraith_Intro_BoastResponse_010.wav"
+    }
+  ]
+}

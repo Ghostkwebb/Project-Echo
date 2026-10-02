@@ -1,0 +1,31 @@
+{
+  "name": "M_Spark_VelocityLerp_TeamColor",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/M_Spark_VelocityLerp_TeamColor.M_Spark_VelocityLerp_TeamColor",
+  "textures": {},
+  "scalars": {
+    "ParticleSpeed": 700.0,
+    "PositionScale": 0.800000011920929,
+    "BrightnessDistance": 1024.0
+  },
+  "vectors": {
+    "CoreModulate": [
+      15.0,
+      10.0,
+      15.0,
+      1.0
+    ],
+    "EdgeModulate": [
+      4.0,
+      3.0,
+      4.0,
+      1.0
+    ],
+    "HDRModulate": [
+      35.0,
+      5.0,
+      35.0,
+      0.0
+    ]
+  }
+}

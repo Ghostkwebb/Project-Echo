@@ -1,0 +1,29 @@
+{
+  "name": "M_Wraith_Halo",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/M_Wraith_Halo.M_Wraith_Halo",
+  "textures": {},
+  "scalars": {
+    "DistFadeOffset": 100.0
+  },
+  "vectors": {
+    "InnerColor": [
+      1.0,
+      0.25825726985931396,
+      0.14850521087646484,
+      1.0
+    ],
+    "MidColor": [
+      0.762387752532959,
+      2.0,
+      0.8881763219833374,
+      1.0
+    ],
+    "OuterColor": [
+      0.1723572015762329,
+      0.5729880332946777,
+      2.0,
+      1.0
+    ]
+  }
+}

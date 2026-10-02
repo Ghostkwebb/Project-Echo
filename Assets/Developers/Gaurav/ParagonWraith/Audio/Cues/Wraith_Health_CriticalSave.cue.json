@@ -1,0 +1,25 @@
+{
+  "name": "Wraith_Health_CriticalSave",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.045875072479248,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Health_CriticalSave_010_Dialogue",
+      "wav_file": "Wraith_Health_CriticalSave_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Health_CriticalSave_030_Dialogue",
+      "wav_file": "Wraith_Health_CriticalSave_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Health_CriticalSave_020_Dialogue",
+      "wav_file": "Wraith_Health_CriticalSave_020.wav"
+    }
+  ]
+}

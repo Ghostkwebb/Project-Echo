@@ -1,0 +1,39 @@
+{
+  "name": "M_Smoke_Offset_Particles_SubUV_LIT",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Smoke/Hyperbreach/M_Smoke_Offset_Particles_SubUV_LIT.M_Smoke_Offset_Particles_SubUV_LIT",
+  "textures": {},
+  "scalars": {},
+  "vectors": {
+    "SmokeColor": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "ColorCool": [
+      0.25,
+      0.11239799857139587,
+      0.0491890013217926,
+      0.0
+    ],
+    "ColorHot": [
+      60.0,
+      19.890472412109375,
+      8.91183853149414,
+      0.0
+    ],
+    "Param": [
+      1.0,
+      1.0,
+      2.0,
+      0.0
+    ],
+    "HDRTint": [
+      2.0,
+      0.24396799504756927,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "M_WaterImpact_Cylinder",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Water/M_WaterImpact_Cylinder.M_WaterImpact_Cylinder",
+  "textures": {},
+  "scalars": {
+    "UV Power": 6.976611137390137,
+    "WPO Mask Offset": -0.22935700416564941,
+    "Opacity Bump": 2.0,
+    "U Scale": 1.0,
+    "V Scale": 1.0,
+    "Pan Speed": 1.0,
+    "FBOVA Power": 8.0,
+    "Normal Strength": 1.0,
+    "Fade Distance": 100.0
+  },
+  "vectors": {}
+}

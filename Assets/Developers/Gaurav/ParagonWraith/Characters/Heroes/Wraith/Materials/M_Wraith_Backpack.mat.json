@@ -1,0 +1,146 @@
+{
+  "name": "M_Wraith_Backpack",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Backpack.M_Wraith_Backpack",
+  "textures": {
+    "BakedNormal": "T_Wraith_backpack_N_DEMO",
+    "FadeMask": "T_AtmosphericCloudNoise03",
+    "Rubber Texture": "T_TireRubber_R",
+    "EmissiveMaskTexture": "T_Wraith_Emissive_Mask"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "Specular": 0.44999998807907104,
+    "Roughness": 1.0,
+    "GhostlatexFlatness": 0.8799999952316284,
+    "GhostlatexNormal_Tiling": 10.0,
+    "GhostLatexTiling": 8.0,
+    "PlasticTiling_1": 0.7236959934234619,
+    "PlasticTiling_2": 1.0,
+    "LatexR": 0.699999988079071,
+    "MCRough": 0.2018350064754486,
+    "LatexG": 1.100000023841858,
+    "PistonEmissiveMult": 1.0,
+    "LatexGrimeIntensity": 4.0,
+    "LatexGrimePower": 1.0,
+    "EmissiveFresnelINT": 0.20000000298023224,
+    "EmissiveFresnelPower": 0.009999999776482582,
+    "EmissiveTiling": 50.0
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "Base Color": [
+      0.014999999664723873,
+      0.014999999664723873,
+      0.013214999809861183,
+      1.0
+    ],
+    "Dark metal": [
+      0.6559249758720398,
+      0.7425310015678406,
+      0.75,
+      1.0
+    ],
+    "Dark MetalG": [
+      0.4650000035762787,
+      0.3542560040950775,
+      0.32629600167274475,
+      1.0
+    ],
+    "Light Metal": [
+      0.03500000014901161,
+      0.019895000383257866,
+      0.002624999964609742,
+      1.0
+    ],
+    "LatexD": [
+      0.03500000014901161,
+      0.03500000014901161,
+      0.03500000014901161,
+      1.0
+    ],
+    "LatexM": [
+      0.26499998569488525,
+      0.23989799618721008,
+      0.23725800216197968,
+      1.0
+    ],
+    "LatexL": [
+      0.33500000834465027,
+      0.33023399114608765,
+      0.3215999901294708,
+      1.0
+    ],
+    "MeatllicCCTint": [
+      1.399999976158142,
+      1.399999976158142,
+      1.399999976158142,
+      1.0
+    ],
+    "LatexG": [
+      0.13500000536441803,
+      0.12077599763870239,
+      0.1080000028014183,
+      1.0
+    ],
+    "MeatllicCCTintG": [
+      1.0,
+      0.9303439855575562,
+      0.875,
+      1.0
+    ],
+    "DeepEmissiveColor": [
+      8.026361465454102,
+      688.18310546875,
+      800.0,
+      1.0
+    ],
+    "ShallowEmissive": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  }
+}

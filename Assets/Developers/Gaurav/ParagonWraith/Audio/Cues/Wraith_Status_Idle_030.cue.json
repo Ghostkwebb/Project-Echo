@@ -1,0 +1,17 @@
+{
+  "name": "Wraith_Status_Idle_030",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.0985000133514404,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Idle_030_Dialogue",
+      "wav_file": "Wraith_Status_Idle_030.wav"
+    }
+  ]
+}

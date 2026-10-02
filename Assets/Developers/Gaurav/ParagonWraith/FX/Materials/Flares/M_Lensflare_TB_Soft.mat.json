@@ -1,0 +1,21 @@
+{
+  "name": "M_Lensflare_TB_Soft",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Flares/M_Lensflare_TB_Soft.M_Lensflare_TB_Soft",
+  "textures": {},
+  "scalars": {},
+  "vectors": {
+    "RandomColor2": [
+      0.4300000071525574,
+      1.0,
+      0.9793400168418884,
+      0.0
+    ],
+    "RandomColor1": [
+      1.0,
+      0.6867520213127136,
+      0.4950000047683716,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "M_ShadowPlaneShimmer",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/M_ShadowPlaneShimmer.M_ShadowPlaneShimmer",
+  "textures": {},
+  "scalars": {
+    "R1": 0.8999999761581421
+  },
+  "vectors": {
+    "zczc": [
+      6.547741889953613,
+      6.350758075714111,
+      8.0,
+      1.0
+    ],
+    "Param": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  }
+}

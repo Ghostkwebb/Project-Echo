@@ -1,0 +1,107 @@
+{
+  "name": "M_Wraith_Backpack_ODGreen",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Backpack_ODGreen.M_Wraith_Backpack_ODGreen",
+  "textures": {
+    "BakedNormal": "T_Wraith_backpack_N_DEMO",
+    "FadeMask": "T_AtmosphericCloudNoise03",
+    "EmissiveMaskTexture": "T_Wraith_Emissive_Mask"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "CameraFacingHilight": 1.0,
+    "FresnelPower": 0.4000000059604645,
+    "PlasticTiling_1": 0.7236959934234619,
+    "PistonEmissiveMult": 1.0,
+    "scratchint": 1.0,
+    "PlasticRoughnessModulation": 1.0,
+    "PlasticTiling": 8.0,
+    "AccentDarkness": 1.0
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "Dark metal": [
+      0.6559249758720398,
+      0.7425310015678406,
+      0.75,
+      1.0
+    ],
+    "Light Metal": [
+      0.03500000014901161,
+      0.019895000383257866,
+      0.002624999964609742,
+      1.0
+    ],
+    "Copper Tint": [
+      0.6514059901237488,
+      0.46778398752212524,
+      0.30054399371147156,
+      0.0
+    ],
+    "DeepEmissiveColor": [
+      15.0,
+      8.0438232421875,
+      3.1157519817352295,
+      1.0
+    ],
+    "PlasticScratch": [
+      0.6222000122070312,
+      0.6683480143547058,
+      0.6800000071525574,
+      1.0
+    ],
+    "PrimaryArmorColor": [
+      0.2985819876194,
+      0.30000001192092896,
+      0.23250000178813934,
+      1.0
+    ],
+    "PlasticGrime": [
+      0.7094680070877075,
+      0.7149999737739563,
+      0.45167699456214905,
+      1.0
+    ]
+  }
+}

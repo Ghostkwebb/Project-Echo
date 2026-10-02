@@ -1,0 +1,28 @@
+{
+  "name": "M_Fog_SphericalDensity",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/VolumeFog/M_Fog_SphericalDensity.M_Fog_SphericalDensity",
+  "textures": {},
+  "scalars": {
+    "Camera Depth Fade Length": 512.0,
+    "DensityPower": 1.0,
+    "OpacityMult": 1.0,
+    "ColorCoreBrightnessMult": 5.0,
+    "ColorPow": 1.0,
+    "ObjectUnitXYRadius": 70.0
+  },
+  "vectors": {
+    "Offset": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Color": [
+      0.0,
+      0.21130800247192383,
+      1.0,
+      1.0
+    ]
+  }
+}

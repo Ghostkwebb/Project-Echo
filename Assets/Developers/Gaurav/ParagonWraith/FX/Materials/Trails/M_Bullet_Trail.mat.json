@@ -1,0 +1,17 @@
+{
+  "name": "M_Bullet_Trail",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Trails/M_Bullet_Trail.M_Bullet_Trail",
+  "textures": {},
+  "scalars": {
+    "RefractionAmount": 1.350000023841858
+  },
+  "vectors": {
+    "SecondaryColor": [
+      0.032399993389844894,
+      0.07656421512365341,
+      0.36000001430511475,
+      0.0
+    ]
+  }
+}

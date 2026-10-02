@@ -1,0 +1,17 @@
+{
+  "name": "Wraith_ProfilePoke_010",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.8927500247955322,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_ProfilePoke_010_Dialogue",
+      "wav_file": "Wraith_ProfilePoke_010.wav"
+    }
+  ]
+}

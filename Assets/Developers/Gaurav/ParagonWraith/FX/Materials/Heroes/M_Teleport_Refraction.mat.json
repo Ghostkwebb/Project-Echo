@@ -1,0 +1,10 @@
+{
+  "name": "M_Teleport_Refraction",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/M_Teleport_Refraction.M_Teleport_Refraction",
+  "textures": {},
+  "scalars": {
+    "FadeDistance": 100.0
+  },
+  "vectors": {}
+}

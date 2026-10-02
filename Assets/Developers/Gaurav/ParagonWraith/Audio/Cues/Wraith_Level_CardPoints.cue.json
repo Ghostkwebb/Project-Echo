@@ -1,0 +1,25 @@
+{
+  "name": "Wraith_Level_CardPoints",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.0582709312438965,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_CardPoints_010_Dialogue",
+      "wav_file": "Wraith_Level_CardPoints_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_CardPoints_030_Dialogue",
+      "wav_file": "Wraith_Level_CardPoints_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_CardPoints_020_Dialogue",
+      "wav_file": "Wraith_Level_CardPoints_020.wav"
+    }
+  ]
+}

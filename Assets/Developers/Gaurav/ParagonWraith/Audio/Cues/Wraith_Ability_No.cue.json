@@ -1,0 +1,29 @@
+{
+  "name": "Wraith_Ability_No",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.1847083568573,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_No_020_Dialogue",
+      "wav_file": "Wraith_Ability_No_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_No_030_Dialogue",
+      "wav_file": "Wraith_Ability_No_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_No_040_Dialogue",
+      "wav_file": "Wraith_Ability_No_040.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_No_010_Dialogue",
+      "wav_file": "Wraith_Ability_No_010.wav"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "M_LingerSmoke_MasterAdditiveWarp_EmissiveParticleColor",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Smoke/M_LingerSmoke_MasterAdditiveWarp_EmissiveParticleColor.M_LingerSmoke_MasterAdditiveWarp_EmissiveParticleColor",
+  "textures": {
+    "Main Tex": "T_MinionSmokeTile",
+    "Main Mask": "T_MinionSmokeMask_Test"
+  },
+  "scalars": {
+    "scaleSmokeTile": 0.30000001192092896,
+    "ScaleUVDistort": 0.20000000298023224,
+    "Opacity Edge Tinting": 0.25,
+    "Warp Over Life Curve Power": 0.5,
+    "Warp Scale": 0.3499999940395355,
+    "Detail Strength": 1.0,
+    "Fade Near": 50.0,
+    "Fade Far": 100.0,
+    "Opacity Power": 1.0,
+    "Warp Pan Strength": 1.0
+  },
+  "vectors": {
+    "BaseColor": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  }
+}

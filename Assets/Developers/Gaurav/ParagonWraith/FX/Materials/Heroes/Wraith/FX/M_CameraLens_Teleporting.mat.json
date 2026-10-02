@@ -1,0 +1,23 @@
+{
+  "name": "M_CameraLens_Teleporting",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/Wraith/FX/M_CameraLens_Teleporting.M_CameraLens_Teleporting",
+  "textures": {},
+  "scalars": {
+    "Refraction": 3.0
+  },
+  "vectors": {
+    "BrightColor": [
+      0.5193636417388916,
+      1.0,
+      0.760491669178009,
+      1.0
+    ],
+    "DarkColor": [
+      0.17697538435459137,
+      0.2286939024925232,
+      0.3449999988079071,
+      1.0
+    ]
+  }
+}

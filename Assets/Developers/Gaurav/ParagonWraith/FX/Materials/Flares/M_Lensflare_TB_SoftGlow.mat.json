@@ -1,0 +1,23 @@
+{
+  "name": "M_Lensflare_TB_SoftGlow",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Flares/M_Lensflare_TB_SoftGlow.M_Lensflare_TB_SoftGlow",
+  "textures": {},
+  "scalars": {
+    "FadeDistance": 100.0
+  },
+  "vectors": {
+    "RandomColor1": [
+      1.0,
+      0.6867517232894897,
+      0.4950000047683716,
+      0.0
+    ],
+    "RandomColor2": [
+      0.4300000071525574,
+      1.0,
+      0.9793400168418884,
+      0.0
+    ]
+  }
+}

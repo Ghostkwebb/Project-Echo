@@ -1,0 +1,17 @@
+{
+  "name": "Wraith_Lore_Muriel_110",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 4.618312358856201,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Lore_Muriel_110_Dialogue",
+      "wav_file": "Wraith_Lore_Muriel_110.wav"
+    }
+  ]
+}

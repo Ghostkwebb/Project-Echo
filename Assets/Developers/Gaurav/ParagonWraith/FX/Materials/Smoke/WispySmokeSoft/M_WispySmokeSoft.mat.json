@@ -1,0 +1,10 @@
+{
+  "name": "M_WispySmokeSoft",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Smoke/WispySmokeSoft/M_WispySmokeSoft.M_WispySmokeSoft",
+  "textures": {},
+  "scalars": {
+    "FlattenNormal": 0.5
+  },
+  "vectors": {}
+}

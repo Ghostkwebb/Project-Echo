@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Level_AbilityLevelConfirm",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.2357916831970215,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_AbilityLevelConfirm_010_Dialogue",
+      "wav_file": "Wraith_Level_AbilityLevelConfirm_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_AbilityLevelConfirm_050_Dialogue",
+      "wav_file": "Wraith_Level_AbilityLevelConfirm_050.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_AbilityLevelConfirm_040_Dialogue",
+      "wav_file": "Wraith_Level_AbilityLevelConfirm_040.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_AbilityLevelConfirm_030_Dialogue",
+      "wav_file": "Wraith_Level_AbilityLevelConfirm_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_AbilityLevelConfirm_020_Dialogue",
+      "wav_file": "Wraith_Level_AbilityLevelConfirm_020.wav"
+    }
+  ]
+}

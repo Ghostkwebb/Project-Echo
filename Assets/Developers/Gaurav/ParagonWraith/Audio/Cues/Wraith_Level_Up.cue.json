@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Level_Up",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.1400415897369385,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_Up_020_Dialogue",
+      "wav_file": "Wraith_Level_Up_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_Up_030_Dialogue",
+      "wav_file": "Wraith_Level_Up_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_Up_040_Dialogue",
+      "wav_file": "Wraith_Level_Up_040.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_Up_010_Dialogue",
+      "wav_file": "Wraith_Level_Up_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Level_Up_050_Dialogue",
+      "wav_file": "Wraith_Level_Up_050.wav"
+    }
+  ]
+}

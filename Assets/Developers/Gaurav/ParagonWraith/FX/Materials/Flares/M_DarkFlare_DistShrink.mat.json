@@ -1,0 +1,12 @@
+{
+  "name": "M_DarkFlare_DistShrink",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Flares/M_DarkFlare_DistShrink.M_DarkFlare_DistShrink",
+  "textures": {},
+  "scalars": {
+    "MaxSpeed": 10.0,
+    "ShrinkDistance": 100.0,
+    "DepthFadeDistance": 40.0
+  },
+  "vectors": {}
+}

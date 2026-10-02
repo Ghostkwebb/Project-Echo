@@ -1,0 +1,11 @@
+{
+  "name": "M_WaterMist",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Water/M_WaterMist.M_WaterMist",
+  "textures": {},
+  "scalars": {
+    "Radius": 0.4000000059604645,
+    "Camera_Offset": 0.0
+  },
+  "vectors": {}
+}

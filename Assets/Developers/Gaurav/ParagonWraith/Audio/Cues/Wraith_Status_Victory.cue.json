@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Status_Victory",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.328937530517578,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Victory_020_Dialogue",
+      "wav_file": "Wraith_Status_Victory_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Victory_030_Dialogue",
+      "wav_file": "Wraith_Status_Victory_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Victory_040_Dialogue",
+      "wav_file": "Wraith_Status_Victory_040.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Victory_050_Dialogue",
+      "wav_file": "Wraith_Status_Victory_050.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Victory_010_Dialogue",
+      "wav_file": "Wraith_Status_Victory_010.wav"
+    }
+  ]
+}

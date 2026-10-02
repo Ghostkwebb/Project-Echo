@@ -1,0 +1,11 @@
+{
+  "name": "M_WispySmokeTest",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Smoke/M_WispySmokeTest.M_WispySmokeTest",
+  "textures": {},
+  "scalars": {
+    "CameraFadeDistance": 100.0,
+    "DepthFadeDistance": 120.0
+  },
+  "vectors": {}
+}

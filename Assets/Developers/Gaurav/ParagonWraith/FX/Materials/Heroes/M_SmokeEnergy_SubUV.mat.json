@@ -1,0 +1,11 @@
+{
+  "name": "M_SmokeEnergy_SubUV",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/M_SmokeEnergy_SubUV.M_SmokeEnergy_SubUV",
+  "textures": {},
+  "scalars": {
+    "DepthFadeFar": 250.0,
+    "DepthFadeNear": 40.0
+  },
+  "vectors": {}
+}

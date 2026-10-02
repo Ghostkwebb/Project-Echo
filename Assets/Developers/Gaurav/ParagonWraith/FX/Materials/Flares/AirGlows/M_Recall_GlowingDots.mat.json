@@ -1,0 +1,38 @@
+{
+  "name": "M_Recall_GlowingDots",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Flares/AirGlows/M_Recall_GlowingDots.M_Recall_GlowingDots",
+  "textures": {
+    "PackedTexture": "T_TankMote"
+  },
+  "scalars": {
+    "Div": 1803.2418212890625,
+    "FadeDistance": 131.7207489013672,
+    "LerpDistance": 115.31903839111328,
+    "FlickerMaskScale": 0.20000000298023224,
+    "BrightenBy Distance": 8000.0,
+    "MaxScaleAtDistance": 2.5999999046325684,
+    "ParticleExpandCameraDistance": 256.0,
+    "RandomSize": 4.0
+  },
+  "vectors": {
+    "HDRTint_1": [
+      0.0,
+      0.33716699481010437,
+      0.5950000286102295,
+      0.0
+    ],
+    "HDRTint_0": [
+      0.0,
+      3.0,
+      2.078252077102661,
+      0.0
+    ],
+    "ScaleHDRTint_ParticleRand": [
+      0.0,
+      0.021530000492930412,
+      0.07500000298023224,
+      0.0
+    ]
+  }
+}

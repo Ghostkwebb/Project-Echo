@@ -1,0 +1,149 @@
+{
+  "name": "M_Wraith_Attachment_ODGreen",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Attachment_ODGreen.M_Wraith_Attachment_ODGreen",
+  "textures": {
+    "BakedNormal": "T_Accessories_ts_DEMO",
+    "FadeMask": "T_AtmosphericCloudNoise03",
+    "Rubber Texture": "T_TireRubber_R"
+  },
+  "scalars": {
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "Specular": 0.44999998807907104,
+    "Roughness": 1.0,
+    "GhostlatexFlatness": 0.8799999952316284,
+    "GhostlatexNormal_Tiling": 10.0,
+    "GhostLatexTiling": 8.0,
+    "LatexR": 1.0010210275650024,
+    "LatexG": 1.3379130363464355,
+    "AnisotropicFlattenNormals": 0.800000011920929,
+    "AnodizedMetalScratchBrightness": 4.0,
+    "Wukong_PrimaryMetal_Tiling": 30.0,
+    "Wukong_PrimaryMetal_Rotation": 12.064146995544434,
+    "Wukong_PrimaryMetal_ScratchMult": 1.5,
+    "Wukong_PrimaryMetal_RoughnessModulation": 0.8999999761581421,
+    "CameraFacingHilight": 1.0,
+    "FresnelPower": 0.4000000059604645,
+    "PlasticRoughnessModulation": 1.0,
+    "PlasticTiling": 8.0,
+    "AccentDarkness": 1.0,
+    "flake tile_1": 8.043910026550293,
+    "Sign": 0.7913740277290344
+  },
+  "vectors": {
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "Base Color": [
+      0.014999999664723873,
+      0.014999999664723873,
+      0.013214999809861183,
+      1.0
+    ],
+    "LatexB": [
+      0.03999999910593033,
+      0.03440000116825104,
+      0.035711001604795456,
+      1.0
+    ],
+    "LatexG": [
+      0.07500000298023224,
+      0.06630799919366837,
+      0.05849999934434891,
+      1.0
+    ],
+    "LatexD": [
+      0.023739000782370567,
+      0.02954700030386448,
+      0.03500000014901161,
+      1.0
+    ],
+    "Wukong_PrimaryMetal_Tint": [
+      0.3449999988079071,
+      0.3449999988079071,
+      0.3449999988079071,
+      1.0
+    ],
+    "PrimaryMetalGrimeTInt": [
+      0.019999999552965164,
+      0.019262999296188354,
+      0.01705400086939335,
+      1.0
+    ],
+    "DeepEmissiveColor": [
+      15.0,
+      8.0438232421875,
+      3.1157519817352295,
+      1.0
+    ],
+    "PlasticScratch": [
+      0.7548750042915344,
+      0.8108630180358887,
+      0.824999988079071,
+      1.0
+    ],
+    "PrimaryArmorColor": [
+      0.2985819876194,
+      0.30000001192092896,
+      0.23250000178813934,
+      1.0
+    ],
+    "PlasticGrime": [
+      0.7094680070877075,
+      0.7149999737739563,
+      0.45167699456214905,
+      1.0
+    ],
+    "uppergunmetal": [
+      1.5,
+      1.5,
+      1.5,
+      1.0
+    ],
+    "Sign": [
+      0.41499999165534973,
+      0.20630699396133423,
+      0.043807998299598694,
+      1.0
+    ]
+  }
+}

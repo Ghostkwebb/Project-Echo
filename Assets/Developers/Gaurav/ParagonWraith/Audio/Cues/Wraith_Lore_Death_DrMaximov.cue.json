@@ -1,0 +1,17 @@
+{
+  "name": "Wraith_Lore_Death_DrMaximov",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 1.951812505722046,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Lore_Death_DrMaximov_010_Dialogue",
+      "wav_file": "Wraith_Lore_Death_DrMaximov_010.wav"
+    }
+  ]
+}

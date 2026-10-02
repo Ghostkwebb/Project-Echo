@@ -1,0 +1,25 @@
+{
+  "name": "Wraith_Status_Ace",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.959083318710327,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Ace_030_Dialogue",
+      "wav_file": "Wraith_Status_Ace_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Ace_020_Dialogue",
+      "wav_file": "Wraith_Status_Ace_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Ace_010_Dialogue",
+      "wav_file": "Wraith_Status_Ace_010.wav"
+    }
+  ]
+}

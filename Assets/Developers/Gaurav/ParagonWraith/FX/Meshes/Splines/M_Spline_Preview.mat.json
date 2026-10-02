@@ -1,0 +1,12 @@
+{
+  "name": "M_Spline_Preview",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Meshes/Splines/M_Spline_Preview.M_Spline_Preview",
+  "textures": {},
+  "scalars": {
+    "Width": 15.0,
+    "WidthTipMult": 1.0,
+    "TextureTile": 2.0
+  },
+  "vectors": {}
+}

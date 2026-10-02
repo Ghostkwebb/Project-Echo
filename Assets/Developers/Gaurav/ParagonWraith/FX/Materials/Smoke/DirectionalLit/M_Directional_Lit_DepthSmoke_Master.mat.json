@@ -1,0 +1,49 @@
+{
+  "name": "M_Directional_Lit_DepthSmoke_Master",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_Directional_Lit_DepthSmoke_Master.M_Directional_Lit_DepthSmoke_Master",
+  "textures": {
+    "HeightMaskParticle_SubUV": "DefaultTexture",
+    "AlphaParticle_SubUV": "DefaultTexture",
+    "NormalParticle_SubUV": "FlatNormal",
+    "TiledMask_Texture": "DefaultTexture"
+  },
+  "scalars": {
+    "BaseColorDepth_Near": 15.0,
+    "BaseColorDepth_Far": 100.0,
+    "BaseColorDepth_Scalar": 0.5,
+    "DepthFadeDistance_Far": 150.0,
+    "DepthFadeDistance_Near": 22.0,
+    "CameraFadeDistance_Far": 512.0,
+    "CameraFadeDistance_Near": 32.0,
+    "MipLevel_ParticleLifetime": 4.0,
+    "TiledMask_TileX": 1.0,
+    "TiledMask_TileY": 1.0
+  },
+  "vectors": {
+    "BaseColor": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "ScaleNormalEdge": [
+      1.0,
+      1.0,
+      3.0,
+      0.0
+    ],
+    "ScaleNormalCore": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "NormalMult": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  }
+}

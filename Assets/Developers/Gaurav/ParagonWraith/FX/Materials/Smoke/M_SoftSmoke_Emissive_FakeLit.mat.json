@@ -1,0 +1,45 @@
+{
+  "name": "M_SoftSmoke_Emissive_FakeLit",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Smoke/M_SoftSmoke_Emissive_FakeLit.M_SoftSmoke_Emissive_FakeLit",
+  "textures": {},
+  "scalars": {
+    "PowEXP": 2.0,
+    "Color_Depth0": 15.0,
+    "Color_Depth1": 75.0,
+    "LerpAO_Shadow": 0.5,
+    "FadeDistance": 20.0
+  },
+  "vectors": {
+    "SmokeColor": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "ShadowColor": [
+      0.2922999858856201,
+      0.3760159909725189,
+      0.39500001072883606,
+      1.0
+    ],
+    "LightDirection": [
+      0.0,
+      0.800000011920929,
+      1.0,
+      0.0
+    ],
+    "LightColor": [
+      0.8100000023841858,
+      0.7759439945220947,
+      0.7176460027694702,
+      1.0
+    ],
+    "Param": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

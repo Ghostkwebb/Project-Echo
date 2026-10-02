@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Effort_LandHeavy",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 1.4964791536331177,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_LandHeavy_014_Dialogue",
+      "wav_file": "Wraith_Effort_LandHeavy_014.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_LandHeavy_013_Dialogue",
+      "wav_file": "Wraith_Effort_LandHeavy_013.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_LandHeavy_012_Dialogue",
+      "wav_file": "Wraith_Effort_LandHeavy_012.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_LandHeavy_010_Dialogue",
+      "wav_file": "Wraith_Effort_LandHeavy_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_LandHeavy_011_Dialogue",
+      "wav_file": "Wraith_Effort_LandHeavy_011.wav"
+    }
+  ]
+}

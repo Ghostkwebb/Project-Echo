@@ -1,0 +1,22 @@
+{
+  "name": "M_Wraith_Tech_Holo_Flicker_Spline",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Tech/M_Wraith_Tech_Holo_Flicker_Spline.M_Wraith_Tech_Holo_Flicker_Spline",
+  "textures": {
+    "PanTexture": "T_Wraith_Swirl_Grad"
+  },
+  "scalars": {
+    "SplineWidth": 2.200000047683716,
+    "HDR Intensity": 5.0,
+    "UV1 V Tiling": 0.699999988079071,
+    "FlickerBrightness": 4.0
+  },
+  "vectors": {
+    "EgeColor": [
+      0.03156336396932602,
+      0.011699995957314968,
+      0.12999999523162842,
+      0.0
+    ]
+  }
+}

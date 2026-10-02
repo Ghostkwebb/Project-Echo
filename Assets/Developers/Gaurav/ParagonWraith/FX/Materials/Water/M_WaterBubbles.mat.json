@@ -1,0 +1,49 @@
+{
+  "name": "M_WaterBubbles",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Water/M_WaterBubbles.M_WaterBubbles",
+  "textures": {},
+  "scalars": {
+    "WiggleIntensity": 0.029999999329447746,
+    "Refract": 0.800000011920929,
+    "TextureSize1": 800.0,
+    "Pow": 1.0,
+    "FlowScale2": 0.0,
+    "TextureSize2": 2400.0,
+    "Particle1TexturePositionScale": -66.0,
+    "Particle2TexturePositionScale": -33.0,
+    "WPOFlowStrength": 0.0
+  },
+  "vectors": {
+    "WaterColor0": [
+      0.3492000102996826,
+      0.7259830236434937,
+      0.9700000286102295,
+      1.0
+    ],
+    "WaterColor1": [
+      0.009999999776482582,
+      0.009999999776482582,
+      0.009999999776482582,
+      1.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "ZDirection": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ZDirection_1": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Wraith_Emote_Taunt",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 10.858833312988281,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Emote_Taunt_010_Dialogue",
+      "wav_file": "Wraith_Emote_Taunt_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Emote_Taunt_040_Dialogue",
+      "wav_file": "Wraith_Emote_Taunt_040.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Emote_Taunt_030_Dialogue",
+      "wav_file": "Wraith_Emote_Taunt_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Emote_Taunt_020_Dialogue",
+      "wav_file": "Wraith_Emote_Taunt_020.wav"
+    }
+  ]
+}

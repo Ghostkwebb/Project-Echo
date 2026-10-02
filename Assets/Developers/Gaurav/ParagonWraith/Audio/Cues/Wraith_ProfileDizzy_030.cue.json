@@ -1,0 +1,17 @@
+{
+  "name": "Wraith_ProfileDizzy_030",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.7318332195281982,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_ProfileDizzy_030_Dialogue",
+      "wav_file": "Wraith_ProfileDizzy_030.wav"
+    }
+  ]
+}

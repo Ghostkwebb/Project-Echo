@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Effort_Ability_Ultimate",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.4142708778381348,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Ability_Ultimate_010_Dialogue",
+      "wav_file": "Wraith_Effort_Ability_Ultimate_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Ability_Ultimate_011_Dialogue",
+      "wav_file": "Wraith_Effort_Ability_Ultimate_011.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Ability_Ultimate_014_Dialogue",
+      "wav_file": "Wraith_Effort_Ability_Ultimate_014.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Ability_Ultimate_013_Dialogue",
+      "wav_file": "Wraith_Effort_Ability_Ultimate_013.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Ability_Ultimate_012_Dialogue",
+      "wav_file": "Wraith_Effort_Ability_Ultimate_012.wav"
+    }
+  ]
+}

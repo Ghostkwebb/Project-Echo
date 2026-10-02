@@ -1,0 +1,16 @@
+{
+  "name": "M_Tech_Holo_Spline_WPO",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Tech/M_Tech_Holo_Spline_WPO.M_Tech_Holo_Spline_WPO",
+  "textures": {
+    "SplineMask": "T_Square_SoftEdges",
+    "PanTexture": "T_Vertical_Gradient_Bits"
+  },
+  "scalars": {
+    "SplineWidth": 16.0,
+    "RefractionAmount": 1.100000023841858,
+    "WPOTextureSize": 700.0,
+    "MaxLength": 4000.0
+  },
+  "vectors": {}
+}

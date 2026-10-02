@@ -1,0 +1,19 @@
+{
+  "name": "M_Holo_Display_02_FlickerIn",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Tech/M_Holo_Display_02_FlickerIn.M_Holo_Display_02_FlickerIn",
+  "textures": {},
+  "scalars": {
+    "HDR Intensity": 2.0,
+    "FlickerBrightness": 4.0,
+    "CameraPanOffset": 0.699999988079071
+  },
+  "vectors": {
+    "EgeColor": [
+      0.06680241227149963,
+      0.01805804669857025,
+      0.07999999821186066,
+      0.0
+    ]
+  }
+}

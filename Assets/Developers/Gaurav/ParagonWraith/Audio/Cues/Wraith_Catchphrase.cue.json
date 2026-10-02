@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Catchphrase",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 8.530229568481445,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Catchphrase_030_Dialogue",
+      "wav_file": "Wraith_Catchphrase_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Catchphrase_020_Dialogue",
+      "wav_file": "Wraith_Catchphrase_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Catchphrase_010_Dialogue",
+      "wav_file": "Wraith_Catchphrase_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Catchphrase_050_Dialogue",
+      "wav_file": "Wraith_Catchphrase_050.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Catchphrase_040_Dialogue",
+      "wav_file": "Wraith_Catchphrase_040.wav"
+    }
+  ]
+}

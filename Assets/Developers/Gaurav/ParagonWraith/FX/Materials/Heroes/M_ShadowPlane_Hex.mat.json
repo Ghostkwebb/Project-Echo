@@ -1,0 +1,42 @@
+{
+  "name": "M_ShadowPlane_Hex",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/M_ShadowPlane_Hex.M_ShadowPlane_Hex",
+  "textures": {},
+  "scalars": {
+    "World scale": 16.21727752685547,
+    "SphereMaskPower": 1.25
+  },
+  "vectors": {
+    "Non-UniformScale": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "RefractionNormalAdd": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Color1": [
+      0.07679300010204315,
+      0.05430600047111511,
+      0.11999999731779099,
+      1.0
+    ],
+    "Color2": [
+      1.3572560548782349,
+      0.3700309991836548,
+      2.0,
+      1.0
+    ],
+    "HexColor": [
+      16.60727310180664,
+      15.287327766418457,
+      50.0,
+      1.0
+    ]
+  }
+}

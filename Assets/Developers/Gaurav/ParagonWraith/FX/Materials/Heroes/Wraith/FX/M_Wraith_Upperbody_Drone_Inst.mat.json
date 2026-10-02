@@ -1,0 +1,9 @@
+{
+  "name": "M_Wraith_Upperbody_Drone_Inst",
+  "ue_class": "MaterialInstanceConstant",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/Wraith/FX/M_Wraith_Upperbody_Drone_Inst.M_Wraith_Upperbody_Drone_Inst",
+  "textures": {},
+  "scalars": {},
+  "vectors": {},
+  "meta_extract_error": "MaterialEditingLibrary: Failed to convert parameter 'material' when calling function 'MaterialEditingLibrary.GetMaterialDefaultTextureParameterValue' on 'Default__MaterialEditingLibrary'\n  TypeError: NativizeProperty: Cannot nativize 'MaterialInstanceConstant' as 'Material' (ObjectProperty)\n    TypeError: NativizeObject: Cannot nativize 'MaterialInstanceConstant' as 'Object' (allowed Class type: 'Material')"
+}

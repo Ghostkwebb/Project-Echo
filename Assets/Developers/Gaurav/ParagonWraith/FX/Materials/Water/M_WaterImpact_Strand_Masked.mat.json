@@ -1,0 +1,10 @@
+{
+  "name": "M_WaterImpact_Strand_Masked",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Water/M_WaterImpact_Strand_Masked.M_WaterImpact_Strand_Masked",
+  "textures": {},
+  "scalars": {
+    "Roughness": 0.05000000074505806
+  },
+  "vectors": {}
+}

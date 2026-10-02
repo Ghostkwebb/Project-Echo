@@ -1,0 +1,15 @@
+{
+  "name": "M_Spline_Light_Scanner",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Tech/M_Spline_Light_Scanner.M_Spline_Light_Scanner",
+  "textures": {},
+  "scalars": {
+    "DepthGlowDist": 12.0,
+    "EdgeGradientPower": 2.5,
+    "DepthIntersectBrightness": 100.0,
+    "DepthPower": 0.0005000000237487257,
+    "DepthFade": 5.0,
+    "AngleFade": 1.0
+  },
+  "vectors": {}
+}

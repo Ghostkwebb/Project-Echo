@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Effort_Attack",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 1.7713749408721924,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Attack_012_Dialogue",
+      "wav_file": "Wraith_Effort_Attack_012.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Attack_014_Dialogue",
+      "wav_file": "Wraith_Effort_Attack_014.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Attack_013_Dialogue",
+      "wav_file": "Wraith_Effort_Attack_013.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Attack_011_Dialogue",
+      "wav_file": "Wraith_Effort_Attack_011.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Attack_010_Dialogue",
+      "wav_file": "Wraith_Effort_Attack_010.wav"
+    }
+  ]
+}

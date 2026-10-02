@@ -1,0 +1,32 @@
+{
+  "name": "M_LensFlareMaster",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Flares/M_LensFlareMaster.M_LensFlareMaster",
+  "textures": {
+    "Texture": "T_LDR_Flare01"
+  },
+  "scalars": {
+    "DepthBiasScale": 100.0,
+    "SourceRadius": 100.0,
+    "FadeDistance": 5000.0,
+    "ScaleH": 0.20000000298023224,
+    "ScaleV": 0.20000000298023224,
+    "EdgeOfScreenScale": 2.0,
+    "OffsetFromSource": 2.0,
+    "ScreenEdgeFlareBrightness": 1.0,
+    "flickerSpeed": 0.20000000298023224,
+    "FlickerAmount": 0.0,
+    "FlickerOffset": 0.0,
+    "ScalebyCenter": 1.0,
+    "DotPower": 16.0,
+    "OpacityByParticleDIrection": 0.0
+  },
+  "vectors": {
+    "Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

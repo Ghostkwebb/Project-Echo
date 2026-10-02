@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Effort_Block",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 1.6309791803359985,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Block_010_Dialogue",
+      "wav_file": "Wraith_Effort_Block_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Block_011_Dialogue",
+      "wav_file": "Wraith_Effort_Block_011.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Block_014_Dialogue",
+      "wav_file": "Wraith_Effort_Block_014.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Block_013_Dialogue",
+      "wav_file": "Wraith_Effort_Block_013.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Block_012_Dialogue",
+      "wav_file": "Wraith_Effort_Block_012.wav"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "M_WaterRipple_Mesh_Foam",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Environment/Water/M_WaterRipple_Mesh_Foam.M_WaterRipple_Mesh_Foam",
+  "textures": {},
+  "scalars": {
+    "Roughness": 0.009999999776482582,
+    "DebugSineSpeed": 0.25,
+    "FadeDistance": 5.0
+  },
+  "vectors": {
+    "WPO_Offset": [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "WPO_Expand": [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "M_GlowPoint_MASTER",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Flares/M_GlowPoint_MASTER.M_GlowPoint_MASTER",
+  "textures": {},
+  "scalars": {
+    "MaxSpeed": 10.0,
+    "ShrinkDistance": 120.0
+  },
+  "vectors": {}
+}

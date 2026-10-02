@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Revive",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.096770763397217,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Revive_040_Dialogue",
+      "wav_file": "Wraith_Revive_040.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Revive_050_Dialogue",
+      "wav_file": "Wraith_Revive_050.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Revive_010_Dialogue",
+      "wav_file": "Wraith_Revive_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Revive_020_Dialogue",
+      "wav_file": "Wraith_Revive_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Revive_030_Dialogue",
+      "wav_file": "Wraith_Revive_030.wav"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "M_Recall_GlowingDots_Inst",
+  "ue_class": "MaterialInstanceConstant",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Flares/AirGlows/M_Recall_GlowingDots_Inst.M_Recall_GlowingDots_Inst",
+  "textures": {},
+  "scalars": {},
+  "vectors": {},
+  "meta_extract_error": "MaterialEditingLibrary: Failed to convert parameter 'material' when calling function 'MaterialEditingLibrary.GetMaterialDefaultTextureParameterValue' on 'Default__MaterialEditingLibrary'\n  TypeError: NativizeProperty: Cannot nativize 'MaterialInstanceConstant' as 'Material' (ObjectProperty)\n    TypeError: NativizeObject: Cannot nativize 'MaterialInstanceConstant' as 'Object' (allowed Class type: 'Material')"
+}

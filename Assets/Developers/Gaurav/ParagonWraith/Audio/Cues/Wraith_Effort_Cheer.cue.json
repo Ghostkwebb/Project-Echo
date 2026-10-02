@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Effort_Cheer",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 1.9145208597183228,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Cheer_010_Dialogue",
+      "wav_file": "Wraith_Effort_Cheer_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Cheer_011_Dialogue",
+      "wav_file": "Wraith_Effort_Cheer_011.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Cheer_014_Dialogue",
+      "wav_file": "Wraith_Effort_Cheer_014.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Cheer_013_Dialogue",
+      "wav_file": "Wraith_Effort_Cheer_013.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_Cheer_012_Dialogue",
+      "wav_file": "Wraith_Effort_Cheer_012.wav"
+    }
+  ]
+}

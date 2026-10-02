@@ -1,0 +1,42 @@
+{
+  "name": "M_Smoke_SplineMesh_Trail",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Smoke/Spline/M_Smoke_SplineMesh_Trail.M_Smoke_SplineMesh_Trail",
+  "textures": {
+    "TrailOpacity": "T_SoftEdge_M",
+    "SmokeTexture": "T_Smoke_Trail",
+    "SmokeEmissiveTexture": "T_SmokeTile_Strip_02_Height"
+  },
+  "scalars": {
+    "SplineWidthBase": 30.0,
+    "SplineWidthTip": 30.0,
+    "PanSpeed": 1.0,
+    "WaveSpeed": 0.20000000298023224,
+    "WaveLEngth": 300.0,
+    "WaveStrength": 10.0,
+    "MaxLength": 4000.0,
+    "EmissivePanSpeed": 1.0,
+    "Erosion": 1.0,
+    "OpacityInfluence": 1.0
+  },
+  "vectors": {
+    "LightColor": [
+      0.8600000143051147,
+      0.7728855013847351,
+      0.7381534576416016,
+      1.0
+    ],
+    "DarkColor": [
+      0.14311100542545319,
+      0.14284060895442963,
+      0.1599999964237213,
+      1.0
+    ],
+    "EmissiveColor": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

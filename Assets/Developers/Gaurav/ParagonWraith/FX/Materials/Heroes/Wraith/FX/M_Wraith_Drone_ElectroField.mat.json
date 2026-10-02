@@ -1,0 +1,11 @@
+{
+  "name": "M_Wraith_Drone_ElectroField",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/Wraith/FX/M_Wraith_Drone_ElectroField.M_Wraith_Drone_ElectroField",
+  "textures": {},
+  "scalars": {
+    "RefractionAmount": 1.25,
+    "PanSpeed": 1.5
+  },
+  "vectors": {}
+}

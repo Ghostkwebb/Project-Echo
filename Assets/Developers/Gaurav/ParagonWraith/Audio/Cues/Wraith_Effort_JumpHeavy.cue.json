@@ -1,0 +1,33 @@
+{
+  "name": "Wraith_Effort_JumpHeavy",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 1.8593958616256714,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_JumpHeavy_011_Dialogue",
+      "wav_file": "Wraith_Effort_JumpHeavy_011.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_JumpHeavy_010_Dialogue",
+      "wav_file": "Wraith_Effort_JumpHeavy_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_JumpHeavy_012_Dialogue",
+      "wav_file": "Wraith_Effort_JumpHeavy_012.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_JumpHeavy_014_Dialogue",
+      "wav_file": "Wraith_Effort_JumpHeavy_014.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Effort_JumpHeavy_013_Dialogue",
+      "wav_file": "Wraith_Effort_JumpHeavy_013.wav"
+    }
+  ]
+}

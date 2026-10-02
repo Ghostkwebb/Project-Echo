@@ -1,0 +1,43 @@
+{
+  "name": "M_Spark_VelocityLerp_WorldColor",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Sparks/M_Spark_VelocityLerp_WorldColor.M_Spark_VelocityLerp_WorldColor",
+  "textures": {},
+  "scalars": {
+    "ParticleSpeed": 700.0,
+    "PositionScale": 0.800000011920929,
+    "BrightnessDistance": 1024.0
+  },
+  "vectors": {
+    "ColorCore": [
+      4.0,
+      3.1735799312591553,
+      2.3329079151153564,
+      1.0
+    ],
+    "ColorEdge": [
+      2.5132761001586914,
+      0.7296040058135986,
+      0.0,
+      1.0
+    ],
+    "HDRTint": [
+      8.0,
+      1.9285780191421509,
+      0.0988209992647171,
+      0.0
+    ],
+    "RandBright": [
+      1.0,
+      0.5661259889602661,
+      0.0,
+      0.0
+    ],
+    "RandDim": [
+      0.41999998688697815,
+      0.060559000819921494,
+      0.004220000002533197,
+      0.0
+    ]
+  }
+}

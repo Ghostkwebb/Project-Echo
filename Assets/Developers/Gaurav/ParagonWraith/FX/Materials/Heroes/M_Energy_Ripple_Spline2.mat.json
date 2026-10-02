@@ -1,0 +1,10 @@
+{
+  "name": "M_Energy_Ripple_Spline2",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/M_Energy_Ripple_Spline2.M_Energy_Ripple_Spline2",
+  "textures": {},
+  "scalars": {
+    "SplineWidth": 30.0
+  },
+  "vectors": {}
+}

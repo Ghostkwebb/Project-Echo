@@ -1,0 +1,11 @@
+{
+  "name": "M_HDRSky",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/Characters/Maps/BackGroundAssets/M_HDRSky.M_HDRSky",
+  "textures": {},
+  "scalars": {
+    "EVC": 1.25,
+    "envRot": 0.10000000149011612
+  },
+  "vectors": {}
+}

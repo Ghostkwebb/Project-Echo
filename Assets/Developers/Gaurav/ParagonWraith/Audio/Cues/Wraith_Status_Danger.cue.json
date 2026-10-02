@@ -1,0 +1,25 @@
+{
+  "name": "Wraith_Status_Danger",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.9518959522247314,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Danger_010_Dialogue",
+      "wav_file": "Wraith_Status_Danger_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Danger_020_Dialogue",
+      "wav_file": "Wraith_Status_Danger_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Status_Danger_030_Dialogue",
+      "wav_file": "Wraith_Status_Danger_030.wav"
+    }
+  ]
+}

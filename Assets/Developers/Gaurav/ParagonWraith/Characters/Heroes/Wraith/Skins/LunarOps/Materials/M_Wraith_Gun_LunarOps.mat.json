@@ -1,0 +1,188 @@
+{
+  "name": "M_Wraith_Gun_LunarOps",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Gun_LunarOps.M_Wraith_Gun_LunarOps",
+  "textures": {
+    "FadeMask": "T_AtmosphericCloudNoise03",
+    "Rubber Texture": "T_TireRubber_R",
+    "Orange Peel Normal": "T_Bump_N"
+  },
+  "scalars": {
+    "GunShallR": 1.5,
+    "XiangjiaoR": 1.0,
+    "GunShallS": 2.099323034286499,
+    "Metallic": 0.949999988079071,
+    "XiangjiaoR_1": 1.399999976158142,
+    "Tan": 0.824413001537323,
+    "TanTint": 2.5664470195770264,
+    "TanTiling": 25.0,
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "Specular": 0.5,
+    "Roughness Overall": 1.0,
+    "Dirt (Roughness Min)": 0.15000000596046448,
+    "Metal (Roughness Max)": 0.30000001192092896,
+    "Dirt Scale": 10.0,
+    "Dirt Scale_1": 10.0,
+    "Gunmetal2R": 0.12165000289678574,
+    "Roughness": 1.0,
+    "GhostlatexFlatness": 0.8799999952316284,
+    "GhostlatexNormal_Tiling": 10.0,
+    "GhostLatexTiling": 8.0,
+    "Shift": 0.47874999046325684,
+    "Y Repeat Size": 0.800000011920929,
+    "X Repeat Size": 0.5,
+    "Z Repeat Size": 0.800000011920929,
+    "Preview Camera Panning Speed": 0.5,
+    "Flake Color Power": 5.0,
+    "Flake Distribution": 3.0,
+    "Flake Movement Speed": 2.0,
+    "2nd Flake Intensity": 1.0,
+    "3rd Flake Intensity": 0.5,
+    "Sparkle Colors Scale": 32.0,
+    "Final Flake Brightness": 1.0,
+    "Flake Scale": 1.5,
+    "Flake Color Variation": 0.0,
+    "inputtili": 233.88327026367188,
+    "Multiply": 1.75,
+    "Reflect": 0.0,
+    "Exponent": 0.5,
+    "Brightness": 0.6000000238418579,
+    "FrontNormal": 0.20000000298023224,
+    "EdgeNormal": 0.0,
+    "EdgeBrightness": 0.20000000298023224
+  },
+  "vectors": {
+    "Gunmetal2TintG": [
+      0.07500000298023224,
+      0.06761699914932251,
+      0.04912500083446503,
+      0.0
+    ],
+    "GunShallTint": [
+      0.18000000715255737,
+      0.18000000715255737,
+      0.18000000715255737,
+      0.0
+    ],
+    "LowContsMet": [
+      0.37665000557899475,
+      0.3903700113296509,
+      0.4050000011920929,
+      0.0
+    ],
+    "LowContsMetG": [
+      0.9300000071525574,
+      0.9638770222663879,
+      1.0,
+      0.0
+    ],
+    "LatexTint": [
+      0.03500000014901161,
+      0.03500000014901161,
+      0.03500000014901161,
+      1.0
+    ],
+    "LatexTintG": [
+      0.07000000029802322,
+      0.05384400114417076,
+      0.03933199867606163,
+      1.0
+    ],
+    "Gunmetal2Tint": [
+      0.13019999861717224,
+      0.13494199514389038,
+      0.14000000059604645,
+      0.0
+    ],
+    "GunShallTintG": [
+      0.04500000178813934,
+      0.04500000178813934,
+      0.04500000178813934,
+      0.0
+    ],
+    "LatexTint2": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      1.0
+    ],
+    "CarPaint": [
+      1.0,
+      0.05251200124621391,
+      0.0,
+      1.0
+    ],
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "Base Color": [
+      0.3239310085773468,
+      0.3239310085773468,
+      0.3449999988079071,
+      1.0
+    ],
+    "Emissive Color": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Flake Color Alpha": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "Offset 1": [
+      286.2650146484375,
+      218.16799926757812,
+      0.0,
+      0.0
+    ],
+    "Offset 2": [
+      15865.5859375,
+      2.686800003051758,
+      0.0,
+      0.0
+    ]
+  }
+}

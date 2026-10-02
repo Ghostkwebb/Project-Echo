@@ -1,0 +1,41 @@
+{
+  "name": "Wraith_Kill_Enemy",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.715625047683716,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Kill_Enemy_070_Dialogue",
+      "wav_file": "Wraith_Kill_Enemy_070.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Kill_Enemy_030_Dialogue",
+      "wav_file": "Wraith_Kill_Enemy_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Kill_Enemy_060_Dialogue",
+      "wav_file": "Wraith_Kill_Enemy_060.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Kill_Enemy_020_Dialogue",
+      "wav_file": "Wraith_Kill_Enemy_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Kill_Enemy_050_Dialogue",
+      "wav_file": "Wraith_Kill_Enemy_050.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Kill_Enemy_010_Dialogue",
+      "wav_file": "Wraith_Kill_Enemy_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Kill_Enemy_040_Dialogue",
+      "wav_file": "Wraith_Kill_Enemy_040.wav"
+    }
+  ]
+}

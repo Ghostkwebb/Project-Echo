@@ -1,0 +1,25 @@
+{
+  "name": "Wraith_Kill_FirstBlood",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 3.1339375972747803,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Kill_FirstBlood_020_Dialogue",
+      "wav_file": "Wraith_Kill_FirstBlood_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Kill_FirstBlood_030_Dialogue",
+      "wav_file": "Wraith_Kill_FirstBlood_030.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Kill_FirstBlood_010_Dialogue",
+      "wav_file": "Wraith_Kill_FirstBlood_010.wav"
+    }
+  ]
+}

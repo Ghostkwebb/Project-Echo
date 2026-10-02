@@ -1,0 +1,9 @@
+{
+  "name": "M_Spark_VelocityLerp_Pellets_Inst",
+  "ue_class": "MaterialInstanceConstant",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/M_Spark_VelocityLerp_Pellets_Inst.M_Spark_VelocityLerp_Pellets_Inst",
+  "textures": {},
+  "scalars": {},
+  "vectors": {},
+  "meta_extract_error": "MaterialEditingLibrary: Failed to convert parameter 'material' when calling function 'MaterialEditingLibrary.GetMaterialDefaultScalarParameterValue' on 'Default__MaterialEditingLibrary'\n  TypeError: NativizeProperty: Cannot nativize 'MaterialInstanceConstant' as 'Material' (ObjectProperty)\n    TypeError: NativizeObject: Cannot nativize 'MaterialInstanceConstant' as 'Object' (allowed Class type: 'Material')"
+}

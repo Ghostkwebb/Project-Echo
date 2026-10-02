@@ -1,0 +1,192 @@
+{
+  "name": "M_Wraith_Upperbody_LunarOps",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Upperbody_LunarOps.M_Wraith_Upperbody_LunarOps",
+  "textures": {
+    "BakedNormal": "T_Wraith_upperbody_N_DEMO",
+    "FadeMask": "T_AtmosphericCloudNoise03",
+    "Orange Peel Normal": "T_Bump_N",
+    "Rubber Texture": "T_TireRubber_R"
+  },
+  "scalars": {
+    "LatexR": 1.0385639667510986,
+    "PlasticTiling_1": 0.6485400199890137,
+    "LatexG": 1.3379130363464355,
+    "scratchedR": 0.5316219925880432,
+    "scratchedR_1": 1.2238450050354004,
+    "PlasticTiling_3": 0.9352390170097351,
+    "Tan": 0.8760049939155579,
+    "TanTint": 2.398236036300659,
+    "TanTiling": 34.0,
+    "Tan_1": 0.9199039936065674,
+    "Damage": 0.0,
+    "HitFlashBrightness": 0.20000000298023224,
+    "FadeOut": 0.0,
+    "VertexDisplacePower": 1.5,
+    "IriExponent": 0.20000000298023224,
+    "IriMask": 0.029999999329447746,
+    "BrightnessAdjust": 1.25,
+    "Shift": 0.47874999046325684,
+    "Y Repeat Size": 0.800000011920929,
+    "X Repeat Size": 0.5,
+    "Z Repeat Size": 0.800000011920929,
+    "Preview Camera Panning Speed": 0.5,
+    "Metallic": 0.800000011920929,
+    "Flake Color Power": 5.0,
+    "Flake Distribution": 3.0,
+    "Flake Movement Speed": 2.0,
+    "2nd Flake Intensity": 1.0,
+    "3rd Flake Intensity": 0.5,
+    "Sparkle Colors Scale": 32.0,
+    "Final Flake Brightness": 1.0,
+    "Flake Scale": 1.5,
+    "Flake Color Variation": 0.0,
+    "inputtili": 233.88327026367188,
+    "Specular": 0.44999998807907104,
+    "Roughness": 1.0,
+    "GhostlatexFlatness": 0.8799999952316284,
+    "GhostlatexNormal_Tiling": 10.0,
+    "GhostLatexTiling": 8.0,
+    "Multiply": 1.75,
+    "Reflect": 0.0,
+    "Exponent": 0.5,
+    "Brightness": 0.6000000238418579,
+    "FrontNormal": 0.20000000298023224,
+    "EdgeNormal": 0.0,
+    "EdgeBrightness": 0.20000000298023224
+  },
+  "vectors": {
+    "LatexM": [
+      0.09960000216960907,
+      0.10971300303936005,
+      0.11999999731779099,
+      1.0
+    ],
+    "LatexL": [
+      0.030799999833106995,
+      0.032965999096632004,
+      0.03500000014901161,
+      1.0
+    ],
+    "Dark metal": [
+      0.9300000071525574,
+      0.9944429993629456,
+      1.0,
+      1.0
+    ],
+    "Dark MetalG": [
+      0.11999999731779099,
+      0.10706599801778793,
+      0.10379999876022339,
+      1.0
+    ],
+    "LatexD": [
+      0.023739000782370567,
+      0.02954700030386448,
+      0.03500000014901161,
+      1.0
+    ],
+    "LatexG": [
+      0.07500000298023224,
+      0.06630799919366837,
+      0.05849999934434891,
+      1.0
+    ],
+    "PlasticTint2": [
+      0.17499999701976776,
+      0.15662500262260437,
+      0.15662500262260437,
+      1.0
+    ],
+    "Dark metal2": [
+      1.100000023841858,
+      1.100000023841858,
+      1.100000023841858,
+      1.0
+    ],
+    "CarPaint": [
+      1.0,
+      0.05251200124621391,
+      0.0,
+      1.0
+    ],
+    "MeatllicCCG": [
+      0.5649999976158142,
+      0.5056750178337097,
+      0.5056750178337097,
+      1.0
+    ],
+    "PlasticTint": [
+      0.5049999952316284,
+      0.4671249985694885,
+      0.5040979981422424,
+      1.0
+    ],
+    "DisplaceValue": [
+      0.0,
+      0.0,
+      326.0597229003906,
+      0.0
+    ],
+    "Color1": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612,
+      0.0
+    ],
+    "Color0": [
+      0.004999999888241291,
+      0.004999999888241291,
+      0.004999999888241291,
+      0.0
+    ],
+    "NoiseTextureSize": [
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "ScaleNormal": [
+      1.0,
+      1.0,
+      0.4000000059604645,
+      0.0
+    ],
+    "BaseColorDiv": [
+      0.27049800753593445,
+      0.37123799324035645,
+      0.5583400130271912,
+      1.0
+    ],
+    "Emissive Color": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Flake Color Alpha": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "Offset 1": [
+      286.2650146484375,
+      218.16799926757812,
+      0.0,
+      0.0
+    ],
+    "Offset 2": [
+      15865.5859375,
+      2.686800003051758,
+      0.0,
+      0.0
+    ],
+    "Base Color": [
+      0.014999999664723873,
+      0.014999999664723873,
+      0.013214999809861183,
+      1.0
+    ]
+  }
+}

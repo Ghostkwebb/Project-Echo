@@ -1,0 +1,11 @@
+{
+  "name": "M_Large_Bolt",
+  "ue_class": "Material",
+  "ue_path": "/Game/ParagonWraith/FX/Materials/Heroes/M_Large_Bolt.M_Large_Bolt",
+  "textures": {},
+  "scalars": {
+    "Depth Fade Distance": 100.0,
+    "ViewAngle": 3.0
+  },
+  "vectors": {}
+}

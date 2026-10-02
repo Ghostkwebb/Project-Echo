@@ -1,0 +1,29 @@
+{
+  "name": "Wraith_Ability_LowMana",
+  "ue_class": "SoundCue",
+  "volume_multiplier": 0.75,
+  "pitch_multiplier": 1.0,
+  "duration": 2.1606874465942383,
+  "sound_files": [
+    {
+      "ref": "/Game/ParagonWraith/Audio/Wraith",
+      "wav_file": "Wraith.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_LowMana_040_Dialogue",
+      "wav_file": "Wraith_Ability_LowMana_040.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_LowMana_010_Dialogue",
+      "wav_file": "Wraith_Ability_LowMana_010.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_LowMana_020_Dialogue",
+      "wav_file": "Wraith_Ability_LowMana_020.wav"
+    },
+    {
+      "ref": "/Game/ParagonWraith/Audio/DialogueWaves/Wraith_Ability_LowMana_030_Dialogue",
+      "wav_file": "Wraith_Ability_LowMana_030.wav"
+    }
+  ]
+}
