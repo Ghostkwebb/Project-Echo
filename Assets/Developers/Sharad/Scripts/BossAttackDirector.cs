@@ -55,6 +55,13 @@ public class BossAttackDirector : MonoBehaviour
             bossHealth.OnStaggerEnded += HandleStaggerEnded;
             bossHealth.OnBossDefeated += HandleBossDefeated;
         }
+
+        // Listen to all part breaks!
+        BossPart[] parts = GetComponentsInChildren<BossPart>(true);
+        for (int i = 0; i < parts.Length; i++)
+        {
+            parts[i].OnPartBroken += HandlePartBroken;
+        }
     }
 
     private void OnDisable()
@@ -64,6 +71,24 @@ public class BossAttackDirector : MonoBehaviour
             bossHealth.OnStaggerStarted -= HandleStaggerStarted;
             bossHealth.OnStaggerEnded -= HandleStaggerEnded;
             bossHealth.OnBossDefeated -= HandleBossDefeated;
+        }
+
+        BossPart[] parts = GetComponentsInChildren<BossPart>(true);
+        for (int i = 0; i < parts.Length; i++)
+        {
+            parts[i].OnPartBroken -= HandlePartBroken;
+        }
+    }
+
+    private void HandlePartBroken(BossPart brokenPart)
+    {
+        // If broken part was actively firing -> SHUT IT DOWN IMMEDIATELY!
+        if (activeAttack != null && activeAttack.LinkedPart == brokenPart)
+        {
+            activeAttack.InterruptAttack();
+            activeAttack = null;
+            currentState = DirectorState.Resting;
+            restTimer = Random.Range(minRestDuration, maxRestDuration);
         }
     }
 
