@@ -10,15 +10,16 @@ public class BossAimController : MonoBehaviour
     [Header("360 Turret Swivel (Mech Waist)")]
     [Tooltip("Drag bone spine_01 here.")]
     [SerializeField] private Transform waistBearing;
-    [SerializeField] private float turnSpeed = 70f;
-    [SerializeField] private float yawOffset = 180f;
+    [SerializeField] private float maxTurnSpeed = 75f;
+    [Tooltip("Damping delay in seconds. Higher = heavier, lazier mech tracking.")]
+    [SerializeField] private float trackingDelay = 0.35f;
+    [SerializeField] private float yawOffset = 155f;
 
     [Header("Cannon Forearm Aim Alignment")]
-    [Tooltip("Drag bone lowerarm_r here.")]
     [SerializeField] private Transform rightForearmBone;
-    [Tooltip("Drag MuzzlePoint here.")]
     [SerializeField] private Transform muzzlePoint;
     [SerializeField] private float maxForearmAdjustment = 45f;
+    [SerializeField] private float forearmSmoothSpeed = 8f; // Smooths arm aiming
 
     [Header("Aim Lockout")]
     [SerializeField] private bool isAimLocked = false;
@@ -26,6 +27,8 @@ public class BossAimController : MonoBehaviour
     private BossHealth bossHealth;
     private Animator bossAnimator;
     private float currentTurretYaw;
+    private float yawVelocity;
+    private Quaternion currentForearmCorrection = Quaternion.identity;
 
     public Transform CurrentTarget => currentTarget;
 
@@ -47,7 +50,7 @@ public class BossAimController : MonoBehaviour
 
         FindTargetIfNull();
 
-        // 1. Update tracking angle if not locked or flinching
+        // 1. Update tracking angle with hydraulic inertia
         bool freezeTracking = isAimLocked || IsFlinching() || (bossHealth != null && bossHealth.IsStaggered);
 
         if (!freezeTracking && currentTarget != null)
@@ -55,13 +58,13 @@ public class BossAimController : MonoBehaviour
             UpdateTargetAngles();
         }
 
-        // 2. Hold waist bearing orientation
+        // 2. Apply smooth damped yaw to waist bearing
         if (waistBearing != null)
         {
             waistBearing.rotation = Quaternion.Euler(waistBearing.eulerAngles.x, currentTurretYaw, waistBearing.eulerAngles.z);
         }
 
-        // 3. Option B: Align right arm shoulder ball-joint dead at target
+        // 3. Smooth forearm aim
         if (currentTarget != null && !IsFlinching())
         {
             AlignForearmToTarget();
@@ -77,28 +80,43 @@ public class BossAimController : MonoBehaviour
         if (targetDir.sqrMagnitude < 0.001f) return;
 
         float targetAngle = Mathf.Atan2(targetDir.x, targetDir.z) * Mathf.Rad2Deg + yawOffset;
-        currentTurretYaw = Mathf.MoveTowardsAngle(currentTurretYaw, targetAngle, turnSpeed * Time.deltaTime);
+
+        // SmoothDampAngle adds mechanical mass & lazy delay curve
+        currentTurretYaw = Mathf.SmoothDampAngle(
+            currentTurretYaw,
+            targetAngle,
+            ref yawVelocity,
+            trackingDelay,
+            maxTurnSpeed,
+            Time.deltaTime
+        );
     }
 
     private void AlignForearmToTarget()
     {
         if (rightForearmBone == null || muzzlePoint == null || currentTarget == null) return;
 
-        // Physical centerline from elbow to muzzle tip in 3D world space
         Vector3 barrelDir = (muzzlePoint.position - rightForearmBone.position).normalized;
         Vector3 targetDir = (currentTarget.position - rightForearmBone.position).normalized;
 
         if (barrelDir.sqrMagnitude < 0.001f || targetDir.sqrMagnitude < 0.001f) return;
 
-        // Rotation needed to point barrel line dead at target
-        Quaternion delta = Quaternion.FromToRotation(barrelDir, targetDir);
+        Quaternion targetDelta = Quaternion.FromToRotation(barrelDir, targetDir);
 
-        // Clamp to prevent elbow hyperextension
-        delta.ToAngleAxis(out float angle, out Vector3 axis);
+        targetDelta.ToAngleAxis(out float angle, out Vector3 axis);
         if (angle > 180f) angle -= 360f;
         angle = Mathf.Clamp(angle, -maxForearmAdjustment, maxForearmAdjustment);
 
-        rightForearmBone.rotation = Quaternion.AngleAxis(angle, axis) * rightForearmBone.rotation;
+        Quaternion targetCorrection = Quaternion.AngleAxis(angle, axis);
+
+        // Smoothly slerp arm correction so hand never snaps instantly
+        currentForearmCorrection = Quaternion.Slerp(
+            currentForearmCorrection,
+            targetCorrection,
+            forearmSmoothSpeed * Time.deltaTime
+        );
+
+        rightForearmBone.rotation = currentForearmCorrection * rightForearmBone.rotation;
     }
 
     private bool IsFlinching()

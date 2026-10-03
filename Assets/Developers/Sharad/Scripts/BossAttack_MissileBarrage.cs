@@ -6,7 +6,6 @@ using UnityEngine;
 public class BossAttack_MissileBarrage : BossAttackBase
 {
     [Header("Barrage Tuning (Designer PDF 2 & 3)")]
-    [SerializeField] private int missileCount = 5;
     [SerializeField] private float damagePerMissile = 35f;
     [SerializeField] private float explosionRadius = 2.5f;
     [SerializeField] private float rocketFlightTime = 1.35f;

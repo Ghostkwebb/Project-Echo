@@ -388,6 +388,21 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!4 &343971618 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4136116063460237058, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+  m_PrefabInstance: {fileID: 2133534715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &473045657 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7512077431461324229, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+  m_PrefabInstance: {fileID: 2133534715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &490779283 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2920944844118820415, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+  m_PrefabInstance: {fileID: 2133534715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &542838875
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +706,11 @@ MonoBehaviour:
   hitboxType: 1
   linkedPart: {fileID: 2145780457}
   bossHealth: {fileID: 933617345}
+--- !u!4 &805507040 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3654593507197554382, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+  m_PrefabInstance: {fileID: 2133534715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &900160041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3178647439844866392, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
@@ -708,7 +728,7 @@ GameObject:
   - component: {fileID: 920397160}
   - component: {fileID: 920397159}
   - component: {fileID: 920397158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -878,6 +898,7 @@ MonoBehaviour:
   attackSlots:
   - {fileID: 1392301407}
   - {fileID: 2145780458}
+  - {fileID: 1151001812}
   preventConsecutiveRepeats: 1
 --- !u!136 &933617349
 CapsuleCollider:
@@ -1044,6 +1065,37 @@ MonoBehaviour:
   partColliders:
   - {fileID: 1809030210}
   visualMesh: {fileID: 0}
+--- !u!114 &1151001812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151001809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6cfa8e4b728640cebd4f7b98da6364d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossAttack_HeavyLaser
+  attackName: Attack
+  baseCooldown: 5
+  selectionWeight: 1
+  linkedPart: {fileID: 1151001811}
+  chargeDuration: 1.6
+  beamDuration: 6
+  sweepSpeed: 35
+  damagePerTick: 12
+  damageInterval: 0.25
+  lavaSpacing: 1.2
+  lavaRadius: 1.6
+  cannonArm1: {fileID: 343971618}
+  cannonArm2: {fileID: 490779283}
+  cannonBarrel: {fileID: 473045657}
+  laserMuzzle: {fileID: 805507040}
+  laserBeam: {fileID: 0}
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &1193396659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3242738703338497088, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
@@ -5427,6 +5479,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4023525734786664291, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1151001811}
+    - targetCorrespondingSourceObject: {fileID: 4023525734786664291, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1151001812}
     - targetCorrespondingSourceObject: {fileID: 3242738703338497088, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1193396661}
@@ -5478,7 +5533,6 @@ MonoBehaviour:
   baseCooldown: 5
   selectionWeight: 1
   linkedPart: {fileID: 2145780457}
-  missileCount: 5
   damagePerMissile: 35
   explosionRadius: 2.5
   rocketFlightTime: 1.35
@@ -5489,7 +5543,7 @@ MonoBehaviour:
   rightRocketPod: {fileID: 1534666164}
   damageLayers:
     serializedVersion: 2
-    m_Bits: 9
+    m_Bits: 1033
   podOpenDuration: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
