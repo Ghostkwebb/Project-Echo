@@ -246,6 +246,93 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1001 &93277688
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1209598452}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9102716
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.04424023
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2633966
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.31633952
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -4.94
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 30.624
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 36.974
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_Name
+      value: MuzzleFlash_FX
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+--- !u!4 &93277689 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+  m_PrefabInstance: {fileID: 93277688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &93277690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 21c960940111749f1a4c78f8abef5912, type: 3}
+  m_PrefabInstance: {fileID: 93277688}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &172450222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 692333040328160476, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
@@ -391,6 +478,11 @@ MonoBehaviour:
 --- !u!4 &343971618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4136116063460237058, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+  m_PrefabInstance: {fileID: 2133534715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &374979892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3785507916994378623, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
   m_PrefabInstance: {fileID: 2133534715}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &473045657 stripped
@@ -781,7 +873,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 57fe5e75b2ff647d0aafe01ecacd3da4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -875,11 +967,13 @@ MonoBehaviour:
   currentTarget: {fileID: 592106365}
   playerTag: Player
   waistBearing: {fileID: 900160041}
-  turnSpeed: 60
+  maxTurnSpeed: 75
+  trackingDelay: 0.35
   yawOffset: 180
   rightForearmBone: {fileID: 1392301405}
   muzzlePoint: {fileID: 1209598452}
   maxForearmAdjustment: 45
+  forearmSmoothSpeed: 8
   isAimLocked: 0
 --- !u!114 &933617347
 MonoBehaviour:
@@ -965,6 +1059,9 @@ MonoBehaviour:
   hangTime: 0.4
   slamTime: 0.13
   telegraphRing: {fileID: 0}
+  shockwaveMeshPrefab: {fileID: 919132149155446097, guid: 011ce0d2e5832488e99b40dc4e8c3ca5, type: 3}
+  shockwaveMaterial: {fileID: 2100000, guid: 49980375c4f474260b228d5f2bb4ef40, type: 2}
+  telegraphMaterial: {fileID: 2100000, guid: 26050d09a7c914a69b97a5851ae83b08, type: 2}
 --- !u!1 &957728512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,9 +1159,21 @@ MonoBehaviour:
   partDisplayName: Shoulder Mortar
   breakThreshold: 300
   repairDuration: 15
+  recallDuration: 2.5
   partColliders:
   - {fileID: 1809030210}
-  visualMesh: {fileID: 0}
+  debrisPrefabs:
+  - {fileID: 919132149155446097, guid: 5cc5efe904fbb43ee84e325779642fa3, type: 3}
+  - {fileID: 919132149155446097, guid: 2e124890ac46249c78c39b0df12fc503, type: 3}
+  - {fileID: 919132149155446097, guid: da3f3371091dd4350ba091d8565059b9, type: 3}
+  - {fileID: 919132149155446097, guid: 7a89fac7ec7844578a32836063c57910, type: 3}
+  - {fileID: 919132149155446097, guid: 06b6792a172204a54b6599c495b7d62b, type: 3}
+  - {fileID: 919132149155446097, guid: 1586ed3f1ab9f42779723b8188d14f45, type: 3}
+  explosionForce: 2
+  upwardModifier: 1.5
+  debrisMaterialOverride: {fileID: 0}
+  totalDebrisPieces: 14
+  debrisScale: 2.2
 --- !u!114 &1151001812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,7 +1192,6 @@ MonoBehaviour:
   linkedPart: {fileID: 1151001811}
   chargeDuration: 1.6
   beamDuration: 6
-  sweepSpeed: 35
   damagePerTick: 12
   damageInterval: 0.25
   lavaSpacing: 1.2
@@ -1096,6 +1204,7 @@ MonoBehaviour:
   floorLayer:
     serializedVersion: 2
     m_Bits: 512
+  laserTrackingLag: 0.55
 --- !u!1 &1193396659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3242738703338497088, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
@@ -1122,9 +1231,21 @@ MonoBehaviour:
   partDisplayName: Left Missile Bay
   breakThreshold: 300
   repairDuration: 15
+  recallDuration: 2.5
   partColliders:
   - {fileID: 957728514}
-  visualMesh: {fileID: 0}
+  debrisPrefabs:
+  - {fileID: 919132149155446097, guid: 5cc5efe904fbb43ee84e325779642fa3, type: 3}
+  - {fileID: 919132149155446097, guid: 2e124890ac46249c78c39b0df12fc503, type: 3}
+  - {fileID: 919132149155446097, guid: da3f3371091dd4350ba091d8565059b9, type: 3}
+  - {fileID: 919132149155446097, guid: 7a89fac7ec7844578a32836063c57910, type: 3}
+  - {fileID: 919132149155446097, guid: 06b6792a172204a54b6599c495b7d62b, type: 3}
+  - {fileID: 919132149155446097, guid: 1586ed3f1ab9f42779723b8188d14f45, type: 3}
+  explosionForce: 2
+  upwardModifier: 1.5
+  debrisMaterialOverride: {fileID: 0}
+  totalDebrisPieces: 14
+  debrisScale: 2.2
 --- !u!1 &1209598451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1274,8 @@ Transform:
   m_LocalPosition: {x: -1.003022, y: 0.0039762105, z: 0.33900344}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 93277689}
   m_Father: {fileID: 1392301405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1234695264 stripped
@@ -1161,6 +1283,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4071491524005063018, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
   m_PrefabInstance: {fileID: 2133534715}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1253924756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1253924757}
+  - component: {fileID: 1253924758}
+  m_Layer: 0
+  m_Name: EncounterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1253924757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253924756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.26054, y: 4.4231, z: -1.33786}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1253924758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253924756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb2689a27a18e4221a6566dd6e8984de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EncounterManager
+  respawnDelay: 1.5
+  playerSpawnPoint: {fileID: 0}
+  playerTransform: {fileID: 0}
+  bossHealth: {fileID: 0}
+  attackDirector: {fileID: 0}
+  threatMonitor: {fileID: 0}
+  bossParts: []
 --- !u!1 &1254167706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,9 +1429,21 @@ MonoBehaviour:
   partDisplayName: Right Cannon
   breakThreshold: 300
   repairDuration: 15
+  recallDuration: 2.5
   partColliders:
   - {fileID: 1407315062}
-  visualMesh: {fileID: 0}
+  debrisPrefabs:
+  - {fileID: 919132149155446097, guid: 5cc5efe904fbb43ee84e325779642fa3, type: 3}
+  - {fileID: 919132149155446097, guid: 2e124890ac46249c78c39b0df12fc503, type: 3}
+  - {fileID: 919132149155446097, guid: da3f3371091dd4350ba091d8565059b9, type: 3}
+  - {fileID: 919132149155446097, guid: 7a89fac7ec7844578a32836063c57910, type: 3}
+  - {fileID: 919132149155446097, guid: 06b6792a172204a54b6599c495b7d62b, type: 3}
+  - {fileID: 919132149155446097, guid: 1586ed3f1ab9f42779723b8188d14f45, type: 3}
+  explosionForce: 2
+  upwardModifier: 1.5
+  debrisMaterialOverride: {fileID: 2100000, guid: 919f89191b7b64a5e9573ba5df3ccc35, type: 2}
+  totalDebrisPieces: 14
+  debrisScale: 2.2
 --- !u!114 &1392301407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1284,6 +1469,8 @@ MonoBehaviour:
   spreadAngle: 1.2
   muzzlePoint: {fileID: 1209598452}
   telegraphLaser: {fileID: 0}
+  muzzleFlashObject: {fileID: 93277690}
+  muzzleFlashBaseScale: 1.5
 --- !u!1 &1407315060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,6 +1552,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 925729538810445230, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
   m_PrefabInstance: {fileID: 2133534715}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1636681067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374979892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6092989b37f304608828e039e4f7fe5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossCoreExposeController
+  domeHatchBone: {fileID: 1636681066}
+  openRotationOffset: {x: -140, y: 0, z: 0}
+  hatchMoveSpeed: 6
+  coreWeakpoint: {fileID: 608308839}
 --- !u!1 &1809030208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,6 +1639,37 @@ MonoBehaviour:
   hitboxType: 1
   linkedPart: {fileID: 1151001811}
   bossHealth: {fileID: 933617345}
+--- !u!1 &1992894344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1992894345}
+  m_Layer: 0
+  m_Name: PlayerSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1992894345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992894344}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.81, y: 2.09324, z: -6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2133534715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1915,6 +2149,30 @@ PrefabInstance:
     - target: {fileID: 847370503720421380, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.02620266
+      objectReference: {fileID: 0}
+    - target: {fileID: 925729538810445230, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 925729538810445230, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 925729538810445230, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 925729538810445230, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 925729538810445230, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 925729538810445230, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 1058906596298576476, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5491,6 +5749,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1727680701429879539, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1392301407}
+    - targetCorrespondingSourceObject: {fileID: 3785507916994378623, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1636681067}
   m_SourcePrefab: {fileID: 100100000, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
 --- !u!1 &2145780455 stripped
 GameObject:
@@ -5513,10 +5774,22 @@ MonoBehaviour:
   partDisplayName: Back Rocket Pods
   breakThreshold: 300
   repairDuration: 15
+  recallDuration: 2.5
   partColliders:
   - {fileID: 542838877}
   - {fileID: 623451783}
-  visualMesh: {fileID: 0}
+  debrisPrefabs:
+  - {fileID: 919132149155446097, guid: 5cc5efe904fbb43ee84e325779642fa3, type: 3}
+  - {fileID: 919132149155446097, guid: 2e124890ac46249c78c39b0df12fc503, type: 3}
+  - {fileID: 919132149155446097, guid: da3f3371091dd4350ba091d8565059b9, type: 3}
+  - {fileID: 919132149155446097, guid: 7a89fac7ec7844578a32836063c57910, type: 3}
+  - {fileID: 919132149155446097, guid: 06b6792a172204a54b6599c495b7d62b, type: 3}
+  - {fileID: 919132149155446097, guid: 1586ed3f1ab9f42779723b8188d14f45, type: 3}
+  explosionForce: 2
+  upwardModifier: 1.5
+  debrisMaterialOverride: {fileID: 0}
+  totalDebrisPieces: 14
+  debrisScale: 2.2
 --- !u!114 &2145780458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5539,6 +5812,9 @@ MonoBehaviour:
   arcApexHeight: 16
   predictionLeadTime: 1.2
   randomOffsetRadius: 5
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 512
   leftRocketPod: {fileID: 172450222}
   rightRocketPod: {fileID: 1534666164}
   damageLayers:
@@ -5554,3 +5830,5 @@ SceneRoots:
   - {fileID: 920397161}
   - {fileID: 2133534715}
   - {fileID: 592106365}
+  - {fileID: 1253924757}
+  - {fileID: 1992894345}

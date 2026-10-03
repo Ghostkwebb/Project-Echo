@@ -24,6 +24,15 @@ public class BossProximityStomp : MonoBehaviour
     [Tooltip("Optional ground ring transform. If empty, creates one automatically.")]
     [SerializeField] private Transform telegraphRing;
 
+    [Header("Impact Shockwave FX")]
+    [Tooltip("Drag SM_Shockwave_Disc.fbx here.")]
+    [SerializeField] private GameObject shockwaveMeshPrefab;
+    [Tooltip("Drag M_Shockwave_Toon material here.")]
+    [SerializeField] private Material shockwaveMaterial;
+
+    [Tooltip("Drag M_Telegraph_Holo material asset here.")]
+    [SerializeField] private Material telegraphMaterial;
+
     // References
     private BossHealth bossHealth;
     private Animator bossAnimator;
@@ -165,6 +174,7 @@ public class BossProximityStomp : MonoBehaviour
             bossAnimator.Play("Jump_Land", 0, 0f);
         }
 
+        ShockwaveFX.Spawn(new Vector3(transform.position.x, baseY + 0.03f, transform.position.z), shockwaveMeshPrefab, shockwaveMaterial);
         ApplyStompExplosion();
 
         if (telegraphRing != null)
@@ -247,22 +257,26 @@ public class BossProximityStomp : MonoBehaviour
     {
         if (telegraphRing != null) return;
 
-        // Flat cylinder sitting just above feet
         GameObject ring = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
         ring.name = "Stomp_Telegraph_Ring";
         ring.transform.SetParent(null);
-        ring.transform.position = new Vector3(transform.position.x, transform.position.y + 0.03f, transform.position.z);
+        ring.transform.position = new Vector3(transform.position.x, transform.position.y + 0.02f, transform.position.z);
         ring.transform.localScale = Vector3.zero;
 
         Collider c = ring.GetComponent<Collider>();
         if (c != null) Destroy(c);
 
-        // Make bright red unlit disc
         Renderer rend = ring.GetComponent<Renderer>();
         if (rend != null)
         {
-            rend.material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
-            rend.material.color = new Color(1f, 0f, 0f, 0.5f);
+            if (telegraphMaterial != null)
+            {
+                rend.material = telegraphMaterial;
+            }
+            else
+            {
+                rend.material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
+            }
         }
 
         telegraphRing = ring.transform;

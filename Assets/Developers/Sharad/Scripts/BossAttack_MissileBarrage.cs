@@ -12,6 +12,7 @@ public class BossAttack_MissileBarrage : BossAttackBase
     [SerializeField] private float arcApexHeight = 16.0f;
     [SerializeField] private float predictionLeadTime = 1.2f;
     [SerializeField] private float randomOffsetRadius = 5.0f;
+    [SerializeField] private LayerMask floorLayer;
 
     [Header("Hardpoints (Back Rocket Pods)")]
     [Tooltip("Drag bone rocket_root_l here.")]
@@ -132,24 +133,33 @@ public class BossAttack_MissileBarrage : BossAttackBase
     {
         List<Vector3> points = new List<Vector3>();
         Vector3 playerPos = target != null ? target.position : transform.position + transform.forward * 10f;
-        float groundY = playerPos.y + 0.02f;
 
         // 2 on player
-        points.Add(new Vector3(playerPos.x, groundY, playerPos.z));
-        points.Add(new Vector3(playerPos.x + Random.Range(-0.8f, 0.8f), groundY, playerPos.z + Random.Range(-0.8f, 0.8f)));
+        points.Add(GetFloorPoint(playerPos));
+        points.Add(GetFloorPoint(playerPos + new Vector3(Random.Range(-0.8f, 0.8f), 0f, Random.Range(-0.8f, 0.8f))));
 
-        // 2 predicted ahead of player run direction
-        Vector3 predictedLead = estimatedPlayerVelocity * predictionLeadTime;
-        predictedLead = Vector3.ClampMagnitude(predictedLead, 7.0f);
-        Vector3 leadPos = playerPos + predictedLead;
-        points.Add(new Vector3(leadPos.x, groundY, leadPos.z));
-        points.Add(new Vector3(leadPos.x + Random.Range(-1.0f, 1.0f), groundY, leadPos.z + Random.Range(-1.0f, 1.0f)));
+        // 2 predicted ahead
+        Vector3 lead = Vector3.ClampMagnitude(estimatedPlayerVelocity * predictionLeadTime, 7.0f);
+        points.Add(GetFloorPoint(playerPos + lead));
+        points.Add(GetFloorPoint(playerPos + lead + new Vector3(Random.Range(-1.0f, 1.0f), 0f, Random.Range(-1.0f, 1.0f))));
 
-        // 1 random nearby location
-        Vector2 randomCircle = Random.insideUnitCircle * randomOffsetRadius;
-        points.Add(new Vector3(playerPos.x + randomCircle.x, groundY, playerPos.z + randomCircle.y));
+        // 1 random nearby
+        Vector2 rnd = Random.insideUnitCircle * randomOffsetRadius;
+        points.Add(GetFloorPoint(playerPos + new Vector3(rnd.x, 0f, rnd.y)));
 
         return points;
+    }
+
+    private Vector3 GetFloorPoint(Vector3 worldPos)
+    {
+        if (floorLayer.value == 0) floorLayer = LayerMask.GetMask("Floor", "Default");
+
+        Ray ray = new Ray(new Vector3(worldPos.x, worldPos.y + 10f, worldPos.z), Vector3.down);
+        if (Physics.Raycast(ray, out RaycastHit hit, 30f, floorLayer))
+        {
+            return new Vector3(hit.point.x, hit.point.y + 0.02f, hit.point.z);
+        }
+        return new Vector3(worldPos.x, 0.52f, worldPos.z);
     }
 
     private void SpawnBallisticRocket(Vector3 startPodPos, Vector3 targetGroundPos, int index)

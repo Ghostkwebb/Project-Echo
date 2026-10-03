@@ -17,6 +17,11 @@ public class BossAttack_MachineGun : BossAttackBase
     [SerializeField] private Transform muzzlePoint;
     [SerializeField] private LineRenderer telegraphLaser;
 
+    [Header("Muzzle Flash FX")]
+    [Tooltip("Drag MuzzleFlash_FX child object here.")]
+    [SerializeField] private GameObject muzzleFlashObject;
+    [SerializeField] private float muzzleFlashBaseScale = 1.5f;
+
     private Animator bossAnimator;
     private Coroutine attackRoutine;
     private Vector3 currentAimPoint;
@@ -98,6 +103,8 @@ public class BossAttack_MachineGun : BossAttackBase
             yield return null;
         }
 
+        if (muzzleFlashObject != null) muzzleFlashObject.SetActive(false);
+
         // Stop firing loop
         if (bossAnimator != null)
         {
@@ -113,6 +120,13 @@ public class BossAttack_MachineGun : BossAttackBase
 
     private void FireMachineGunBullet(Vector3 targetPos)
     {
+        // 1. Flash and strobe muzzle
+        if (muzzleFlashObject != null)
+        {
+            StopCoroutine(nameof(MuzzleFlashStrobeRoutine));
+            StartCoroutine(nameof(MuzzleFlashStrobeRoutine));
+        }
+
         Vector3 spawnPos = muzzlePoint.position;
         Vector3 baseDir = (targetPos - spawnPos).normalized;
 
@@ -138,8 +152,24 @@ public class BossAttack_MachineGun : BossAttackBase
         bullet.Initialize(spreadDir, bulletSpeed, damagePerBullet);
     }
 
+    private IEnumerator MuzzleFlashStrobeRoutine()
+    {
+        muzzleFlashObject.SetActive(true);
+
+        // Random spin and jitter on every bullet
+        muzzleFlashObject.transform.localRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
+        float jitter = Random.Range(0.85f, 1.25f) * muzzleFlashBaseScale;
+        muzzleFlashObject.transform.localScale = Vector3.one * jitter;
+
+        yield return new WaitForSeconds(0.04f); // 40ms flash duration
+
+        muzzleFlashObject.SetActive(false);
+    }
+
     protected override void OnInterrupt()
     {
+        if (muzzleFlashObject != null) muzzleFlashObject.SetActive(false);
+
         if (attackRoutine != null)
         {
             StopCoroutine(attackRoutine);
