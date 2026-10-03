@@ -23,3 +23,5 @@ MonoBehaviour:
     color: {r: 0.92, g: 0.25, b: 0.25, a: 1}
   - guid: 998e000de93b84abf96d86628a4aa3a7
     color: {r: 0.2, g: 0.68, b: 0.95, a: 1}
+  - guid: a9e0070cae2ca467d83bec7eaeb23ad4
+    color: {r: 0.45, g: 0.38, b: 0.92, a: 1}
