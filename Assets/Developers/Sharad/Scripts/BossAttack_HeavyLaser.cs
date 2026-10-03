@@ -7,12 +7,17 @@ public class BossAttack_HeavyLaser : BossAttackBase
     [Header("Laser Tuning (Designer PDF 3 & 4)")]
     [SerializeField] private float chargeDuration = 1.5f;
     [SerializeField] private float beamDuration = 6.0f;
+    [SerializeField] private float laserTrackingLag = 0.55f; // Damped lag tracking
     [SerializeField] private float damagePerTick = 12.0f;
     [SerializeField] private float damageInterval = 0.25f;
+    [SerializeField] private float headClearanceOffset = 1.6f;
 
-    [Header("Lava Trail Generation")]
-    [SerializeField] private float lavaSpacing = 1.2f;
-    [SerializeField] private float lavaRadius = 1.6f;
+    [Header("Continuous Magma Ribbon (TrailRenderer)")]
+    [Tooltip("Drag M_LavaRibbon_Toon material here.")]
+    [SerializeField] private Material lavaRibbonMaterial;
+    [SerializeField] private float lavaRibbonWidth = 2.4f;
+    [SerializeField] private float lavaDuration = 10.0f; // 8-12s in PDF
+    [SerializeField] private LayerMask floorLayer;
 
     [Header("Shoulder Cannon Kinematics")]
     [SerializeField] private Transform cannonArm1;
@@ -23,18 +28,16 @@ public class BossAttack_HeavyLaser : BossAttackBase
     [Header("Visuals")]
     [SerializeField] private LineRenderer laserBeam;
 
-    [Header("Floor Detection")]
-    [SerializeField] private LayerMask floorLayer;
-
-    [SerializeField] private float laserTrackingLag = 0.55f; // 0.55s lag so player can outrun it
-    private Vector3 sweepVelocity;
-
-
     private Coroutine laserRoutine;
     private Vector3 currentGroundTarget;
-    private Vector3 lastLavaSpawnPos;
+    private Vector3 sweepVelocity;
+    private Vector3 lastDamageNodePos;
     private float nextDamageTime;
     private bool isFiringBeam;
+    private float floorY = 0.52f;
+
+    private GameObject activeLavaRibbonObj;
+    private TrailRenderer activeLavaTrail;
 
     protected override void Awake()
     {
@@ -51,13 +54,11 @@ public class BossAttack_HeavyLaser : BossAttackBase
     {
         if (!IsExecuting) return;
 
-        // Kinematic bone aiming
         if (cannonBarrel != null && currentGroundTarget != Vector3.zero)
         {
             ApplyKinematicShoulderAim();
         }
 
-        // Draw laser
         if (isFiringBeam)
         {
             UpdateActiveLaserBeam();
@@ -71,15 +72,9 @@ public class BossAttack_HeavyLaser : BossAttackBase
 
     private IEnumerator ExecuteHeavyLaserRoutine(Transform target)
     {
-        // Auto-find Floor layer if empty
-        if (floorLayer.value == 0)
-        {
-            floorLayer = LayerMask.GetMask("Floor", "Default");
-        }
+        if (floorLayer.value == 0) floorLayer = LayerMask.GetMask("Floor", "Default");
 
-        // 1. Initial ground target point at real floor height
         currentGroundTarget = GetGroundPointUnderTarget(target != null ? target.position : transform.position + transform.forward * 10f);
-        lastLavaSpawnPos = currentGroundTarget;
 
         // ==========================================
         // 1. CHARGE TELEGRAPH (1.5s Thin Red Laser)
@@ -107,10 +102,12 @@ public class BossAttack_HeavyLaser : BossAttackBase
         }
 
         // ==========================================
-        // 2. CONTINUOUS HEAVY BEAM + LAVA (6.0s)
+        // 2. SPAWN CONTINUOUS MAGMA RIBBON EMITTER
         // ==========================================
+        StartContinuousLavaRibbon();
+
         isFiringBeam = true;
-        laserBeam.startWidth = 0.45f;
+        laserBeam.startWidth = 0.45f; // Thick energy beam
         laserBeam.endWidth = 0.45f;
         laserBeam.material.color = new Color(1f, 0.4f, 0.05f, 1f);
 
@@ -119,12 +116,15 @@ public class BossAttack_HeavyLaser : BossAttackBase
         {
             beamTimer += Time.deltaTime;
 
-            // Sweeps along the real floor towards moving player
             if (target != null)
             {
                 Vector3 targetFloor = GetGroundPointUnderTarget(target.position);
-                // SmoothDamp lag: laser chases behind sprinting player!
-                currentGroundTarget = Vector3.SmoothDamp(currentGroundTarget, targetFloor, ref sweepVelocity, laserTrackingLag);
+                currentGroundTarget = Vector3.SmoothDamp(
+                    currentGroundTarget,
+                    targetFloor,
+                    ref sweepVelocity,
+                    laserTrackingLag
+                );
             }
 
             yield return null;
@@ -133,6 +133,8 @@ public class BossAttack_HeavyLaser : BossAttackBase
         // ==========================================
         // 3. SHUTDOWN & RECOVERY
         // ==========================================
+        StopContinuousLavaRibbon();
+
         isFiringBeam = false;
         laserBeam.enabled = false;
         ResetBonesToZero();
@@ -143,6 +145,48 @@ public class BossAttack_HeavyLaser : BossAttackBase
         FinishAttack();
     }
 
+    private void StartContinuousLavaRibbon()
+    {
+        activeLavaRibbonObj = new GameObject("ActiveLavaRibbon");
+        activeLavaRibbonObj.transform.position = currentGroundTarget;
+        // -90 on X so TransformZ aligns the ribbon 100% flat on the floor!
+        activeLavaRibbonObj.transform.rotation = Quaternion.Euler(-90f, 0f, 0f);
+
+        activeLavaTrail = activeLavaRibbonObj.AddComponent<TrailRenderer>();
+        activeLavaTrail.alignment = LineAlignment.TransformZ; // Ground flat plane
+        activeLavaTrail.time = lavaDuration;                   // Lingers 10 seconds
+        activeLavaTrail.startWidth = lavaRibbonWidth;
+        activeLavaTrail.endWidth = lavaRibbonWidth * 0.7f;
+        activeLavaTrail.minVertexDistance = 0.25f;            // Smooth curves
+        activeLavaTrail.textureMode = LineTextureMode.Tile;  // Seamless tiling noise
+
+        // Tapered curve: Rounded nose at front, rounded tail at back (Zero flat ruler cuts!)
+        AnimationCurve widthCurve = new AnimationCurve();
+        widthCurve.AddKey(0f, 0.1f);   // Tapers to point at tail
+        widthCurve.AddKey(0.08f, 1.0f); // Reaches full width fast
+        widthCurve.AddKey(0.92f, 1.0f); // Stays full width along body
+        widthCurve.AddKey(1f, 0.1f);   // Tapers to point at laser head
+        activeLavaTrail.widthCurve = widthCurve;
+
+        if (lavaRibbonMaterial != null)
+        {
+            activeLavaTrail.material = lavaRibbonMaterial;
+        }
+
+        lastDamageNodePos = currentGroundTarget;
+    }
+
+    private void StopContinuousLavaRibbon()
+    {
+        if (activeLavaRibbonObj != null)
+        {
+            // Detach emitter so trail naturally dissolves over its 10s lifetime
+            Destroy(activeLavaRibbonObj, lavaDuration + 0.5f);
+            activeLavaRibbonObj = null;
+            activeLavaTrail = null;
+        }
+    }
+
     private void UpdateActiveLaserBeam()
     {
         Vector3 origin = GetMuzzlePosition();
@@ -151,7 +195,13 @@ public class BossAttack_HeavyLaser : BossAttackBase
         laserBeam.SetPosition(0, origin);
         laserBeam.SetPosition(1, groundHitPoint);
 
-        // 1. Damage check along the beam
+        // Update ground ribbon position (draws the continuous fluid highway!)
+        if (activeLavaRibbonObj != null)
+        {
+            activeLavaRibbonObj.transform.position = groundHitPoint;
+        }
+
+        // 1. Direct Laser Damage (48 DPS)
         Vector3 beamDir = (groundHitPoint - origin).normalized;
         float beamDist = Vector3.Distance(origin, groundHitPoint);
 
@@ -169,31 +219,29 @@ public class BossAttack_HeavyLaser : BossAttackBase
             nextDamageTime = Time.time + damageInterval;
         }
 
-        // 2. Drop Flat Lava Patch ON REAL FLOOR
-        if (Vector3.Distance(groundHitPoint, lastLavaSpawnPos) >= lavaSpacing)
+        // 2. Drop Invisible Trigger Node every 1.2m for contact damage
+        if (Vector3.Distance(groundHitPoint, lastDamageNodePos) >= 1.2f)
         {
-            LavaHazardPatch.Spawn(groundHitPoint, lavaRadius);
-            lastLavaSpawnPos = groundHitPoint;
+            LavaHazardPatch.SpawnDamageNode(groundHitPoint, lavaDuration);
+            lastDamageNodePos = groundHitPoint;
         }
+    }
+
+    private Vector3 GetMuzzlePosition()
+    {
+        Vector3 rawMuzzle = laserMuzzle != null ? laserMuzzle.position : (cannonBarrel != null ? cannonBarrel.position : transform.position + Vector3.up * 4.5f);
+        Vector3 beamDir = (currentGroundTarget - rawMuzzle).normalized;
+        return rawMuzzle + (beamDir * headClearanceOffset);
     }
 
     private Vector3 GetGroundPointUnderTarget(Vector3 worldPos)
     {
-        // Casts straight down to find real floor surface
         Ray ray = new Ray(new Vector3(worldPos.x, worldPos.y + 10f, worldPos.z), Vector3.down);
         if (Physics.Raycast(ray, out RaycastHit hit, 30f, floorLayer))
         {
             return new Vector3(hit.point.x, hit.point.y + 0.02f, hit.point.z);
         }
-
-        return new Vector3(worldPos.x, 0.52f, worldPos.z);
-    }
-
-    private Vector3 GetMuzzlePosition()
-    {
-        if (laserMuzzle != null) return laserMuzzle.position;
-        if (cannonBarrel != null) return cannonBarrel.position;
-        return transform.position + Vector3.up * 4.5f;
+        return new Vector3(worldPos.x, floorY, worldPos.z);
     }
 
     private void ApplyKinematicShoulderAim()
@@ -209,11 +257,8 @@ public class BossAttack_HeavyLaser : BossAttackBase
         if (euler.y > 180f) euler.y -= 360f;
         if (euler.z > 180f) euler.z -= 360f;
 
-        // Kinematics: Arm1 & Arm2 rotate on Y only
         if (cannonArm1 != null) cannonArm1.localRotation = Quaternion.Euler(0f, euler.y * 0.35f, 0f);
         if (cannonArm2 != null) cannonArm2.localRotation = Quaternion.Euler(0f, euler.y * 0.35f, 0f);
-
-        // Barrel: Y and Z only. X is strictly 0 (LOCKED)
         if (cannonBarrel != null) cannonBarrel.localRotation = Quaternion.Euler(0f, euler.y * 0.30f, euler.z);
     }
 
@@ -232,6 +277,7 @@ public class BossAttack_HeavyLaser : BossAttackBase
             laserRoutine = null;
         }
 
+        StopContinuousLavaRibbon();
         isFiringBeam = false;
         if (laserBeam != null) laserBeam.enabled = false;
         ResetBonesToZero();

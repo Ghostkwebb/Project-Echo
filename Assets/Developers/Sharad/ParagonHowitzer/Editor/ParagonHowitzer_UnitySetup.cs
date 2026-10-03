@@ -18,10 +18,10 @@ namespace ParagonHowitzer
         private static void RunOnceUpdate()
         {
             EditorApplication.update -= RunOnceUpdate;
-            if (SessionState.GetBool("ParagonHowitzer_DebrisRemap_Ran_v2", false)) return;
-            SessionState.SetBool("ParagonHowitzer_DebrisRemap_Ran_v2", true);
+            if (SessionState.GetBool("ParagonHowitzer_DebrisRemap_Ran_v4", false)) return;
+            SessionState.SetBool("ParagonHowitzer_DebrisRemap_Ran_v4", true);
 
-            Debug.Log("[ParagonHowitzer] Auto-running Debris and DetCharge material setup...");
+            Debug.Log("[ParagonHowitzer] Auto-running Debris, DetCharge, and MicroRocket material setup...");
             ParagonHowitzerUnitySetup.SetupDebrisAndDetChargeMaterials();
         }
     }
@@ -501,6 +501,7 @@ namespace ParagonHowitzer
             string orangeDomedDir = "Assets/Developers/Sharad/ParagonHowitzer/Characters/Heroes/Howitzer/Materials/OrangeDomed";
             Material matMine = AssetDatabase.LoadAssetAtPath<Material>($"{orangeDomedDir}/M_Howitzer_Mine_DomeWhite.mat");
             Material matDebris = AssetDatabase.LoadAssetAtPath<Material>($"{orangeDomedDir}/M_DebrisPieces_DomeWhite.mat");
+            Material matArms = AssetDatabase.LoadAssetAtPath<Material>($"{orangeDomedDir}/M_HowitzerV2_Arms_DomeWhite.mat");
 
             if (matMine == null)
             {
@@ -512,6 +513,55 @@ namespace ParagonHowitzer
                 Debug.LogError("[ParagonHowitzer] Could not find M_DebrisPieces_DomeWhite.mat!");
                 return;
             }
+            if (matArms == null)
+            {
+                Debug.LogError("[ParagonHowitzer] Could not find M_HowitzerV2_Arms_DomeWhite.mat!");
+                return;
+            }
+
+            // 0. Configure and Fix Textures & Materials
+            string texDir = "Assets/Developers/Sharad/ParagonHowitzer/Characters/Heroes/Howitzer/Skins/Tier_2/Domed/Textures";
+            string fxTexDir = "Assets/Developers/Sharad/ParagonHowitzer/FX/Textures";
+
+            // Fix Scorch Decal Texture
+            string scorchPath = $"{fxTexDir}/Decals/Scorch/T_Decal_Small_Scorch_A.png";
+            TextureImporter scorchImporter = AssetImporter.GetAtPath(scorchPath) as TextureImporter;
+            if (scorchImporter != null)
+            {
+                scorchImporter.alphaSource = TextureImporterAlphaSource.FromInput;
+                scorchImporter.alphaIsTransparency = true;
+                scorchImporter.SaveAndReimport();
+                Debug.Log("[ParagonHowitzer] Fixed T_Decal_Small_Scorch_A TextureImporter with alpha transparency!");
+            }
+
+            // Configure Mine DomeWhite Material
+            Texture2D texMineAlbedo = AssetDatabase.LoadAssetAtPath<Texture2D>($"{texDir}/T_Howitzer_Domed_Mine_Albedo.png");
+            Texture2D texMineNormal = AssetDatabase.LoadAssetAtPath<Texture2D>($"{fxTexDir}/CharacterSpecific/T_Howitzer_Mine_N.png");
+            Texture2D texMineEmissive = AssetDatabase.LoadAssetAtPath<Texture2D>($"{texDir}/T_Howitzer_Domed_Mine_Emissive.png");
+
+            if (texMineAlbedo != null) matMine.SetTexture("_BaseMap", texMineAlbedo);
+            if (texMineNormal != null) matMine.SetTexture("_BumpMap", texMineNormal);
+            if (texMineEmissive != null) matMine.SetTexture("_Emissive_Tex", texMineEmissive);
+            matMine.SetColor("_BaseColor", Color.white);
+            matMine.SetColor("_Emissive_Color", new Color(0f, 3f, 2.8f, 1f));
+            matMine.SetFloat("_Use_BaseAs1st", 1f);
+            matMine.SetFloat("_Use_1stAs2nd", 1f);
+            matMine.SetColor("_1st_ShadeColor", new Color(0.55f, 0.58f, 0.67f, 1f));
+            matMine.SetColor("_2nd_ShadeColor", new Color(0.24f, 0.25f, 0.31f, 1f));
+            EditorUtility.SetDirty(matMine);
+
+            // Configure Debris DomeWhite Material
+            Texture2D texDebrisAlbedo = AssetDatabase.LoadAssetAtPath<Texture2D>($"{texDir}/T_Howitzer_Domed_Debris_Albedo.png");
+            Texture2D texDebrisNormal = AssetDatabase.LoadAssetAtPath<Texture2D>($"{fxTexDir}/Tile/T_Metal_Patina_N.png");
+
+            if (texDebrisAlbedo != null) matDebris.SetTexture("_BaseMap", texDebrisAlbedo);
+            if (texDebrisNormal != null) matDebris.SetTexture("_BumpMap", texDebrisNormal);
+            matDebris.SetColor("_BaseColor", Color.white);
+            matDebris.SetFloat("_Use_BaseAs1st", 1f);
+            matDebris.SetFloat("_Use_1stAs2nd", 1f);
+            matDebris.SetColor("_1st_ShadeColor", new Color(0.55f, 0.58f, 0.67f, 1f));
+            matDebris.SetColor("_2nd_ShadeColor", new Color(0.24f, 0.25f, 0.31f, 1f));
+            EditorUtility.SetDirty(matDebris);
 
             // 1. Remap DetCharge FBXs
             string detchargeDir = "Assets/Developers/Sharad/ParagonHowitzer/FX/Meshes/DetCharge";
@@ -551,9 +601,55 @@ namespace ParagonHowitzer
                 }
             }
 
+            // 3. Remap MicroRocket FBXs
+            string microRocketDir = "Assets/Developers/Sharad/ParagonHowitzer/FX/Meshes/MicroRocket";
+            if (Directory.Exists(microRocketDir))
+            {
+                string[] mrFiles = Directory.GetFiles(microRocketDir, "*.fbx");
+                foreach (string fbxPath in mrFiles)
+                {
+                    ModelImporter importer = AssetImporter.GetAtPath(fbxPath) as ModelImporter;
+                    if (importer != null)
+                    {
+                        importer.materialImportMode = ModelImporterMaterialImportMode.ImportViaMaterialDescription;
+                        importer.materialLocation = ModelImporterMaterialLocation.InPrefab;
+                        string fileName = Path.GetFileNameWithoutExtension(fbxPath);
+
+                        if (fileName == "SM_Howitzer_SlowGrenade_Open_Mine")
+                        {
+                            importer.AddRemap(new AssetImporter.SourceAssetIdentifier(typeof(Material), "M_HowitzerV2_ParticleMesh"), matArms);
+                            importer.AddRemap(new AssetImporter.SourceAssetIdentifier(typeof(Material), "M_Howitzer_Mine_TeamColor"), matMine);
+                            Debug.Log($"[ParagonHowitzer] Remapped {fileName} -> [0: {matArms.name}, 1: {matMine.name}]");
+                        }
+                        else
+                        {
+                            importer.AddRemap(new AssetImporter.SourceAssetIdentifier(typeof(Material), "M_HowitzerV2_Arms"), matArms);
+                            Debug.Log($"[ParagonHowitzer] Remapped {fileName} -> {matArms.name}");
+                        }
+                        importer.SaveAndReimport();
+                    }
+                }
+            }
+
+            // 4. Sync materials to FX/Materials
+            string fxMatMine = "Assets/Developers/Sharad/ParagonHowitzer/FX/Materials/CharacterSpecific/M_Howitzer_Mine_FX.mat";
+            string fxMatDebris = "Assets/Developers/Sharad/ParagonHowitzer/FX/Materials/Debris/M_DebrisPieces.mat";
+            Material mfxMine = AssetDatabase.LoadAssetAtPath<Material>(fxMatMine);
+            Material mfxDebris = AssetDatabase.LoadAssetAtPath<Material>(fxMatDebris);
+            if (mfxMine != null)
+            {
+                mfxMine.CopyPropertiesFromMaterial(matMine); mfxMine.name = "M_Howitzer_Mine_FX";
+                EditorUtility.SetDirty(mfxMine);
+            }
+            if (mfxDebris != null)
+            {
+                mfxDebris.CopyPropertiesFromMaterial(matDebris); mfxDebris.name = "M_DebrisPieces";
+                EditorUtility.SetDirty(mfxDebris);
+            }
+
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
-            Debug.Log("[ParagonHowitzer] >>> Debris and DetCharge Materials successfully set up! <<<");
+            Debug.Log("[ParagonHowitzer] >>> Debris, DetCharge, and MicroRocket Materials successfully set up! <<<");
         }
 
     }

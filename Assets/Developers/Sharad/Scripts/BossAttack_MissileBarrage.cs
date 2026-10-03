@@ -25,6 +25,21 @@ public class BossAttack_MissileBarrage : BossAttackBase
     [Tooltip("Time for back pod hatches to slide fully open before firing.")]
     [SerializeField] private float podOpenDuration = 1.1f; // Increased from 0.45s
 
+    [Header("3D Rocket Mesh & Trail")]
+    [SerializeField] private GameObject rocketMeshPrefab;
+    [SerializeField] private Material rocketMaterialOverride;
+    [Tooltip("Drag M_Smoke_FX or a transparent material here.")]
+    [SerializeField] private Material smokeTrailMaterial;
+    [SerializeField] private float rocketScale = 1.0f;
+    [Tooltip("Adjust if 3D model nose points up or sideways. (0,0,0) for default forward.")]
+    [SerializeField] private Vector3 rocketModelRotationOffset = Vector3.zero;
+
+    [Tooltip("Drag M_Explosion_Toon material here.")]
+    [SerializeField] private Material explosionMaterial;
+
+    [Tooltip("Drag M_Telegraph_Holo here to make ground circles translucent.")]
+    [SerializeField] private Material telegraphMaterial;
+
     private Animator bossAnimator;
     private Coroutine barrageRoutine;
     private Vector3 lastPlayerPos;
@@ -164,21 +179,75 @@ public class BossAttack_MissileBarrage : BossAttackBase
 
     private void SpawnBallisticRocket(Vector3 startPodPos, Vector3 targetGroundPos, int index)
     {
-        GameObject rocket = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-        rocket.name = $"Ballistic_Rocket_{index}";
-        rocket.transform.position = startPodPos;
-        rocket.transform.localScale = new Vector3(0.3f, 0.7f, 0.3f);
+        GameObject rocket;
 
-        Renderer rend = rocket.GetComponent<Renderer>();
-        if (rend != null)
+        if (rocketMeshPrefab != null)
         {
-            rend.material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
-            rend.material.color = new Color(1f, 0.45f, 0.05f); // Orange warhead
+            rocket = Instantiate(rocketMeshPrefab, startPodPos, Quaternion.identity);
+        }
+        else
+        {
+            rocket = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+            Collider c = rocket.GetComponent<Collider>();
+            if (c != null) Destroy(c);
         }
 
-        // Add ballistic flight controller
+        rocket.name = $"Ballistic_Rocket_{index}";
+        rocket.transform.localScale = Vector3.one * rocketScale;
+
+        if (rocketMaterialOverride != null)
+        {
+            Renderer[] rends = rocket.GetComponentsInChildren<Renderer>();
+            for (int r = 0; r < rends.Length; r++) rends[r].material = rocketMaterialOverride;
+        }
+
+        // Create 3D Volumetric World-Space Smoke Trail
+        GameObject smokeObj = new GameObject("Rocket_SmokeTrail");
+        smokeObj.transform.SetParent(rocket.transform);
+        smokeObj.transform.localPosition = Vector3.zero;
+
+        ParticleSystem ps = smokeObj.AddComponent<ParticleSystem>();
+
+        // 1. Main Module
+        var main = ps.main;
+        main.simulationSpace = ParticleSystemSimulationSpace.World; // Leaves clouds behind in sky!
+        main.startLifetime = 0.6f;
+        main.startSpeed = 0f; // Stationary in air where rocket was
+        main.startSize = 0.4f;
+        main.startColor = new Color(0.95f, 0.95f, 1f, 0.5f); // Soft white/grey vapor
+
+        // 2. Emission Module (Spawns clouds along distance traveled)
+        var emission = ps.emission;
+        emission.rateOverTime = 0;
+        emission.rateOverDistance = 22; // Drops puff every few centimeters
+
+        // 3. Size Over Lifetime (Smoke billows and expands)
+        var sizeOverLifetime = ps.sizeOverLifetime;
+        sizeOverLifetime.enabled = true;
+        AnimationCurve curve = new AnimationCurve();
+        curve.AddKey(0f, 0.3f);
+        curve.AddKey(1f, 1.4f); // Expands to 1.4m cloud
+        sizeOverLifetime.size = new ParticleSystem.MinMaxCurve(1f, curve);
+
+        // 4. Color Over Lifetime (Smooth alpha fade)
+        var colorOverLifetime = ps.colorOverLifetime;
+        colorOverLifetime.enabled = true;
+        Gradient grad = new Gradient();
+        grad.SetKeys(
+            new GradientColorKey[] { new GradientColorKey(Color.white, 0f), new GradientColorKey(Color.white, 1f) },
+            new GradientAlphaKey[] { new GradientAlphaKey(0.6f, 0f), new GradientAlphaKey(0f, 1f) }
+        );
+        colorOverLifetime.color = grad;
+
+        // 5. Renderer Material
+        var rend = smokeObj.GetComponent<ParticleSystemRenderer>();
+        if (smokeTrailMaterial != null)
+        {
+            rend.material = smokeTrailMaterial;
+        }
+
         BossBallisticRocket flight = rocket.AddComponent<BossBallisticRocket>();
-        flight.Initialize(startPodPos, targetGroundPos, rocketFlightTime, arcApexHeight, damagePerMissile, explosionRadius, damageLayers);
+        flight.Initialize(startPodPos, targetGroundPos, rocketFlightTime, arcApexHeight, damagePerMissile, explosionRadius, damageLayers, rocketModelRotationOffset, explosionMaterial);
     }
 
     private void SpawnWarningCircles(List<Vector3> points)
@@ -198,8 +267,20 @@ public class BossAttack_MissileBarrage : BossAttackBase
             Renderer rend = ring.GetComponent<Renderer>();
             if (rend != null)
             {
-                rend.material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
-                rend.material.color = new Color(1f, 0.12f, 0.12f, 0.6f);
+                if (telegraphMaterial != null)
+                {
+                    rend.material = telegraphMaterial;
+                }
+                else
+                {
+                    Material mat = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
+                    mat.SetFloat("_Surface", 1);
+                    mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+                    mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+                    mat.SetInt("_ZWrite", 0);
+                    mat.color = new Color(1f, 0.2f, 0.1f, 0.35f);
+                    rend.material = mat;
+                }
             }
 
             activeWarningRings.Add(ring);
@@ -259,8 +340,11 @@ public class BossBallisticRocket : MonoBehaviour
     private LayerMask hitLayers;
     private float elapsed;
     private Vector3 lastPos;
+    private Vector3 rotationOffset;
+    private Material explosionMatOverride;
 
-    public void Initialize(Vector3 start, Vector3 target, float flightTime, float apexHeight, float dmg, float radius, LayerMask layers)
+
+    public void Initialize(Vector3 start, Vector3 target, float flightTime, float apexHeight, float dmg, float radius, LayerMask layers, Vector3 modelRotOffset, Material exploMat)
     {
         startPos = start;
         targetPos = target;
@@ -268,8 +352,9 @@ public class BossBallisticRocket : MonoBehaviour
         damage = dmg;
         splashRadius = radius;
         hitLayers = layers;
+        rotationOffset = modelRotOffset;
+        explosionMatOverride = exploMat; // Cached
 
-        // Apex point: High mid-air curve above the battlefield
         apexControlPoint = ((startPos + targetPos) * 0.5f) + Vector3.up * apexHeight;
         lastPos = start;
     }
@@ -279,22 +364,20 @@ public class BossBallisticRocket : MonoBehaviour
         elapsed += Time.deltaTime;
         float p = Mathf.Clamp01(elapsed / totalFlightTime);
 
-        // Quadratic Bezier Curve: Start -> Sky Apex -> Ground Target
         Vector3 m1 = Vector3.Lerp(startPos, apexControlPoint, p);
         Vector3 m2 = Vector3.Lerp(apexControlPoint, targetPos, p);
         Vector3 currentPos = Vector3.Lerp(m1, m2, p);
 
         transform.position = currentPos;
 
-        // Face trajectory direction (noses up on launch, noses down on descent)
+        // Nose tracks flight trajectory directly (Zero 90° sideways snap)
         Vector3 travelDir = currentPos - lastPos;
-        if (travelDir.sqrMagnitude > 0.001f)
+        if (travelDir.sqrMagnitude > 0.0001f)
         {
-            transform.rotation = Quaternion.LookRotation(travelDir) * Quaternion.Euler(90f, 0f, 0f);
+            transform.rotation = Quaternion.LookRotation(travelDir) * Quaternion.Euler(rotationOffset);
         }
         lastPos = currentPos;
 
-        // Detonate on reaching ground
         if (p >= 1.0f)
         {
             Detonate();
@@ -303,6 +386,7 @@ public class BossBallisticRocket : MonoBehaviour
 
     private void Detonate()
     {
+        // 1. Splash Damage (Wipes standing Echoes)
         Collider[] hits = Physics.OverlapSphere(targetPos, splashRadius, hitLayers);
         for (int i = 0; i < hits.Length; i++)
         {
@@ -313,21 +397,95 @@ public class BossBallisticRocket : MonoBehaviour
             }
         }
 
-        // Visual blast
-        GameObject blast = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        blast.transform.position = targetPos;
-        blast.transform.localScale = Vector3.one * (splashRadius * 2f);
-        Collider bc = blast.GetComponent<Collider>();
-        if (bc != null) Destroy(bc);
+        // 2. Spawn Real Fireball & Shrapnel Blast (Zero primitive spheres!)
+        SpawnExplosionVFX(targetPos);
 
-        Renderer rend = blast.GetComponent<Renderer>();
-        if (rend != null)
-        {
-            rend.material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
-            rend.material.color = new Color(1f, 0.25f, 0.05f, 0.85f);
-        }
-
-        Destroy(blast, 0.3f);
         Destroy(gameObject);
+    }
+
+    private void SpawnExplosionVFX(Vector3 pos)
+    {
+        GameObject vfxObj = new GameObject("Missile_Explosion_FX");
+        vfxObj.transform.position = pos;
+
+        // 1. FIREBALL BURST
+        ParticleSystem ps = vfxObj.AddComponent<ParticleSystem>();
+        ps.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear); // FIXES DURATION WARNING!
+
+        var main = ps.main;
+        main.playOnAwake = false;
+        main.loop = false;
+        main.startLifetime = 0.25f;
+        main.startSpeed = 3.5f;
+        main.startSize = 4.0f; // Big fire bloom
+        main.startColor = new Color(1f, 0.65f, 0.15f, 1f);
+
+        var emission = ps.emission;
+        emission.rateOverTime = 0;
+        emission.SetBursts(new ParticleSystem.Burst[] { new ParticleSystem.Burst(0f, 6) });
+
+        var shape = ps.shape;
+        shape.shapeType = ParticleSystemShapeType.Sphere;
+        shape.radius = 0.4f;
+
+        var sizeOverLifetime = ps.sizeOverLifetime;
+        sizeOverLifetime.enabled = true;
+        sizeOverLifetime.size = new ParticleSystem.MinMaxCurve(1f, AnimationCurve.Linear(0f, 0.4f, 1f, 1.2f));
+
+        var colorOverLifetime = ps.colorOverLifetime;
+        colorOverLifetime.enabled = true;
+        Gradient grad = new Gradient();
+        grad.SetKeys(
+            new GradientColorKey[] { new GradientColorKey(new Color(1f, 0.9f, 0.3f), 0f), new GradientColorKey(new Color(1f, 0.2f, 0f), 1f) },
+            new GradientAlphaKey[] { new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0f, 1f) }
+        );
+        colorOverLifetime.color = grad;
+
+        var rend = vfxObj.GetComponent<ParticleSystemRenderer>();
+        Material fireMat = explosionMatOverride;
+        if (fireMat == null)
+        {
+            fireMat = new Material(Shader.Find("Universal Render Pipeline/Particles/Unlit"));
+            fireMat.SetFloat("_Surface", 1);
+            fireMat.color = new Color(1f, 0.45f, 0.05f);
+        }
+        rend.material = fireMat;
+
+        ps.Play(); // Play cleanly after configuration
+
+        // 2. FLYING SHRAPNEL SPARKS
+        GameObject sparksObj = new GameObject("Explosion_Sparks");
+        sparksObj.transform.SetParent(vfxObj.transform);
+        sparksObj.transform.localPosition = Vector3.zero;
+
+        ParticleSystem sp = sparksObj.AddComponent<ParticleSystem>();
+        sp.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear); // FIXES WARNING!
+
+        var sm = sp.main;
+        sm.playOnAwake = false;
+        sm.loop = false;
+        sm.startLifetime = 0.45f;
+        sm.startSpeed = 16f;
+        sm.startSize = 0.05f;
+        sm.gravityModifier = 2.5f;
+        sm.startColor = new Color(1f, 0.95f, 0.4f, 1f);
+
+        var se = sp.emission;
+        se.rateOverTime = 0;
+        se.SetBursts(new ParticleSystem.Burst[] { new ParticleSystem.Burst(0f, 25) });
+
+        var ss = sp.shape;
+        ss.shapeType = ParticleSystemShapeType.Hemisphere;
+        ss.radius = 0.2f;
+
+        var sRend = sparksObj.GetComponent<ParticleSystemRenderer>();
+        sRend.renderMode = ParticleSystemRenderMode.Stretch;
+        sRend.velocityScale = 0.04f;
+        sRend.lengthScale = 2.0f;
+        sRend.material = fireMat;
+
+        sp.Play();
+
+        Destroy(vfxObj, 1.0f);
     }
 }

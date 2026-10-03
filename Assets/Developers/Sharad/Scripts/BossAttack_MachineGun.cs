@@ -120,7 +120,6 @@ public class BossAttack_MachineGun : BossAttackBase
 
     private void FireMachineGunBullet(Vector3 targetPos)
     {
-        // 1. Flash and strobe muzzle
         if (muzzleFlashObject != null)
         {
             StopCoroutine(nameof(MuzzleFlashStrobeRoutine));
@@ -136,17 +135,38 @@ public class BossAttack_MachineGun : BossAttackBase
             0f
         ) * baseDir;
 
-        GameObject proj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        proj.name = "Boss_MG_Bullet";
+        // 1. Create Stretched Capsule Tracer (Overwatch / Borderlands style)
+        GameObject proj = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+        proj.name = "Boss_MG_Tracer";
         proj.transform.position = spawnPos;
-        proj.transform.localScale = Vector3.one * 0.2f;
 
+        // Stretched thin needle (Length 0.65m, Thickness 0.08m)
+        proj.transform.localScale = new Vector3(0.08f, 0.65f, 0.08f);
+
+        // Align long axis dead-straight along travel trajectory
+        proj.transform.rotation = Quaternion.LookRotation(spreadDir) * Quaternion.Euler(90f, 0f, 0f);
+
+        // Remove solid physics collider (trigger only)
+        Collider c = proj.GetComponent<Collider>();
+        if (c != null) c.isTrigger = true;
+
+        // Blinding High-Emission Plasma Yellow/Orange
         Renderer rend = proj.GetComponent<Renderer>();
         if (rend != null)
         {
-            rend.material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
-            rend.material.color = new Color(1f, 0.55f, 0.05f);
+            Material mat = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
+            mat.color = new Color(1f, 0.75f, 0.1f); // Laser yellow core
+            rend.material = mat;
         }
+
+        // 2. Micro High-Speed Trail Ribbon behind bullet
+        TrailRenderer tr = proj.AddComponent<TrailRenderer>();
+        tr.time = 0.08f; // Super short micro-tail
+        tr.startWidth = 0.10f;
+        tr.endWidth = 0.01f;
+        tr.material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
+        tr.material.SetFloat("_Surface", 1);
+        tr.material.color = new Color(1f, 0.45f, 0.05f, 0.75f); // Neon orange tail
 
         BossMGBullet bullet = proj.AddComponent<BossMGBullet>();
         bullet.Initialize(spreadDir, bulletSpeed, damagePerBullet);
