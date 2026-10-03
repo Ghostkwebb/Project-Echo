@@ -43,19 +43,20 @@ public class BossAimController : MonoBehaviour
 
     private void LateUpdate()
     {
-        // Only completely stop on death or stun
-        if (bossHealth != null && (bossHealth.IsDead || bossHealth.IsStaggered)) return;
-        if (IsFlinching()) return;
+        // Only completely stop on death
+        if (bossHealth != null && bossHealth.IsDead) return;
 
         FindTargetIfNull();
 
-        // 1. Only update the tracking angle if aim is NOT locked
-        if (!isAimLocked && currentTarget != null)
+        // 1. Freeze tracking during aim-lock OR hit flinch (so boss doesn't spin while getting hit)
+        bool freezeTracking = isAimLocked || IsFlinching() || (bossHealth != null && bossHealth.IsStaggered);
+
+        if (!freezeTracking && currentTarget != null)
         {
             UpdateTargetAngles();
         }
 
-        // 2. ALWAYS apply the angle to bones (holds the angle during attacks!)
+        // 2. ALWAYS hold the facing angle on waist bearing (prevents snapping sideways!)
         ApplyBoneRotations();
     }
 
