@@ -522,7 +522,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 60c7f099b941f45f9810604ff5411e8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -857,10 +857,9 @@ MonoBehaviour:
   waistBearing: {fileID: 900160041}
   turnSpeed: 60
   yawOffset: 180
-  cannonBone: {fileID: 0}
-  cannonPitchSpeed: 90
-  minPitch: -20
-  maxPitch: 45
+  rightForearmBone: {fileID: 1392301405}
+  muzzlePoint: {fileID: 1209598452}
+  maxForearmAdjustment: 45
   isAimLocked: 0
 --- !u!114 &933617347
 MonoBehaviour:
@@ -876,7 +875,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackDirector
   minRestDuration: 1.5
   maxRestDuration: 2.5
-  attackSlots: []
+  attackSlots:
+  - {fileID: 1392301407}
+  - {fileID: 2145780458}
   preventConsecutiveRepeats: 1
 --- !u!136 &933617349
 CapsuleCollider:
@@ -918,6 +919,31 @@ MonoBehaviour:
   minEchoDamageRequired: 100
   aimController: {fileID: 933617346}
   defaultPlayerTransform: {fileID: 592106365}
+--- !u!114 &933617351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933617342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a967fb4f5f5e948a4913d44fd870beaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossProximityStomp
+  triggerDistance: 7.5
+  stompRadius: 8.5
+  cooldownDuration: 8
+  damage: 45
+  knockbackForce: 18
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 9
+  jumpHeight: 5
+  riseTime: 0.4
+  hangTime: 0.4
+  slamTime: 0.13
+  telegraphRing: {fileID: 0}
 --- !u!1 &957728512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,7 +1098,7 @@ Transform:
   m_GameObject: {fileID: 1209598451}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.008, y: -0.021, z: 0.32}
+  m_LocalPosition: {x: -1.003022, y: 0.0039762105, z: 0.33900344}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1190,20 +1216,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1392301404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb620224a5fd34273893143ac017b929, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e5be5aa8cbee4600b90e0518875df48, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DummyBarrageAttack
+  m_EditorClassIdentifier: Assembly-CSharp::BossAttack_MachineGun
   attackName: Attack
   baseCooldown: 5
   selectionWeight: 1
   linkedPart: {fileID: 1392301406}
-  damage: 20
-  projectileSpeed: 22
-  telegraphDuration: 0.8
-  fireDelayAfterAnim: 0.25
+  damagePerBullet: 4
+  fireRate: 10
+  burstDuration: 3.5
+  telegraphDuration: 1
+  trackingLag: 0.4
+  bulletSpeed: 40
+  spreadAngle: 1.2
   muzzlePoint: {fileID: 1209598452}
-  bossAnimator: {fileID: 933617343}
-  aimController: {fileID: 933617346}
+  telegraphLaser: {fileID: 0}
 --- !u!1 &1407315060
 GameObject:
   m_ObjectHideFlags: 0
@@ -5373,6 +5401,9 @@ PrefabInstance:
       addedObject: {fileID: 608308839}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4126003613671480977, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 933617349}
+    - targetCorrespondingSourceObject: {fileID: 4126003613671480977, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
       insertIndex: -1
       addedObject: {fileID: 933617345}
     - targetCorrespondingSourceObject: {fileID: 4126003613671480977, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
@@ -5386,10 +5417,13 @@ PrefabInstance:
       addedObject: {fileID: 933617347}
     - targetCorrespondingSourceObject: {fileID: 4126003613671480977, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 933617349}
+      addedObject: {fileID: 933617351}
     - targetCorrespondingSourceObject: {fileID: 1448891635589156146, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2145780457}
+    - targetCorrespondingSourceObject: {fileID: 1448891635589156146, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2145780458}
     - targetCorrespondingSourceObject: {fileID: 4023525734786664291, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1151001811}
@@ -5428,6 +5462,35 @@ MonoBehaviour:
   - {fileID: 542838877}
   - {fileID: 623451783}
   visualMesh: {fileID: 0}
+--- !u!114 &2145780458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145780455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc462b7ba694439fbb0cf7bcde32bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossAttack_MissileBarrage
+  attackName: Attack
+  baseCooldown: 5
+  selectionWeight: 1
+  linkedPart: {fileID: 2145780457}
+  missileCount: 5
+  damagePerMissile: 35
+  explosionRadius: 2.5
+  rocketFlightTime: 1.35
+  arcApexHeight: 16
+  predictionLeadTime: 1.2
+  randomOffsetRadius: 5
+  leftRocketPod: {fileID: 172450222}
+  rightRocketPod: {fileID: 1534666164}
+  damageLayers:
+    serializedVersion: 2
+    m_Bits: 9
+  podOpenDuration: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

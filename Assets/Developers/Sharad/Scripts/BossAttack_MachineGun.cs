@@ -1,0 +1,216 @@
+using System.Collections;
+using UnityEngine;
+
+[DisallowMultipleComponent]
+public class BossAttack_MachineGun : BossAttackBase
+{
+    [Header("Machine Gun Tuning (Designer PDF 1)")]
+    [SerializeField] private float damagePerBullet = 4f;
+    [SerializeField] private float fireRate = 12f; // 12 rounds per sec
+    [SerializeField] private float burstDuration = 3.5f;
+    [SerializeField] private float telegraphDuration = 1.0f;
+    [SerializeField] private float trackingLag = 0.4f; // 0.3-0.5s lag
+    [SerializeField] private float bulletSpeed = 45f;
+    [SerializeField] private float spreadAngle = 1.0f;
+
+    [Header("Muzzle & Visuals")]
+    [SerializeField] private Transform muzzlePoint;
+    [SerializeField] private LineRenderer telegraphLaser;
+
+    private Animator bossAnimator;
+    private Coroutine attackRoutine;
+    private Vector3 currentAimPoint;
+    private static readonly int IsFiringMGHash = Animator.StringToHash("IsFiringMG");
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        bossAnimator = GetComponentInParent<Animator>();
+
+        if (linkedPart == null)
+            linkedPart = GetComponentInParent<BossPart>();
+
+        if (muzzlePoint == null)
+            muzzlePoint = transform;
+
+        CreateLaserIfNull();
+    }
+
+    protected override void OnStartAttack(Transform target)
+    {
+        attackRoutine = StartCoroutine(MachineGunRoutine(target));
+    }
+
+    private IEnumerator MachineGunRoutine(Transform target)
+    {
+        currentAimPoint = target != null ? target.position : muzzlePoint.position + muzzlePoint.forward * 10f;
+
+        // 1. TELEGRAPH (1.0s Red Laser Line)
+        if (telegraphLaser != null) telegraphLaser.enabled = true;
+
+        float chargeTimer = 0f;
+        while (chargeTimer < telegraphDuration)
+        {
+            chargeTimer += Time.deltaTime;
+
+            if (target != null)
+            {
+                currentAimPoint = target.position;
+                if (telegraphLaser != null)
+                {
+                    telegraphLaser.SetPosition(0, muzzlePoint.position);
+                    telegraphLaser.SetPosition(1, target.position);
+                }
+            }
+            yield return null;
+        }
+
+        if (telegraphLaser != null) telegraphLaser.enabled = false;
+
+        // 2. CONTINUOUS FIRING (3.5s Rapid Fire at 2.5x - 3x anim speed)
+        if (bossAnimator != null)
+        {
+            bossAnimator.SetBool(IsFiringMGHash, true);
+        }
+
+        Vector3 aimVelocity = Vector3.zero;
+        float burstTimer = 0f;
+        float fireInterval = 1f / fireRate;
+        float nextShotTime = 0f;
+
+        while (burstTimer < burstDuration)
+        {
+            burstTimer += Time.deltaTime;
+
+            // 0.4s Damped Tracking Lag (Player sprints to dodge out of stream)
+            if (target != null)
+            {
+                currentAimPoint = Vector3.SmoothDamp(currentAimPoint, target.position, ref aimVelocity, trackingLag);
+            }
+
+            if (burstTimer >= nextShotTime)
+            {
+                FireMachineGunBullet(currentAimPoint);
+                nextShotTime = burstTimer + fireInterval;
+            }
+
+            yield return null;
+        }
+
+        // Stop firing loop
+        if (bossAnimator != null)
+        {
+            bossAnimator.SetBool(IsFiringMGHash, false);
+        }
+
+        // 3. RECOVERY
+        yield return new WaitForSeconds(1.0f);
+
+        attackRoutine = null;
+        FinishAttack();
+    }
+
+    private void FireMachineGunBullet(Vector3 targetPos)
+    {
+        Vector3 spawnPos = muzzlePoint.position;
+        Vector3 baseDir = (targetPos - spawnPos).normalized;
+
+        Vector3 spreadDir = Quaternion.Euler(
+            Random.Range(-spreadAngle, spreadAngle),
+            Random.Range(-spreadAngle, spreadAngle),
+            0f
+        ) * baseDir;
+
+        GameObject proj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        proj.name = "Boss_MG_Bullet";
+        proj.transform.position = spawnPos;
+        proj.transform.localScale = Vector3.one * 0.2f;
+
+        Renderer rend = proj.GetComponent<Renderer>();
+        if (rend != null)
+        {
+            rend.material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
+            rend.material.color = new Color(1f, 0.55f, 0.05f);
+        }
+
+        BossMGBullet bullet = proj.AddComponent<BossMGBullet>();
+        bullet.Initialize(spreadDir, bulletSpeed, damagePerBullet);
+    }
+
+    protected override void OnInterrupt()
+    {
+        if (attackRoutine != null)
+        {
+            StopCoroutine(attackRoutine);
+            attackRoutine = null;
+        }
+
+        if (bossAnimator != null)
+        {
+            bossAnimator.SetBool(IsFiringMGHash, false);
+        }
+
+        if (telegraphLaser != null)
+        {
+            telegraphLaser.enabled = false;
+        }
+    }
+
+    private void CreateLaserIfNull()
+    {
+        if (telegraphLaser != null) return;
+
+        GameObject laserObj = new GameObject("TelegraphLaser");
+        laserObj.transform.SetParent(muzzlePoint);
+        laserObj.transform.localPosition = Vector3.zero;
+
+        LineRenderer lr = laserObj.AddComponent<LineRenderer>();
+        lr.positionCount = 2;
+        lr.startWidth = 0.035f;
+        lr.endWidth = 0.035f;
+        lr.material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
+        lr.material.color = new Color(1f, 0.1f, 0.1f, 0.85f);
+        lr.enabled = false;
+
+        telegraphLaser = lr;
+    }
+}
+
+public class BossMGBullet : MonoBehaviour
+{
+    private Vector3 moveDir;
+    private float speed;
+    private float damage;
+
+    public void Initialize(Vector3 dir, float spd, float dmg)
+    {
+        moveDir = dir;
+        speed = spd;
+        damage = dmg;
+        Destroy(gameObject, 3.5f);
+    }
+
+    private void Update()
+    {
+        transform.position += moveDir * (speed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // Ignore boss parts & core
+        if (other.gameObject.layer == LayerMask.NameToLayer("BossPart") ||
+            other.gameObject.layer == LayerMask.NameToLayer("BossCore"))
+        {
+            return;
+        }
+
+        // Damage player or collateral Echo (GDD PDF 2)
+        if (other.CompareTag("Player") || other.gameObject.layer == LayerMask.NameToLayer("Echo"))
+        {
+            other.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
+        }
+
+        Destroy(gameObject);
+    }
+}

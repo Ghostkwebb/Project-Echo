@@ -33,6 +33,7 @@ public class BossAttackDirector : MonoBehaviour
     private float restTimer;
     private BossAttackBase activeAttack;
     private BossAttackBase lastExecutedAttack;
+    public bool IsExecutingAttack => currentState == DirectorState.ExecutingAttack;
 
     private void Awake()
     {
