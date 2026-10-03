@@ -3,7 +3,12 @@ guid: f5b1cbe3744e040b7b451cee6f171fe4
 ModelImporter:
   serializedVersion: 24600
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WorldGridMaterial
+    second: {fileID: 2100000, guid: d3b811029c784405a411e749210deba1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

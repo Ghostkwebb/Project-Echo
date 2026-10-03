@@ -1,0 +1,174 @@
+.
+├── AimOffsets
+│   ├── CC.fbx
+│   ├── CC.fbx.meta
+│   ├── CD.fbx
+│   ├── CD.fbx.meta
+│   ├── CU.fbx
+│   ├── CU.fbx.meta
+│   ├── LC.fbx
+│   ├── LC.fbx.meta
+│   ├── LD.fbx
+│   ├── LD.fbx.meta
+│   ├── LU.fbx
+│   ├── LU.fbx.meta
+│   ├── RC.fbx
+│   ├── RC.fbx.meta
+│   ├── RD.fbx
+│   ├── RD.fbx.meta
+│   ├── RU.fbx
+│   └── RU.fbx.meta
+├── AimOffsets.meta
+├── Blendspaces
+├── Blendspaces.meta
+├── Bound.fbx
+├── Bound.fbx.meta
+├── Cast.fbx
+├── Cast.fbx.meta
+├── Death.fbx
+├── Death.fbx.meta
+├── Det_Charge_Cooldown_End.fbx
+├── Det_Charge_Cooldown_End.fbx.meta
+├── Det_Charge_Cooldown_Loop.fbx
+├── Det_Charge_Cooldown_Loop.fbx.meta
+├── Det_Charge_Fire.fbx
+├── Det_Charge_Fire.fbx.meta
+├── Det_Charge_Target_Loop.fbx
+├── Det_Charge_Target_Loop.fbx.meta
+├── Det_Charge_Target.fbx
+├── Det_Charge_Target.fbx.meta
+├── Emote_BootyShake_T3.fbx
+├── Emote_BootyShake_T3.fbx.meta
+├── Emote_FlyingMalfunction_MC_T3.fbx
+├── Emote_FlyingMalfunction_MC_T3.fbx.meta
+├── Emote_ShakeFist_MC_T3.fbx
+├── Emote_ShakeFist_MC_T3.fbx.meta
+├── FrontEndPose.fbx
+├── FrontEndPose.fbx.meta
+├── Hit_React_Bck.fbx
+├── Hit_React_Bck.fbx.meta
+├── Hit_React_Fwd.fbx
+├── Hit_React_Fwd.fbx.meta
+├── Hit_React_Lft.fbx
+├── Hit_React_Lft.fbx.meta
+├── Hit_React_Rt.fbx
+├── Hit_React_Rt.fbx.meta
+├── Idle_Break.fbx
+├── Idle_Break.fbx.meta
+├── Idle.fbx
+├── Idle.fbx.meta
+├── IdlePose_Zero_Additive.fbx
+├── IdlePose_Zero_Additive.fbx.meta
+├── Jump_Fall_Additive.fbx
+├── Jump_Fall_Additive.fbx.meta
+├── Jump_Fall.fbx
+├── Jump_Fall.fbx.meta
+├── Jump_Land.fbx
+├── Jump_Land.fbx.meta
+├── Jump_pad.fbx
+├── Jump_pad.fbx.meta
+├── jump_up.fbx
+├── jump_up.fbx.meta
+├── Knock_Back.fbx
+├── Knock_Back.fbx.meta
+├── KnockBack_Bwd.fbx
+├── KnockBack_Bwd.fbx.meta
+├── Launch_Ready_Loop.fbx
+├── Launch_Ready_Loop.fbx.meta
+├── Launch_Ready.fbx
+├── Launch_Ready.fbx.meta
+├── Lean_Center.fbx
+├── Lean_Center.fbx.meta
+├── Lean_Lft.fbx
+├── Lean_Lft.fbx.meta
+├── Lean_Rt.fbx
+├── Lean_Rt.fbx.meta
+├── LevelStart.fbx
+├── LevelStart.fbx.meta
+├── LRM_Fire_V2_Additive.fbx
+├── LRM_Fire_V2_Additive.fbx.meta
+├── LRM_Fire_V2.fbx
+├── LRM_Fire_V2.fbx.meta
+├── LRM_Jump_Fire.fbx
+├── LRM_Jump_Fire.fbx.meta
+├── LRM_Ready_Loop.fbx
+├── LRM_Ready_Loop.fbx.meta
+├── LRM_Ready_V2.fbx
+├── LRM_Ready_V2.fbx.meta
+├── Missile_Swarm_Aim.fbx
+├── Missile_Swarm_Aim.fbx.meta
+├── Missile_Swarm_End.fbx
+├── Missile_Swarm_End.fbx.meta
+├── Missile_Swarm_Fire.fbx
+├── Missile_Swarm_Fire.fbx.meta
+├── Missile_Swarm_Start.fbx
+├── Missile_Swarm_Start.fbx.meta
+├── Primary_Fire_Fast_V1.fbx
+├── Primary_Fire_Fast_V1.fbx.meta
+├── Primary_Fire_Fast.fbx
+├── Primary_Fire_Fast.fbx.meta
+├── Primary_Fire_Slow.fbx
+├── Primary_Fire_Slow.fbx.meta
+├── Primary_Fire_V1.fbx
+├── Primary_Fire_V1.fbx.meta
+├── Primary_Fire.fbx
+├── Primary_Fire.fbx.meta
+├── Recall.fbx
+├── Recall.fbx.meta
+├── Respawn.fbx
+├── Respawn.fbx.meta
+├── Run_Bwd.fbx
+├── Run_Bwd.fbx.meta
+├── Run_Fwd.fbx
+├── Run_Fwd.fbx.meta
+├── Run_Lft.fbx
+├── Run_Lft.fbx.meta
+├── Run_Rt.fbx
+├── Run_Rt.fbx.meta
+├── Secondary_Fire.fbx
+├── Secondary_Fire.fbx.meta
+├── Slope_Bwd.fbx
+├── Slope_Bwd.fbx.meta
+├── Slope_BwdLeft.fbx
+├── Slope_BwdLeft.fbx.meta
+├── Slope_BwdRight.fbx
+├── Slope_BwdRight.fbx.meta
+├── Slope_Fwd.fbx
+├── Slope_Fwd.fbx.meta
+├── Slope_FwdLeft.fbx
+├── Slope_FwdLeft.fbx.meta
+├── Slope_FwdRight.fbx
+├── Slope_FwdRight.fbx.meta
+├── Slope_Left.fbx
+├── Slope_Left.fbx.meta
+├── Slope_Right.fbx
+├── Slope_Right.fbx.meta
+├── Sprint_Back.fbx
+├── Sprint_Back.fbx.meta
+├── Sprint_Fwd.fbx
+├── Sprint_Fwd.fbx.meta
+├── Sprint_Lft.fbx
+├── Sprint_Lft.fbx.meta
+├── Sprint_Rt.fbx
+├── Sprint_Rt.fbx.meta
+├── Stun.fbx
+├── Stun.fbx.meta
+├── Travel_Mode_Idle.fbx
+├── Travel_Mode_Idle.fbx.meta
+├── Travel_Mode_Jump_Fall_Idle.fbx
+├── Travel_Mode_Jump_Fall_Idle.fbx.meta
+├── Travel_Mode_Jump_Fall.fbx
+├── Travel_Mode_Jump_Fall.fbx.meta
+├── Travel_Mode_Jump_Up_Idle.fbx
+├── Travel_Mode_Jump_Up_Idle.fbx.meta
+├── Travel_Mode_Jump_Up.fbx
+├── Travel_Mode_Jump_Up.fbx.meta
+├── Travel_Mode_Precharge.fbx
+├── Travel_Mode_Precharge.fbx.meta
+├── tree.txt
+├── turn_lft.fbx
+├── turn_lft.fbx.meta
+├── turn_rt.fbx
+└── turn_rt.fbx.meta
+
+3 directories, 169 files

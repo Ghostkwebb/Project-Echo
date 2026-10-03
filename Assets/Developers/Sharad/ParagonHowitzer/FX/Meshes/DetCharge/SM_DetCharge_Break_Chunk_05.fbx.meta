@@ -3,7 +3,12 @@ guid: 06b6792a172204a54b6599c495b7d62b
 ModelImporter:
   serializedVersion: 24600
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Howitzer_Mine_FX
+    second: {fileID: 2100000, guid: c44e5f49c7f2b4b8aadd2e4559504490, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

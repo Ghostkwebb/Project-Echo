@@ -7,6 +7,25 @@ using System.Collections.Generic;
 
 namespace ParagonHowitzer
 {
+    [InitializeOnLoad]
+    public class ParagonHowitzerDebrisAutoRunner
+    {
+        static ParagonHowitzerDebrisAutoRunner()
+        {
+            EditorApplication.update += RunOnceUpdate;
+        }
+
+        private static void RunOnceUpdate()
+        {
+            EditorApplication.update -= RunOnceUpdate;
+            if (SessionState.GetBool("ParagonHowitzer_DebrisRemap_Ran_v2", false)) return;
+            SessionState.SetBool("ParagonHowitzer_DebrisRemap_Ran_v2", true);
+
+            Debug.Log("[ParagonHowitzer] Auto-running Debris and DetCharge material setup...");
+            ParagonHowitzerUnitySetup.SetupDebrisAndDetChargeMaterials();
+        }
+    }
+
     public class ParagonHowitzerUnitySetup : EditorWindow
     {
         [MenuItem("Window/Paragon Howitzer/Apply Showcase Pose (Like Reference Image)", false, 0)]
@@ -475,6 +494,68 @@ namespace ParagonHowitzer
             }
             return null;
         }
+
+        [MenuItem("Window/Paragon Howitzer/Setup Debris and DetCharge Materials", false, 4)]
+        public static void SetupDebrisAndDetChargeMaterials()
+        {
+            string orangeDomedDir = "Assets/Developers/Sharad/ParagonHowitzer/Characters/Heroes/Howitzer/Materials/OrangeDomed";
+            Material matMine = AssetDatabase.LoadAssetAtPath<Material>($"{orangeDomedDir}/M_Howitzer_Mine_DomeWhite.mat");
+            Material matDebris = AssetDatabase.LoadAssetAtPath<Material>($"{orangeDomedDir}/M_DebrisPieces_DomeWhite.mat");
+
+            if (matMine == null)
+            {
+                Debug.LogError("[ParagonHowitzer] Could not find M_Howitzer_Mine_DomeWhite.mat!");
+                return;
+            }
+            if (matDebris == null)
+            {
+                Debug.LogError("[ParagonHowitzer] Could not find M_DebrisPieces_DomeWhite.mat!");
+                return;
+            }
+
+            // 1. Remap DetCharge FBXs
+            string detchargeDir = "Assets/Developers/Sharad/ParagonHowitzer/FX/Meshes/DetCharge";
+            if (Directory.Exists(detchargeDir))
+            {
+                string[] detchargeFiles = Directory.GetFiles(detchargeDir, "*.fbx");
+                foreach (string fbxPath in detchargeFiles)
+                {
+                    ModelImporter importer = AssetImporter.GetAtPath(fbxPath) as ModelImporter;
+                    if (importer != null)
+                    {
+                        importer.materialImportMode = ModelImporterMaterialImportMode.ImportViaMaterialDescription;
+                        importer.materialLocation = ModelImporterMaterialLocation.InPrefab;
+                        importer.AddRemap(new AssetImporter.SourceAssetIdentifier(typeof(Material), "M_Howitzer_Mine_FX"), matMine);
+                        importer.SaveAndReimport();
+                        Debug.Log($"[ParagonHowitzer] Remapped {Path.GetFileName(fbxPath)} -> {matMine.name}");
+                    }
+                }
+            }
+
+            // 2. Remap Debris FBXs
+            string debrisDir = "Assets/Developers/Sharad/ParagonHowitzer/FX/Meshes/Debris";
+            if (Directory.Exists(debrisDir))
+            {
+                string[] debrisFiles = Directory.GetFiles(debrisDir, "*.fbx");
+                foreach (string fbxPath in debrisFiles)
+                {
+                    ModelImporter importer = AssetImporter.GetAtPath(fbxPath) as ModelImporter;
+                    if (importer != null)
+                    {
+                        importer.materialImportMode = ModelImporterMaterialImportMode.ImportViaMaterialDescription;
+                        importer.materialLocation = ModelImporterMaterialLocation.InPrefab;
+                        importer.AddRemap(new AssetImporter.SourceAssetIdentifier(typeof(Material), "WorldGridMaterial"), matDebris);
+                        importer.SaveAndReimport();
+                        Debug.Log($"[ParagonHowitzer] Remapped {Path.GetFileName(fbxPath)} -> {matDebris.name}");
+                    }
+                }
+            }
+
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+            Debug.Log("[ParagonHowitzer] >>> Debris and DetCharge Materials successfully set up! <<<");
+        }
+
     }
 }
 #endif
