@@ -64,6 +64,10 @@ public class WraithCombatLocomotion : MonoBehaviour
     private bool isSprinting = false;
     private bool jumpRequested = false;
 
+    // Public accessors for other combat systems (e.g. WraithShooter)
+    public bool IsSprinting => isSprinting;
+    public bool IsAiming => isAiming;
+
     private readonly int moveXHash = Animator.StringToHash("MoveX");
     private readonly int moveZHash = Animator.StringToHash("MoveZ");
     private readonly int isSprintingHash = Animator.StringToHash("IsSprinting");
@@ -211,10 +215,8 @@ public class WraithCombatLocomotion : MonoBehaviour
             verticalVelocity.y += activeGravity * Time.deltaTime;
         }
 
-        // Horizontal velocity calculation
+        // Horizontal velocity calculation with airborne boost
         float baseTargetSpeed = (inputVector.sqrMagnitude > 0.01f) ? (isSprinting ? sprintSpeed : walkSpeed) : 0f;
-
-        // Apply airborne speed multiplier for longer leap distance
         float targetSpeed = controller.isGrounded ? baseTargetSpeed : (baseTargetSpeed * airSpeedMultiplier);
 
         float accelRate = (sprintSpeed / Mathf.Max(0.01f, accelerationTime));
