@@ -23,9 +23,9 @@ public class WraithCombatLocomotion : MonoBehaviour
     [SerializeField] private float walkSpeed = 4.2f;
     [Tooltip("High-speed sprint speed (m/s)")]
     [SerializeField] private float sprintSpeed = 7.2f;
-    [Tooltip("Time in seconds to smoothly ramp up to speed (prevents sudden velocity pops on landing)")]
-    [Range(0.05f, 0.5f)]
-    [SerializeField] private float accelerationTime = 0.2f;
+    [Tooltip("Time in seconds to ramp up to speed from a dead stop")]
+    [Range(0.01f, 0.5f)]
+    [SerializeField] private float accelerationTime = 0.12f;
     [Tooltip("How fast Wraith turns to face diagonal sprint directions")]
     [SerializeField] private float sprintTurnSpeed = 12f;
     [Tooltip("How fast Wraith snaps back to crosshair aim in combat")]
@@ -38,11 +38,13 @@ public class WraithCombatLocomotion : MonoBehaviour
     [SerializeField] private float combatJumpHeight = 1.25f;
     [Tooltip("Apex height for high-momentum sprint jumps (meters)")]
     [SerializeField] private float sprintJumpHeight = 1.6f;
-    [Tooltip("Base gravity (negative value). Higher absolute values = faster, punchier jump arc")]
-    [SerializeField] private float gravity = -30f;
-    [Tooltip("Extra gravity applied when falling downward (1.5 = 50% heavier fall). Eliminates floatiness")]
-    [Range(1f, 3f)]
-    [SerializeField] private float fallMultiplier = 1.5f;
+    [Tooltip("Gravity applied while ascending (negative value)")]
+    [SerializeField] private float ascentGravity = -28f;
+    [Tooltip("Gravity applied while falling (negative value)")]
+    [SerializeField] private float descentGravity = -45f;
+    [Tooltip("Boost multiplier applied to horizontal speed while airborne for longer leap distance")]
+    [Range(1.0f, 1.6f)]
+    [SerializeField] private float airSpeedMultiplier = 1.25f;
 
     [Header("Animation Tuning")]
     [Tooltip("Playback speed multiplier when moving diagonally (prevents foot-sliding)")]
@@ -84,7 +86,6 @@ public class WraithCombatLocomotion : MonoBehaviour
 
         if (cameraTarget != null)
         {
-            // 180° Y-offset keeps camera forward aligned with Unreal's -Z mesh orientation
             cameraTarget.rotation = Quaternion.Euler(currentPitch, currentYaw + 180f, 0f);
         }
     }
@@ -122,7 +123,6 @@ public class WraithCombatLocomotion : MonoBehaviour
 
     private void HandleAimingAndSprinting()
     {
-        // 1. Aiming (RMB)
         if (Mouse.current != null)
         {
             bool wasAiming = isAiming;
@@ -134,7 +134,6 @@ public class WraithCombatLocomotion : MonoBehaviour
             }
         }
 
-        // 2. Sprinting (Left Shift) - forward only, cancelled by ADS
         bool shiftHeld = Keyboard.current != null && Keyboard.current.leftShiftKey.isPressed;
         bool wasSprinting = isSprinting;
         isSprinting = shiftHeld && inputVector.y > 0.1f && !isAiming;
@@ -179,7 +178,6 @@ public class WraithCombatLocomotion : MonoBehaviour
             moveDirection.Normalize();
         }
 
-        // Body Rotation
         if (isSprinting && moveDirection.sqrMagnitude > 0.01f)
         {
             Quaternion targetSprintRot = Quaternion.LookRotation(moveDirection) * Quaternion.Euler(0f, 180f, 0f);
@@ -191,7 +189,7 @@ public class WraithCombatLocomotion : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetCombatRot, combatTurnSpeed * Time.deltaTime);
         }
 
-        // Grounding & Heavy Jump Physics
+        // Jump & Gravity calculation
         if (controller.isGrounded)
         {
             if (verticalVelocity.y < 0)
@@ -202,20 +200,23 @@ public class WraithCombatLocomotion : MonoBehaviour
             if (jumpRequested)
             {
                 float targetJumpHeight = isSprinting ? sprintJumpHeight : combatJumpHeight;
-                verticalVelocity.y = Mathf.Sqrt(targetJumpHeight * -2f * gravity);
+                verticalVelocity.y = Mathf.Sqrt(targetJumpHeight * -2f * ascentGravity);
                 animator.SetTrigger(jumpHash);
                 jumpRequested = false;
             }
         }
         else
         {
-            float activeGravity = (verticalVelocity.y < 0f) ? (gravity * fallMultiplier) : gravity;
+            float activeGravity = (verticalVelocity.y >= 0f) ? ascentGravity : descentGravity;
             verticalVelocity.y += activeGravity * Time.deltaTime;
         }
 
-        // --- SMOOTH SPEED ACCELERATION ---
-        // Determines target speed based on input; smoothly ramps velocity to prevent abrupt bursts
-        float targetSpeed = (inputVector.sqrMagnitude > 0.01f) ? (isSprinting ? sprintSpeed : walkSpeed) : 0f;
+        // Horizontal velocity calculation
+        float baseTargetSpeed = (inputVector.sqrMagnitude > 0.01f) ? (isSprinting ? sprintSpeed : walkSpeed) : 0f;
+
+        // Apply airborne speed multiplier for longer leap distance
+        float targetSpeed = controller.isGrounded ? baseTargetSpeed : (baseTargetSpeed * airSpeedMultiplier);
+
         float accelRate = (sprintSpeed / Mathf.Max(0.01f, accelerationTime));
         currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, accelRate * Time.deltaTime);
 
