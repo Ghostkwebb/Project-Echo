@@ -36,6 +36,11 @@ public class BossPart : MonoBehaviour
     [SerializeField] private int totalDebrisPieces = 14; // Spawns 14 chunks
     [SerializeField] private float debrisScale = 2.2f;    // Matches 2.5x Howitzer size
 
+    [Header("Socket Sparks & Smoke VFX")]
+    [Tooltip("Particle system attached to socket. Emits sparks & smoke while detached.")]
+    [SerializeField] private ParticleSystem breakSparksParticle;
+    [SerializeField] private ParticleSystem breakSmokeParticle;
+
     // References
     private BossHealth bossHealth;
     private Animator bossAnimator;
@@ -120,6 +125,10 @@ public class BossPart : MonoBehaviour
         isRecalling = false;
         repairTimer = repairDuration;
 
+        // Play violent spark burst & start lingering smoke
+        if (breakSparksParticle != null) breakSparksParticle.Play();
+        if (breakSmokeParticle != null) breakSmokeParticle.Play();
+
         if (bossAnimator != null)
         {
             bossAnimator.SetTrigger(OnPartBreakHash);
@@ -189,6 +198,10 @@ public class BossPart : MonoBehaviour
         isRecalling = false;
         CurrentBreakProgress = 0f;
         repairTimer = 0f;
+
+        // Extinguish socket smoke when arm reassembles
+        if (breakSparksParticle != null) breakSparksParticle.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        if (breakSmokeParticle != null) breakSmokeParticle.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
 
         transform.localScale = Vector3.one;
         SetCollidersActive(true);
@@ -273,6 +286,10 @@ public class BossPart : MonoBehaviour
         isRecalling = false;
         CurrentBreakProgress = 0f;
         repairTimer = 0f;
+
+        // Extinguish socket smoke when arm reassembles
+        if (breakSparksParticle != null) breakSparksParticle.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        if (breakSmokeParticle != null) breakSmokeParticle.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
 
         transform.localScale = Vector3.one;
         SetCollidersActive(true);
