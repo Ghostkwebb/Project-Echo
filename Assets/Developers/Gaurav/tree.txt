@@ -1,0 +1,3188 @@
+.
+├── Audio
+│   ├── Cues
+│   │   ├── Wraith_Ability_E_Engage.cue.json
+│   │   ├── Wraith_Ability_E_Engage.cue.json.meta
+│   │   ├── Wraith_Ability_LMB_Engage.cue.json
+│   │   ├── Wraith_Ability_LMB_Engage.cue.json.meta
+│   │   ├── Wraith_Ability_LowMana.cue.json
+│   │   ├── Wraith_Ability_LowMana.cue.json.meta
+│   │   ├── Wraith_Ability_No.cue.json
+│   │   ├── Wraith_Ability_No.cue.json.meta
+│   │   ├── Wraith_Ability_OnCooldown.cue.json
+│   │   ├── Wraith_Ability_OnCooldown.cue.json.meta
+│   │   ├── Wraith_Ability_Q_Engage.cue.json
+│   │   ├── Wraith_Ability_Q_Engage.cue.json.meta
+│   │   ├── Wraith_Ability_RMB_Engage.cue.json
+│   │   ├── Wraith_Ability_RMB_Engage.cue.json.meta
+│   │   ├── Wraith_Ability_ScoredCrit.cue.json
+│   │   ├── Wraith_Ability_ScoredCrit.cue.json.meta
+│   │   ├── Wraith_Ability_Ultimate_Ally.cue.json
+│   │   ├── Wraith_Ability_Ultimate_Ally.cue.json.meta
+│   │   ├── Wraith_Ability_Ultimate_Enemy.cue.json
+│   │   ├── Wraith_Ability_Ultimate_Enemy.cue.json.meta
+│   │   ├── Wraith_Ability_Ultimate_Ready.cue.json
+│   │   ├── Wraith_Ability_Ultimate_Ready.cue.json.meta
+│   │   ├── Wraith_Ability_Ultimate_Self.cue.json
+│   │   ├── Wraith_Ability_Ultimate_Self.cue.json.meta
+│   │   ├── Wraith_Ability_UsedLastCharge.cue.json
+│   │   ├── Wraith_Ability_UsedLastCharge.cue.json.meta
+│   │   ├── Wraith_Catchphrase.cue.json
+│   │   ├── Wraith_Catchphrase.cue.json.meta
+│   │   ├── Wraith_Death.cue.json
+│   │   ├── Wraith_Death.cue.json.meta
+│   │   ├── Wraith_DraftLock.cue.json
+│   │   ├── Wraith_DraftLock.cue.json.meta
+│   │   ├── Wraith_DraftSelect.cue.json
+│   │   ├── Wraith_DraftSelect.cue.json.meta
+│   │   ├── Wraith_Effort_Ability_E.cue.json
+│   │   ├── Wraith_Effort_Ability_E.cue.json.meta
+│   │   ├── Wraith_Effort_Ability_Primary.cue.json
+│   │   ├── Wraith_Effort_Ability_Primary.cue.json.meta
+│   │   ├── Wraith_Effort_Ability_Q.cue.json
+│   │   ├── Wraith_Effort_Ability_Q.cue.json.meta
+│   │   ├── Wraith_Effort_Ability_RMB.cue.json
+│   │   ├── Wraith_Effort_Ability_RMB.cue.json.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate.cue.json
+│   │   ├── Wraith_Effort_Ability_Ultimate.cue.json.meta
+│   │   ├── Wraith_Effort_Attack.cue.json
+│   │   ├── Wraith_Effort_Attack.cue.json.meta
+│   │   ├── Wraith_Effort_Block.cue.json
+│   │   ├── Wraith_Effort_Block.cue.json.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth.cue.json
+│   │   ├── Wraith_Effort_BreathingLowHealth.cue.json.meta
+│   │   ├── Wraith_Effort_BreathingRun.cue.json
+│   │   ├── Wraith_Effort_BreathingRun.cue.json.meta
+│   │   ├── Wraith_Effort_Cheer.cue.json
+│   │   ├── Wraith_Effort_Cheer.cue.json.meta
+│   │   ├── Wraith_Effort_Death.cue.json
+│   │   ├── Wraith_Effort_Death.cue.json.meta
+│   │   ├── Wraith_Effort_Frustration.cue.json
+│   │   ├── Wraith_Effort_Frustration.cue.json.meta
+│   │   ├── Wraith_Effort_Jump.cue.json
+│   │   ├── Wraith_Effort_Jump.cue.json.meta
+│   │   ├── Wraith_Effort_JumpHeavy.cue.json
+│   │   ├── Wraith_Effort_JumpHeavy.cue.json.meta
+│   │   ├── Wraith_Effort_Land.cue.json
+│   │   ├── Wraith_Effort_Land.cue.json.meta
+│   │   ├── Wraith_Effort_LandHeavy.cue.json
+│   │   ├── Wraith_Effort_LandHeavy.cue.json.meta
+│   │   ├── Wraith_Effort_Laugh.cue.json
+│   │   ├── Wraith_Effort_Laugh.cue.json.meta
+│   │   ├── Wraith_Effort_Pain.cue.json
+│   │   ├── Wraith_Effort_Pain.cue.json.meta
+│   │   ├── Wraith_Effort_PainHeavy.cue.json
+│   │   ├── Wraith_Effort_PainHeavy.cue.json.meta
+│   │   ├── Wraith_Effort_Swing.cue.json
+│   │   ├── Wraith_Effort_Swing.cue.json.meta
+│   │   ├── Wraith_Emote_010.cue.json
+│   │   ├── Wraith_Emote_010.cue.json.meta
+│   │   ├── Wraith_Emote_020.cue.json
+│   │   ├── Wraith_Emote_020.cue.json.meta
+│   │   ├── Wraith_Emote_030.cue.json
+│   │   ├── Wraith_Emote_030.cue.json.meta
+│   │   ├── Wraith_Emote_040.cue.json
+│   │   ├── Wraith_Emote_040.cue.json.meta
+│   │   ├── Wraith_Emote_050.cue.json
+│   │   ├── Wraith_Emote_050.cue.json.meta
+│   │   ├── Wraith_Emote_060.cue.json
+│   │   ├── Wraith_Emote_060.cue.json.meta
+│   │   ├── Wraith_Emote_070.cue.json
+│   │   ├── Wraith_Emote_070.cue.json.meta
+│   │   ├── Wraith_Emote_Taunt.cue.json
+│   │   ├── Wraith_Emote_Taunt.cue.json.meta
+│   │   ├── Wraith_Health_Critical.cue.json
+│   │   ├── Wraith_Health_Critical.cue.json.meta
+│   │   ├── Wraith_Health_CriticalSave.cue.json
+│   │   ├── Wraith_Health_CriticalSave.cue.json.meta
+│   │   ├── Wraith_Health_Healed.cue.json
+│   │   ├── Wraith_Health_Healed.cue.json.meta
+│   │   ├── Wraith_Health_Low.cue.json
+│   │   ├── Wraith_Health_Low.cue.json.meta
+│   │   ├── Wraith_Health_SufferedCrit.cue.json
+│   │   ├── Wraith_Health_SufferedCrit.cue.json.meta
+│   │   ├── Wraith_Intro_Boast.cue.json
+│   │   ├── Wraith_Intro_Boast.cue.json.meta
+│   │   ├── Wraith_Intro_BoastResponse.cue.json
+│   │   ├── Wraith_Intro_BoastResponse.cue.json.meta
+│   │   ├── Wraith_Intro_Question.cue.json
+│   │   ├── Wraith_Intro_Question.cue.json.meta
+│   │   ├── Wraith_Intro_QuestionResponse.cue.json
+│   │   ├── Wraith_Intro_QuestionResponse.cue.json.meta
+│   │   ├── Wraith_Intro_Shinbi.cue.json
+│   │   ├── Wraith_Intro_Shinbi.cue.json.meta
+│   │   ├── Wraith_Intro_Statement.cue.json
+│   │   ├── Wraith_Intro_Statement.cue.json.meta
+│   │   ├── Wraith_Kill_Assist.cue.json
+│   │   ├── Wraith_Kill_Assist.cue.json.meta
+│   │   ├── Wraith_Kill_Enemy.cue.json
+│   │   ├── Wraith_Kill_Enemy.cue.json.meta
+│   │   ├── Wraith_Kill_FirstBlood.cue.json
+│   │   ├── Wraith_Kill_FirstBlood.cue.json.meta
+│   │   ├── Wraith_Kill_Revenge.cue.json
+│   │   ├── Wraith_Kill_Revenge.cue.json.meta
+│   │   ├── Wraith_Kill_SameEnemy.cue.json
+│   │   ├── Wraith_Kill_SameEnemy.cue.json.meta
+│   │   ├── Wraith_Kill_Shutdown.cue.json
+│   │   ├── Wraith_Kill_Shutdown.cue.json.meta
+│   │   ├── Wraith_Kill_Streak.cue.json
+│   │   ├── Wraith_Kill_Streak.cue.json.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm.cue.json
+│   │   ├── Wraith_Level_AbilityLevelConfirm.cue.json.meta
+│   │   ├── Wraith_Level_BoughtItem.cue.json
+│   │   ├── Wraith_Level_BoughtItem.cue.json.meta
+│   │   ├── Wraith_Level_CardPoints.cue.json
+│   │   ├── Wraith_Level_CardPoints.cue.json.meta
+│   │   ├── Wraith_Level_Five.cue.json
+│   │   ├── Wraith_Level_Five.cue.json.meta
+│   │   ├── Wraith_Level_Up.cue.json
+│   │   ├── Wraith_Level_Up.cue.json.meta
+│   │   ├── Wraith_Lore_Death_DrMaximov.cue.json
+│   │   ├── Wraith_Lore_Death_DrMaximov.cue.json.meta
+│   │   ├── Wraith_Lore_Death_Emeritus.cue.json
+│   │   ├── Wraith_Lore_Death_Emeritus.cue.json.meta
+│   │   ├── Wraith_Lore_Death_Kallari.cue.json
+│   │   ├── Wraith_Lore_Death_Kallari.cue.json.meta
+│   │   ├── Wraith_Lore_Death_Muriel.cue.json
+│   │   ├── Wraith_Lore_Death_Muriel.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_010.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_010.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_020.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_020.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_030.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_030.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_040.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_040.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_050.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_050.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_060.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_060.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_070.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_070.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_080.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_080.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_090.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_090.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_100.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_100.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_110.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_110.cue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_120.cue.json
+│   │   ├── Wraith_Lore_DrMaximov_120.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_010.cue.json
+│   │   ├── Wraith_Lore_Emeritus_010.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_020.cue.json
+│   │   ├── Wraith_Lore_Emeritus_020.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_030.cue.json
+│   │   ├── Wraith_Lore_Emeritus_030.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_040.cue.json
+│   │   ├── Wraith_Lore_Emeritus_040.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_050.cue.json
+│   │   ├── Wraith_Lore_Emeritus_050.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_060.cue.json
+│   │   ├── Wraith_Lore_Emeritus_060.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_070.cue.json
+│   │   ├── Wraith_Lore_Emeritus_070.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_080.cue.json
+│   │   ├── Wraith_Lore_Emeritus_080.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_090.cue.json
+│   │   ├── Wraith_Lore_Emeritus_090.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_100.cue.json
+│   │   ├── Wraith_Lore_Emeritus_100.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_110.cue.json
+│   │   ├── Wraith_Lore_Emeritus_110.cue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_120.cue.json
+│   │   ├── Wraith_Lore_Emeritus_120.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_010.cue.json
+│   │   ├── Wraith_Lore_Kallari_010.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_020.cue.json
+│   │   ├── Wraith_Lore_Kallari_020.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_030.cue.json
+│   │   ├── Wraith_Lore_Kallari_030.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_040.cue.json
+│   │   ├── Wraith_Lore_Kallari_040.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_050.cue.json
+│   │   ├── Wraith_Lore_Kallari_050.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_060.cue.json
+│   │   ├── Wraith_Lore_Kallari_060.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_070.cue.json
+│   │   ├── Wraith_Lore_Kallari_070.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_080.cue.json
+│   │   ├── Wraith_Lore_Kallari_080.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_090.cue.json
+│   │   ├── Wraith_Lore_Kallari_090.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_100.cue.json
+│   │   ├── Wraith_Lore_Kallari_100.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_110.cue.json
+│   │   ├── Wraith_Lore_Kallari_110.cue.json.meta
+│   │   ├── Wraith_Lore_Kallari_120.cue.json
+│   │   ├── Wraith_Lore_Kallari_120.cue.json.meta
+│   │   ├── Wraith_Lore_Kill_DrMaximov.cue.json
+│   │   ├── Wraith_Lore_Kill_DrMaximov.cue.json.meta
+│   │   ├── Wraith_Lore_Kill_Emeritus.cue.json
+│   │   ├── Wraith_Lore_Kill_Emeritus.cue.json.meta
+│   │   ├── Wraith_Lore_Kill_Kallari.cue.json
+│   │   ├── Wraith_Lore_Kill_Kallari.cue.json.meta
+│   │   ├── Wraith_Lore_Kill_Muriel.cue.json
+│   │   ├── Wraith_Lore_Kill_Muriel.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_010.cue.json
+│   │   ├── Wraith_Lore_Muriel_010.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_020.cue.json
+│   │   ├── Wraith_Lore_Muriel_020.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_030.cue.json
+│   │   ├── Wraith_Lore_Muriel_030.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_040.cue.json
+│   │   ├── Wraith_Lore_Muriel_040.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_050.cue.json
+│   │   ├── Wraith_Lore_Muriel_050.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_060.cue.json
+│   │   ├── Wraith_Lore_Muriel_060.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_070.cue.json
+│   │   ├── Wraith_Lore_Muriel_070.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_080.cue.json
+│   │   ├── Wraith_Lore_Muriel_080.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_090.cue.json
+│   │   ├── Wraith_Lore_Muriel_090.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_100.cue.json
+│   │   ├── Wraith_Lore_Muriel_100.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_110.cue.json
+│   │   ├── Wraith_Lore_Muriel_110.cue.json.meta
+│   │   ├── Wraith_Lore_Muriel_120.cue.json
+│   │   ├── Wraith_Lore_Muriel_120.cue.json.meta
+│   │   ├── Wraith_ProfileDizzy_010.cue.json
+│   │   ├── Wraith_ProfileDizzy_010.cue.json.meta
+│   │   ├── Wraith_ProfileDizzy_020.cue.json
+│   │   ├── Wraith_ProfileDizzy_020.cue.json.meta
+│   │   ├── Wraith_ProfileDizzy_030.cue.json
+│   │   ├── Wraith_ProfileDizzy_030.cue.json.meta
+│   │   ├── Wraith_ProfileDizzy_040.cue.json
+│   │   ├── Wraith_ProfileDizzy_040.cue.json.meta
+│   │   ├── Wraith_ProfileIdle_010.cue.json
+│   │   ├── Wraith_ProfileIdle_010.cue.json.meta
+│   │   ├── Wraith_ProfileIdle_020.cue.json
+│   │   ├── Wraith_ProfileIdle_020.cue.json.meta
+│   │   ├── Wraith_ProfileIdle_030.cue.json
+│   │   ├── Wraith_ProfileIdle_030.cue.json.meta
+│   │   ├── Wraith_ProfileIdle_040.cue.json
+│   │   ├── Wraith_ProfileIdle_040.cue.json.meta
+│   │   ├── Wraith_ProfilePoke_010.cue.json
+│   │   ├── Wraith_ProfilePoke_010.cue.json.meta
+│   │   ├── Wraith_ProfilePoke_020.cue.json
+│   │   ├── Wraith_ProfilePoke_020.cue.json.meta
+│   │   ├── Wraith_ProfilePoke_030.cue.json
+│   │   ├── Wraith_ProfilePoke_030.cue.json.meta
+│   │   ├── Wraith_ProfilePoke_040.cue.json
+│   │   ├── Wraith_ProfilePoke_040.cue.json.meta
+│   │   ├── Wraith_ProfilePoke_050.cue.json
+│   │   ├── Wraith_ProfilePoke_050.cue.json.meta
+│   │   ├── Wraith_ProfilePoke_060.cue.json
+│   │   ├── Wraith_ProfilePoke_060.cue.json.meta
+│   │   ├── Wraith_ProfilePoke_070.cue.json
+│   │   ├── Wraith_ProfilePoke_070.cue.json.meta
+│   │   ├── Wraith_Revive.cue.json
+│   │   ├── Wraith_Revive.cue.json.meta
+│   │   ├── Wraith_Status_Ace.cue.json
+│   │   ├── Wraith_Status_Ace.cue.json.meta
+│   │   ├── Wraith_Status_Buffed.cue.json
+│   │   ├── Wraith_Status_Buffed.cue.json.meta
+│   │   ├── Wraith_Status_Celebrate.cue.json
+│   │   ├── Wraith_Status_Celebrate.cue.json.meta
+│   │   ├── Wraith_Status_Danger.cue.json
+│   │   ├── Wraith_Status_Danger.cue.json.meta
+│   │   ├── Wraith_Status_Defeat.cue.json
+│   │   ├── Wraith_Status_Defeat.cue.json.meta
+│   │   ├── Wraith_Status_Idle_010.cue.json
+│   │   ├── Wraith_Status_Idle_010.cue.json.meta
+│   │   ├── Wraith_Status_Idle_020.cue.json
+│   │   ├── Wraith_Status_Idle_020.cue.json.meta
+│   │   ├── Wraith_Status_Idle_030.cue.json
+│   │   ├── Wraith_Status_Idle_030.cue.json.meta
+│   │   ├── Wraith_Status_OrbPrimeActivated.cue.json
+│   │   ├── Wraith_Status_OrbPrimeActivated.cue.json.meta
+│   │   ├── Wraith_Status_Recall.cue.json
+│   │   ├── Wraith_Status_Recall.cue.json.meta
+│   │   ├── Wraith_Status_TeamDead.cue.json
+│   │   ├── Wraith_Status_TeamDead.cue.json.meta
+│   │   ├── Wraith_Status_Victory.cue.json
+│   │   └── Wraith_Status_Victory.cue.json.meta
+│   ├── Cues.meta
+│   ├── DialogueWaves
+│   │   ├── Wraith_Ability_E_Engage_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_E_Engage_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_E_Engage_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_E_Engage_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_E_Engage_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_E_Engage_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_LMB_Engage_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_LMB_Engage_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_LMB_Engage_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_LMB_Engage_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_LMB_Engage_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_LMB_Engage_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_LowMana_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_LowMana_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_LowMana_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_LowMana_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_LowMana_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_LowMana_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_LowMana_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_LowMana_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_No_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_No_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_No_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_No_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_No_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_No_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_No_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_No_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_OnCooldown_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_OnCooldown_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_OnCooldown_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_OnCooldown_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_OnCooldown_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_OnCooldown_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_OnCooldown_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_OnCooldown_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_Q_Engage_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_Q_Engage_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_Q_Engage_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_Q_Engage_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_Q_Engage_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_Q_Engage_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_RMB_Engage_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_RMB_Engage_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_RMB_Engage_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_RMB_Engage_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_RMB_Engage_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_RMB_Engage_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_ScoredCrit_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_ScoredCrit_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_ScoredCrit_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_ScoredCrit_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_ScoredCrit_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_ScoredCrit_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_Ultimate_Ally_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_Ultimate_Ally_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_Ultimate_Enemy_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_Ultimate_Enemy_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_Ultimate_Ready_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_Ultimate_Ready_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_Ultimate_Ready_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_Ultimate_Ready_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_Ultimate_Ready_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_Ultimate_Ready_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_Ultimate_Self_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_Ultimate_Self_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_UsedLastCharge_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_UsedLastCharge_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_UsedLastCharge_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_UsedLastCharge_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_UsedLastCharge_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_UsedLastCharge_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Ability_UsedLastCharge_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Ability_UsedLastCharge_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Catchphrase_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Catchphrase_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Catchphrase_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Catchphrase_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Catchphrase_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Catchphrase_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Catchphrase_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Catchphrase_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Catchphrase_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Catchphrase_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Death_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Death_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Death_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Death_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Death_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Death_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Death_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Death_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Death_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Death_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Death_060_Dialogue.dialogue.json
+│   │   ├── Wraith_Death_060_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Death_070_Dialogue.dialogue.json
+│   │   ├── Wraith_Death_070_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_DraftLock_010_Dialogue.dialogue.json
+│   │   ├── Wraith_DraftLock_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_DraftLock_020_Dialogue.dialogue.json
+│   │   ├── Wraith_DraftLock_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_DraftLock_030_Dialogue.dialogue.json
+│   │   ├── Wraith_DraftLock_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_DraftLock_040_Dialogue.dialogue.json
+│   │   ├── Wraith_DraftLock_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_DraftLock_050_Dialogue.dialogue.json
+│   │   ├── Wraith_DraftLock_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_DraftSelect_010_Dialogue.dialogue.json
+│   │   ├── Wraith_DraftSelect_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_DraftSelect_020_Dialogue.dialogue.json
+│   │   ├── Wraith_DraftSelect_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_DraftSelect_030_Dialogue.dialogue.json
+│   │   ├── Wraith_DraftSelect_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_E_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_E_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_E_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_E_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_E_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_E_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_E_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_E_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_E_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_E_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Primary_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Primary_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Primary_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Primary_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Primary_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Primary_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Primary_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Primary_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Primary_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Primary_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Q_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Q_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Q_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Q_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Q_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Q_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Q_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Q_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Q_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Q_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_RMB_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_RMB_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_RMB_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_RMB_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_RMB_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_RMB_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_RMB_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_RMB_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_RMB_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_RMB_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Ultimate_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Ultimate_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Ultimate_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Ultimate_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Ability_Ultimate_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Attack_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Attack_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Attack_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Attack_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Attack_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Attack_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Attack_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Attack_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Attack_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Attack_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Block_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Block_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Block_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Block_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Block_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Block_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Block_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Block_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Block_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Block_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_BreathingLowHealth_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_BreathingLowHealth_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_BreathingLowHealth_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_BreathingLowHealth_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_BreathingLowHealth_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_BreathingRun_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_BreathingRun_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_BreathingRun_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_BreathingRun_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_BreathingRun_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_BreathingRun_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_BreathingRun_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_BreathingRun_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_BreathingRun_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_BreathingRun_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Cheer_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Cheer_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Cheer_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Cheer_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Cheer_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Cheer_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Cheer_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Cheer_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Cheer_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Cheer_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Death_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Death_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Death_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Death_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Death_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Death_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Death_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Death_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Death_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Death_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Frustration_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Frustration_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Frustration_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Frustration_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Frustration_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Frustration_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Frustration_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Frustration_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Frustration_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Frustration_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Jump_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Jump_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Jump_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Jump_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Jump_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Jump_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Jump_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Jump_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Jump_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Jump_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_JumpHeavy_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_JumpHeavy_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_JumpHeavy_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_JumpHeavy_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_JumpHeavy_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_JumpHeavy_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_JumpHeavy_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_JumpHeavy_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_JumpHeavy_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_JumpHeavy_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Land_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Land_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Land_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Land_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Land_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Land_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Land_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Land_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Land_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Land_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_LandHeavy_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_LandHeavy_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_LandHeavy_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_LandHeavy_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_LandHeavy_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_LandHeavy_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_LandHeavy_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_LandHeavy_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_LandHeavy_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_LandHeavy_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Laugh_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Laugh_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Laugh_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Laugh_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Laugh_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Laugh_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Laugh_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Laugh_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Laugh_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Laugh_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Pain_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Pain_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Pain_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Pain_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Pain_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Pain_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Pain_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Pain_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Pain_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Pain_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_PainHeavy_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_PainHeavy_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_PainHeavy_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_PainHeavy_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_PainHeavy_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_PainHeavy_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_PainHeavy_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_PainHeavy_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_PainHeavy_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_PainHeavy_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Swing_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Swing_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Swing_011_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Swing_011_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Swing_012_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Swing_012_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Swing_013_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Swing_013_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Effort_Swing_014_Dialogue.dialogue.json
+│   │   ├── Wraith_Effort_Swing_014_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_060_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_060_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_070_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_070_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_Taunt_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_Taunt_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_Taunt_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_Taunt_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_Taunt_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_Taunt_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Emote_Taunt_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Emote_Taunt_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_Critical_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_Critical_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_Critical_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_Critical_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_Critical_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_Critical_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_CriticalSave_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_CriticalSave_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_CriticalSave_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_CriticalSave_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_CriticalSave_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_CriticalSave_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_Healed_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_Healed_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_Healed_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_Healed_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_Healed_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_Healed_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_Low_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_Low_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_Low_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_Low_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_Low_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_Low_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_SufferedCrit_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_SufferedCrit_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_SufferedCrit_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_SufferedCrit_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Health_SufferedCrit_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Health_SufferedCrit_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Boast_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Boast_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Boast_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Boast_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Boast_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Boast_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_BoastResponse_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_BoastResponse_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_BoastResponse_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_BoastResponse_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_BoastResponse_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_BoastResponse_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Question_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Question_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Question_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Question_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Question_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Question_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_QuestionResponse_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_QuestionResponse_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_QuestionResponse_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_QuestionResponse_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_QuestionResponse_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_QuestionResponse_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Shinbi_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Shinbi_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Statement_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Statement_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Statement_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Statement_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Statement_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Statement_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Intro_Statement_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Intro_Statement_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Assist_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Assist_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Assist_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Assist_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Assist_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Assist_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Enemy_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Enemy_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Enemy_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Enemy_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Enemy_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Enemy_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Enemy_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Enemy_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Enemy_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Enemy_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Enemy_060_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Enemy_060_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Enemy_070_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Enemy_070_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_FirstBlood_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_FirstBlood_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_FirstBlood_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_FirstBlood_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_FirstBlood_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_FirstBlood_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Revenge_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Revenge_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Revenge_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Revenge_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Revenge_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Revenge_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_SameEnemy_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_SameEnemy_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_SameEnemy_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_SameEnemy_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_SameEnemy_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_SameEnemy_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Shutdown_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Shutdown_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Shutdown_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Shutdown_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Shutdown_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Shutdown_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Streak_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Streak_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Streak_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Streak_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Kill_Streak_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Kill_Streak_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_AbilityLevelConfirm_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_AbilityLevelConfirm_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_AbilityLevelConfirm_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_AbilityLevelConfirm_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_AbilityLevelConfirm_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_BoughtItem_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_BoughtItem_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_BoughtItem_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_BoughtItem_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_BoughtItem_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_BoughtItem_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_CardPoints_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_CardPoints_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_CardPoints_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_CardPoints_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_CardPoints_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_CardPoints_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_Five_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_Five_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_Five_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_Five_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_Five_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_Five_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_Up_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_Up_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_Up_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_Up_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_Up_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_Up_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_Up_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_Up_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Level_Up_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Level_Up_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Death_DrMaximov_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Death_DrMaximov_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Death_Emeritus_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Death_Emeritus_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Death_Kallari_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Death_Kallari_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Death_Muriel_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Death_Muriel_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_060_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_060_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_070_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_070_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_080_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_080_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_090_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_090_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_100_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_100_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_110_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_110_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_DrMaximov_120_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_DrMaximov_120_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_060_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_060_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_070_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_070_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_080_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_080_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_090_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_090_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_100_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_100_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_110_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_110_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Emeritus_120_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Emeritus_120_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_060_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_060_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_070_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_070_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_080_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_080_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_090_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_090_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_100_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_100_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_110_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_110_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kallari_120_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kallari_120_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_DrMaximov_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_DrMaximov_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_DrMaximov_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_DrMaximov_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_DrMaximov_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_DrMaximov_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_Emeritus_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_Emeritus_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_Emeritus_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_Emeritus_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_Emeritus_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_Emeritus_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_Kallari_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_Kallari_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_Kallari_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_Kallari_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_Kallari_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_Kallari_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_Muriel_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_Muriel_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_Muriel_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_Muriel_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Kill_Muriel_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Kill_Muriel_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_060_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_060_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_070_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_070_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_080_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_080_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_090_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_090_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_100_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_100_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_110_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_110_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Lore_Muriel_120_Dialogue.dialogue.json
+│   │   ├── Wraith_Lore_Muriel_120_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfileDizzy_010_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfileDizzy_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfileDizzy_020_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfileDizzy_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfileDizzy_030_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfileDizzy_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfileDizzy_040_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfileDizzy_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfileIdle_010_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfileIdle_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfileIdle_020_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfileIdle_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfileIdle_030_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfileIdle_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfileIdle_040_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfileIdle_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfilePoke_010_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfilePoke_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfilePoke_020_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfilePoke_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfilePoke_030_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfilePoke_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfilePoke_040_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfilePoke_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfilePoke_050_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfilePoke_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfilePoke_060_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfilePoke_060_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_ProfilePoke_070_Dialogue.dialogue.json
+│   │   ├── Wraith_ProfilePoke_070_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Revive_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Revive_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Revive_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Revive_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Revive_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Revive_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Revive_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Revive_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Revive_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Revive_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Ace_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Ace_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Ace_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Ace_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Ace_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Ace_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Buffed_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Buffed_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Buffed_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Buffed_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Buffed_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Buffed_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Celebrate_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Celebrate_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Celebrate_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Celebrate_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Celebrate_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Celebrate_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Danger_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Danger_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Danger_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Danger_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Danger_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Danger_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Defeat_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Defeat_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Defeat_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Defeat_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Defeat_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Defeat_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Idle_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Idle_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Idle_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Idle_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Idle_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Idle_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_OrbPrimeActivated_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_OrbPrimeActivated_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_OrbPrimeActivated_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_OrbPrimeActivated_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_OrbPrimeActivated_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_OrbPrimeActivated_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Recall_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Recall_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Recall_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Recall_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Recall_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Recall_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Recall_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Recall_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Recall_050_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Recall_050_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_TeamDead_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_TeamDead_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_TeamDead_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_TeamDead_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_TeamDead_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_TeamDead_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Victory_010_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Victory_010_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Victory_020_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Victory_020_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Victory_030_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Victory_030_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Victory_040_Dialogue.dialogue.json
+│   │   ├── Wraith_Status_Victory_040_Dialogue.dialogue.json.meta
+│   │   ├── Wraith_Status_Victory_050_Dialogue.dialogue.json
+│   │   └── Wraith_Status_Victory_050_Dialogue.dialogue.json.meta
+│   ├── DialogueWaves.meta
+│   ├── Wavs
+│   │   ├── Wraith_Ability_E_Engage_010.wav
+│   │   ├── Wraith_Ability_E_Engage_010.wav.meta
+│   │   ├── Wraith_Ability_E_Engage_020.wav
+│   │   ├── Wraith_Ability_E_Engage_020.wav.meta
+│   │   ├── Wraith_Ability_E_Engage_030.wav
+│   │   ├── Wraith_Ability_E_Engage_030.wav.meta
+│   │   ├── Wraith_Ability_LMB_Engage_010.wav
+│   │   ├── Wraith_Ability_LMB_Engage_010.wav.meta
+│   │   ├── Wraith_Ability_LMB_Engage_020.wav
+│   │   ├── Wraith_Ability_LMB_Engage_020.wav.meta
+│   │   ├── Wraith_Ability_LMB_Engage_030.wav
+│   │   ├── Wraith_Ability_LMB_Engage_030.wav.meta
+│   │   ├── Wraith_Ability_LowMana_010.wav
+│   │   ├── Wraith_Ability_LowMana_010.wav.meta
+│   │   ├── Wraith_Ability_LowMana_020.wav
+│   │   ├── Wraith_Ability_LowMana_020.wav.meta
+│   │   ├── Wraith_Ability_LowMana_030.wav
+│   │   ├── Wraith_Ability_LowMana_030.wav.meta
+│   │   ├── Wraith_Ability_LowMana_040.wav
+│   │   ├── Wraith_Ability_LowMana_040.wav.meta
+│   │   ├── Wraith_Ability_No_010.wav
+│   │   ├── Wraith_Ability_No_010.wav.meta
+│   │   ├── Wraith_Ability_No_020.wav
+│   │   ├── Wraith_Ability_No_020.wav.meta
+│   │   ├── Wraith_Ability_No_030.wav
+│   │   ├── Wraith_Ability_No_030.wav.meta
+│   │   ├── Wraith_Ability_No_040.wav
+│   │   ├── Wraith_Ability_No_040.wav.meta
+│   │   ├── Wraith_Ability_OnCooldown_010.wav
+│   │   ├── Wraith_Ability_OnCooldown_010.wav.meta
+│   │   ├── Wraith_Ability_OnCooldown_020.wav
+│   │   ├── Wraith_Ability_OnCooldown_020.wav.meta
+│   │   ├── Wraith_Ability_OnCooldown_030.wav
+│   │   ├── Wraith_Ability_OnCooldown_030.wav.meta
+│   │   ├── Wraith_Ability_OnCooldown_040.wav
+│   │   ├── Wraith_Ability_OnCooldown_040.wav.meta
+│   │   ├── Wraith_Ability_Q_Engage_010.wav
+│   │   ├── Wraith_Ability_Q_Engage_010.wav.meta
+│   │   ├── Wraith_Ability_Q_Engage_020.wav
+│   │   ├── Wraith_Ability_Q_Engage_020.wav.meta
+│   │   ├── Wraith_Ability_Q_Engage_030.wav
+│   │   ├── Wraith_Ability_Q_Engage_030.wav.meta
+│   │   ├── Wraith_Ability_RMB_Engage_010.wav
+│   │   ├── Wraith_Ability_RMB_Engage_010.wav.meta
+│   │   ├── Wraith_Ability_RMB_Engage_020.wav
+│   │   ├── Wraith_Ability_RMB_Engage_020.wav.meta
+│   │   ├── Wraith_Ability_RMB_Engage_030.wav
+│   │   ├── Wraith_Ability_RMB_Engage_030.wav.meta
+│   │   ├── Wraith_Ability_ScoredCrit_010.wav
+│   │   ├── Wraith_Ability_ScoredCrit_010.wav.meta
+│   │   ├── Wraith_Ability_ScoredCrit_020.wav
+│   │   ├── Wraith_Ability_ScoredCrit_020.wav.meta
+│   │   ├── Wraith_Ability_ScoredCrit_030.wav
+│   │   ├── Wraith_Ability_ScoredCrit_030.wav.meta
+│   │   ├── Wraith_Ability_Ultimate_Ally_010.wav
+│   │   ├── Wraith_Ability_Ultimate_Ally_010.wav.meta
+│   │   ├── Wraith_Ability_Ultimate_Enemy_010.wav
+│   │   ├── Wraith_Ability_Ultimate_Enemy_010.wav.meta
+│   │   ├── Wraith_Ability_Ultimate_Ready_010.wav
+│   │   ├── Wraith_Ability_Ultimate_Ready_010.wav.meta
+│   │   ├── Wraith_Ability_Ultimate_Ready_020.wav
+│   │   ├── Wraith_Ability_Ultimate_Ready_020.wav.meta
+│   │   ├── Wraith_Ability_Ultimate_Ready_030.wav
+│   │   ├── Wraith_Ability_Ultimate_Ready_030.wav.meta
+│   │   ├── Wraith_Ability_Ultimate_Self_010.wav
+│   │   ├── Wraith_Ability_Ultimate_Self_010.wav.meta
+│   │   ├── Wraith_Ability_UsedLastCharge_010.wav
+│   │   ├── Wraith_Ability_UsedLastCharge_010.wav.meta
+│   │   ├── Wraith_Ability_UsedLastCharge_020.wav
+│   │   ├── Wraith_Ability_UsedLastCharge_020.wav.meta
+│   │   ├── Wraith_Ability_UsedLastCharge_030.wav
+│   │   ├── Wraith_Ability_UsedLastCharge_030.wav.meta
+│   │   ├── Wraith_Ability_UsedLastCharge_040.wav
+│   │   ├── Wraith_Ability_UsedLastCharge_040.wav.meta
+│   │   ├── Wraith_Catchphrase_010.wav
+│   │   ├── Wraith_Catchphrase_010.wav.meta
+│   │   ├── Wraith_Catchphrase_020.wav
+│   │   ├── Wraith_Catchphrase_020.wav.meta
+│   │   ├── Wraith_Catchphrase_030.wav
+│   │   ├── Wraith_Catchphrase_030.wav.meta
+│   │   ├── Wraith_Catchphrase_040.wav
+│   │   ├── Wraith_Catchphrase_040.wav.meta
+│   │   ├── Wraith_Catchphrase_050.wav
+│   │   ├── Wraith_Catchphrase_050.wav.meta
+│   │   ├── Wraith_Death_010.wav
+│   │   ├── Wraith_Death_010.wav.meta
+│   │   ├── Wraith_Death_020.wav
+│   │   ├── Wraith_Death_020.wav.meta
+│   │   ├── Wraith_Death_030.wav
+│   │   ├── Wraith_Death_030.wav.meta
+│   │   ├── Wraith_Death_040.wav
+│   │   ├── Wraith_Death_040.wav.meta
+│   │   ├── Wraith_Death_050.wav
+│   │   ├── Wraith_Death_050.wav.meta
+│   │   ├── Wraith_Death_060.wav
+│   │   ├── Wraith_Death_060.wav.meta
+│   │   ├── Wraith_Death_070.wav
+│   │   ├── Wraith_Death_070.wav.meta
+│   │   ├── Wraith_DraftLock_010.wav
+│   │   ├── Wraith_DraftLock_010.wav.meta
+│   │   ├── Wraith_DraftLock_020.wav
+│   │   ├── Wraith_DraftLock_020.wav.meta
+│   │   ├── Wraith_DraftLock_030.wav
+│   │   ├── Wraith_DraftLock_030.wav.meta
+│   │   ├── Wraith_DraftLock_040.wav
+│   │   ├── Wraith_DraftLock_040.wav.meta
+│   │   ├── Wraith_DraftLock_050.wav
+│   │   ├── Wraith_DraftLock_050.wav.meta
+│   │   ├── Wraith_DraftSelect_010.wav
+│   │   ├── Wraith_DraftSelect_010.wav.meta
+│   │   ├── Wraith_DraftSelect_020.wav
+│   │   ├── Wraith_DraftSelect_020.wav.meta
+│   │   ├── Wraith_DraftSelect_030.wav
+│   │   ├── Wraith_DraftSelect_030.wav.meta
+│   │   ├── Wraith_Effort_Ability_E_010.wav
+│   │   ├── Wraith_Effort_Ability_E_010.wav.meta
+│   │   ├── Wraith_Effort_Ability_E_011.wav
+│   │   ├── Wraith_Effort_Ability_E_011.wav.meta
+│   │   ├── Wraith_Effort_Ability_E_012.wav
+│   │   ├── Wraith_Effort_Ability_E_012.wav.meta
+│   │   ├── Wraith_Effort_Ability_E_013.wav
+│   │   ├── Wraith_Effort_Ability_E_013.wav.meta
+│   │   ├── Wraith_Effort_Ability_E_014.wav
+│   │   ├── Wraith_Effort_Ability_E_014.wav.meta
+│   │   ├── Wraith_Effort_Ability_Primary_010.wav
+│   │   ├── Wraith_Effort_Ability_Primary_010.wav.meta
+│   │   ├── Wraith_Effort_Ability_Primary_011.wav
+│   │   ├── Wraith_Effort_Ability_Primary_011.wav.meta
+│   │   ├── Wraith_Effort_Ability_Primary_012.wav
+│   │   ├── Wraith_Effort_Ability_Primary_012.wav.meta
+│   │   ├── Wraith_Effort_Ability_Primary_013.wav
+│   │   ├── Wraith_Effort_Ability_Primary_013.wav.meta
+│   │   ├── Wraith_Effort_Ability_Primary_014.wav
+│   │   ├── Wraith_Effort_Ability_Primary_014.wav.meta
+│   │   ├── Wraith_Effort_Ability_Q_010.wav
+│   │   ├── Wraith_Effort_Ability_Q_010.wav.meta
+│   │   ├── Wraith_Effort_Ability_Q_011.wav
+│   │   ├── Wraith_Effort_Ability_Q_011.wav.meta
+│   │   ├── Wraith_Effort_Ability_Q_012.wav
+│   │   ├── Wraith_Effort_Ability_Q_012.wav.meta
+│   │   ├── Wraith_Effort_Ability_Q_013.wav
+│   │   ├── Wraith_Effort_Ability_Q_013.wav.meta
+│   │   ├── Wraith_Effort_Ability_Q_014.wav
+│   │   ├── Wraith_Effort_Ability_Q_014.wav.meta
+│   │   ├── Wraith_Effort_Ability_RMB_010.wav
+│   │   ├── Wraith_Effort_Ability_RMB_010.wav.meta
+│   │   ├── Wraith_Effort_Ability_RMB_011.wav
+│   │   ├── Wraith_Effort_Ability_RMB_011.wav.meta
+│   │   ├── Wraith_Effort_Ability_RMB_012.wav
+│   │   ├── Wraith_Effort_Ability_RMB_012.wav.meta
+│   │   ├── Wraith_Effort_Ability_RMB_013.wav
+│   │   ├── Wraith_Effort_Ability_RMB_013.wav.meta
+│   │   ├── Wraith_Effort_Ability_RMB_014.wav
+│   │   ├── Wraith_Effort_Ability_RMB_014.wav.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate_010.wav
+│   │   ├── Wraith_Effort_Ability_Ultimate_010.wav.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate_011.wav
+│   │   ├── Wraith_Effort_Ability_Ultimate_011.wav.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate_012.wav
+│   │   ├── Wraith_Effort_Ability_Ultimate_012.wav.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate_013.wav
+│   │   ├── Wraith_Effort_Ability_Ultimate_013.wav.meta
+│   │   ├── Wraith_Effort_Ability_Ultimate_014.wav
+│   │   ├── Wraith_Effort_Ability_Ultimate_014.wav.meta
+│   │   ├── Wraith_Effort_Attack_010.wav
+│   │   ├── Wraith_Effort_Attack_010.wav.meta
+│   │   ├── Wraith_Effort_Attack_011.wav
+│   │   ├── Wraith_Effort_Attack_011.wav.meta
+│   │   ├── Wraith_Effort_Attack_012.wav
+│   │   ├── Wraith_Effort_Attack_012.wav.meta
+│   │   ├── Wraith_Effort_Attack_013.wav
+│   │   ├── Wraith_Effort_Attack_013.wav.meta
+│   │   ├── Wraith_Effort_Attack_014.wav
+│   │   ├── Wraith_Effort_Attack_014.wav.meta
+│   │   ├── Wraith_Effort_Block_010.wav
+│   │   ├── Wraith_Effort_Block_010.wav.meta
+│   │   ├── Wraith_Effort_Block_011.wav
+│   │   ├── Wraith_Effort_Block_011.wav.meta
+│   │   ├── Wraith_Effort_Block_012.wav
+│   │   ├── Wraith_Effort_Block_012.wav.meta
+│   │   ├── Wraith_Effort_Block_013.wav
+│   │   ├── Wraith_Effort_Block_013.wav.meta
+│   │   ├── Wraith_Effort_Block_014.wav
+│   │   ├── Wraith_Effort_Block_014.wav.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth_010.wav
+│   │   ├── Wraith_Effort_BreathingLowHealth_010.wav.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth_011.wav
+│   │   ├── Wraith_Effort_BreathingLowHealth_011.wav.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth_012.wav
+│   │   ├── Wraith_Effort_BreathingLowHealth_012.wav.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth_013.wav
+│   │   ├── Wraith_Effort_BreathingLowHealth_013.wav.meta
+│   │   ├── Wraith_Effort_BreathingLowHealth_014.wav
+│   │   ├── Wraith_Effort_BreathingLowHealth_014.wav.meta
+│   │   ├── Wraith_Effort_BreathingRun_010.wav
+│   │   ├── Wraith_Effort_BreathingRun_010.wav.meta
+│   │   ├── Wraith_Effort_BreathingRun_011.wav
+│   │   ├── Wraith_Effort_BreathingRun_011.wav.meta
+│   │   ├── Wraith_Effort_BreathingRun_012.wav
+│   │   ├── Wraith_Effort_BreathingRun_012.wav.meta
+│   │   ├── Wraith_Effort_BreathingRun_013.wav
+│   │   ├── Wraith_Effort_BreathingRun_013.wav.meta
+│   │   ├── Wraith_Effort_BreathingRun_014.wav
+│   │   ├── Wraith_Effort_BreathingRun_014.wav.meta
+│   │   ├── Wraith_Effort_Cheer_010.wav
+│   │   ├── Wraith_Effort_Cheer_010.wav.meta
+│   │   ├── Wraith_Effort_Cheer_011.wav
+│   │   ├── Wraith_Effort_Cheer_011.wav.meta
+│   │   ├── Wraith_Effort_Cheer_012.wav
+│   │   ├── Wraith_Effort_Cheer_012.wav.meta
+│   │   ├── Wraith_Effort_Cheer_013.wav
+│   │   ├── Wraith_Effort_Cheer_013.wav.meta
+│   │   ├── Wraith_Effort_Cheer_014.wav
+│   │   ├── Wraith_Effort_Cheer_014.wav.meta
+│   │   ├── Wraith_Effort_Death_010.wav
+│   │   ├── Wraith_Effort_Death_010.wav.meta
+│   │   ├── Wraith_Effort_Death_011.wav
+│   │   ├── Wraith_Effort_Death_011.wav.meta
+│   │   ├── Wraith_Effort_Death_012.wav
+│   │   ├── Wraith_Effort_Death_012.wav.meta
+│   │   ├── Wraith_Effort_Death_013.wav
+│   │   ├── Wraith_Effort_Death_013.wav.meta
+│   │   ├── Wraith_Effort_Death_014.wav
+│   │   ├── Wraith_Effort_Death_014.wav.meta
+│   │   ├── Wraith_Effort_Frustration_010.wav
+│   │   ├── Wraith_Effort_Frustration_010.wav.meta
+│   │   ├── Wraith_Effort_Frustration_011.wav
+│   │   ├── Wraith_Effort_Frustration_011.wav.meta
+│   │   ├── Wraith_Effort_Frustration_012.wav
+│   │   ├── Wraith_Effort_Frustration_012.wav.meta
+│   │   ├── Wraith_Effort_Frustration_013.wav
+│   │   ├── Wraith_Effort_Frustration_013.wav.meta
+│   │   ├── Wraith_Effort_Frustration_014.wav
+│   │   ├── Wraith_Effort_Frustration_014.wav.meta
+│   │   ├── Wraith_Effort_Jump_010.wav
+│   │   ├── Wraith_Effort_Jump_010.wav.meta
+│   │   ├── Wraith_Effort_Jump_011.wav
+│   │   ├── Wraith_Effort_Jump_011.wav.meta
+│   │   ├── Wraith_Effort_Jump_012.wav
+│   │   ├── Wraith_Effort_Jump_012.wav.meta
+│   │   ├── Wraith_Effort_Jump_013.wav
+│   │   ├── Wraith_Effort_Jump_013.wav.meta
+│   │   ├── Wraith_Effort_Jump_014.wav
+│   │   ├── Wraith_Effort_Jump_014.wav.meta
+│   │   ├── Wraith_Effort_JumpHeavy_010.wav
+│   │   ├── Wraith_Effort_JumpHeavy_010.wav.meta
+│   │   ├── Wraith_Effort_JumpHeavy_011.wav
+│   │   ├── Wraith_Effort_JumpHeavy_011.wav.meta
+│   │   ├── Wraith_Effort_JumpHeavy_012.wav
+│   │   ├── Wraith_Effort_JumpHeavy_012.wav.meta
+│   │   ├── Wraith_Effort_JumpHeavy_013.wav
+│   │   ├── Wraith_Effort_JumpHeavy_013.wav.meta
+│   │   ├── Wraith_Effort_JumpHeavy_014.wav
+│   │   ├── Wraith_Effort_JumpHeavy_014.wav.meta
+│   │   ├── Wraith_Effort_Land_010.wav
+│   │   ├── Wraith_Effort_Land_010.wav.meta
+│   │   ├── Wraith_Effort_Land_011.wav
+│   │   ├── Wraith_Effort_Land_011.wav.meta
+│   │   ├── Wraith_Effort_Land_012.wav
+│   │   ├── Wraith_Effort_Land_012.wav.meta
+│   │   ├── Wraith_Effort_Land_013.wav
+│   │   ├── Wraith_Effort_Land_013.wav.meta
+│   │   ├── Wraith_Effort_Land_014.wav
+│   │   ├── Wraith_Effort_Land_014.wav.meta
+│   │   ├── Wraith_Effort_LandHeavy_010.wav
+│   │   ├── Wraith_Effort_LandHeavy_010.wav.meta
+│   │   ├── Wraith_Effort_LandHeavy_011.wav
+│   │   ├── Wraith_Effort_LandHeavy_011.wav.meta
+│   │   ├── Wraith_Effort_LandHeavy_012.wav
+│   │   ├── Wraith_Effort_LandHeavy_012.wav.meta
+│   │   ├── Wraith_Effort_LandHeavy_013.wav
+│   │   ├── Wraith_Effort_LandHeavy_013.wav.meta
+│   │   ├── Wraith_Effort_LandHeavy_014.wav
+│   │   ├── Wraith_Effort_LandHeavy_014.wav.meta
+│   │   ├── Wraith_Effort_Laugh_010.wav
+│   │   ├── Wraith_Effort_Laugh_010.wav.meta
+│   │   ├── Wraith_Effort_Laugh_011.wav
+│   │   ├── Wraith_Effort_Laugh_011.wav.meta
+│   │   ├── Wraith_Effort_Laugh_012.wav
+│   │   ├── Wraith_Effort_Laugh_012.wav.meta
+│   │   ├── Wraith_Effort_Laugh_013.wav
+│   │   ├── Wraith_Effort_Laugh_013.wav.meta
+│   │   ├── Wraith_Effort_Laugh_014.wav
+│   │   ├── Wraith_Effort_Laugh_014.wav.meta
+│   │   ├── Wraith_Effort_Pain_010.wav
+│   │   ├── Wraith_Effort_Pain_010.wav.meta
+│   │   ├── Wraith_Effort_Pain_011.wav
+│   │   ├── Wraith_Effort_Pain_011.wav.meta
+│   │   ├── Wraith_Effort_Pain_012.wav
+│   │   ├── Wraith_Effort_Pain_012.wav.meta
+│   │   ├── Wraith_Effort_Pain_013.wav
+│   │   ├── Wraith_Effort_Pain_013.wav.meta
+│   │   ├── Wraith_Effort_Pain_014.wav
+│   │   ├── Wraith_Effort_Pain_014.wav.meta
+│   │   ├── Wraith_Effort_PainHeavy_010.wav
+│   │   ├── Wraith_Effort_PainHeavy_010.wav.meta
+│   │   ├── Wraith_Effort_PainHeavy_011.wav
+│   │   ├── Wraith_Effort_PainHeavy_011.wav.meta
+│   │   ├── Wraith_Effort_PainHeavy_012.wav
+│   │   ├── Wraith_Effort_PainHeavy_012.wav.meta
+│   │   ├── Wraith_Effort_PainHeavy_013.wav
+│   │   ├── Wraith_Effort_PainHeavy_013.wav.meta
+│   │   ├── Wraith_Effort_PainHeavy_014.wav
+│   │   ├── Wraith_Effort_PainHeavy_014.wav.meta
+│   │   ├── Wraith_Effort_Swing_010.wav
+│   │   ├── Wraith_Effort_Swing_010.wav.meta
+│   │   ├── Wraith_Effort_Swing_011.wav
+│   │   ├── Wraith_Effort_Swing_011.wav.meta
+│   │   ├── Wraith_Effort_Swing_012.wav
+│   │   ├── Wraith_Effort_Swing_012.wav.meta
+│   │   ├── Wraith_Effort_Swing_013.wav
+│   │   ├── Wraith_Effort_Swing_013.wav.meta
+│   │   ├── Wraith_Effort_Swing_014.wav
+│   │   ├── Wraith_Effort_Swing_014.wav.meta
+│   │   ├── Wraith_Emote_010.wav
+│   │   ├── Wraith_Emote_010.wav.meta
+│   │   ├── Wraith_Emote_020.wav
+│   │   ├── Wraith_Emote_020.wav.meta
+│   │   ├── Wraith_Emote_030.wav
+│   │   ├── Wraith_Emote_030.wav.meta
+│   │   ├── Wraith_Emote_040.wav
+│   │   ├── Wraith_Emote_040.wav.meta
+│   │   ├── Wraith_Emote_050.wav
+│   │   ├── Wraith_Emote_050.wav.meta
+│   │   ├── Wraith_Emote_060.wav
+│   │   ├── Wraith_Emote_060.wav.meta
+│   │   ├── Wraith_Emote_070.wav
+│   │   ├── Wraith_Emote_070.wav.meta
+│   │   ├── Wraith_Emote_Taunt_010.wav
+│   │   ├── Wraith_Emote_Taunt_010.wav.meta
+│   │   ├── Wraith_Emote_Taunt_020.wav
+│   │   ├── Wraith_Emote_Taunt_020.wav.meta
+│   │   ├── Wraith_Emote_Taunt_030.wav
+│   │   ├── Wraith_Emote_Taunt_030.wav.meta
+│   │   ├── Wraith_Emote_Taunt_040.wav
+│   │   ├── Wraith_Emote_Taunt_040.wav.meta
+│   │   ├── Wraith_Health_Critical_010.wav
+│   │   ├── Wraith_Health_Critical_010.wav.meta
+│   │   ├── Wraith_Health_Critical_020.wav
+│   │   ├── Wraith_Health_Critical_020.wav.meta
+│   │   ├── Wraith_Health_Critical_030.wav
+│   │   ├── Wraith_Health_Critical_030.wav.meta
+│   │   ├── Wraith_Health_CriticalSave_010.wav
+│   │   ├── Wraith_Health_CriticalSave_010.wav.meta
+│   │   ├── Wraith_Health_CriticalSave_020.wav
+│   │   ├── Wraith_Health_CriticalSave_020.wav.meta
+│   │   ├── Wraith_Health_CriticalSave_030.wav
+│   │   ├── Wraith_Health_CriticalSave_030.wav.meta
+│   │   ├── Wraith_Health_Healed_010.wav
+│   │   ├── Wraith_Health_Healed_010.wav.meta
+│   │   ├── Wraith_Health_Healed_020.wav
+│   │   ├── Wraith_Health_Healed_020.wav.meta
+│   │   ├── Wraith_Health_Healed_030.wav
+│   │   ├── Wraith_Health_Healed_030.wav.meta
+│   │   ├── Wraith_Health_Low_010.wav
+│   │   ├── Wraith_Health_Low_010.wav.meta
+│   │   ├── Wraith_Health_Low_020.wav
+│   │   ├── Wraith_Health_Low_020.wav.meta
+│   │   ├── Wraith_Health_Low_030.wav
+│   │   ├── Wraith_Health_Low_030.wav.meta
+│   │   ├── Wraith_Health_SufferedCrit_010.wav
+│   │   ├── Wraith_Health_SufferedCrit_010.wav.meta
+│   │   ├── Wraith_Health_SufferedCrit_020.wav
+│   │   ├── Wraith_Health_SufferedCrit_020.wav.meta
+│   │   ├── Wraith_Health_SufferedCrit_030.wav
+│   │   ├── Wraith_Health_SufferedCrit_030.wav.meta
+│   │   ├── Wraith_Intro_Boast_010.wav
+│   │   ├── Wraith_Intro_Boast_010.wav.meta
+│   │   ├── Wraith_Intro_Boast_020.wav
+│   │   ├── Wraith_Intro_Boast_020.wav.meta
+│   │   ├── Wraith_Intro_Boast_030.wav
+│   │   ├── Wraith_Intro_Boast_030.wav.meta
+│   │   ├── Wraith_Intro_BoastResponse_010.wav
+│   │   ├── Wraith_Intro_BoastResponse_010.wav.meta
+│   │   ├── Wraith_Intro_BoastResponse_020.wav
+│   │   ├── Wraith_Intro_BoastResponse_020.wav.meta
+│   │   ├── Wraith_Intro_BoastResponse_030.wav
+│   │   ├── Wraith_Intro_BoastResponse_030.wav.meta
+│   │   ├── Wraith_Intro_Question_010.wav
+│   │   ├── Wraith_Intro_Question_010.wav.meta
+│   │   ├── Wraith_Intro_Question_020.wav
+│   │   ├── Wraith_Intro_Question_020.wav.meta
+│   │   ├── Wraith_Intro_Question_030.wav
+│   │   ├── Wraith_Intro_Question_030.wav.meta
+│   │   ├── Wraith_Intro_QuestionResponse_010.wav
+│   │   ├── Wraith_Intro_QuestionResponse_010.wav.meta
+│   │   ├── Wraith_Intro_QuestionResponse_020.wav
+│   │   ├── Wraith_Intro_QuestionResponse_020.wav.meta
+│   │   ├── Wraith_Intro_QuestionResponse_030.wav
+│   │   ├── Wraith_Intro_QuestionResponse_030.wav.meta
+│   │   ├── Wraith_Intro_Shinbi_010.wav
+│   │   ├── Wraith_Intro_Shinbi_010.wav.meta
+│   │   ├── Wraith_Intro_Statement_010.wav
+│   │   ├── Wraith_Intro_Statement_010.wav.meta
+│   │   ├── Wraith_Intro_Statement_020.wav
+│   │   ├── Wraith_Intro_Statement_020.wav.meta
+│   │   ├── Wraith_Intro_Statement_030.wav
+│   │   ├── Wraith_Intro_Statement_030.wav.meta
+│   │   ├── Wraith_Intro_Statement_040.wav
+│   │   ├── Wraith_Intro_Statement_040.wav.meta
+│   │   ├── Wraith_Kill_Assist_010.wav
+│   │   ├── Wraith_Kill_Assist_010.wav.meta
+│   │   ├── Wraith_Kill_Assist_020.wav
+│   │   ├── Wraith_Kill_Assist_020.wav.meta
+│   │   ├── Wraith_Kill_Assist_030.wav
+│   │   ├── Wraith_Kill_Assist_030.wav.meta
+│   │   ├── Wraith_Kill_Enemy_010.wav
+│   │   ├── Wraith_Kill_Enemy_010.wav.meta
+│   │   ├── Wraith_Kill_Enemy_020.wav
+│   │   ├── Wraith_Kill_Enemy_020.wav.meta
+│   │   ├── Wraith_Kill_Enemy_030.wav
+│   │   ├── Wraith_Kill_Enemy_030.wav.meta
+│   │   ├── Wraith_Kill_Enemy_040.wav
+│   │   ├── Wraith_Kill_Enemy_040.wav.meta
+│   │   ├── Wraith_Kill_Enemy_050.wav
+│   │   ├── Wraith_Kill_Enemy_050.wav.meta
+│   │   ├── Wraith_Kill_Enemy_060.wav
+│   │   ├── Wraith_Kill_Enemy_060.wav.meta
+│   │   ├── Wraith_Kill_Enemy_070.wav
+│   │   ├── Wraith_Kill_Enemy_070.wav.meta
+│   │   ├── Wraith_Kill_FirstBlood_010.wav
+│   │   ├── Wraith_Kill_FirstBlood_010.wav.meta
+│   │   ├── Wraith_Kill_FirstBlood_020.wav
+│   │   ├── Wraith_Kill_FirstBlood_020.wav.meta
+│   │   ├── Wraith_Kill_FirstBlood_030.wav
+│   │   ├── Wraith_Kill_FirstBlood_030.wav.meta
+│   │   ├── Wraith_Kill_Revenge_010.wav
+│   │   ├── Wraith_Kill_Revenge_010.wav.meta
+│   │   ├── Wraith_Kill_Revenge_020.wav
+│   │   ├── Wraith_Kill_Revenge_020.wav.meta
+│   │   ├── Wraith_Kill_Revenge_030.wav
+│   │   ├── Wraith_Kill_Revenge_030.wav.meta
+│   │   ├── Wraith_Kill_SameEnemy_010.wav
+│   │   ├── Wraith_Kill_SameEnemy_010.wav.meta
+│   │   ├── Wraith_Kill_SameEnemy_020.wav
+│   │   ├── Wraith_Kill_SameEnemy_020.wav.meta
+│   │   ├── Wraith_Kill_SameEnemy_030.wav
+│   │   ├── Wraith_Kill_SameEnemy_030.wav.meta
+│   │   ├── Wraith_Kill_Shutdown_010.wav
+│   │   ├── Wraith_Kill_Shutdown_010.wav.meta
+│   │   ├── Wraith_Kill_Shutdown_020.wav
+│   │   ├── Wraith_Kill_Shutdown_020.wav.meta
+│   │   ├── Wraith_Kill_Shutdown_030.wav
+│   │   ├── Wraith_Kill_Shutdown_030.wav.meta
+│   │   ├── Wraith_Kill_Streak_010.wav
+│   │   ├── Wraith_Kill_Streak_010.wav.meta
+│   │   ├── Wraith_Kill_Streak_020.wav
+│   │   ├── Wraith_Kill_Streak_020.wav.meta
+│   │   ├── Wraith_Kill_Streak_030.wav
+│   │   ├── Wraith_Kill_Streak_030.wav.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm_010.wav
+│   │   ├── Wraith_Level_AbilityLevelConfirm_010.wav.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm_020.wav
+│   │   ├── Wraith_Level_AbilityLevelConfirm_020.wav.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm_030.wav
+│   │   ├── Wraith_Level_AbilityLevelConfirm_030.wav.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm_040.wav
+│   │   ├── Wraith_Level_AbilityLevelConfirm_040.wav.meta
+│   │   ├── Wraith_Level_AbilityLevelConfirm_050.wav
+│   │   ├── Wraith_Level_AbilityLevelConfirm_050.wav.meta
+│   │   ├── Wraith_Level_BoughtItem_010.wav
+│   │   ├── Wraith_Level_BoughtItem_010.wav.meta
+│   │   ├── Wraith_Level_BoughtItem_020.wav
+│   │   ├── Wraith_Level_BoughtItem_020.wav.meta
+│   │   ├── Wraith_Level_BoughtItem_030.wav
+│   │   ├── Wraith_Level_BoughtItem_030.wav.meta
+│   │   ├── Wraith_Level_CardPoints_010.wav
+│   │   ├── Wraith_Level_CardPoints_010.wav.meta
+│   │   ├── Wraith_Level_CardPoints_020.wav
+│   │   ├── Wraith_Level_CardPoints_020.wav.meta
+│   │   ├── Wraith_Level_CardPoints_030.wav
+│   │   ├── Wraith_Level_CardPoints_030.wav.meta
+│   │   ├── Wraith_Level_Five_010.wav
+│   │   ├── Wraith_Level_Five_010.wav.meta
+│   │   ├── Wraith_Level_Five_020.wav
+│   │   ├── Wraith_Level_Five_020.wav.meta
+│   │   ├── Wraith_Level_Five_030.wav
+│   │   ├── Wraith_Level_Five_030.wav.meta
+│   │   ├── Wraith_Level_Up_010.wav
+│   │   ├── Wraith_Level_Up_010.wav.meta
+│   │   ├── Wraith_Level_Up_020.wav
+│   │   ├── Wraith_Level_Up_020.wav.meta
+│   │   ├── Wraith_Level_Up_030.wav
+│   │   ├── Wraith_Level_Up_030.wav.meta
+│   │   ├── Wraith_Level_Up_040.wav
+│   │   ├── Wraith_Level_Up_040.wav.meta
+│   │   ├── Wraith_Level_Up_050.wav
+│   │   ├── Wraith_Level_Up_050.wav.meta
+│   │   ├── Wraith_Lore_Death_DrMaximov_010.wav
+│   │   ├── Wraith_Lore_Death_DrMaximov_010.wav.meta
+│   │   ├── Wraith_Lore_Death_Emeritus_010.wav
+│   │   ├── Wraith_Lore_Death_Emeritus_010.wav.meta
+│   │   ├── Wraith_Lore_Death_Kallari_010.wav
+│   │   ├── Wraith_Lore_Death_Kallari_010.wav.meta
+│   │   ├── Wraith_Lore_Death_Muriel_010.wav
+│   │   ├── Wraith_Lore_Death_Muriel_010.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_010.wav
+│   │   ├── Wraith_Lore_DrMaximov_010.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_020.wav
+│   │   ├── Wraith_Lore_DrMaximov_020.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_030.wav
+│   │   ├── Wraith_Lore_DrMaximov_030.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_040.wav
+│   │   ├── Wraith_Lore_DrMaximov_040.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_050.wav
+│   │   ├── Wraith_Lore_DrMaximov_050.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_060.wav
+│   │   ├── Wraith_Lore_DrMaximov_060.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_070.wav
+│   │   ├── Wraith_Lore_DrMaximov_070.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_080.wav
+│   │   ├── Wraith_Lore_DrMaximov_080.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_090.wav
+│   │   ├── Wraith_Lore_DrMaximov_090.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_100.wav
+│   │   ├── Wraith_Lore_DrMaximov_100.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_110.wav
+│   │   ├── Wraith_Lore_DrMaximov_110.wav.meta
+│   │   ├── Wraith_Lore_DrMaximov_120.wav
+│   │   ├── Wraith_Lore_DrMaximov_120.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_010.wav
+│   │   ├── Wraith_Lore_Emeritus_010.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_020.wav
+│   │   ├── Wraith_Lore_Emeritus_020.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_030.wav
+│   │   ├── Wraith_Lore_Emeritus_030.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_040.wav
+│   │   ├── Wraith_Lore_Emeritus_040.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_050.wav
+│   │   ├── Wraith_Lore_Emeritus_050.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_060.wav
+│   │   ├── Wraith_Lore_Emeritus_060.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_070.wav
+│   │   ├── Wraith_Lore_Emeritus_070.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_080.wav
+│   │   ├── Wraith_Lore_Emeritus_080.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_090.wav
+│   │   ├── Wraith_Lore_Emeritus_090.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_100.wav
+│   │   ├── Wraith_Lore_Emeritus_100.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_110.wav
+│   │   ├── Wraith_Lore_Emeritus_110.wav.meta
+│   │   ├── Wraith_Lore_Emeritus_120.wav
+│   │   ├── Wraith_Lore_Emeritus_120.wav.meta
+│   │   ├── Wraith_Lore_Kallari_010.wav
+│   │   ├── Wraith_Lore_Kallari_010.wav.meta
+│   │   ├── Wraith_Lore_Kallari_020.wav
+│   │   ├── Wraith_Lore_Kallari_020.wav.meta
+│   │   ├── Wraith_Lore_Kallari_030.wav
+│   │   ├── Wraith_Lore_Kallari_030.wav.meta
+│   │   ├── Wraith_Lore_Kallari_040.wav
+│   │   ├── Wraith_Lore_Kallari_040.wav.meta
+│   │   ├── Wraith_Lore_Kallari_050.wav
+│   │   ├── Wraith_Lore_Kallari_050.wav.meta
+│   │   ├── Wraith_Lore_Kallari_060.wav
+│   │   ├── Wraith_Lore_Kallari_060.wav.meta
+│   │   ├── Wraith_Lore_Kallari_070.wav
+│   │   ├── Wraith_Lore_Kallari_070.wav.meta
+│   │   ├── Wraith_Lore_Kallari_080.wav
+│   │   ├── Wraith_Lore_Kallari_080.wav.meta
+│   │   ├── Wraith_Lore_Kallari_090.wav
+│   │   ├── Wraith_Lore_Kallari_090.wav.meta
+│   │   ├── Wraith_Lore_Kallari_100.wav
+│   │   ├── Wraith_Lore_Kallari_100.wav.meta
+│   │   ├── Wraith_Lore_Kallari_110.wav
+│   │   ├── Wraith_Lore_Kallari_110.wav.meta
+│   │   ├── Wraith_Lore_Kallari_120.wav
+│   │   ├── Wraith_Lore_Kallari_120.wav.meta
+│   │   ├── Wraith_Lore_Kill_DrMaximov_010.wav
+│   │   ├── Wraith_Lore_Kill_DrMaximov_010.wav.meta
+│   │   ├── Wraith_Lore_Kill_DrMaximov_020.wav
+│   │   ├── Wraith_Lore_Kill_DrMaximov_020.wav.meta
+│   │   ├── Wraith_Lore_Kill_DrMaximov_030.wav
+│   │   ├── Wraith_Lore_Kill_DrMaximov_030.wav.meta
+│   │   ├── Wraith_Lore_Kill_Emeritus_010.wav
+│   │   ├── Wraith_Lore_Kill_Emeritus_010.wav.meta
+│   │   ├── Wraith_Lore_Kill_Emeritus_020.wav
+│   │   ├── Wraith_Lore_Kill_Emeritus_020.wav.meta
+│   │   ├── Wraith_Lore_Kill_Emeritus_030.wav
+│   │   ├── Wraith_Lore_Kill_Emeritus_030.wav.meta
+│   │   ├── Wraith_Lore_Kill_Kallari_010.wav
+│   │   ├── Wraith_Lore_Kill_Kallari_010.wav.meta
+│   │   ├── Wraith_Lore_Kill_Kallari_020.wav
+│   │   ├── Wraith_Lore_Kill_Kallari_020.wav.meta
+│   │   ├── Wraith_Lore_Kill_Kallari_030.wav
+│   │   ├── Wraith_Lore_Kill_Kallari_030.wav.meta
+│   │   ├── Wraith_Lore_Kill_Muriel_010.wav
+│   │   ├── Wraith_Lore_Kill_Muriel_010.wav.meta
+│   │   ├── Wraith_Lore_Kill_Muriel_020.wav
+│   │   ├── Wraith_Lore_Kill_Muriel_020.wav.meta
+│   │   ├── Wraith_Lore_Kill_Muriel_030.wav
+│   │   ├── Wraith_Lore_Kill_Muriel_030.wav.meta
+│   │   ├── Wraith_Lore_Muriel_010.wav
+│   │   ├── Wraith_Lore_Muriel_010.wav.meta
+│   │   ├── Wraith_Lore_Muriel_020.wav
+│   │   ├── Wraith_Lore_Muriel_020.wav.meta
+│   │   ├── Wraith_Lore_Muriel_030.wav
+│   │   ├── Wraith_Lore_Muriel_030.wav.meta
+│   │   ├── Wraith_Lore_Muriel_040.wav
+│   │   ├── Wraith_Lore_Muriel_040.wav.meta
+│   │   ├── Wraith_Lore_Muriel_050.wav
+│   │   ├── Wraith_Lore_Muriel_050.wav.meta
+│   │   ├── Wraith_Lore_Muriel_060.wav
+│   │   ├── Wraith_Lore_Muriel_060.wav.meta
+│   │   ├── Wraith_Lore_Muriel_070.wav
+│   │   ├── Wraith_Lore_Muriel_070.wav.meta
+│   │   ├── Wraith_Lore_Muriel_080.wav
+│   │   ├── Wraith_Lore_Muriel_080.wav.meta
+│   │   ├── Wraith_Lore_Muriel_090.wav
+│   │   ├── Wraith_Lore_Muriel_090.wav.meta
+│   │   ├── Wraith_Lore_Muriel_100.wav
+│   │   ├── Wraith_Lore_Muriel_100.wav.meta
+│   │   ├── Wraith_Lore_Muriel_110.wav
+│   │   ├── Wraith_Lore_Muriel_110.wav.meta
+│   │   ├── Wraith_Lore_Muriel_120.wav
+│   │   ├── Wraith_Lore_Muriel_120.wav.meta
+│   │   ├── Wraith_ProfileDizzy_010.wav
+│   │   ├── Wraith_ProfileDizzy_010.wav.meta
+│   │   ├── Wraith_ProfileDizzy_020.wav
+│   │   ├── Wraith_ProfileDizzy_020.wav.meta
+│   │   ├── Wraith_ProfileDizzy_030.wav
+│   │   ├── Wraith_ProfileDizzy_030.wav.meta
+│   │   ├── Wraith_ProfileDizzy_040.wav
+│   │   ├── Wraith_ProfileDizzy_040.wav.meta
+│   │   ├── Wraith_ProfileIdle_010.wav
+│   │   ├── Wraith_ProfileIdle_010.wav.meta
+│   │   ├── Wraith_ProfileIdle_020.wav
+│   │   ├── Wraith_ProfileIdle_020.wav.meta
+│   │   ├── Wraith_ProfileIdle_030.wav
+│   │   ├── Wraith_ProfileIdle_030.wav.meta
+│   │   ├── Wraith_ProfileIdle_040.wav
+│   │   ├── Wraith_ProfileIdle_040.wav.meta
+│   │   ├── Wraith_ProfilePoke_010.wav
+│   │   ├── Wraith_ProfilePoke_010.wav.meta
+│   │   ├── Wraith_ProfilePoke_020.wav
+│   │   ├── Wraith_ProfilePoke_020.wav.meta
+│   │   ├── Wraith_ProfilePoke_030.wav
+│   │   ├── Wraith_ProfilePoke_030.wav.meta
+│   │   ├── Wraith_ProfilePoke_040.wav
+│   │   ├── Wraith_ProfilePoke_040.wav.meta
+│   │   ├── Wraith_ProfilePoke_050.wav
+│   │   ├── Wraith_ProfilePoke_050.wav.meta
+│   │   ├── Wraith_ProfilePoke_060.wav
+│   │   ├── Wraith_ProfilePoke_060.wav.meta
+│   │   ├── Wraith_ProfilePoke_070.wav
+│   │   ├── Wraith_ProfilePoke_070.wav.meta
+│   │   ├── Wraith_Revive_010.wav
+│   │   ├── Wraith_Revive_010.wav.meta
+│   │   ├── Wraith_Revive_020.wav
+│   │   ├── Wraith_Revive_020.wav.meta
+│   │   ├── Wraith_Revive_030.wav
+│   │   ├── Wraith_Revive_030.wav.meta
+│   │   ├── Wraith_Revive_040.wav
+│   │   ├── Wraith_Revive_040.wav.meta
+│   │   ├── Wraith_Revive_050.wav
+│   │   ├── Wraith_Revive_050.wav.meta
+│   │   ├── Wraith_Status_Ace_010.wav
+│   │   ├── Wraith_Status_Ace_010.wav.meta
+│   │   ├── Wraith_Status_Ace_020.wav
+│   │   ├── Wraith_Status_Ace_020.wav.meta
+│   │   ├── Wraith_Status_Ace_030.wav
+│   │   ├── Wraith_Status_Ace_030.wav.meta
+│   │   ├── Wraith_Status_Buffed_010.wav
+│   │   ├── Wraith_Status_Buffed_010.wav.meta
+│   │   ├── Wraith_Status_Buffed_020.wav
+│   │   ├── Wraith_Status_Buffed_020.wav.meta
+│   │   ├── Wraith_Status_Buffed_030.wav
+│   │   ├── Wraith_Status_Buffed_030.wav.meta
+│   │   ├── Wraith_Status_Celebrate_010.wav
+│   │   ├── Wraith_Status_Celebrate_010.wav.meta
+│   │   ├── Wraith_Status_Celebrate_020.wav
+│   │   ├── Wraith_Status_Celebrate_020.wav.meta
+│   │   ├── Wraith_Status_Celebrate_030.wav
+│   │   ├── Wraith_Status_Celebrate_030.wav.meta
+│   │   ├── Wraith_Status_Danger_010.wav
+│   │   ├── Wraith_Status_Danger_010.wav.meta
+│   │   ├── Wraith_Status_Danger_020.wav
+│   │   ├── Wraith_Status_Danger_020.wav.meta
+│   │   ├── Wraith_Status_Danger_030.wav
+│   │   ├── Wraith_Status_Danger_030.wav.meta
+│   │   ├── Wraith_Status_Defeat_010.wav
+│   │   ├── Wraith_Status_Defeat_010.wav.meta
+│   │   ├── Wraith_Status_Defeat_020.wav
+│   │   ├── Wraith_Status_Defeat_020.wav.meta
+│   │   ├── Wraith_Status_Defeat_030.wav
+│   │   ├── Wraith_Status_Defeat_030.wav.meta
+│   │   ├── Wraith_Status_Idle_010.wav
+│   │   ├── Wraith_Status_Idle_010.wav.meta
+│   │   ├── Wraith_Status_Idle_020.wav
+│   │   ├── Wraith_Status_Idle_020.wav.meta
+│   │   ├── Wraith_Status_Idle_030.wav
+│   │   ├── Wraith_Status_Idle_030.wav.meta
+│   │   ├── Wraith_Status_OrbPrimeActivated_010.wav
+│   │   ├── Wraith_Status_OrbPrimeActivated_010.wav.meta
+│   │   ├── Wraith_Status_OrbPrimeActivated_020.wav
+│   │   ├── Wraith_Status_OrbPrimeActivated_020.wav.meta
+│   │   ├── Wraith_Status_OrbPrimeActivated_030.wav
+│   │   ├── Wraith_Status_OrbPrimeActivated_030.wav.meta
+│   │   ├── Wraith_Status_Recall_010.wav
+│   │   ├── Wraith_Status_Recall_010.wav.meta
+│   │   ├── Wraith_Status_Recall_020.wav
+│   │   ├── Wraith_Status_Recall_020.wav.meta
+│   │   ├── Wraith_Status_Recall_030.wav
+│   │   ├── Wraith_Status_Recall_030.wav.meta
+│   │   ├── Wraith_Status_Recall_040.wav
+│   │   ├── Wraith_Status_Recall_040.wav.meta
+│   │   ├── Wraith_Status_Recall_050.wav
+│   │   ├── Wraith_Status_Recall_050.wav.meta
+│   │   ├── Wraith_Status_TeamDead_010.wav
+│   │   ├── Wraith_Status_TeamDead_010.wav.meta
+│   │   ├── Wraith_Status_TeamDead_020.wav
+│   │   ├── Wraith_Status_TeamDead_020.wav.meta
+│   │   ├── Wraith_Status_TeamDead_030.wav
+│   │   ├── Wraith_Status_TeamDead_030.wav.meta
+│   │   ├── Wraith_Status_Victory_010.wav
+│   │   ├── Wraith_Status_Victory_010.wav.meta
+│   │   ├── Wraith_Status_Victory_020.wav
+│   │   ├── Wraith_Status_Victory_020.wav.meta
+│   │   ├── Wraith_Status_Victory_030.wav
+│   │   ├── Wraith_Status_Victory_030.wav.meta
+│   │   ├── Wraith_Status_Victory_040.wav
+│   │   ├── Wraith_Status_Victory_040.wav.meta
+│   │   ├── Wraith_Status_Victory_050.wav
+│   │   └── Wraith_Status_Victory_050.wav.meta
+│   └── Wavs.meta
+├── Audio.meta
+├── Characters
+│   ├── Global
+│   │   ├── MaterialFunctions
+│   │   │   ├── MaterialLayerConstructors
+│   │   │   ├── MaterialLayerConstructors.meta
+│   │   │   ├── Textures
+│   │   │   │   ├── T_AtmosphericCloudNoise01_N.png
+│   │   │   │   ├── T_AtmosphericCloudNoise01_N.png.meta
+│   │   │   │   ├── T_AtmosphericCloudNoise01.png
+│   │   │   │   ├── T_AtmosphericCloudNoise01.png.meta
+│   │   │   │   ├── T_AtmosphericCloudNoise03.png
+│   │   │   │   └── T_AtmosphericCloudNoise03.png.meta
+│   │   │   └── Textures.meta
+│   │   ├── MaterialFunctions.meta
+│   │   ├── MaterialLayers
+│   │   │   ├── Fabric
+│   │   │   │   ├── T_nylonstap_D.png
+│   │   │   │   ├── T_nylonstap_D.png.meta
+│   │   │   │   ├── T_nylonstap_N.png
+│   │   │   │   └── T_nylonstap_N.png.meta
+│   │   │   ├── Fabric.meta
+│   │   │   ├── Metal
+│   │   │   │   ├── T_AnodizedMetal_D.png
+│   │   │   │   ├── T_AnodizedMetal_D.png.meta
+│   │   │   │   ├── T_AnodizedMetal_N.png
+│   │   │   │   ├── T_AnodizedMetal_N.png.meta
+│   │   │   │   ├── T_Blank_N.png
+│   │   │   │   ├── T_Blank_N.png.meta
+│   │   │   │   ├── T_Blue_Metal02.png
+│   │   │   │   ├── T_Blue_Metal02.png.meta
+│   │   │   │   ├── T_Brushed_Copper_D.png
+│   │   │   │   ├── T_Brushed_Copper_D.png.meta
+│   │   │   │   ├── T_Brushed_Copper_N.png
+│   │   │   │   ├── T_Brushed_Copper_N.png.meta
+│   │   │   │   ├── T_hardmetal2_D.png
+│   │   │   │   ├── T_hardmetal2_D.png.meta
+│   │   │   │   ├── T_Metal_Scratched_Circular_01_COLOR.png
+│   │   │   │   ├── T_Metal_Scratched_Circular_01_COLOR.png.meta
+│   │   │   │   ├── T_Metal_Scratched_Circular_01_N.png
+│   │   │   │   ├── T_Metal_Scratched_Circular_01_N.png.meta
+│   │   │   │   ├── T_ML_Aluminum_01_N.png
+│   │   │   │   ├── T_ML_Aluminum_01_N.png.meta
+│   │   │   │   ├── T_ML_Aluminum01_N.png
+│   │   │   │   ├── T_ML_Aluminum01_N.png.meta
+│   │   │   │   ├── T_ML_Aluminum01.png
+│   │   │   │   ├── T_ML_Aluminum01.png.meta
+│   │   │   │   ├── T_Noise_Rough_Dark_Big.png
+│   │   │   │   ├── T_Noise_Rough_Dark_Big.png.meta
+│   │   │   │   ├── T_Primer_Black_Metal.png
+│   │   │   │   ├── T_Primer_Black_Metal.png.meta
+│   │   │   │   ├── T_Primer_Black_Metal2.png
+│   │   │   │   ├── T_Primer_Black_Metal2.png.meta
+│   │   │   │   ├── T_Rough_Metal_N.png
+│   │   │   │   ├── T_Rough_Metal_N.png.meta
+│   │   │   │   ├── T_ScratchMask.png
+│   │   │   │   ├── T_ScratchMask.png.meta
+│   │   │   │   ├── T_Wraith_Body_Color_Overlay.png
+│   │   │   │   └── T_Wraith_Body_Color_Overlay.png.meta
+│   │   │   ├── Metal.meta
+│   │   │   ├── Painted
+│   │   │   │   ├── T_Cream_Paint_D.png
+│   │   │   │   ├── T_Cream_Paint_D.png.meta
+│   │   │   │   ├── T_Cream_Painted_Metal_N.png
+│   │   │   │   ├── T_Cream_Painted_Metal_N.png.meta
+│   │   │   │   ├── T_PaintScratches.png
+│   │   │   │   └── T_PaintScratches.png.meta
+│   │   │   ├── Painted.meta
+│   │   │   ├── Rubber
+│   │   │   │   ├── T_Blank_N.png
+│   │   │   │   ├── T_Blank_N.png.meta
+│   │   │   │   ├── T_ML_FineRubber_N.png
+│   │   │   │   └── T_ML_FineRubber_N.png.meta
+│   │   │   ├── Rubber.meta
+│   │   │   ├── Synthetics
+│   │   │   │   ├── T_Carbon_Color.png
+│   │   │   │   ├── T_Carbon_Color.png.meta
+│   │   │   │   ├── T_CF_Nor.png
+│   │   │   │   ├── T_CF_Nor.png.meta
+│   │   │   │   ├── T_Rough_Plastic_D.png
+│   │   │   │   ├── T_Rough_Plastic_D.png.meta
+│   │   │   │   ├── T_Rough_Plastic_N.png
+│   │   │   │   ├── T_Rough_Plastic_N.png.meta
+│   │   │   │   ├── T_Wraith_Eye_D.png
+│   │   │   │   └── T_Wraith_Eye_D.png.meta
+│   │   │   ├── Synthetics.meta
+│   │   │   ├── T_TestML_Mask.png
+│   │   │   └── T_TestML_Mask.png.meta
+│   │   ├── MaterialLayers.meta
+│   │   ├── ParameterCollections
+│   │   ├── ParameterCollections.meta
+│   │   ├── T_Black_Linear.png
+│   │   └── T_Black_Linear.png.meta
+│   ├── Global.meta
+│   ├── Heroes
+│   │   ├── Wraith
+│   │   │   ├── Animations
+│   │   │   │   ├── Ability_E_Additive_BasePose.fbx
+│   │   │   │   ├── Ability_E_Additive_BasePose.fbx.meta
+│   │   │   │   ├── Ability_E_MSA.fbx
+│   │   │   │   ├── Ability_E_MSA.fbx.meta
+│   │   │   │   ├── Ability_E_Recovery_MSA.fbx
+│   │   │   │   ├── Ability_E_Recovery_MSA.fbx.meta
+│   │   │   │   ├── Ability_E_Recovery.fbx
+│   │   │   │   ├── Ability_E_Recovery.fbx.meta
+│   │   │   │   ├── Ability_E_Targeting_Loop_MSA.fbx
+│   │   │   │   ├── Ability_E_Targeting_Loop_MSA.fbx.meta
+│   │   │   │   ├── Ability_E_Targeting_Loop.fbx
+│   │   │   │   ├── Ability_E_Targeting_Loop.fbx.meta
+│   │   │   │   ├── Ability_E_Targeting_Start_MSA.fbx
+│   │   │   │   ├── Ability_E_Targeting_Start_MSA.fbx.meta
+│   │   │   │   ├── Ability_E_Targeting_Start.fbx
+│   │   │   │   ├── Ability_E_Targeting_Start.fbx.meta
+│   │   │   │   ├── Ability_E.fbx
+│   │   │   │   ├── Ability_E.fbx.meta
+│   │   │   │   ├── Ability_Q_Additive_BasePose.fbx
+│   │   │   │   ├── Ability_Q_Additive_BasePose.fbx.meta
+│   │   │   │   ├── Ability_Q_Fire_Fwd_MSA.fbx
+│   │   │   │   ├── Ability_Q_Fire_Fwd_MSA.fbx.meta
+│   │   │   │   ├── Ability_Q_Fire_Fwd.fbx
+│   │   │   │   ├── Ability_Q_Fire_Fwd.fbx.meta
+│   │   │   │   ├── Ability_Q_Fire_MSA.fbx
+│   │   │   │   ├── Ability_Q_Fire_MSA.fbx.meta
+│   │   │   │   ├── Ability_Q_Fire.fbx
+│   │   │   │   ├── Ability_Q_Fire.fbx.meta
+│   │   │   │   ├── Ability_Q_Targeting_Canon_Only_Loop.fbx
+│   │   │   │   ├── Ability_Q_Targeting_Canon_Only_Loop.fbx.meta
+│   │   │   │   ├── Ability_Q_Targeting_Canon_Only.fbx
+│   │   │   │   ├── Ability_Q_Targeting_Canon_Only.fbx.meta
+│   │   │   │   ├── Ability_Q_Targeting_Loop_MSA.fbx
+│   │   │   │   ├── Ability_Q_Targeting_Loop_MSA.fbx.meta
+│   │   │   │   ├── Ability_Q_Targeting_Loop.fbx
+│   │   │   │   ├── Ability_Q_Targeting_Loop.fbx.meta
+│   │   │   │   ├── Ability_Q_Targeting_Recovery_MSA.fbx
+│   │   │   │   ├── Ability_Q_Targeting_Recovery_MSA.fbx.meta
+│   │   │   │   ├── Ability_Q_Targeting_Recovery.fbx
+│   │   │   │   ├── Ability_Q_Targeting_Recovery.fbx.meta
+│   │   │   │   ├── Ability_Q_Targeting_Start_MSA.fbx
+│   │   │   │   ├── Ability_Q_Targeting_Start_MSA.fbx.meta
+│   │   │   │   ├── Ability_Q_Targeting_Start.fbx
+│   │   │   │   ├── Ability_Q_Targeting_Start.fbx.meta
+│   │   │   │   ├── Ability_R_InMotion_MSA.fbx
+│   │   │   │   ├── Ability_R_InMotion_MSA.fbx.meta
+│   │   │   │   ├── Ability_R_InMotion.fbx
+│   │   │   │   ├── Ability_R_InMotion.fbx.meta
+│   │   │   │   ├── Ability_R_MSA.fbx
+│   │   │   │   ├── Ability_R_MSA.fbx.meta
+│   │   │   │   ├── Ability_R.fbx
+│   │   │   │   ├── Ability_R.fbx.meta
+│   │   │   │   ├── Ability_RMB_Loop_MSA.fbx
+│   │   │   │   ├── Ability_RMB_Loop_MSA.fbx.meta
+│   │   │   │   ├── Ability_RMB_Loop.fbx
+│   │   │   │   ├── Ability_RMB_Loop.fbx.meta
+│   │   │   │   ├── Ability_RMB_Parts_Loop.fbx
+│   │   │   │   ├── Ability_RMB_Parts_Loop.fbx.meta
+│   │   │   │   ├── Ability_RMB_Parts_Start.fbx
+│   │   │   │   ├── Ability_RMB_Parts_Start.fbx.meta
+│   │   │   │   ├── Ability_RMB_Start_MSA.fbx
+│   │   │   │   ├── Ability_RMB_Start_MSA.fbx.meta
+│   │   │   │   ├── Ability_RMB_Start.fbx
+│   │   │   │   ├── Ability_RMB_Start.fbx.meta
+│   │   │   │   ├── Ability_RMB_Walk_Bwd.fbx
+│   │   │   │   ├── Ability_RMB_Walk_Bwd.fbx.meta
+│   │   │   │   ├── Ability_RMB_Walk_Fwd.fbx
+│   │   │   │   ├── Ability_RMB_Walk_Fwd.fbx.meta
+│   │   │   │   ├── Ability_RMB_Walk_Left.fbx
+│   │   │   │   ├── Ability_RMB_Walk_Left.fbx.meta
+│   │   │   │   ├── Ability_RMB_Walk_Right.fbx
+│   │   │   │   ├── Ability_RMB_Walk_Right.fbx.meta
+│   │   │   │   ├── AimOffset
+│   │   │   │   │   ├── Ability_Q_AO_CC_Pose.fbx
+│   │   │   │   │   ├── Ability_Q_AO_CC_Pose.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_CC.fbx
+│   │   │   │   │   ├── Ability_Q_AO_CC.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_CD.fbx
+│   │   │   │   │   ├── Ability_Q_AO_CD.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_CU.fbx
+│   │   │   │   │   ├── Ability_Q_AO_CU.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_LBC.fbx
+│   │   │   │   │   ├── Ability_Q_AO_LBC.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_LBD.fbx
+│   │   │   │   │   ├── Ability_Q_AO_LBD.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_LBU.fbx
+│   │   │   │   │   ├── Ability_Q_AO_LBU.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_LC.fbx
+│   │   │   │   │   ├── Ability_Q_AO_LC.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_LD.fbx
+│   │   │   │   │   ├── Ability_Q_AO_LD.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_LU.fbx
+│   │   │   │   │   ├── Ability_Q_AO_LU.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_RBC.fbx
+│   │   │   │   │   ├── Ability_Q_AO_RBC.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_RBD.fbx
+│   │   │   │   │   ├── Ability_Q_AO_RBD.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_RBU.fbx
+│   │   │   │   │   ├── Ability_Q_AO_RBU.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_RC.fbx
+│   │   │   │   │   ├── Ability_Q_AO_RC.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_RD.fbx
+│   │   │   │   │   ├── Ability_Q_AO_RD.fbx.meta
+│   │   │   │   │   ├── Ability_Q_AO_RU.fbx
+│   │   │   │   │   ├── Ability_Q_AO_RU.fbx.meta
+│   │   │   │   │   ├── Idle_AO_CC_NonCombat_Pose.fbx
+│   │   │   │   │   ├── Idle_AO_CC_NonCombat_Pose.fbx.meta
+│   │   │   │   │   ├── Idle_AO_CC_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_CC_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_CD_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_CD_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_CU_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_CU_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_LBC_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_LBC_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_LBD_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_LBD_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_LBU_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_LBU_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_LC_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_LC_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_LD_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_LD_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_LU_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_LU_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_RBC_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_RBC_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_RBD_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_RBD_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_RBU_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_RBU_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_RC_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_RC_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_RD_NonCombat.fbx
+│   │   │   │   │   ├── Idle_AO_RD_NonCombat.fbx.meta
+│   │   │   │   │   ├── Idle_AO_RU_NonCombat.fbx
+│   │   │   │   │   └── Idle_AO_RU_NonCombat.fbx.meta
+│   │   │   │   ├── AimOffset.meta
+│   │   │   │   ├── Blendspaces
+│   │   │   │   ├── Blendspaces.meta
+│   │   │   │   ├── Bound.fbx
+│   │   │   │   ├── Bound.fbx.meta
+│   │   │   │   ├── Cast.fbx
+│   │   │   │   ├── Cast.fbx.meta
+│   │   │   │   ├── Death_Backward.fbx
+│   │   │   │   ├── Death_Backward.fbx.meta
+│   │   │   │   ├── Death_Forward.fbx
+│   │   │   │   ├── Death_Forward.fbx.meta
+│   │   │   │   ├── Emote_DoIt.fbx
+│   │   │   │   ├── Emote_DoIt.fbx.meta
+│   │   │   │   ├── Emote_IDK.fbx
+│   │   │   │   ├── Emote_IDK.fbx.meta
+│   │   │   │   ├── Emote_ThumbsDown.fbx
+│   │   │   │   ├── Emote_ThumbsDown.fbx.meta
+│   │   │   │   ├── Fingers_Left.fbx
+│   │   │   │   ├── Fingers_Left.fbx.meta
+│   │   │   │   ├── Fire_A_Fast_V1_MSA.fbx
+│   │   │   │   ├── Fire_A_Fast_V1_MSA.fbx.meta
+│   │   │   │   ├── Fire_A_Fast_V1.fbx
+│   │   │   │   ├── Fire_A_Fast_V1.fbx.meta
+│   │   │   │   ├── Fire_A_Slow_MSA.fbx
+│   │   │   │   ├── Fire_A_Slow_MSA.fbx.meta
+│   │   │   │   ├── Fire_A_Slow.fbx
+│   │   │   │   ├── Fire_A_Slow.fbx.meta
+│   │   │   │   ├── Fire_Snipe_A_Slow_MSA.fbx
+│   │   │   │   ├── Fire_Snipe_A_Slow_MSA.fbx.meta
+│   │   │   │   ├── Fire_Snipe_A_Slow.fbx
+│   │   │   │   ├── Fire_Snipe_A_Slow.fbx.meta
+│   │   │   │   ├── FrontEndPose_A.fbx
+│   │   │   │   ├── FrontEndPose_A.fbx.meta
+│   │   │   │   ├── FrontEndPose.fbx
+│   │   │   │   ├── FrontEndPose.fbx.meta
+│   │   │   │   ├── HitReact_Back.fbx
+│   │   │   │   ├── HitReact_Back.fbx.meta
+│   │   │   │   ├── HitReact_Front.fbx
+│   │   │   │   ├── HitReact_Front.fbx.meta
+│   │   │   │   ├── HitReact_Left.fbx
+│   │   │   │   ├── HitReact_Left.fbx.meta
+│   │   │   │   ├── HitReact_Right.fbx
+│   │   │   │   ├── HitReact_Right.fbx.meta
+│   │   │   │   ├── Idle_Ability_Q_MSA.fbx
+│   │   │   │   ├── Idle_Ability_Q_MSA.fbx.meta
+│   │   │   │   ├── Idle_Ability_Q.fbx
+│   │   │   │   ├── Idle_Ability_Q.fbx.meta
+│   │   │   │   ├── Idle_Ability_RMB_MSA.fbx
+│   │   │   │   ├── Idle_Ability_RMB_MSA.fbx.meta
+│   │   │   │   ├── Idle_Ability_RMB.fbx
+│   │   │   │   ├── Idle_Ability_RMB.fbx.meta
+│   │   │   │   ├── Idle_Noise_A_NonAdditive.fbx
+│   │   │   │   ├── Idle_Noise_A_NonAdditive.fbx.meta
+│   │   │   │   ├── Idle_Noise_A.fbx
+│   │   │   │   ├── Idle_Noise_A.fbx.meta
+│   │   │   │   ├── Idle_Noise_B.fbx
+│   │   │   │   ├── Idle_Noise_B.fbx.meta
+│   │   │   │   ├── Idle_NonCombat_Additive.fbx
+│   │   │   │   ├── Idle_NonCombat_Additive.fbx.meta
+│   │   │   │   ├── Idle_NonCombat.fbx
+│   │   │   │   ├── Idle_NonCombat.fbx.meta
+│   │   │   │   ├── Jog_Bwd_Ability_Q.fbx
+│   │   │   │   ├── Jog_Bwd_Ability_Q.fbx.meta
+│   │   │   │   ├── Jog_Bwd_CircleLeft.fbx
+│   │   │   │   ├── Jog_Bwd_CircleLeft.fbx.meta
+│   │   │   │   ├── Jog_Bwd_CircleRight.fbx
+│   │   │   │   ├── Jog_Bwd_CircleRight.fbx.meta
+│   │   │   │   ├── Jog_Bwd_Downhill.fbx
+│   │   │   │   ├── Jog_Bwd_Downhill.fbx.meta
+│   │   │   │   ├── Jog_Bwd_Pivot_180.fbx
+│   │   │   │   ├── Jog_Bwd_Pivot_180.fbx.meta
+│   │   │   │   ├── Jog_Bwd_Start.fbx
+│   │   │   │   ├── Jog_Bwd_Start.fbx.meta
+│   │   │   │   ├── Jog_Bwd_Stop.fbx
+│   │   │   │   ├── Jog_Bwd_Stop.fbx.meta
+│   │   │   │   ├── Jog_Bwd_Uphill.fbx
+│   │   │   │   ├── Jog_Bwd_Uphill.fbx.meta
+│   │   │   │   ├── Jog_Bwd.fbx
+│   │   │   │   ├── Jog_Bwd.fbx.meta
+│   │   │   │   ├── Jog_BwdToFwd_Spin_CCW.fbx
+│   │   │   │   ├── Jog_BwdToFwd_Spin_CCW.fbx.meta
+│   │   │   │   ├── Jog_BwdToFwd_Spin_CW.fbx
+│   │   │   │   ├── Jog_BwdToFwd_Spin_CW.fbx.meta
+│   │   │   │   ├── Jog_Fwd_Ability_E.fbx
+│   │   │   │   ├── Jog_Fwd_Ability_E.fbx.meta
+│   │   │   │   ├── Jog_Fwd_Ability_Q.fbx
+│   │   │   │   ├── Jog_Fwd_Ability_Q.fbx.meta
+│   │   │   │   ├── Jog_Fwd_Ability_RMB_Combat.fbx
+│   │   │   │   ├── Jog_Fwd_Ability_RMB_Combat.fbx.meta
+│   │   │   │   ├── Jog_Fwd_CircleLeft.fbx
+│   │   │   │   ├── Jog_Fwd_CircleLeft.fbx.meta
+│   │   │   │   ├── Jog_Fwd_CircleRight.fbx
+│   │   │   │   ├── Jog_Fwd_CircleRight.fbx.meta
+│   │   │   │   ├── Jog_Fwd_Downhill.fbx
+│   │   │   │   ├── Jog_Fwd_Downhill.fbx.meta
+│   │   │   │   ├── Jog_Fwd_Pivot_180.fbx
+│   │   │   │   ├── Jog_Fwd_Pivot_180.fbx.meta
+│   │   │   │   ├── Jog_Fwd_Start.fbx
+│   │   │   │   ├── Jog_Fwd_Start.fbx.meta
+│   │   │   │   ├── Jog_Fwd_Stop.fbx
+│   │   │   │   ├── Jog_Fwd_Stop.fbx.meta
+│   │   │   │   ├── Jog_Fwd_Uphill.fbx
+│   │   │   │   ├── Jog_Fwd_Uphill.fbx.meta
+│   │   │   │   ├── Jog_Fwd.fbx
+│   │   │   │   ├── Jog_Fwd.fbx.meta
+│   │   │   │   ├── Jog_FwdToBwd_Spin_CCW.fbx
+│   │   │   │   ├── Jog_FwdToBwd_Spin_CCW.fbx.meta
+│   │   │   │   ├── Jog_FwdToBwd_Spin_CW.fbx
+│   │   │   │   ├── Jog_FwdToBwd_Spin_CW.fbx.meta
+│   │   │   │   ├── Jog_Left_CircleLeft.fbx
+│   │   │   │   ├── Jog_Left_CircleLeft.fbx.meta
+│   │   │   │   ├── Jog_Left_CircleRight.fbx
+│   │   │   │   ├── Jog_Left_CircleRight.fbx.meta
+│   │   │   │   ├── Jog_Left_Downhill.fbx
+│   │   │   │   ├── Jog_Left_Downhill.fbx.meta
+│   │   │   │   ├── Jog_Left_Pivot_180.fbx
+│   │   │   │   ├── Jog_Left_Pivot_180.fbx.meta
+│   │   │   │   ├── Jog_Left_Start.fbx
+│   │   │   │   ├── Jog_Left_Start.fbx.meta
+│   │   │   │   ├── Jog_Left_Stop.fbx
+│   │   │   │   ├── Jog_Left_Stop.fbx.meta
+│   │   │   │   ├── Jog_Left_Uphill.fbx
+│   │   │   │   ├── Jog_Left_Uphill.fbx.meta
+│   │   │   │   ├── Jog_Left.fbx
+│   │   │   │   ├── Jog_Left.fbx.meta
+│   │   │   │   ├── Jog_Right_CircleLeft.fbx
+│   │   │   │   ├── Jog_Right_CircleLeft.fbx.meta
+│   │   │   │   ├── Jog_Right_CircleRight.fbx
+│   │   │   │   ├── Jog_Right_CircleRight.fbx.meta
+│   │   │   │   ├── Jog_Right_Downhill.fbx
+│   │   │   │   ├── Jog_Right_Downhill.fbx.meta
+│   │   │   │   ├── Jog_Right_Pivot_180.fbx
+│   │   │   │   ├── Jog_Right_Pivot_180.fbx.meta
+│   │   │   │   ├── Jog_Right_Start.fbx
+│   │   │   │   ├── Jog_Right_Start.fbx.meta
+│   │   │   │   ├── Jog_Right_Stop.fbx
+│   │   │   │   ├── Jog_Right_Stop.fbx.meta
+│   │   │   │   ├── Jog_Right_Uphill.fbx
+│   │   │   │   ├── Jog_Right_Uphill.fbx.meta
+│   │   │   │   ├── Jog_Right.fbx
+│   │   │   │   ├── Jog_Right.fbx.meta
+│   │   │   │   ├── Jump_Apex.fbx
+│   │   │   │   ├── Jump_Apex.fbx.meta
+│   │   │   │   ├── Jump_Land.fbx
+│   │   │   │   ├── Jump_Land.fbx.meta
+│   │   │   │   ├── Jump_Pad.fbx
+│   │   │   │   ├── Jump_Pad.fbx.meta
+│   │   │   │   ├── Jump_Recovery_Additive.fbx
+│   │   │   │   ├── Jump_Recovery_Additive.fbx.meta
+│   │   │   │   ├── Jump_Recovery.fbx
+│   │   │   │   ├── Jump_Recovery.fbx.meta
+│   │   │   │   ├── Jump_Start.fbx
+│   │   │   │   ├── Jump_Start.fbx.meta
+│   │   │   │   ├── Knockback_Bwd.fbx
+│   │   │   │   ├── Knockback_Bwd.fbx.meta
+│   │   │   │   ├── Knockback_Fwd.fbx
+│   │   │   │   ├── Knockback_Fwd.fbx.meta
+│   │   │   │   ├── Knockback_Up.fbx
+│   │   │   │   ├── Knockback_Up.fbx.meta
+│   │   │   │   ├── Level_Start.fbx
+│   │   │   │   ├── Level_Start.fbx.meta
+│   │   │   │   ├── Locomotion_Combat
+│   │   │   │   │   ├── AO
+│   │   │   │   │   │   ├── Idle_AO_CC_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_CC_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_CD_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_CD_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_CU_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_CU_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_LBC_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_LBC_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_LBD_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_LBD_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_LBU_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_LBU_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_LC_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_LC_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_LD_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_LD_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_LU_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_LU_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_RBC_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_RBC_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_RBD_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_RBD_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_RBU_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_RBU_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_RC_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_RC_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_RD_Combat.fbx
+│   │   │   │   │   │   ├── Idle_AO_RD_Combat.fbx.meta
+│   │   │   │   │   │   ├── Idle_AO_RU_Combat.fbx
+│   │   │   │   │   │   └── Idle_AO_RU_Combat.fbx.meta
+│   │   │   │   │   ├── AO.meta
+│   │   │   │   │   ├── Idle_Combat_Additive.fbx
+│   │   │   │   │   ├── Idle_Combat_Additive.fbx.meta
+│   │   │   │   │   ├── Idle_Combat_LMB.fbx
+│   │   │   │   │   ├── Idle_Combat_LMB.fbx.meta
+│   │   │   │   │   ├── Idle_Combat.fbx
+│   │   │   │   │   ├── Idle_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Bwd_CircleLeft_Combat.fbx
+│   │   │   │   │   ├── Jog_Bwd_CircleLeft_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Bwd_CircleRight_Combat.fbx
+│   │   │   │   │   ├── Jog_Bwd_CircleRight_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Bwd_Combat.fbx
+│   │   │   │   │   ├── Jog_Bwd_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Bwd_Downhill_Combat.fbx
+│   │   │   │   │   ├── Jog_Bwd_Downhill_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Bwd_Pivot180_Combat.fbx
+│   │   │   │   │   ├── Jog_Bwd_Pivot180_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Bwd_Start_Combat.fbx
+│   │   │   │   │   ├── Jog_Bwd_Start_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Bwd_Stop_Combat.fbx
+│   │   │   │   │   ├── Jog_Bwd_Stop_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Bwd_Uphill_Combat.fbx
+│   │   │   │   │   ├── Jog_Bwd_Uphill_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_BwdToFwd_SpinCCW_Combat.fbx
+│   │   │   │   │   ├── Jog_BwdToFwd_SpinCCW_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_BwdToFwd_SpinCW_Combat.fbx
+│   │   │   │   │   ├── Jog_BwdToFwd_SpinCW_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Fwd_CircleLeft_Combat.fbx
+│   │   │   │   │   ├── Jog_Fwd_CircleLeft_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Fwd_CircleRight_Combat.fbx
+│   │   │   │   │   ├── Jog_Fwd_CircleRight_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Fwd_Combat.fbx
+│   │   │   │   │   ├── Jog_Fwd_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Fwd_Downhill_Combat.fbx
+│   │   │   │   │   ├── Jog_Fwd_Downhill_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Fwd_Pivot180_Combat.fbx
+│   │   │   │   │   ├── Jog_Fwd_Pivot180_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Fwd_Start_Combat.fbx
+│   │   │   │   │   ├── Jog_Fwd_Start_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Fwd_Stop_Combat.fbx
+│   │   │   │   │   ├── Jog_Fwd_Stop_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Fwd_Uphill_Combat.fbx
+│   │   │   │   │   ├── Jog_Fwd_Uphill_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_FwdToBwd_SpinCCW_Combat.fbx
+│   │   │   │   │   ├── Jog_FwdToBwd_SpinCCW_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_FwdToBwd_SpinCW_Combat.fbx
+│   │   │   │   │   ├── Jog_FwdToBwd_SpinCW_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Left_CircleLeft_Combat.fbx
+│   │   │   │   │   ├── Jog_Left_CircleLeft_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Left_CircleRight_Combat.fbx
+│   │   │   │   │   ├── Jog_Left_CircleRight_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Left_Combat.fbx
+│   │   │   │   │   ├── Jog_Left_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Left_Downhill_Combat.fbx
+│   │   │   │   │   ├── Jog_Left_Downhill_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Left_Pivot180_Combat.fbx
+│   │   │   │   │   ├── Jog_Left_Pivot180_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Left_Start_Combat.fbx
+│   │   │   │   │   ├── Jog_Left_Start_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Left_Stop_Combat.fbx
+│   │   │   │   │   ├── Jog_Left_Stop_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Left_Uphill_Combat.fbx
+│   │   │   │   │   ├── Jog_Left_Uphill_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Right_CircleLeft_Combat.fbx
+│   │   │   │   │   ├── Jog_Right_CircleLeft_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Right_CircleRight_Combat.fbx
+│   │   │   │   │   ├── Jog_Right_CircleRight_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Right_Combat.fbx
+│   │   │   │   │   ├── Jog_Right_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Right_Downhill_Combat.fbx
+│   │   │   │   │   ├── Jog_Right_Downhill_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Right_Pivot180_Combat.fbx
+│   │   │   │   │   ├── Jog_Right_Pivot180_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Right_Start_Combat.fbx
+│   │   │   │   │   ├── Jog_Right_Start_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Right_Stop_Combat.fbx
+│   │   │   │   │   ├── Jog_Right_Stop_Combat.fbx.meta
+│   │   │   │   │   ├── Jog_Right_Uphill_Combat.fbx
+│   │   │   │   │   ├── Jog_Right_Uphill_Combat.fbx.meta
+│   │   │   │   │   ├── Jump_Apex_Combat.fbx
+│   │   │   │   │   ├── Jump_Apex_Combat.fbx.meta
+│   │   │   │   │   ├── Jump_Land_Combat.fbx
+│   │   │   │   │   ├── Jump_Land_Combat.fbx.meta
+│   │   │   │   │   ├── Jump_Recovery_Additive_Combat.fbx
+│   │   │   │   │   ├── Jump_Recovery_Additive_Combat.fbx.meta
+│   │   │   │   │   ├── Jump_Recovery_Combat.fbx
+│   │   │   │   │   ├── Jump_Recovery_Combat.fbx.meta
+│   │   │   │   │   ├── Jump_Start_Combat.fbx
+│   │   │   │   │   ├── Jump_Start_Combat.fbx.meta
+│   │   │   │   │   ├── Turn_Left_180_Combat.fbx
+│   │   │   │   │   ├── Turn_Left_180_Combat.fbx.meta
+│   │   │   │   │   ├── Turn_Left_90_Combat.fbx
+│   │   │   │   │   ├── Turn_Left_90_Combat.fbx.meta
+│   │   │   │   │   ├── Turn_Right_180_Combat.fbx
+│   │   │   │   │   ├── Turn_Right_180_Combat.fbx.meta
+│   │   │   │   │   ├── Turn_Right_90_Combat.fbx
+│   │   │   │   │   └── Turn_Right_90_Combat.fbx.meta
+│   │   │   │   ├── Locomotion_Combat.meta
+│   │   │   │   ├── Recall.fbx
+│   │   │   │   ├── Recall.fbx.meta
+│   │   │   │   ├── Respawn.fbx
+│   │   │   │   ├── Respawn.fbx.meta
+│   │   │   │   ├── Rings_Spin.fbx
+│   │   │   │   ├── Rings_Spin.fbx.meta
+│   │   │   │   ├── Stun_Loop.fbx
+│   │   │   │   ├── Stun_Loop.fbx.meta
+│   │   │   │   ├── Stun_Start.fbx
+│   │   │   │   ├── Stun_Start.fbx.meta
+│   │   │   │   ├── TravelMode_Transition_InMotion.fbx
+│   │   │   │   ├── TravelMode_Transition_InMotion.fbx.meta
+│   │   │   │   ├── TravelMode_Transition_MSA.fbx
+│   │   │   │   ├── TravelMode_Transition_MSA.fbx.meta
+│   │   │   │   ├── TravelMode_Transition.fbx
+│   │   │   │   ├── TravelMode_Transition.fbx.meta
+│   │   │   │   ├── Turn_Left_180.fbx
+│   │   │   │   ├── Turn_Left_180.fbx.meta
+│   │   │   │   ├── Turn_Left_90.fbx
+│   │   │   │   ├── Turn_Left_90.fbx.meta
+│   │   │   │   ├── Turn_Right_180.fbx
+│   │   │   │   ├── Turn_Right_180.fbx.meta
+│   │   │   │   ├── Turn_Right_90.fbx
+│   │   │   │   ├── Turn_Right_90.fbx.meta
+│   │   │   │   ├── TurnInPlace_Ability_E_Fast.fbx
+│   │   │   │   ├── TurnInPlace_Ability_E_Fast.fbx.meta
+│   │   │   │   ├── TurnInPlace_Ability_E_Slow.fbx
+│   │   │   │   ├── TurnInPlace_Ability_E_Slow.fbx.meta
+│   │   │   │   ├── TurnInPlace_Ability_E_Zero.fbx
+│   │   │   │   ├── TurnInPlace_Ability_E_Zero.fbx.meta
+│   │   │   │   ├── TurnInPlace_Fast.fbx
+│   │   │   │   ├── TurnInPlace_Fast.fbx.meta
+│   │   │   │   ├── TurnInPlace_Slow.fbx
+│   │   │   │   ├── TurnInPlace_Slow.fbx.meta
+│   │   │   │   ├── TurnInPlace_Zero.fbx
+│   │   │   │   ├── TurnInPlace_Zero.fbx.meta
+│   │   │   │   ├── VictoryPose_1.fbx
+│   │   │   │   └── VictoryPose_1.fbx.meta
+│   │   │   ├── Animations.meta
+│   │   │   ├── Materials
+│   │   │   │   ├── M_Wraith_Backpack.mat.json
+│   │   │   │   ├── M_Wraith_Backpack.mat.json.meta
+│   │   │   │   ├── M_Wraith_Gun.mat.json
+│   │   │   │   ├── M_Wraith_Gun.mat.json.meta
+│   │   │   │   ├── M_Wraith_Lowerbody.mat.json
+│   │   │   │   ├── M_Wraith_Lowerbody.mat.json.meta
+│   │   │   │   ├── M_Wraith_Upperbody.mat.json
+│   │   │   │   ├── M_Wraith_Upperbody.mat.json.meta
+│   │   │   │   ├── MLayer
+│   │   │   │   │   ├── T_TireRubber_R.png
+│   │   │   │   │   ├── T_TireRubber_R.png.meta
+│   │   │   │   │   ├── T_WheelHub_R.png
+│   │   │   │   │   └── T_WheelHub_R.png.meta
+│   │   │   │   └── MLayer.meta
+│   │   │   ├── Materials.meta
+│   │   │   ├── Meshes
+│   │   │   │   ├── Wraith.fbx
+│   │   │   │   └── Wraith.fbx.meta
+│   │   │   ├── Meshes.meta
+│   │   │   ├── Skins
+│   │   │   │   ├── LunarOps
+│   │   │   │   │   ├── Materials
+│   │   │   │   │   │   ├── M_Wraith_Attachment_LunarOps.mat.json
+│   │   │   │   │   │   ├── M_Wraith_Attachment_LunarOps.mat.json.meta
+│   │   │   │   │   │   ├── M_Wraith_Backpack_LunarOps.mat.json
+│   │   │   │   │   │   ├── M_Wraith_Backpack_LunarOps.mat.json.meta
+│   │   │   │   │   │   ├── M_Wraith_Gun_LunarOps.mat.json
+│   │   │   │   │   │   ├── M_Wraith_Gun_LunarOps.mat.json.meta
+│   │   │   │   │   │   ├── M_Wraith_Lowerbody_LunarOps.mat.json
+│   │   │   │   │   │   ├── M_Wraith_Lowerbody_LunarOps.mat.json.meta
+│   │   │   │   │   │   ├── M_Wraith_Upperbody_LunarOps.mat.json
+│   │   │   │   │   │   ├── M_Wraith_Upperbody_LunarOps.mat.json.meta
+│   │   │   │   │   │   ├── ML
+│   │   │   │   │   │   │   ├── T_Bump_N.png
+│   │   │   │   │   │   │   ├── T_Bump_N.png.meta
+│   │   │   │   │   │   │   ├── T_FlakeMask.png
+│   │   │   │   │   │   │   └── T_FlakeMask.png.meta
+│   │   │   │   │   │   └── ML.meta
+│   │   │   │   │   ├── Materials.meta
+│   │   │   │   │   ├── Meshes
+│   │   │   │   │   │   ├── Wraith_LunarOps.fbx
+│   │   │   │   │   │   └── Wraith_LunarOps.fbx.meta
+│   │   │   │   │   ├── Meshes.meta
+│   │   │   │   │   ├── Textures
+│   │   │   │   │   │   ├── T_Accessories_ts_DEMO.png
+│   │   │   │   │   │   ├── T_Accessories_ts_DEMO.png.meta
+│   │   │   │   │   │   ├── T_Wraith_attachment_LunarOps_Mask1.png
+│   │   │   │   │   │   ├── T_Wraith_attachment_LunarOps_Mask1.png.meta
+│   │   │   │   │   │   ├── T_Wraith_attachment_LunarOps_Mask2.png
+│   │   │   │   │   │   ├── T_Wraith_attachment_LunarOps_Mask2.png.meta
+│   │   │   │   │   │   ├── T_Wraith_attachment_LunarOps_RGB.png
+│   │   │   │   │   │   ├── T_Wraith_attachment_LunarOps_RGB.png.meta
+│   │   │   │   │   │   ├── T_Wraith_Backpack_LunarOps_Mask.png
+│   │   │   │   │   │   ├── T_Wraith_Backpack_LunarOps_Mask.png.meta
+│   │   │   │   │   │   ├── T_Wraith_Gun_LunarOps_Mask2.png
+│   │   │   │   │   │   ├── T_Wraith_Gun_LunarOps_Mask2.png.meta
+│   │   │   │   │   │   ├── T_Wraith_lowerBody_LunarOps_Mask.png
+│   │   │   │   │   │   ├── T_Wraith_lowerBody_LunarOps_Mask.png.meta
+│   │   │   │   │   │   ├── T_Wraith_lowerBody_LunarOps_Mask2.png
+│   │   │   │   │   │   ├── T_Wraith_lowerBody_LunarOps_Mask2.png.meta
+│   │   │   │   │   │   ├── T_Wraith_LunarOps_Gun_RGB.png
+│   │   │   │   │   │   ├── T_Wraith_LunarOps_Gun_RGB.png.meta
+│   │   │   │   │   │   ├── T_Wraith_LunarOps_Lowerbody_RGBA.png
+│   │   │   │   │   │   ├── T_Wraith_LunarOps_Lowerbody_RGBA.png.meta
+│   │   │   │   │   │   ├── T_Wraith_UpperBody_LunarOps_Mask.png
+│   │   │   │   │   │   ├── T_Wraith_UpperBody_LunarOps_Mask.png.meta
+│   │   │   │   │   │   ├── T_Wraith_UpperBody_LunarOps_Mask2.png
+│   │   │   │   │   │   ├── T_Wraith_UpperBody_LunarOps_Mask2.png.meta
+│   │   │   │   │   │   ├── T_Wraith_Upperbody_LunarOps_RGBA.png
+│   │   │   │   │   │   └── T_Wraith_Upperbody_LunarOps_RGBA.png.meta
+│   │   │   │   │   └── Textures.meta
+│   │   │   │   ├── LunarOps.meta
+│   │   │   │   ├── ODGreen
+│   │   │   │   │   ├── Materials
+│   │   │   │   │   │   ├── M_Wraith_Attachment_ODGreen.mat
+│   │   │   │   │   │   ├── M_Wraith_Attachment_ODGreen.mat.json
+│   │   │   │   │   │   ├── M_Wraith_Attachment_ODGreen.mat.json.meta
+│   │   │   │   │   │   ├── M_Wraith_Attachment_ODGreen.mat.meta
+│   │   │   │   │   │   ├── M_Wraith_Backpack_ODGreen.mat
+│   │   │   │   │   │   ├── M_Wraith_Backpack_ODGreen.mat.json
+│   │   │   │   │   │   ├── M_Wraith_Backpack_ODGreen.mat.json.meta
+│   │   │   │   │   │   ├── M_Wraith_Backpack_ODGreen.mat.meta
+│   │   │   │   │   │   ├── M_Wraith_Gun_ODGreen.mat
+│   │   │   │   │   │   ├── M_Wraith_Gun_ODGreen.mat.json
+│   │   │   │   │   │   ├── M_Wraith_Gun_ODGreen.mat.json.meta
+│   │   │   │   │   │   ├── M_Wraith_Gun_ODGreen.mat.meta
+│   │   │   │   │   │   ├── M_Wraith_Lowerbody_ODGreen.mat
+│   │   │   │   │   │   ├── M_Wraith_Lowerbody_ODGreen.mat.json
+│   │   │   │   │   │   ├── M_Wraith_Lowerbody_ODGreen.mat.json.meta
+│   │   │   │   │   │   ├── M_Wraith_Lowerbody_ODGreen.mat.meta
+│   │   │   │   │   │   ├── M_Wraith_Upperbody_ODGreen.mat
+│   │   │   │   │   │   ├── M_Wraith_Upperbody_ODGreen.mat.json
+│   │   │   │   │   │   ├── M_Wraith_Upperbody_ODGreen.mat.json.meta
+│   │   │   │   │   │   ├── M_Wraith_Upperbody_ODGreen.mat.meta
+│   │   │   │   │   │   ├── ML
+│   │   │   │   │   │   └── ML.meta
+│   │   │   │   │   ├── Materials.meta
+│   │   │   │   │   ├── Meshes
+│   │   │   │   │   │   ├── Wraith_ODGreen.fbx
+│   │   │   │   │   │   └── Wraith_ODGreen.fbx.meta
+│   │   │   │   │   ├── Meshes.meta
+│   │   │   │   │   ├── Textures
+│   │   │   │   │   │   ├── T_Accessories_ts_DEMO.png
+│   │   │   │   │   │   ├── T_Accessories_ts_DEMO.png.meta
+│   │   │   │   │   │   ├── T_Wraith_Accessories_ODGreen_Mask.png
+│   │   │   │   │   │   ├── T_Wraith_Accessories_ODGreen_Mask.png.meta
+│   │   │   │   │   │   ├── T_Wraith_Accessories_ODGreen_Mask2.png
+│   │   │   │   │   │   ├── T_Wraith_Accessories_ODGreen_Mask2.png.meta
+│   │   │   │   │   │   ├── T_Wraith_Accessories_ODGreen_RGB.png
+│   │   │   │   │   │   ├── T_Wraith_Accessories_ODGreen_RGB.png.meta
+│   │   │   │   │   │   ├── T_Wraith_Gun_ODGreen_Mask.png
+│   │   │   │   │   │   ├── T_Wraith_Gun_ODGreen_Mask.png.meta
+│   │   │   │   │   │   ├── T_Wraith_Gun_ODGreen_Mask2.png
+│   │   │   │   │   │   ├── T_Wraith_Gun_ODGreen_Mask2.png.meta
+│   │   │   │   │   │   ├── T_Wraith_lowerBody_ODGreen_Mask.png
+│   │   │   │   │   │   ├── T_Wraith_lowerBody_ODGreen_Mask.png.meta
+│   │   │   │   │   │   ├── T_Wraith_lowerBody_ODGreen_Mask2.png
+│   │   │   │   │   │   ├── T_Wraith_lowerBody_ODGreen_Mask2.png.meta
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_Attachment_Albedo.png
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_Attachment_Albedo.png.meta
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_Backpack_Albedo.png
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_Backpack_Albedo.png.meta
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_Backpack_Emissive.png
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_Backpack_Emissive.png.meta
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_Gun_Albedo.png
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_Gun_Albedo.png.meta
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_Gun_Emissive.png
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_Gun_Emissive.png.meta
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_LowerBody_Albedo.png
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_LowerBody_Albedo.png.meta
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_LowerBody_Emissive.png
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_LowerBody_Emissive.png.meta
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_UpperBody_Albedo.png
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_UpperBody_Albedo.png.meta
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_UpperBody_Emissive.png
+│   │   │   │   │   │   ├── T_Wraith_ODGreen_UpperBody_Emissive.png.meta
+│   │   │   │   │   │   ├── T_Wraith_UpperBody_ODGreen_Mask.png
+│   │   │   │   │   │   ├── T_Wraith_UpperBody_ODGreen_Mask.png.meta
+│   │   │   │   │   │   ├── T_Wraith_UpperBody_ODGreen_Mask2.png
+│   │   │   │   │   │   └── T_Wraith_UpperBody_ODGreen_Mask2.png.meta
+│   │   │   │   │   └── Textures.meta
+│   │   │   │   └── ODGreen.meta
+│   │   │   ├── Skins.meta
+│   │   │   ├── Textures
+│   │   │   │   ├── T_ElectroHex_Tile.png
+│   │   │   │   ├── T_ElectroHex_Tile.png.meta
+│   │   │   │   ├── T_Wraith_Backpack_Mask.png
+│   │   │   │   ├── T_Wraith_Backpack_Mask.png.meta
+│   │   │   │   ├── T_Wraith_Backpack_Mask2.png
+│   │   │   │   ├── T_Wraith_Backpack_Mask2.png.meta
+│   │   │   │   ├── T_Wraith_backpack_N_DEMO.png
+│   │   │   │   ├── T_Wraith_backpack_N_DEMO.png.meta
+│   │   │   │   ├── T_Wraith_BackPackbody_RGBA.png
+│   │   │   │   ├── T_Wraith_BackPackbody_RGBA.png.meta
+│   │   │   │   ├── T_Wraith_Emissive_Mask.png
+│   │   │   │   ├── T_Wraith_Emissive_Mask.png.meta
+│   │   │   │   ├── T_Wraith_Gun_Mask.png
+│   │   │   │   ├── T_Wraith_Gun_Mask.png.meta
+│   │   │   │   ├── T_Wraith_Gun_Mask2.png
+│   │   │   │   ├── T_Wraith_Gun_Mask2.png.meta
+│   │   │   │   ├── T_Wraith_gun_N_DEMO.png
+│   │   │   │   ├── T_Wraith_gun_N_DEMO.png.meta
+│   │   │   │   ├── T_Wraith_Gun_RGB.png
+│   │   │   │   ├── T_Wraith_Gun_RGB.png.meta
+│   │   │   │   ├── T_Wraith_LowerBody_Mask.png
+│   │   │   │   ├── T_Wraith_LowerBody_Mask.png.meta
+│   │   │   │   ├── T_Wraith_LowerBody_Mask2.png
+│   │   │   │   ├── T_Wraith_LowerBody_Mask2.png.meta
+│   │   │   │   ├── T_Wraith_lowerbody_N_DEMO.png
+│   │   │   │   ├── T_Wraith_lowerbody_N_DEMO.png.meta
+│   │   │   │   ├── T_Wraith_Lowerbody_RGBA.png
+│   │   │   │   ├── T_Wraith_Lowerbody_RGBA.png.meta
+│   │   │   │   ├── T_Wraith_UpperBody_Mask.png
+│   │   │   │   ├── T_Wraith_UpperBody_Mask.png.meta
+│   │   │   │   ├── T_Wraith_UpperBody_Mask2.png
+│   │   │   │   ├── T_Wraith_UpperBody_Mask2.png.meta
+│   │   │   │   ├── T_Wraith_upperbody_N_DEMO.png
+│   │   │   │   ├── T_Wraith_upperbody_N_DEMO.png.meta
+│   │   │   │   ├── T_Wraith_Upperbody_RGBA.png
+│   │   │   │   └── T_Wraith_Upperbody_RGBA.png.meta
+│   │   │   └── Textures.meta
+│   │   └── Wraith.meta
+│   ├── Heroes.meta
+│   ├── Maps
+│   │   ├── BackGroundAssets
+│   │   │   ├── M_AssetPlatform.mat.json
+│   │   │   ├── M_AssetPlatform.mat.json.meta
+│   │   │   ├── M_HDRSky.mat.json
+│   │   │   ├── M_HDRSky.mat.json.meta
+│   │   │   ├── SM_AssetPlatform.fbx
+│   │   │   ├── SM_AssetPlatform.fbx.meta
+│   │   │   ├── T_HDRI_Epic_Courtyard_Daylight.hdr
+│   │   │   └── T_HDRI_Epic_Courtyard_Daylight.hdr.meta
+│   │   └── BackGroundAssets.meta
+│   └── Maps.meta
+├── Characters.meta
+├── Editor
+│   ├── ParagonWraith_UnitySetup.cs
+│   └── ParagonWraith_UnitySetup.cs.meta
+├── Editor.meta
+├── FX
+│   ├── Materials
+│   │   ├── Debris
+│   │   │   ├── M_Explosion_RockChunks.mat.json
+│   │   │   └── M_Explosion_RockChunks.mat.json.meta
+│   │   ├── Debris.meta
+│   │   ├── Environment
+│   │   │   ├── Water
+│   │   │   │   ├── M_WaterRipple_Mesh_Foam.mat.json
+│   │   │   │   └── M_WaterRipple_Mesh_Foam.mat.json.meta
+│   │   │   └── Water.meta
+│   │   ├── Environment.meta
+│   │   ├── Flares
+│   │   │   ├── AirGlows
+│   │   │   │   ├── M_Recall_GlowingDots_Inst.mat.json
+│   │   │   │   ├── M_Recall_GlowingDots_Inst.mat.json.meta
+│   │   │   │   ├── M_Recall_GlowingDots.mat.json
+│   │   │   │   └── M_Recall_GlowingDots.mat.json.meta
+│   │   │   ├── AirGlows.meta
+│   │   │   ├── M_DarkFlare_DistShrink.mat.json
+│   │   │   ├── M_DarkFlare_DistShrink.mat.json.meta
+│   │   │   ├── M_GlowPoint_MASTER.mat.json
+│   │   │   ├── M_GlowPoint_MASTER.mat.json.meta
+│   │   │   ├── M_LensFlare_Particle_01.mat.json
+│   │   │   ├── M_LensFlare_Particle_01.mat.json.meta
+│   │   │   ├── M_LensFlare_Particle_PDirection_Inst.mat.json
+│   │   │   ├── M_LensFlare_Particle_PDirection_Inst.mat.json.meta
+│   │   │   ├── M_LensFlare_Particle.mat.json
+│   │   │   ├── M_LensFlare_Particle.mat.json.meta
+│   │   │   ├── M_Lensflare_TB_Soft.mat.json
+│   │   │   ├── M_Lensflare_TB_Soft.mat.json.meta
+│   │   │   ├── M_Lensflare_TB_SoftGlow_LowDepth_Inst.mat.json
+│   │   │   ├── M_Lensflare_TB_SoftGlow_LowDepth_Inst.mat.json.meta
+│   │   │   ├── M_Lensflare_TB_SoftGlow.mat.json
+│   │   │   ├── M_Lensflare_TB_SoftGlow.mat.json.meta
+│   │   │   ├── M_LensFlareMaster.mat.json
+│   │   │   └── M_LensFlareMaster.mat.json.meta
+│   │   ├── Flares.meta
+│   │   ├── Functions
+│   │   │   ├── LensFlare
+│   │   │   └── LensFlare.meta
+│   │   ├── Functions.meta
+│   │   ├── HeatDistort
+│   │   │   ├── M_Shockwave_Refract.mat.json
+│   │   │   └── M_Shockwave_Refract.mat.json.meta
+│   │   ├── HeatDistort.meta
+│   │   ├── Heroes
+│   │   │   ├── M_Energy_Ripple_Spline2.mat.json
+│   │   │   ├── M_Energy_Ripple_Spline2.mat.json.meta
+│   │   │   ├── M_Jet_Mesh.mat.json
+│   │   │   ├── M_Jet_Mesh.mat.json.meta
+│   │   │   ├── M_Large_Bolt.mat.json
+│   │   │   ├── M_Large_Bolt.mat.json.meta
+│   │   │   ├── M_ShadowPlane_Hex.mat.json
+│   │   │   ├── M_ShadowPlane_Hex.mat.json.meta
+│   │   │   ├── M_SmokeEnergy_SubUV.mat.json
+│   │   │   ├── M_SmokeEnergy_SubUV.mat.json.meta
+│   │   │   ├── M_Spark_VelocityLerp_Pellets_Inst.mat.json
+│   │   │   ├── M_Spark_VelocityLerp_Pellets_Inst.mat.json.meta
+│   │   │   ├── M_Spark_VelocityLerp_TeamColor.mat.json
+│   │   │   ├── M_Spark_VelocityLerp_TeamColor.mat.json.meta
+│   │   │   ├── M_Teleport_Refraction.mat.json
+│   │   │   ├── M_Teleport_Refraction.mat.json.meta
+│   │   │   ├── M_Thruster_Cone.mat.json
+│   │   │   ├── M_Thruster_Cone.mat.json.meta
+│   │   │   ├── M_Ult_Bullet_Pyramid.mat.json
+│   │   │   ├── M_Ult_Bullet_Pyramid.mat.json.meta
+│   │   │   ├── M_Wraith_Halo.mat.json
+│   │   │   ├── M_Wraith_Halo.mat.json.meta
+│   │   │   ├── M_Wraith_Muzzle_Flash.mat.json
+│   │   │   ├── M_Wraith_Muzzle_Flash.mat.json.meta
+│   │   │   ├── M_Wraith_Projectile_Ribbon.mat.json
+│   │   │   ├── M_Wraith_Projectile_Ribbon.mat.json.meta
+│   │   │   ├── Wraith
+│   │   │   │   ├── FX
+│   │   │   │   │   ├── M_CameraLens_Teleporting.mat.json
+│   │   │   │   │   ├── M_CameraLens_Teleporting.mat.json.meta
+│   │   │   │   │   ├── M_Screen_Triangles.mat.json
+│   │   │   │   │   ├── M_Screen_Triangles.mat.json.meta
+│   │   │   │   │   ├── M_Wraith_Drone_ElectroField.mat.json
+│   │   │   │   │   ├── M_Wraith_Drone_ElectroField.mat.json.meta
+│   │   │   │   │   ├── M_Wraith_Upperbody_Drone_Inst.mat.json
+│   │   │   │   │   └── M_Wraith_Upperbody_Drone_Inst.mat.json.meta
+│   │   │   │   ├── FX.meta
+│   │   │   │   ├── M_Wraith_Upperbody.mat.json
+│   │   │   │   ├── M_Wraith_Upperbody.mat.json.meta
+│   │   │   │   ├── MLayer
+│   │   │   │   │   ├── T_TireRubber_R.png
+│   │   │   │   │   └── T_TireRubber_R.png.meta
+│   │   │   │   └── MLayer.meta
+│   │   │   └── Wraith.meta
+│   │   ├── Heroes.meta
+│   │   ├── M_ShadowPlaneShimmer_Ward_Inst.mat.json
+│   │   ├── M_ShadowPlaneShimmer_Ward_Inst.mat.json.meta
+│   │   ├── M_ShadowPlaneShimmer.mat.json
+│   │   ├── M_ShadowPlaneShimmer.mat.json.meta
+│   │   ├── MaterialFunctions
+│   │   │   ├── Camera
+│   │   │   │   ├── Effects
+│   │   │   │   │   ├── SM_Camera_Mesh.fbx
+│   │   │   │   │   ├── SM_Camera_Mesh.fbx.meta
+│   │   │   │   │   ├── T_Simple_Gradients_M.png
+│   │   │   │   │   └── T_Simple_Gradients_M.png.meta
+│   │   │   │   └── Effects.meta
+│   │   │   ├── Camera.meta
+│   │   │   ├── M_Tri_Test.mat.json
+│   │   │   ├── M_Tri_Test.mat.json.meta
+│   │   │   ├── MaterialLayerConstructors
+│   │   │   ├── MaterialLayerConstructors.meta
+│   │   │   ├── ParameterCollections
+│   │   │   ├── ParameterCollections.meta
+│   │   │   ├── Textures
+│   │   │   │   ├── Noise
+│   │   │   │   │   ├── T_3dnoise.png
+│   │   │   │   │   ├── T_3dnoise.png.meta
+│   │   │   │   │   ├── T_AtmosphericCloudNoise01_N.png
+│   │   │   │   │   ├── T_AtmosphericCloudNoise01_N.png.meta
+│   │   │   │   │   ├── T_AtmosphericCloudNoise01.png
+│   │   │   │   │   ├── T_AtmosphericCloudNoise01.png.meta
+│   │   │   │   │   ├── T_AtmosphericCloudNoise03.png
+│   │   │   │   │   ├── T_AtmosphericCloudNoise03.png.meta
+│   │   │   │   │   ├── T_AtmosphericCloudNoise04_N.png
+│   │   │   │   │   ├── T_AtmosphericCloudNoise04_N.png.meta
+│   │   │   │   │   ├── T_noise_flamy_Tile_NRM.png
+│   │   │   │   │   ├── T_noise_flamy_Tile_NRM.png.meta
+│   │   │   │   │   ├── T_Perlin_Noise_M.png
+│   │   │   │   │   └── T_Perlin_Noise_M.png.meta
+│   │   │   │   ├── Noise.meta
+│   │   │   │   ├── T_Black_Linear.png
+│   │   │   │   └── T_Black_Linear.png.meta
+│   │   │   └── Textures.meta
+│   │   ├── MaterialFunctions.meta
+│   │   ├── MaterialLayers
+│   │   │   ├── Metal
+│   │   │   │   ├── T_Blue_Metal02.png
+│   │   │   │   ├── T_Blue_Metal02.png.meta
+│   │   │   │   ├── T_Metal_Scratched_Circular_01_COLOR.png
+│   │   │   │   ├── T_Metal_Scratched_Circular_01_COLOR.png.meta
+│   │   │   │   ├── T_Metal_Scratched_Circular_01_N.png
+│   │   │   │   ├── T_Metal_Scratched_Circular_01_N.png.meta
+│   │   │   │   ├── T_ML_Aluminum01_N.png
+│   │   │   │   ├── T_ML_Aluminum01_N.png.meta
+│   │   │   │   ├── T_ML_Aluminum01.png
+│   │   │   │   ├── T_ML_Aluminum01.png.meta
+│   │   │   │   ├── T_ScratchMask.png
+│   │   │   │   └── T_ScratchMask.png.meta
+│   │   │   ├── Metal.meta
+│   │   │   ├── Painted
+│   │   │   │   ├── T_PaintScratches.png
+│   │   │   │   └── T_PaintScratches.png.meta
+│   │   │   ├── Painted.meta
+│   │   │   ├── Rubber
+│   │   │   │   ├── T_Blank_N.png
+│   │   │   │   ├── T_Blank_N.png.meta
+│   │   │   │   ├── T_ML_FineRubber_N.png
+│   │   │   │   └── T_ML_FineRubber_N.png.meta
+│   │   │   ├── Rubber.meta
+│   │   │   ├── Synthetics
+│   │   │   ├── Synthetics.meta
+│   │   │   ├── T_TestML_Mask.png
+│   │   │   └── T_TestML_Mask.png.meta
+│   │   ├── MaterialLayers.meta
+│   │   ├── PhysMats
+│   │   ├── PhysMats.meta
+│   │   ├── Shockwaves
+│   │   │   ├── M_Shockwave_Soft.mat.json
+│   │   │   └── M_Shockwave_Soft.mat.json.meta
+│   │   ├── Shockwaves.meta
+│   │   ├── Smoke
+│   │   │   ├── DirectionalLit
+│   │   │   │   ├── M_Directional_Lit_Depth_Smoke_Spikey_Inst.mat.json
+│   │   │   │   ├── M_Directional_Lit_Depth_Smoke_Spikey_Inst.mat.json.meta
+│   │   │   │   ├── M_Directional_Lit_Depth_SmokeElement_Inst.mat.json
+│   │   │   │   ├── M_Directional_Lit_Depth_SmokeElement_Inst.mat.json.meta
+│   │   │   │   ├── M_Directional_Lit_DepthSmoke_Master.mat.json
+│   │   │   │   ├── M_Directional_Lit_DepthSmoke_Master.mat.json.meta
+│   │   │   │   ├── M_residualMuzzleSmoke_Inst.mat.json
+│   │   │   │   ├── M_residualMuzzleSmoke_Inst.mat.json.meta
+│   │   │   │   ├── M_ResidualMuzzleSmoke_Master.mat.json
+│   │   │   │   └── M_ResidualMuzzleSmoke_Master.mat.json.meta
+│   │   │   ├── DirectionalLit.meta
+│   │   │   ├── Hyperbreach
+│   │   │   │   ├── M_Smoke_Offset_Particles_SubUV_LIT.mat.json
+│   │   │   │   └── M_Smoke_Offset_Particles_SubUV_LIT.mat.json.meta
+│   │   │   ├── Hyperbreach.meta
+│   │   │   ├── M_LingerSmoke_MasterAdditiveWarp_EmissiveParticleColor.mat.json
+│   │   │   ├── M_LingerSmoke_MasterAdditiveWarp_EmissiveParticleColor.mat.json.meta
+│   │   │   ├── M_SoftSmoke_Emissive_FakeLit.mat.json
+│   │   │   ├── M_SoftSmoke_Emissive_FakeLit.mat.json.meta
+│   │   │   ├── M_WispySmokeTest.mat.json
+│   │   │   ├── M_WispySmokeTest.mat.json.meta
+│   │   │   ├── Spline
+│   │   │   │   ├── M_Smoke_SplineMesh_Trail_Wisp_Inst.mat.json
+│   │   │   │   ├── M_Smoke_SplineMesh_Trail_Wisp_Inst.mat.json.meta
+│   │   │   │   ├── M_Smoke_SplineMesh_Trail.mat.json
+│   │   │   │   └── M_Smoke_SplineMesh_Trail.mat.json.meta
+│   │   │   ├── Spline.meta
+│   │   │   ├── WispySmokeSoft
+│   │   │   │   ├── M_WispySmokeSoft.mat.json
+│   │   │   │   └── M_WispySmokeSoft.mat.json.meta
+│   │   │   └── WispySmokeSoft.meta
+│   │   ├── Smoke.meta
+│   │   ├── Sparks
+│   │   │   ├── M_Hotdog_Spark_VLerp_MASTER.mat.json
+│   │   │   ├── M_Hotdog_Spark_VLerp_MASTER.mat.json.meta
+│   │   │   ├── M_Hotdog_VLerp_DirectionTint.mat.json
+│   │   │   ├── M_Hotdog_VLerp_DirectionTint.mat.json.meta
+│   │   │   ├── M_Spark_VelocityLerp_Pellets_Inst.mat.json
+│   │   │   ├── M_Spark_VelocityLerp_Pellets_Inst.mat.json.meta
+│   │   │   ├── M_Spark_VelocityLerp_WorldColor.mat.json
+│   │   │   └── M_Spark_VelocityLerp_WorldColor.mat.json.meta
+│   │   ├── Sparks.meta
+│   │   ├── Tech
+│   │   │   ├── M_Glitch_Refraction.mat.json
+│   │   │   ├── M_Glitch_Refraction.mat.json.meta
+│   │   │   ├── M_GlowPoint_CameraFacing.mat.json
+│   │   │   ├── M_GlowPoint_CameraFacing.mat.json.meta
+│   │   │   ├── M_Holo_Display_02_FlickerIn.mat.json
+│   │   │   ├── M_Holo_Display_02_FlickerIn.mat.json.meta
+│   │   │   ├── M_Holo_Display_FlickerIn.mat.json
+│   │   │   ├── M_Holo_Display_FlickerIn.mat.json.meta
+│   │   │   ├── M_Holo_Reticle_FlickerIn.mat.json
+│   │   │   ├── M_Holo_Reticle_FlickerIn.mat.json.meta
+│   │   │   ├── M_Hotdog_Spline_Laser.mat.json
+│   │   │   ├── M_Hotdog_Spline_Laser.mat.json.meta
+│   │   │   ├── M_Spline_Light_Scanner.mat.json
+│   │   │   ├── M_Spline_Light_Scanner.mat.json.meta
+│   │   │   ├── M_Tech_Holo_Spline_WPO.mat.json
+│   │   │   ├── M_Tech_Holo_Spline_WPO.mat.json.meta
+│   │   │   ├── M_Wraith_Tech_Holo_Flicker_Spline.mat.json
+│   │   │   ├── M_Wraith_Tech_Holo_Flicker_Spline.mat.json.meta
+│   │   │   ├── M_Wraith_Tech_Holo_Spline.mat.json
+│   │   │   └── M_Wraith_Tech_Holo_Spline.mat.json.meta
+│   │   ├── Tech.meta
+│   │   ├── Trails
+│   │   │   ├── M_Bullet_Trail.mat.json
+│   │   │   └── M_Bullet_Trail.mat.json.meta
+│   │   ├── Trails.meta
+│   │   ├── VolumeFog
+│   │   │   ├── M_Fog_SphericalDensity.mat.json
+│   │   │   ├── M_Fog_SphericalDensity.mat.json.meta
+│   │   │   ├── MI_Fog_SphericalDensity_Particle.mat.json
+│   │   │   └── MI_Fog_SphericalDensity_Particle.mat.json.meta
+│   │   ├── VolumeFog.meta
+│   │   ├── Water
+│   │   │   ├── Hydro
+│   │   │   │   ├── M_Hydro_Water_Particles_Body_Inst.mat.json
+│   │   │   │   ├── M_Hydro_Water_Particles_Body_Inst.mat.json.meta
+│   │   │   │   ├── M_Wraith_Water_Particles.mat.json
+│   │   │   │   └── M_Wraith_Water_Particles.mat.json.meta
+│   │   │   ├── Hydro.meta
+│   │   │   ├── M_Water_Drops_Master.mat.json
+│   │   │   ├── M_Water_Drops_Master.mat.json.meta
+│   │   │   ├── M_WaterBubbles_Inst.mat.json
+│   │   │   ├── M_WaterBubbles_Inst.mat.json.meta
+│   │   │   ├── M_WaterBubbles.mat.json
+│   │   │   ├── M_WaterBubbles.mat.json.meta
+│   │   │   ├── M_WaterImpact_Cylinder.mat.json
+│   │   │   ├── M_WaterImpact_Cylinder.mat.json.meta
+│   │   │   ├── M_WaterImpact_Strand_Masked.mat.json
+│   │   │   ├── M_WaterImpact_Strand_Masked.mat.json.meta
+│   │   │   ├── M_WaterMist.mat.json
+│   │   │   └── M_WaterMist.mat.json.meta
+│   │   └── Water.meta
+│   ├── Materials.meta
+│   ├── Meshes
+│   │   ├── Heroes
+│   │   │   ├── SM_Large_Bolt.fbx
+│   │   │   ├── SM_Large_Bolt.fbx.meta
+│   │   │   ├── SM_Thruster_Cone.fbx
+│   │   │   ├── SM_Thruster_Cone.fbx.meta
+│   │   │   ├── SM_Wraith_Jets_Combined.fbx
+│   │   │   ├── SM_Wraith_Jets_Combined.fbx.meta
+│   │   │   ├── SM_Wraith_SimpleUltBullet.fbx
+│   │   │   ├── SM_Wraith_SimpleUltBullet.fbx.meta
+│   │   │   ├── Wraith
+│   │   │   │   ├── FX
+│   │   │   │   │   ├── SM_Holo_Circle_Y.fbx
+│   │   │   │   │   ├── SM_Holo_Circle_Y.fbx.meta
+│   │   │   │   │   ├── SM_Holo_Display_01.fbx
+│   │   │   │   │   ├── SM_Holo_Display_01.fbx.meta
+│   │   │   │   │   ├── SM_Holo_Targeting_Rifle_01.fbx
+│   │   │   │   │   ├── SM_Holo_Targeting_Rifle_01.fbx.meta
+│   │   │   │   │   ├── SM_Holo_Targeting_Rifle_02.fbx
+│   │   │   │   │   ├── SM_Holo_Targeting_Rifle_02.fbx.meta
+│   │   │   │   │   ├── SM_HoloSpline_Targeter_02.fbx
+│   │   │   │   │   ├── SM_HoloSpline_Targeter_02.fbx.meta
+│   │   │   │   │   ├── SM_HoloSpline_Targeter.fbx
+│   │   │   │   │   ├── SM_HoloSpline_Targeter.fbx.meta
+│   │   │   │   │   ├── SM_Screen_Triangles.fbx
+│   │   │   │   │   ├── SM_Screen_Triangles.fbx.meta
+│   │   │   │   │   ├── SM_Wraith_Drone_ElectroField.fbx
+│   │   │   │   │   ├── SM_Wraith_Drone_ElectroField.fbx.meta
+│   │   │   │   │   ├── SM_Wraith_Holo_Interface.fbx
+│   │   │   │   │   └── SM_Wraith_Holo_Interface.fbx.meta
+│   │   │   │   ├── FX.meta
+│   │   │   │   ├── SM_Wraith_Drone_open.fbx
+│   │   │   │   ├── SM_Wraith_Drone_open.fbx.meta
+│   │   │   │   ├── SM_Wraith_Drone.fbx
+│   │   │   │   └── SM_Wraith_Drone.fbx.meta
+│   │   │   └── Wraith.meta
+│   │   ├── Heroes.meta
+│   │   ├── MuzzleFlashes
+│   │   │   ├── SM_Muzzle_Flash.fbx
+│   │   │   └── SM_Muzzle_Flash.fbx.meta
+│   │   ├── MuzzleFlashes.meta
+│   │   ├── Reticles
+│   │   │   ├── HyperBreach
+│   │   │   │   ├── SM_Target_OuterCircle_Cylinder_LG.fbx
+│   │   │   │   └── SM_Target_OuterCircle_Cylinder_LG.fbx.meta
+│   │   │   └── HyperBreach.meta
+│   │   ├── Reticles.meta
+│   │   ├── Shapes
+│   │   │   ├── SM_Flat_LightPlane_Cluster.fbx
+│   │   │   ├── SM_Flat_LightPlane_Cluster.fbx.meta
+│   │   │   ├── SM_Flat_LightPlane.fbx
+│   │   │   ├── SM_Flat_LightPlane.fbx.meta
+│   │   │   ├── SM_Holo_Projector_Beams.fbx
+│   │   │   ├── SM_Holo_Projector_Beams.fbx.meta
+│   │   │   ├── SM_Shockwave_Disc.fbx
+│   │   │   ├── SM_Shockwave_Disc.fbx.meta
+│   │   │   ├── SM_Sphere_FlippedNormals.fbx
+│   │   │   └── SM_Sphere_FlippedNormals.fbx.meta
+│   │   ├── Shapes.meta
+│   │   ├── Smoke
+│   │   │   ├── SM_Plasma_Mesh_Reduced.fbx
+│   │   │   ├── SM_Plasma_Mesh_Reduced.fbx.meta
+│   │   │   ├── SM_Plasma_Mesh.fbx
+│   │   │   ├── SM_Plasma_Mesh.fbx.meta
+│   │   │   ├── SM_SmokeFlat.fbx
+│   │   │   └── SM_SmokeFlat.fbx.meta
+│   │   ├── Smoke.meta
+│   │   ├── Splines
+│   │   │   ├── M_Spline_Preview.mat.json
+│   │   │   ├── M_Spline_Preview.mat.json.meta
+│   │   │   ├── SM_Forward_Burst_Splines.fbx
+│   │   │   ├── SM_Forward_Burst_Splines.fbx.meta
+│   │   │   ├── SM_GlowPoint_Sphere.fbx
+│   │   │   ├── SM_GlowPoint_Sphere.fbx.meta
+│   │   │   ├── SM_HoloSpline_Connector.fbx
+│   │   │   ├── SM_HoloSpline_Connector.fbx.meta
+│   │   │   ├── SM_HoloSpline_Wireframe_Helix.fbx
+│   │   │   ├── SM_HoloSpline_Wireframe_Helix.fbx.meta
+│   │   │   ├── SM_Straight_Spline_100.fbx
+│   │   │   ├── SM_Straight_Spline_100.fbx.meta
+│   │   │   ├── SM_Swirl_Spline_X_03.fbx
+│   │   │   ├── SM_Swirl_Spline_X_03.fbx.meta
+│   │   │   ├── SM_Swirl_Spline_X.fbx
+│   │   │   ├── SM_Swirl_Spline_X.fbx.meta
+│   │   │   ├── SM_Tech_Holo_Splines.fbx
+│   │   │   └── SM_Tech_Holo_Splines.fbx.meta
+│   │   ├── Splines.meta
+│   │   ├── Water
+│   │   │   ├── SM_WaterFall_RippleMeshes.fbx
+│   │   │   ├── SM_WaterFall_RippleMeshes.fbx.meta
+│   │   │   ├── SM_WaterImpact_ImpactCylinder.fbx
+│   │   │   └── SM_WaterImpact_ImpactCylinder.fbx.meta
+│   │   └── Water.meta
+│   ├── Meshes.meta
+│   ├── Particles
+│   │   ├── Abilities
+│   │   │   ├── Drone
+│   │   │   │   ├── FX
+│   │   │   │   └── FX.meta
+│   │   │   ├── Drone.meta
+│   │   │   ├── Primary
+│   │   │   │   ├── FX
+│   │   │   │   └── FX.meta
+│   │   │   ├── Primary.meta
+│   │   │   ├── ScopedShot
+│   │   │   │   ├── FX
+│   │   │   │   └── FX.meta
+│   │   │   ├── ScopedShot.meta
+│   │   │   ├── TeleportTarget
+│   │   │   │   ├── FX
+│   │   │   │   └── FX.meta
+│   │   │   ├── TeleportTarget.meta
+│   │   │   ├── Ultimate
+│   │   │   │   ├── FX
+│   │   │   │   └── FX.meta
+│   │   │   └── Ultimate.meta
+│   │   └── Abilities.meta
+│   ├── Particles.meta
+│   ├── Textures
+│   │   ├── Coords
+│   │   │   ├── T_Swirl_FlowMapDiffTile_Warp.png
+│   │   │   ├── T_Swirl_FlowMapDiffTile_Warp.png.meta
+│   │   │   ├── T_Turbulence_AdditiveWarp_Linear.png
+│   │   │   └── T_Turbulence_AdditiveWarp_Linear.png.meta
+│   │   ├── Coords.meta
+│   │   ├── Debris
+│   │   │   ├── T_Concrete_ChunkSubUV_D.png
+│   │   │   ├── T_Concrete_ChunkSubUV_D.png.meta
+│   │   │   ├── T_Concrete_ChunkSubUV_N_TGA.png
+│   │   │   └── T_Concrete_ChunkSubUV_N_TGA.png.meta
+│   │   ├── Debris.meta
+│   │   ├── Energy
+│   │   │   ├── Electricity
+│   │   │   │   ├── T_Lightning_B_Tile_Chromatic.png
+│   │   │   │   └── T_Lightning_B_Tile_Chromatic.png.meta
+│   │   │   ├── Electricity.meta
+│   │   │   ├── T_Plasma_Wisps_N.png
+│   │   │   ├── T_Plasma_Wisps_N.png.meta
+│   │   │   ├── T_Plasma_Wisps.png
+│   │   │   └── T_Plasma_Wisps.png.meta
+│   │   ├── Energy.meta
+│   │   ├── Explosions
+│   │   │   ├── HyperBreach
+│   │   │   │   ├── T_FireBall_07D_Depth.png
+│   │   │   │   ├── T_FireBall_07D_Depth.png.meta
+│   │   │   │   ├── T_FireBall_07D_N.png
+│   │   │   │   └── T_FireBall_07D_N.png.meta
+│   │   │   ├── HyperBreach.meta
+│   │   │   ├── T_Explosion_Test_v1_Depth.png
+│   │   │   ├── T_Explosion_Test_v1_Depth.png.meta
+│   │   │   ├── T_Explosion_Test_v1_Normal.png
+│   │   │   ├── T_Explosion_Test_v1_Normal.png.meta
+│   │   │   ├── T_Explosion_Test_v1_Temperature.png
+│   │   │   └── T_Explosion_Test_v1_Temperature.png.meta
+│   │   ├── Explosions.meta
+│   │   ├── Flares
+│   │   │   ├── Org_A
+│   │   │   │   ├── T_LDR_Flare01.png
+│   │   │   │   └── T_LDR_Flare01.png.meta
+│   │   │   ├── Org_A.meta
+│   │   │   ├── T_Flare_Spikeball.png
+│   │   │   ├── T_Flare_Spikeball.png.meta
+│   │   │   ├── T_FlareWide_04.png
+│   │   │   ├── T_FlareWide_04.png.meta
+│   │   │   ├── T_Glow_Sphere_Soft.png
+│   │   │   └── T_Glow_Sphere_Soft.png.meta
+│   │   ├── Flares.meta
+│   │   ├── FluidPatterns
+│   │   │   ├── T_FluidTile01_DA.png
+│   │   │   └── T_FluidTile01_DA.png.meta
+│   │   ├── FluidPatterns.meta
+│   │   ├── Gradients
+│   │   │   ├── Color
+│   │   │   │   ├── T_ShadowPlane_Reflection.png
+│   │   │   │   ├── T_ShadowPlane_Reflection.png.meta
+│   │   │   │   ├── T_Wraith_Prism_03.png
+│   │   │   │   └── T_Wraith_Prism_03.png.meta
+│   │   │   ├── Color.meta
+│   │   │   ├── Masks
+│   │   │   │   ├── T_Wraith_M.png
+│   │   │   │   └── T_Wraith_M.png.meta
+│   │   │   └── Masks.meta
+│   │   ├── Gradients.meta
+│   │   ├── Heroes
+│   │   │   ├── T_Hanging_cloth_normal_b.png
+│   │   │   ├── T_Hanging_cloth_normal_b.png.meta
+│   │   │   ├── T_Wraith_HealBlur_SubUV_A.png
+│   │   │   ├── T_Wraith_HealBlur_SubUV_A.png.meta
+│   │   │   ├── T_Wraith_HealBlur_SubUV_N.png
+│   │   │   ├── T_Wraith_HealBlur_SubUV_N.png.meta
+│   │   │   ├── Wraith
+│   │   │   │   ├── T_ElectroHex_Tile.png
+│   │   │   │   ├── T_ElectroHex_Tile.png.meta
+│   │   │   │   ├── T_Wraith_BackPackbody_RGBA.png
+│   │   │   │   ├── T_Wraith_BackPackbody_RGBA.png.meta
+│   │   │   │   ├── T_Wraith_UpperBody_Mask.png
+│   │   │   │   ├── T_Wraith_UpperBody_Mask.png.meta
+│   │   │   │   ├── T_Wraith_UpperBody_Mask2.png
+│   │   │   │   ├── T_Wraith_UpperBody_Mask2.png.meta
+│   │   │   │   ├── T_Wraith_upperbody_N_DEMO.png
+│   │   │   │   ├── T_Wraith_upperbody_N_DEMO.png.meta
+│   │   │   │   ├── T_Wraith_Upperbody_RGBA.png
+│   │   │   │   └── T_Wraith_Upperbody_RGBA.png.meta
+│   │   │   └── Wraith.meta
+│   │   ├── Heroes.meta
+│   │   ├── Liquid
+│   │   │   ├── T_Drop_Hard_Mask.png
+│   │   │   ├── T_Drop_Hard_Mask.png.meta
+│   │   │   ├── T_Drop_Hard_Normal.png
+│   │   │   ├── T_Drop_Hard_Normal.png.meta
+│   │   │   ├── T_Liquid_Reflection.png
+│   │   │   └── T_Liquid_Reflection.png.meta
+│   │   ├── Liquid.meta
+│   │   ├── Masks
+│   │   │   ├── T_Beam_Gradient_02.png
+│   │   │   ├── T_Beam_Gradient_02.png.meta
+│   │   │   ├── T_Explosion_WarpMask.png
+│   │   │   ├── T_Explosion_WarpMask.png.meta
+│   │   │   ├── T_Holo_Scanlines.png
+│   │   │   ├── T_Holo_Scanlines.png.meta
+│   │   │   ├── T_NoisyRamp.png
+│   │   │   ├── T_NoisyRamp.png.meta
+│   │   │   ├── T_Radial_Burst.png
+│   │   │   ├── T_Radial_Burst.png.meta
+│   │   │   ├── T_SmokeTrailCoord1_Mask.png
+│   │   │   ├── T_SmokeTrailCoord1_Mask.png.meta
+│   │   │   ├── T_SoftEdge_M.png
+│   │   │   ├── T_SoftEdge_M.png.meta
+│   │   │   ├── T_Sphere_A.png
+│   │   │   ├── T_Sphere_A.png.meta
+│   │   │   ├── T_Square_SoftEdges.png
+│   │   │   ├── T_Square_SoftEdges.png.meta
+│   │   │   ├── T_Square_Triangle_Mask.png
+│   │   │   ├── T_Square_Triangle_Mask.png.meta
+│   │   │   ├── T_TankMote.png
+│   │   │   ├── T_TankMote.png.meta
+│   │   │   ├── T_TankMoteNoise.png
+│   │   │   ├── T_TankMoteNoise.png.meta
+│   │   │   ├── T_Vert_Gradient_Softer_Clamped.png
+│   │   │   ├── T_Vert_Gradient_Softer_Clamped.png.meta
+│   │   │   ├── T_Vertical_Gradient_Bits.png
+│   │   │   ├── T_Vertical_Gradient_Bits.png.meta
+│   │   │   ├── T_Wraith_Swirl_Grad.png
+│   │   │   └── T_Wraith_Swirl_Grad.png.meta
+│   │   ├── Masks.meta
+│   │   ├── MuzzleFlashes
+│   │   │   ├── T_Muzzle_Flash.png
+│   │   │   └── T_Muzzle_Flash.png.meta
+│   │   ├── MuzzleFlashes.meta
+│   │   ├── NormalShapes
+│   │   │   ├── T_Refraction_Depression_N.png
+│   │   │   ├── T_Refraction_Depression_N.png.meta
+│   │   │   ├── T_Sphere_N.png
+│   │   │   └── T_Sphere_N.png.meta
+│   │   ├── NormalShapes.meta
+│   │   ├── Smoke
+│   │   │   ├── T_FluidSmoke_04_Depth.png
+│   │   │   ├── T_FluidSmoke_04_Depth.png.meta
+│   │   │   ├── T_FluidSmoke_04_N.png
+│   │   │   ├── T_FluidSmoke_04_N.png.meta
+│   │   │   ├── T_FluidSmoke_04.png
+│   │   │   ├── T_FluidSmoke_04.png.meta
+│   │   │   ├── T_MinionSmokeMask_Test.png
+│   │   │   ├── T_MinionSmokeMask_Test.png.meta
+│   │   │   ├── T_MinionSmokeTile.png
+│   │   │   ├── T_MinionSmokeTile.png.meta
+│   │   │   ├── T_PriceSmoke_01_Depth.png
+│   │   │   ├── T_PriceSmoke_01_Depth.png.meta
+│   │   │   ├── T_Smoke_Trail.png
+│   │   │   ├── T_Smoke_Trail.png.meta
+│   │   │   ├── T_SmokeJet_Element_01_Depth.png
+│   │   │   ├── T_SmokeJet_Element_01_Depth.png.meta
+│   │   │   ├── T_SmokeJet_Element_01_N.png
+│   │   │   ├── T_SmokeJet_Element_01_N.png.meta
+│   │   │   ├── T_SmokeJet_Element_01.png
+│   │   │   ├── T_SmokeJet_Element_01.png.meta
+│   │   │   ├── T_SmokeTile_Strip_02_Height.png
+│   │   │   ├── T_SmokeTile_Strip_02_Height.png.meta
+│   │   │   ├── T_SoftSmoke_Mask_01.png
+│   │   │   ├── T_SoftSmoke_Mask_01.png.meta
+│   │   │   ├── T_SoftSmoke.png
+│   │   │   ├── T_SoftSmoke.png.meta
+│   │   │   ├── T_WispySmoke_V2_NRM.png
+│   │   │   ├── T_WispySmoke_V2_NRM.png.meta
+│   │   │   ├── T_WispySmoke_V2_OCC+Alpha.png
+│   │   │   ├── T_WispySmoke_V2_OCC+Alpha.png.meta
+│   │   │   ├── T_WraithSmoke_01_N.png
+│   │   │   └── T_WraithSmoke_01_N.png.meta
+│   │   ├── Smoke.meta
+│   │   ├── Sparks
+│   │   │   ├── T_Spark_Soft.png
+│   │   │   ├── T_Spark_Soft.png.meta
+│   │   │   ├── T_StretchSpark_01.png
+│   │   │   └── T_StretchSpark_01.png.meta
+│   │   ├── Sparks.meta
+│   │   ├── Tech
+│   │   │   ├── T_Techy_Holo_Display_Elements.png
+│   │   │   ├── T_Techy_Holo_Display_Elements.png.meta
+│   │   │   ├── T_Techy_Holo_Display.png
+│   │   │   ├── T_Techy_Holo_Display.png.meta
+│   │   │   ├── T_Techy_Holo_Reticle.png
+│   │   │   ├── T_Techy_Holo_Reticle.png.meta
+│   │   │   ├── T_Triangle_Hex_Wireframe.png
+│   │   │   └── T_Triangle_Hex_Wireframe.png.meta
+│   │   ├── Tech.meta
+│   │   ├── Tile
+│   │   │   ├── Geometric
+│   │   │   │   ├── T_BlastShield_Pattern02_N.png
+│   │   │   │   └── T_BlastShield_Pattern02_N.png.meta
+│   │   │   ├── Geometric.meta
+│   │   │   ├── Heat
+│   │   │   │   ├── T_2ndInfectedMapNormal.png
+│   │   │   │   └── T_2ndInfectedMapNormal.png.meta
+│   │   │   ├── Heat.meta
+│   │   │   ├── Noise
+│   │   │   │   ├── T_Inky_Smoke_Tile.png
+│   │   │   │   ├── T_Inky_Smoke_Tile.png.meta
+│   │   │   │   ├── T_Noise_LoFreq_RGBA_Pack.png
+│   │   │   │   ├── T_Noise_LoFreq_RGBA_Pack.png.meta
+│   │   │   │   ├── T_Noise_Rough_Dark_Big.png
+│   │   │   │   ├── T_Noise_Rough_Dark_Big.png.meta
+│   │   │   │   ├── T_NoiseBubbly_Large.png
+│   │   │   │   ├── T_NoiseBubbly_Large.png.meta
+│   │   │   │   ├── T_soft_noise_even_distribution.png
+│   │   │   │   ├── T_soft_noise_even_distribution.png.meta
+│   │   │   │   ├── T_Soft_Noise.png
+│   │   │   │   ├── T_Soft_Noise.png.meta
+│   │   │   │   ├── T_Water_Screen_Noise_Soft2.png
+│   │   │   │   ├── T_Water_Screen_Noise_Soft2.png.meta
+│   │   │   │   ├── T_Wind_Blur.png
+│   │   │   │   └── T_Wind_Blur.png.meta
+│   │   │   ├── Noise.meta
+│   │   │   ├── Organic
+│   │   │   │   ├── T_Spores_Tile.png
+│   │   │   │   └── T_Spores_Tile.png.meta
+│   │   │   ├── Organic.meta
+│   │   │   ├── Tech
+│   │   │   │   ├── T_Trap_HexMask_N.png
+│   │   │   │   ├── T_Trap_HexMask_N.png.meta
+│   │   │   │   ├── T_Trap_HexMask_Packed.png
+│   │   │   │   └── T_Trap_HexMask_Packed.png.meta
+│   │   │   ├── Tech.meta
+│   │   │   ├── Water
+│   │   │   │   ├── T_WaveDisplaced_N.png
+│   │   │   │   └── T_WaveDisplaced_N.png.meta
+│   │   │   └── Water.meta
+│   │   ├── Tile.meta
+│   │   ├── trails
+│   │   │   ├── T_Silky_Smoke_Trail.png
+│   │   │   ├── T_Silky_Smoke_Trail.png.meta
+│   │   │   ├── T_Smoke_Trail_Soft.png
+│   │   │   ├── T_Smoke_Trail_Soft.png.meta
+│   │   │   ├── T_Soft_Energy_Trail.png
+│   │   │   ├── T_Soft_Energy_Trail.png.meta
+│   │   │   ├── T_Trail_Mask.png
+│   │   │   ├── T_Trail_Mask.png.meta
+│   │   │   ├── T_Venus_Trail.png
+│   │   │   └── T_Venus_Trail.png.meta
+│   │   ├── trails.meta
+│   │   ├── Water
+│   │   │   ├── T_BoilBubble_D.png
+│   │   │   ├── T_BoilBubble_D.png.meta
+│   │   │   ├── T_BoilBubble_N.png
+│   │   │   ├── T_BoilBubble_N.png.meta
+│   │   │   ├── T_Mist.png
+│   │   │   ├── T_Mist.png.meta
+│   │   │   ├── T_Water_M.png
+│   │   │   ├── T_Water_M.png.meta
+│   │   │   ├── T_Water_N.png
+│   │   │   ├── T_Water_N.png.meta
+│   │   │   ├── T_WaterSplash2x2_N.png
+│   │   │   ├── T_WaterSplash2x2_N.png.meta
+│   │   │   ├── T_WaterSplash2x2.png
+│   │   │   ├── T_WaterSplash2x2.png.meta
+│   │   │   ├── T_WaterTests_BF_01E_D.png
+│   │   │   ├── T_WaterTests_BF_01E_D.png.meta
+│   │   │   ├── T_WaterTests_BF_01E_N.png
+│   │   │   ├── T_WaterTests_BF_01E_N.png.meta
+│   │   │   ├── T_WaterTile_Blur_Packed.png
+│   │   │   └── T_WaterTile_Blur_Packed.png.meta
+│   │   └── Water.meta
+│   ├── Textures.meta
+│   ├── VectorFields
+│   └── VectorFields.meta
+├── FX.meta
+├── manifest.json
+├── manifest.json.meta
+├── README.md
+├── README.md.meta
+├── tree.txt
+├── Wraith_ODGreen_Animator.controller
+├── Wraith_ODGreen_Animator.controller.meta
+├── Wraith_ODGreen_Ready.prefab
+├── Wraith_ODGreen_Ready.prefab.meta
+├── Wraith_Ready.prefab
+└── Wraith_Ready.prefab.meta
+
+136 directories, 3050 files
