@@ -854,10 +854,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossAimController
   currentTarget: {fileID: 592106365}
   playerTag: Player
-  torsoBone: {fileID: 900160041}
+  waistBearing: {fileID: 900160041}
   turnSpeed: 60
   yawOffset: 180
-  cannonBone: {fileID: 1151001810}
+  cannonBone: {fileID: 0}
   cannonPitchSpeed: 90
   minPitch: -20
   maxPitch: 45

@@ -65,7 +65,7 @@ public class DummyBarrageAttack : BossAttackBase
         yield return new WaitForSeconds(fireDelayAfterAnim);
 
         // 3. Spawn Test Projectile
-        Vector3 targetPoint = target != null ? target.position + Vector3.up * 1.0f : muzzlePoint.position + muzzlePoint.forward * 10f;
+        Vector3 targetPoint = target != null ? target.position : muzzlePoint.position + muzzlePoint.forward * 10f;
         SpawnTestProjectile(targetPoint);
 
         // 4. Recovery Window
