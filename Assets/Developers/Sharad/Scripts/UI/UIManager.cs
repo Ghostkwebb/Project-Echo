@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using Unity.Cinemachine;
 
 [DisallowMultipleComponent]
@@ -20,11 +21,15 @@ public class UIManager : MonoBehaviour
     [SerializeField] private CinemachineCamera menuCamera;
     [SerializeField] private float cameraBlendDuration = 1.5f;
 
-    [Header("Player & Input Lock")]
+    [Header("Player References")]
     [SerializeField] private MonoBehaviour playerLocomotion;
     [SerializeField] private MonoBehaviour playerShooter;
 
-    [Header("HUD - Boss Sliders & Texts (GDD 29)")]
+    [Header("Boss References (To freeze in menu)")]
+    [SerializeField] private BossAttackDirector bossDirector;
+    [SerializeField] private BossAimController bossAim;
+
+    [Header("HUD - Boss Sliders & Texts")]
     [SerializeField] private Slider bossShieldSlider;
     [SerializeField] private Slider bossHealthSlider;
     [SerializeField] private TextMeshProUGUI bossStatusText;
@@ -62,6 +67,8 @@ public class UIManager : MonoBehaviour
 
         bossHealth = FindAnyObjectByType<BossHealth>();
         playerHealth = FindAnyObjectByType<PlayerHealth>();
+        if (bossDirector == null) bossDirector = FindAnyObjectByType<BossAttackDirector>();
+        if (bossAim == null) bossAim = FindAnyObjectByType<BossAimController>();
 
         ShowMainMenuInstant();
     }
@@ -73,7 +80,9 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        // Hook Boss Events
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         if (bossHealth != null)
         {
             bossHealth.OnHealthChanged += UpdateBossHealth;
@@ -82,7 +91,6 @@ public class UIManager : MonoBehaviour
             bossHealth.OnStaggerEnded += HandleBossRecovered;
         }
 
-        // Hook Threat Monitor
         BossThreatMonitor threat = FindAnyObjectByType<BossThreatMonitor>();
         if (threat != null)
         {
@@ -90,7 +98,6 @@ public class UIManager : MonoBehaviour
             threat.OnPlayerReEngaged += HideThreatWarning;
         }
 
-        // Hook Encounter Manager
         if (EncounterManager.Instance != null)
         {
             EncounterManager.Instance.OnAttemptStarted += HandleAttemptStarted;
@@ -108,8 +115,8 @@ public class UIManager : MonoBehaviour
             combatTimer += Time.deltaTime;
         }
 
-        // Press Escape to toggle Settings in-game
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // New Input System Escape Key Check
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             if (panelSettings != null && panelSettings.activeSelf)
             {
@@ -122,9 +129,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    // ==========================================
-    // MENU ➔ PLAY ZOOM-IN FLOW
-    // ==========================================
     public void OnPlayButtonClicked()
     {
         StartCoroutine(PlayTransitionRoutine());
@@ -132,26 +136,28 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator PlayTransitionRoutine()
     {
-        // 1. Hide Menu
         if (panelMainMenu != null) panelMainMenu.SetActive(false);
 
-        // 2. Drop Menu Camera Priority -> Cinemachine glides down to Wraith!
+        // Zoom camera down to Wraith
         if (menuCamera != null)
         {
             menuCamera.Priority = 0;
         }
 
-        // Wait for smooth zoom-in blend
         yield return new WaitForSeconds(cameraBlendDuration);
 
-        // 3. Lock Cursor & Enable Player Controls
+        // Lock mouse & enable player
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
         if (playerLocomotion != null) playerLocomotion.enabled = true;
         if (playerShooter != null) playerShooter.enabled = true;
 
-        // 4. Reveal Combat HUD
+        // UNFREEZE HOWITZER FOR COMBAT!
+        if (bossDirector != null) bossDirector.enabled = true;
+        if (bossAim != null) bossAim.enabled = true;
+
+        // Reveal HUD
         if (panelHUD != null) panelHUD.SetActive(true);
 
         isInCombat = true;
@@ -162,25 +168,24 @@ public class UIManager : MonoBehaviour
     {
         isInCombat = false;
 
+        // Panels visibility
         if (panelMainMenu != null) panelMainMenu.SetActive(true);
         if (panelSettings != null) panelSettings.SetActive(false);
-        if (panelHUD != null) panelHUD.SetActive(false);
+        if (panelHUD != null) panelHUD.SetActive(false); // HIDES CROSSHAIR/HUD
         if (panelVictory != null) panelVictory.SetActive(false);
 
         if (menuCamera != null) menuCamera.Priority = 20;
 
-        // Unlock mouse for menu clicking
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        // Disable player input during menu
+        // Freeze player & boss during menu!
         if (playerLocomotion != null) playerLocomotion.enabled = false;
         if (playerShooter != null) playerShooter.enabled = false;
+        if (bossDirector != null) bossDirector.enabled = false;
+        if (bossAim != null) bossAim.enabled = false;
     }
 
-    // ==========================================
-    // SETTINGS PANEL
-    // ==========================================
     public void OpenSettings()
     {
         if (panelSettings != null) panelSettings.SetActive(true);
@@ -234,9 +239,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    // ==========================================
-    // HUD UPDATES
-    // ==========================================
     private void UpdateBossHealth(float current, float max)
     {
         if (bossHealthSlider != null) bossHealthSlider.value = current / max;
@@ -260,15 +262,9 @@ public class UIManager : MonoBehaviour
     {
         if (bossStatusText != null)
         {
-            bossStatusText.text = "HOWITZER // HEAVY UNIT-04";
+            bossStatusText.text = "HOWITZER // UNIT-04";
             bossStatusText.color = Color.white;
         }
-    }
-
-    public void UpdatePlayerHP(float current, float max)
-    {
-        if (playerHealthSlider != null) playerHealthSlider.value = current / max;
-        if (playerHealthText != null) playerHealthText.text = $"{Mathf.CeilToInt(current)} / {max}";
     }
 
     private void ShowThreatWarning(string message)
@@ -298,10 +294,7 @@ public class UIManager : MonoBehaviour
         HideThreatWarning();
     }
 
-    private void HandlePlayerDied(int attempt)
-    {
-        // Brief death feedback
-    }
+    private void HandlePlayerDied(int attempt) { }
 
     private void HandleVictory()
     {
@@ -321,14 +314,8 @@ public class UIManager : MonoBehaviour
 
     public void OnReplayButtonClicked()
     {
-        if (EncounterManager.Instance != null)
-        {
-            EncounterManager.Instance.ResetEncounter();
-        }
-        if (EchoManager.Instance != null)
-        {
-            EchoManager.Instance.ClearAllEchoHistory();
-        }
+        if (EncounterManager.Instance != null) EncounterManager.Instance.ResetEncounter();
+        if (EchoManager.Instance != null) EchoManager.Instance.ClearAllEchoHistory();
         ShowMainMenuInstant();
     }
 

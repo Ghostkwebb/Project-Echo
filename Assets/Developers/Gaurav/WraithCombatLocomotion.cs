@@ -88,9 +88,6 @@ public class WraithCombatLocomotion : MonoBehaviour
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
         if (adsCameraObject != null) adsCameraObject.SetActive(false);
         if (sprintCameraObject != null) sprintCameraObject.SetActive(false);
 
