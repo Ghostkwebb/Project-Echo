@@ -185,12 +185,14 @@ public class BossAttack_HeavyLaser : BossAttackBase
         activeLavaTrail.minVertexDistance = 0.25f;            // Smooth curves
         activeLavaTrail.textureMode = LineTextureMode.Tile;  // Seamless tiling noise
 
-        // Tapered curve: Rounded nose at front, rounded tail at back (Zero flat ruler cuts!)
+        activeLavaTrail.widthMultiplier = lavaRibbonWidth;
+
+        // Tapered curve: Rounded nose at front, rounded tail at back
         AnimationCurve widthCurve = new AnimationCurve();
-        widthCurve.AddKey(0f, 0.1f);   // Tapers to point at tail
-        widthCurve.AddKey(0.08f, 1.0f); // Reaches full width fast
-        widthCurve.AddKey(0.92f, 1.0f); // Stays full width along body
-        widthCurve.AddKey(1f, 0.1f);   // Tapers to point at laser head
+        widthCurve.AddKey(0f, 0.1f);
+        widthCurve.AddKey(0.08f, 1.0f);
+        widthCurve.AddKey(0.92f, 1.0f);
+        widthCurve.AddKey(1f, 0.1f);
         activeLavaTrail.widthCurve = widthCurve;
 
         if (lavaRibbonMaterial != null)

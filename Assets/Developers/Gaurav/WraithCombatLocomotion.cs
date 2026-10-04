@@ -158,6 +158,8 @@ public class WraithCombatLocomotion : MonoBehaviour
 
     private void HandleCameraAndRotation()
     {
+        if (Cursor.lockState != CursorLockMode.Locked) return;
+
         float sensitivity = isAiming ? (mouseSensitivity * adsSensitivityMultiplier) : mouseSensitivity;
 
         float mouseX = lookInput.x * sensitivity * 0.1f;

@@ -38,6 +38,9 @@ public class WraithShooter : MonoBehaviour
     [SerializeField] private float minPitch = -35f;
     [SerializeField] private float maxPitch = 50f;
 
+
+    [SerializeField] private AudioClip gunshotSound;
+
     [Header("Debug")]
     [SerializeField] private bool showDebugRays = true;
 
@@ -168,6 +171,11 @@ public class WraithShooter : MonoBehaviour
 
     private void SpawnBullet()
     {
+        if (gunshotSound != null)
+        {
+            AudioSource.PlayClipAtPoint(gunshotSound, muzzlePoint.position, 0.8f);
+        }
+
         Vector3 fireDirection = (currentTargetPoint - muzzlePoint.position).normalized;
 
         GameObject bulletObj = Instantiate(bulletPrefab, muzzlePoint.position, Quaternion.LookRotation(fireDirection));

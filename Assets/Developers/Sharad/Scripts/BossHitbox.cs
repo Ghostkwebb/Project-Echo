@@ -11,6 +11,9 @@ public class BossHitbox : MonoBehaviour
     [SerializeField] private BossPart linkedPart;
     [SerializeField] private BossHealth bossHealth;
 
+    [Header("Hit Sound Cues")]
+    [SerializeField] private AudioClip hitSoundOverride;
+
     public HitboxType Type => hitboxType;
     public BossPart LinkedPart => linkedPart;
 
@@ -33,6 +36,7 @@ public class BossHitbox : MonoBehaviour
     /// </summary>
     public void TakeHit(float damage, DamageSource source)
     {
+        PlayHitAudio();
         switch (hitboxType)
         {
             case HitboxType.Part:
@@ -68,5 +72,13 @@ public class BossHitbox : MonoBehaviour
     {
         bossHealth = GetComponentInParent<BossHealth>();
         linkedPart = GetComponentInParent<BossPart>();
+    }
+
+    private void PlayHitAudio()
+    {
+        if (hitSoundOverride != null)
+        {
+            AudioSource.PlayClipAtPoint(hitSoundOverride, transform.position, 1.0f);
+        }
     }
 }

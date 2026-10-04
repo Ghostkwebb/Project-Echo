@@ -80,6 +80,12 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
+        if (playerHealth != null)
+        {
+            playerHealth.OnHealthChanged += UpdatePlayerHP;
+            UpdatePlayerHP(playerHealth.CurrentHealth, playerHealth.MaxHealth);
+        }
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
@@ -189,6 +195,13 @@ public class UIManager : MonoBehaviour
     public void OpenSettings()
     {
         if (panelSettings != null) panelSettings.SetActive(true);
+
+        if (isInCombat) Time.timeScale = 0f;
+
+        // Sleep player input while settings is open
+        if (playerLocomotion != null) playerLocomotion.enabled = false;
+        if (playerShooter != null) playerShooter.enabled = false;
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -197,8 +210,14 @@ public class UIManager : MonoBehaviour
     {
         if (panelSettings != null) panelSettings.SetActive(false);
 
+        Time.timeScale = 1f;
+
         if (isInCombat)
         {
+            // Re-enable player input on resume
+            if (playerLocomotion != null) playerLocomotion.enabled = true;
+            if (playerShooter != null) playerShooter.enabled = true;
+
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
@@ -322,5 +341,18 @@ public class UIManager : MonoBehaviour
     public void OnQuitButtonClicked()
     {
         Application.Quit();
+    }
+
+    public void UpdatePlayerHP(float current, float max)
+    {
+        if (playerHealthSlider != null)
+        {
+            playerHealthSlider.value = current / max;
+        }
+
+        if (playerHealthText != null)
+        {
+            playerHealthText.text = $"{Mathf.CeilToInt(current)} / {max}";
+        }
     }
 }
