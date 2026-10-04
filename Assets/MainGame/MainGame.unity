@@ -4668,9 +4668,9 @@ MonoBehaviour:
   coreExposedAlarmClip: {fileID: 0}
   partBreakClip: {fileID: 8300000, guid: 442e60b6d2c714f4c86c07c3a6f94953, type: 3}
   deathExplosionClip: {fileID: 8300000, guid: 854d65d346bac4237aea3b6f79c7ac5a, type: 3}
-  stompJumpClip: {fileID: 0}
-  stompImpactClip: {fileID: 0}
-  machineGunFireClip: {fileID: 0}
+  stompJumpClip: {fileID: 8300000, guid: fc0ad79471813440eb5ad22407660eae, type: 3}
+  stompImpactClip: {fileID: 8300000, guid: fc0ad79471813440eb5ad22407660eae, type: 3}
+  machineGunFireClip: {fileID: 8300000, guid: c500e41a8ad6f4c2e834ebe3670b8f3b, type: 3}
   missileLaunchClip: {fileID: 0}
   missileExplosionClip: {fileID: 0}
   laserChargeClip: {fileID: 0}
@@ -8341,15 +8341,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6957260207291544154, guid: 1f7a04b91f44048fb88c483f0814fbb0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.6
+      value: 6.78734
       objectReference: {fileID: 0}
     - target: {fileID: 6957260207291544154, guid: 1f7a04b91f44048fb88c483f0814fbb0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.84
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6957260207291544154, guid: 1f7a04b91f44048fb88c483f0814fbb0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.82
+      value: 3.303
       objectReference: {fileID: 0}
     - target: {fileID: 6957260207291544154, guid: 1f7a04b91f44048fb88c483f0814fbb0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10303,7 +10303,7 @@ Transform:
   m_GameObject: {fileID: 829653303}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.043619454, z: -0, w: -0.99904823}
-  m_LocalPosition: {x: 36.62853, y: -1.2399999, z: 3.0954697}
+  m_LocalPosition: {x: 7.8158684, y: 1.1, z: -0.4215305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
