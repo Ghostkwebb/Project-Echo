@@ -12,7 +12,7 @@ AvatarMask:
   - m_Path: 
     m_Weight: 1
   - m_Path: root
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: root/ik_foot_root
     m_Weight: 0
   - m_Path: root/ik_foot_root/ik_foot_l
@@ -28,7 +28,7 @@ AvatarMask:
   - m_Path: root/ik_hand_root/ik_hand_gun/ik_hand_r
     m_Weight: 1
   - m_Path: root/pelvis
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: root/pelvis/spine_01
     m_Weight: 1
   - m_Path: root/pelvis/spine_01/spine_02

@@ -21,6 +21,8 @@ public class WraithCombatLocomotion : MonoBehaviour
     [Header("Movement & Speeds")]
     [Tooltip("Base combat strafe speed (m/s)")]
     [SerializeField] private float walkSpeed = 4.2f;
+    [Tooltip("Aim-Down-Sights tactical walk speed (m/s)")]
+    [SerializeField] private float adsSpeed = 3.5f;
     [Tooltip("High-speed sprint speed (m/s)")]
     [SerializeField] private float sprintSpeed = 7.2f;
     [Tooltip("Time in seconds to ramp up to speed from a dead stop")]
@@ -50,6 +52,9 @@ public class WraithCombatLocomotion : MonoBehaviour
     [Tooltip("Playback speed multiplier when moving diagonally (prevents foot-sliding)")]
     [Range(1f, 2f)]
     [SerializeField] private float diagonalAnimSpeedBoost = 1.25f;
+    [Tooltip("Playback speed multiplier for ADS walk clips to eliminate foot-sliding at higher move speeds")]
+    [Range(1f, 2f)]
+    [SerializeField] private float adsAnimSpeedMultiplier = 1.35f;
 
     private CharacterController controller;
     private Animator animator;
@@ -64,13 +69,14 @@ public class WraithCombatLocomotion : MonoBehaviour
     private bool isSprinting = false;
     private bool jumpRequested = false;
 
-    // Public accessors for other combat systems (e.g. WraithShooter)
+    // Public accessors
     public bool IsSprinting => isSprinting;
     public bool IsAiming => isAiming;
 
     private readonly int moveXHash = Animator.StringToHash("MoveX");
     private readonly int moveZHash = Animator.StringToHash("MoveZ");
     private readonly int isSprintingHash = Animator.StringToHash("IsSprinting");
+    private readonly int isAimingHash = Animator.StringToHash("IsAiming");
     private readonly int isGroundedHash = Animator.StringToHash("IsGrounded");
     private readonly int jumpHash = Animator.StringToHash("Jump");
     private readonly int animSpeedMultHash = Animator.StringToHash("AnimSpeedMultiplier");
@@ -193,7 +199,6 @@ public class WraithCombatLocomotion : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetCombatRot, combatTurnSpeed * Time.deltaTime);
         }
 
-        // Jump & Gravity calculation
         if (controller.isGrounded)
         {
             if (verticalVelocity.y < 0)
@@ -215,8 +220,14 @@ public class WraithCombatLocomotion : MonoBehaviour
             verticalVelocity.y += activeGravity * Time.deltaTime;
         }
 
-        // Horizontal velocity calculation with airborne boost
-        float baseTargetSpeed = (inputVector.sqrMagnitude > 0.01f) ? (isSprinting ? sprintSpeed : walkSpeed) : 0f;
+        float baseTargetSpeed = 0f;
+        if (inputVector.sqrMagnitude > 0.01f)
+        {
+            if (isSprinting) baseTargetSpeed = sprintSpeed;
+            else if (isAiming) baseTargetSpeed = adsSpeed;
+            else baseTargetSpeed = walkSpeed;
+        }
+
         float targetSpeed = controller.isGrounded ? baseTargetSpeed : (baseTargetSpeed * airSpeedMultiplier);
 
         float accelRate = (sprintSpeed / Mathf.Max(0.01f, accelerationTime));
@@ -231,11 +242,16 @@ public class WraithCombatLocomotion : MonoBehaviour
         animator.SetFloat(moveXHash, inputVector.x, animDampTime, Time.deltaTime);
         animator.SetFloat(moveZHash, inputVector.y, animDampTime, Time.deltaTime);
         animator.SetBool(isSprintingHash, isSprinting);
+        animator.SetBool(isAimingHash, isAiming);
         animator.SetBool(isGroundedHash, controller.isGrounded);
 
+        // Diagonal factor (0 to 0.707)
         float diagonalFactor = Mathf.Min(Mathf.Abs(inputVector.x), Mathf.Abs(inputVector.y));
         float diagonalRatio = Mathf.InverseLerp(0f, 0.707f, diagonalFactor);
-        float currentAnimSpeed = Mathf.Lerp(1.0f, diagonalAnimSpeedBoost, diagonalRatio);
+
+        // When in ADS, scale base cadence by adsAnimSpeedMultiplier to match the faster ground travel
+        float baseCadence = isAiming ? adsAnimSpeedMultiplier : 1.0f;
+        float currentAnimSpeed = Mathf.Lerp(baseCadence, baseCadence * diagonalAnimSpeedBoost, diagonalRatio);
 
         animator.SetFloat(animSpeedMultHash, currentAnimSpeed);
     }
