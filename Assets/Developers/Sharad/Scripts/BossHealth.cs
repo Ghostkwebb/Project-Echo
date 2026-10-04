@@ -231,14 +231,38 @@ public class BossHealth : MonoBehaviour
         if (bossAnimator != null)
         {
             bossAnimator.SetBool(IsStaggeredHash, false);
-            bossAnimator.SetTrigger(OnDeathHash);
+            bossAnimator.SetTrigger(OnDeathHash); // Launches backward into sky
         }
 
+        StartCoroutine(DeathExplosionSequenceRoutine());
+    }
+
+    private IEnumerator DeathExplosionSequenceRoutine()
+    {
+        // Wait 1.1s for Howitzer to reach peak of flight
+        yield return new WaitForSeconds(1.1f);
+
+        // 1. Break and blow off all 4 limbs simultaneously!
+        BossPart[] parts = GetComponentsInChildren<BossPart>(true);
+        for (int i = 0; i < parts.Length; i++)
+        {
+            if (parts[i] != null) parts[i].SendMessage("BreakPart", SendMessageOptions.DontRequireReceiver);
+        }
+
+        // 2. Hide body mesh (Zero floating upside down corpse!)
+        if (bossMeshRenderer != null)
+        {
+            bossMeshRenderer.enabled = false;
+        }
+
+        // 3. Trigger Victory event
         OnBossDefeated?.Invoke();
     }
 
     public void ResetBoss()
     {
+        if (bossMeshRenderer != null) bossMeshRenderer.enabled = true;
+
         IsDead = false;
         IsStaggered = false;
         staggerTimer = 0f;

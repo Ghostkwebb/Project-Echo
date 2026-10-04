@@ -84,14 +84,9 @@ public class EchoManager : MonoBehaviour
 
     private void SyncAndSpawnEchoSquad()
     {
-        // Ensure pool matches saved runs count
         while (spawnedGhosts.Count < savedRuns.Count)
         {
-            if (echoGhostPrefab == null)
-            {
-                Debug.LogWarning("EchoManager: EchoGhostPrefab not assigned!");
-                return;
-            }
+            if (echoGhostPrefab == null) return;
 
             GameObject ghostObj = Instantiate(echoGhostPrefab, Vector3.zero, Quaternion.identity, transform);
             EchoController controller = ghostObj.GetComponent<EchoController>();
@@ -100,18 +95,36 @@ public class EchoManager : MonoBehaviour
             spawnedGhosts.Add(controller);
         }
 
-        // Initialize and reset each ghost with its corresponding run data
+        Transform spawnPoint = EncounterManager.Instance != null ? EncounterManager.Instance.transform : transform;
+
         for (int i = 0; i < spawnedGhosts.Count; i++)
         {
             if (i < savedRuns.Count)
             {
-                spawnedGhosts[i].Initialize(savedRuns[i], i + 1);
+                // Calculate Tactical V-Formation Offset (rotated to match spawn facing)
+                Vector3 localOffset = GetSquadFormationOffset(i + 1);
+                Vector3 worldFormationOffset = spawnPoint.rotation * localOffset;
+
+                spawnedGhosts[i].Initialize(savedRuns[i], i + 1, worldFormationOffset);
                 spawnedGhosts[i].ResetForNewAttempt();
             }
             else
             {
                 spawnedGhosts[i].gameObject.SetActive(false);
             }
+        }
+    }
+
+    private Vector3 GetSquadFormationOffset(int squadIndex)
+    {
+        switch (squadIndex)
+        {
+            case 1: return new Vector3(-2.2f, 0f, -0.8f); // Left Flank Wing
+            case 2: return new Vector3(2.2f, 0f, -0.8f); // Right Flank Wing
+            case 3: return new Vector3(-3.8f, 0f, -2.0f); // Far Left Rear
+            case 4: return new Vector3(3.8f, 0f, -2.0f); // Far Right Rear
+            case 5: return new Vector3(0.0f, 0f, -3.2f); // Rear Anchor
+            default: return new Vector3(Random.Range(-2f, 2f), 0f, -2f);
         }
     }
 

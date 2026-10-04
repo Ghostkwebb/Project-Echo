@@ -52,6 +52,12 @@ public class BossThreatMonitor : MonoBehaviour
 
     private void Update()
     {
+        // If current targeted Echo died or despawned -> SNAP BACK TO PLAYER IMMEDIATELY!
+        if (IsPlayerPassive && (CurrentThreatTarget == null || !CurrentThreatTarget.gameObject.activeInHierarchy))
+        {
+            ClearAntiPassive();
+        }
+
         PurgeOldRecords();
         EvaluateThreat();
     }

@@ -227,6 +227,7 @@ public class BossPart : MonoBehaviour
             Vector3 scatterOffset = UnityEngine.Random.insideUnitSphere * 0.6f;
             GameObject chunk = Instantiate(prefab, spawnCenter + scatterOffset, UnityEngine.Random.rotation);
             chunk.name = $"Debris_{partType}_{i}";
+            chunk.layer = LayerMask.NameToLayer("Debris");
 
             // SCALE TO MATCH 2.5x MECH SIZE (with random size variation)
             float randomSize = UnityEngine.Random.Range(0.8f, 1.35f) * debrisScale;
