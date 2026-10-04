@@ -331,6 +331,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2377502495744885962, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
+      propertyPath: deathExplosionDelay
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3605503967924945963, guid: b0764f843e0164c89a67421e90ef3f33, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.163
@@ -5454,7 +5458,7 @@ MonoBehaviour:
   fireRate: 5
   isAutomatic: 0
   bulletSpeed: 90
-  bulletDamage: 25
+  bulletDamage: 2500
   maxAimDistance: 150
   aimLayerMask:
     serializedVersion: 2

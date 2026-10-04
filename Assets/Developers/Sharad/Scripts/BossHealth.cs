@@ -40,6 +40,12 @@ public class BossHealth : MonoBehaviour
 
     [Header("Hit Flash Feedback")]
     [SerializeField] private SkinnedMeshRenderer bossMeshRenderer;
+
+    [Header("Death Finale Tuning")]
+    [Tooltip("Time in seconds for Howitzer to fly back before exploding into pieces.")]
+    [SerializeField] private float deathExplosionDelay = 1.35f;
+
+
     private Color[] originalBaseColors;
     private Coroutine flashRoutine;
     private static readonly int BaseColorID = Shader.PropertyToID("_BaseColor");
@@ -228,10 +234,11 @@ public class BossHealth : MonoBehaviour
         IsDead = true;
         IsStaggered = false;
 
+        // Force Death animation to play IMMEDIATELY on frame 0 (Bypasses all transition lag!)
         if (bossAnimator != null)
         {
             bossAnimator.SetBool(IsStaggeredHash, false);
-            bossAnimator.SetTrigger(OnDeathHash); // Launches backward into sky
+            bossAnimator.Play("Death", 0, 0f);
         }
 
         StartCoroutine(DeathExplosionSequenceRoutine());
@@ -239,23 +246,27 @@ public class BossHealth : MonoBehaviour
 
     private IEnumerator DeathExplosionSequenceRoutine()
     {
-        // Wait 1.1s for Howitzer to reach peak of flight
-        yield return new WaitForSeconds(1.1f);
+        // 1. Let Howitzer play his full death flight backwards into the air!
+        yield return new WaitForSeconds(deathExplosionDelay);
 
-        // 1. Break and blow off all 4 limbs simultaneously!
+        // 2. AT APEX: Break and blow off all 4 limbs simultaneously!
         BossPart[] parts = GetComponentsInChildren<BossPart>(true);
         for (int i = 0; i < parts.Length; i++)
         {
-            if (parts[i] != null) parts[i].SendMessage("BreakPart", SendMessageOptions.DontRequireReceiver);
+            if (parts[i] != null)
+            {
+                // Silently break without triggering flinch triggers
+                parts[i].SendMessage("BreakPart", SendMessageOptions.DontRequireReceiver);
+            }
         }
 
-        // 2. Hide body mesh (Zero floating upside down corpse!)
+        // 3. Hide body mesh (Zero floating corpse!)
         if (bossMeshRenderer != null)
         {
             bossMeshRenderer.enabled = false;
         }
 
-        // 3. Trigger Victory event
+        // 4. Trigger Victory
         OnBossDefeated?.Invoke();
     }
 

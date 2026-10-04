@@ -129,7 +129,7 @@ public class BossPart : MonoBehaviour
         if (breakSparksParticle != null) breakSparksParticle.Play();
         if (breakSmokeParticle != null) breakSmokeParticle.Play();
 
-        if (bossAnimator != null)
+        if (bossAnimator != null && (bossHealth == null || !bossHealth.IsDead))
         {
             bossAnimator.SetTrigger(OnPartBreakHash);
         }
