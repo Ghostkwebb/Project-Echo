@@ -15,6 +15,7 @@ public class SettingsManager : MonoBehaviour
     private const string MouseSensKey = "Settings_MouseSens";
     public float MouseSensitivity { get; private set; } = 1.2f;
     public static event Action<float> OnMouseSensitivityChanged;
+    public static float GlobalSFXVolume => Instance != null ? Instance.SFXVolume : 1.0f;
 
     public float MasterVolume { get; private set; } = 1.0f;
     public float SFXVolume { get; private set; } = 1.0f;
@@ -61,7 +62,7 @@ public class SettingsManager : MonoBehaviour
     public void SetMasterVolume(float volume)
     {
         MasterVolume = Mathf.Clamp01(volume);
-        AudioListener.volume = MasterVolume;
+        AudioListener.volume = MasterVolume; // Master scales Unity audio engine globally!
         PlayerPrefs.SetFloat(MasterVolKey, MasterVolume);
         PlayerPrefs.Save();
     }

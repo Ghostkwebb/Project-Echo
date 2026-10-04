@@ -41,10 +41,19 @@ public class BossAudio : MonoBehaviour
     public void PlayMissileLaunch() => PlayOneShot(missileLaunchClip, 0.8f);
     public void PlayMissileExplosion(Vector3 pos)
     {
-        if (missileExplosionClip != null) AudioSource.PlayClipAtPoint(missileExplosionClip, pos, 0.9f);
+        if (missileExplosionClip != null)
+        {
+            AudioSource.PlayClipAtPoint(missileExplosionClip, pos, 0.9f * SettingsManager.GlobalSFXVolume);
+        }
     }
     public void PlayLaserCharge() => PlayOneShot(laserChargeClip, 1.0f);
     public void PlayLaserLoop() => PlayOneShot(laserLoopClip, 1.1f);
+
+    private void Start()
+    {
+        SettingsManager.OnSFXVolumeChanged += val => audioSource.volume = val;
+        if (SettingsManager.Instance != null) audioSource.volume = SettingsManager.Instance.SFXVolume;
+    }
 
     private void OnDestroy()
     {
@@ -90,7 +99,9 @@ public class BossAudio : MonoBehaviour
     {
         if (clip != null && audioSource != null)
         {
-            audioSource.PlayOneShot(clip, vol);
+            // Multiplies by SFX slider volume!
+            float finalVol = vol * SettingsManager.GlobalSFXVolume;
+            audioSource.PlayOneShot(clip, finalVol);
         }
     }
 }

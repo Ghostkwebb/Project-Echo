@@ -173,7 +173,7 @@ public class WraithShooter : MonoBehaviour
     {
         if (gunshotSound != null)
         {
-            AudioSource.PlayClipAtPoint(gunshotSound, muzzlePoint.position, 0.8f);
+            AudioSource.PlayClipAtPoint(gunshotSound, muzzlePoint.position, 0.8f * SettingsManager.GlobalSFXVolume);
         }
 
         Vector3 fireDirection = (currentTargetPoint - muzzlePoint.position).normalized;

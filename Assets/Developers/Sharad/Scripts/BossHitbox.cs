@@ -78,7 +78,7 @@ public class BossHitbox : MonoBehaviour
     {
         if (hitSoundOverride != null)
         {
-            AudioSource.PlayClipAtPoint(hitSoundOverride, transform.position, 1.0f);
+            AudioSource.PlayClipAtPoint(hitSoundOverride, transform.position, 1.0f); AudioSource.PlayClipAtPoint(hitSoundOverride, transform.position, 1.0f * SettingsManager.GlobalSFXVolume);
         }
     }
 }
