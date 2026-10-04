@@ -97,6 +97,7 @@ public class BossAttack_MissileBarrage : BossAttackBase
 
     private IEnumerator ExecuteBarrageRoutine(Transform target)
     {
+        BossAudio.Instance?.PlayMissileLaunch();
         // 1. OPEN PODS (Swarm_Start)
         if (bossAnimator != null)
         {
@@ -386,6 +387,7 @@ public class BossBallisticRocket : MonoBehaviour
 
     private void Detonate()
     {
+        BossAudio.Instance?.PlayMissileExplosion(targetPos);
         // 1. Splash Damage (Wipes standing Echoes)
         Collider[] hits = Physics.OverlapSphere(targetPos, splashRadius, hitLayers);
         for (int i = 0; i < hits.Length; i++)

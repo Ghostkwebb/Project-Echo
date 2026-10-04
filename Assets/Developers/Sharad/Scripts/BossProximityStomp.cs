@@ -105,6 +105,7 @@ public class BossProximityStomp : MonoBehaviour
         if (bossAnimator != null)
         {
             bossAnimator.Play("jump_up", 0, 0f);
+            BossAudio.Instance?.PlayStompJump();
         }
 
         // ==========================================
@@ -176,6 +177,7 @@ public class BossProximityStomp : MonoBehaviour
 
         ShockwaveFX.Spawn(new Vector3(transform.position.x, baseY + 0.03f, transform.position.z), shockwaveMeshPrefab, shockwaveMaterial);
         ApplyStompExplosion();
+        BossAudio.Instance?.PlayStompImpact();
 
         if (telegraphRing != null)
         {

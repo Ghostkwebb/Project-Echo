@@ -99,6 +99,7 @@ public class BossAttack_MachineGun : BossAttackBase
             if (burstTimer >= nextShotTime)
             {
                 FireMachineGunBullet(currentAimPoint);
+
                 nextShotTime = burstTimer + fireInterval;
             }
 
@@ -122,6 +123,7 @@ public class BossAttack_MachineGun : BossAttackBase
 
     private void FireMachineGunBullet(Vector3 targetPos)
     {
+        BossAudio.Instance?.PlayMGFire();
         if (muzzleFlashObject != null)
         {
             StopCoroutine(nameof(MuzzleFlashStrobeRoutine));

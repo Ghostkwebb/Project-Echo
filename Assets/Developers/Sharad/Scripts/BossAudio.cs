@@ -20,16 +20,35 @@ public class BossAudio : MonoBehaviour
     [SerializeField] private AudioClip laserChargeClip;
     [SerializeField] private AudioClip laserLoopClip;
 
+    public static BossAudio Instance { get; private set; }
+
+
     private AudioSource audioSource;
     private BossHealth bossHealth;
 
     private void Awake()
     {
+        Instance = this;
         audioSource = GetComponent<AudioSource>();
         audioSource.spatialBlend = 1.0f; // 3D sound
         audioSource.playOnAwake = false;
-
         bossHealth = GetComponent<BossHealth>();
+    }
+
+    public void PlayStompJump() => PlayOneShot(stompJumpClip, 1.0f);
+    public void PlayStompImpact() => PlayOneShot(stompImpactClip, 1.3f);
+    public void PlayMGFire() => PlayOneShot(machineGunFireClip, 0.5f);
+    public void PlayMissileLaunch() => PlayOneShot(missileLaunchClip, 0.8f);
+    public void PlayMissileExplosion(Vector3 pos)
+    {
+        if (missileExplosionClip != null) AudioSource.PlayClipAtPoint(missileExplosionClip, pos, 0.9f);
+    }
+    public void PlayLaserCharge() => PlayOneShot(laserChargeClip, 1.0f);
+    public void PlayLaserLoop() => PlayOneShot(laserLoopClip, 1.1f);
+
+    private void OnDestroy()
+    {
+        if (Instance == this) Instance = null;
     }
 
     private void OnEnable()

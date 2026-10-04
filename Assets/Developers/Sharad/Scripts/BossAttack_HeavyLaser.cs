@@ -75,6 +75,7 @@ public class BossAttack_HeavyLaser : BossAttackBase
 
     private IEnumerator ExecuteHeavyLaserRoutine(Transform target)
     {
+        BossAudio.Instance?.PlayLaserCharge();
         if (floorLayer.value == 0) floorLayer = LayerMask.GetMask("Floor", "Default");
 
         currentGroundTarget = GetGroundPointUnderTarget(target != null ? target.position : transform.position + transform.forward * 10f);
@@ -131,6 +132,7 @@ public class BossAttack_HeavyLaser : BossAttackBase
         StartContinuousLavaRibbon();
 
         isFiringBeam = true;
+        BossAudio.Instance?.PlayLaserLoop();
         laserBeam.startWidth = 0.45f;
         laserBeam.endWidth = 0.45f;
         laserBeam.material.color = new Color(1f, 0.4f, 0.05f, 1f);
