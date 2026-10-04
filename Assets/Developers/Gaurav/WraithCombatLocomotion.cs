@@ -100,6 +100,9 @@ public class WraithCombatLocomotion : MonoBehaviour
         {
             cameraTarget.rotation = Quaternion.Euler(currentPitch, currentYaw + 180f, 0f);
         }
+
+        SettingsManager.OnMouseSensitivityChanged += val => mouseSensitivity = val;
+        if (SettingsManager.Instance != null) mouseSensitivity = SettingsManager.Instance.MouseSensitivity;
     }
 
     public void OnMove(InputValue value)
