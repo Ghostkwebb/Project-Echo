@@ -68,6 +68,8 @@ public class WraithCombatLocomotion : MonoBehaviour
     private bool isAiming = false;
     private bool isSprinting = false;
     private bool jumpRequested = false;
+    private Vector3 externalKnockbackVelocity;
+
 
     // Public accessors
     public bool IsSprinting => isSprinting;
@@ -234,6 +236,14 @@ public class WraithCombatLocomotion : MonoBehaviour
         currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, accelRate * Time.deltaTime);
 
         Vector3 finalMotion = (moveDirection * currentSpeed + verticalVelocity) * Time.deltaTime;
+
+        // Apply stomp knockback and decay smoothly
+        if (externalKnockbackVelocity.sqrMagnitude > 0.01f)
+        {
+            finalMotion += externalKnockbackVelocity * Time.deltaTime;
+            externalKnockbackVelocity = Vector3.MoveTowards(externalKnockbackVelocity, Vector3.zero, 35f * Time.deltaTime);
+        }
+
         controller.Move(finalMotion);
     }
 
@@ -254,5 +264,10 @@ public class WraithCombatLocomotion : MonoBehaviour
         float currentAnimSpeed = Mathf.Lerp(baseCadence, baseCadence * diagonalAnimSpeedBoost, diagonalRatio);
 
         animator.SetFloat(animSpeedMultHash, currentAnimSpeed);
+    }
+
+    public void ApplyKnockback(Vector3 impulse)
+    {
+        externalKnockbackVelocity = impulse;
     }
 }

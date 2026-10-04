@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 public enum DamageSource
 {
@@ -37,6 +38,12 @@ public class BossHealth : MonoBehaviour
     [Header("References")]
     [SerializeField] private Animator bossAnimator;
 
+    [Header("Hit Flash Feedback")]
+    [SerializeField] private SkinnedMeshRenderer bossMeshRenderer;
+    private Color[] originalBaseColors;
+    private Coroutine flashRoutine;
+    private static readonly int BaseColorID = Shader.PropertyToID("_BaseColor");
+
     // State
     public float CurrentHealth { get; private set; }
     public float CurrentShield { get; private set; }
@@ -59,8 +66,20 @@ public class BossHealth : MonoBehaviour
     private void Awake()
     {
         if (bossAnimator == null)
-        {
             bossAnimator = GetComponentInChildren<Animator>();
+
+        if (bossMeshRenderer == null)
+            bossMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
+
+        // Cache original colors for clean restoration
+        if (bossMeshRenderer != null)
+        {
+            Material[] mats = bossMeshRenderer.materials;
+            originalBaseColors = new Color[mats.Length];
+            for (int i = 0; i < mats.Length; i++)
+            {
+                originalBaseColors[i] = mats[i].GetColor(BaseColorID);
+            }
         }
 
         ResetBoss();
@@ -80,6 +99,10 @@ public class BossHealth : MonoBehaviour
     public void TakeDamage(float rawDamage, DamageSource source, HitboxType hitboxType)
     {
         if (IsDead) return;
+
+        // Visual Hit Flash on EVERY hit (Red for body, Gold for Rabbit Core!)
+        Color flashCol = (hitboxType == HitboxType.Core) ? new Color(1f, 0.9f, 0.2f) : new Color(1f, 0.15f, 0.15f);
+        TriggerHitFlash(flashCol);
 
         if (IsStaggered)
         {
@@ -112,6 +135,10 @@ public class BossHealth : MonoBehaviour
     private void ApplyStaggerDamage(float rawDamage, DamageSource source, HitboxType hitboxType)
     {
         float damage = rawDamage;
+
+        // Flash Red on body hit, Flash Gold on Rabbit Core critical hit!
+        Color flashCol = (hitboxType == HitboxType.Core) ? new Color(2.5f, 2.0f, 0.5f) : new Color(2.0f, 0.1f, 0.1f);
+        TriggerHitFlash(flashCol);
 
         // Core weakpoint bonus
         if (hitboxType == HitboxType.Core)
@@ -227,5 +254,33 @@ public class BossHealth : MonoBehaviour
 
         OnHealthChanged?.Invoke(CurrentHealth, maxHealth);
         OnShieldChanged?.Invoke(CurrentShield, maxShield);
+    }
+
+    private void TriggerHitFlash(Color color)
+    {
+        if (bossMeshRenderer == null || originalBaseColors == null) return;
+        if (flashRoutine != null) StopCoroutine(flashRoutine);
+        flashRoutine = StartCoroutine(HitFlashRoutine(color));
+    }
+
+    private IEnumerator HitFlashRoutine(Color color)
+    {
+        Material[] mats = bossMeshRenderer.materials;
+        for (int i = 0; i < mats.Length; i++)
+        {
+            mats[i].SetColor(BaseColorID, color);
+        }
+
+        yield return new WaitForSeconds(0.06f);
+
+        // Restore exact original colors
+        for (int i = 0; i < mats.Length; i++)
+        {
+            if (i < originalBaseColors.Length)
+            {
+                mats[i].SetColor(BaseColorID, originalBaseColors[i]);
+            }
+        }
+        flashRoutine = null;
     }
 }

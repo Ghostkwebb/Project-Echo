@@ -63,6 +63,7 @@ public class EncounterManager : MonoBehaviour
             bossHealth.OnBossDefeated += HandleBossDefeated;
         }
 
+        ResetEncounter();
         StartNewAttempt();
     }
 
@@ -124,14 +125,18 @@ public class EncounterManager : MonoBehaviour
         // 5. Snap Player back to Spawn Point (GDD Section 2 rule 7)
         if (playerTransform != null && playerSpawnPoint != null)
         {
+            CharacterController cc = playerTransform.GetComponent<CharacterController>();
+            if (cc != null) cc.enabled = false;
+
             playerTransform.position = playerSpawnPoint.position;
             playerTransform.rotation = playerSpawnPoint.rotation;
 
-            // Reset linear velocity if Rigidbody is attached
-            if (playerTransform.TryGetComponent<Rigidbody>(out var rb))
+            if (cc != null) cc.enabled = true;
+
+            // Reset player HP
+            if (playerTransform.TryGetComponent<PlayerHealth>(out var ph))
             {
-                rb.linearVelocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
+                ph.ResetHealth();
             }
         }
     }

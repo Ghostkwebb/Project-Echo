@@ -42,9 +42,14 @@ public class WraithBullet : MonoBehaviour
         if (Physics.Raycast(transform.position, travelDirection, out RaycastHit hit, stepDistance, collisionMask))
         {
             transform.position = hit.point;
-            Debug.Log($"Bullet hit: {hit.collider.name} for {damage} damage at {hit.point}");
 
-            // (Hit FX and damage logic will plug in here)
+            // Damage Boss Hitbox (Routes to Parts, Core weakpoint, or Shield)
+            BossHitbox bossHitbox = hit.collider.GetComponentInParent<BossHitbox>();
+            if (bossHitbox != null)
+            {
+                bossHitbox.TakeHit(damage, DamageSource.Player);
+            }
+
             Destroy(gameObject);
         }
         else

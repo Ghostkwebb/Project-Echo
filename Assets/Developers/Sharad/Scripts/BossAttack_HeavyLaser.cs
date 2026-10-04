@@ -28,6 +28,9 @@ public class BossAttack_HeavyLaser : BossAttackBase
     [Header("Visuals")]
     [SerializeField] private LineRenderer laserBeam;
 
+    [Tooltip("Locks aim on ground for this many seconds before firing so player can dodge away.")]
+    [SerializeField] private float preFireLockDuration = 0.45f;
+
     private Coroutine laserRoutine;
     private Vector3 currentGroundTarget;
     private Vector3 sweepVelocity;
@@ -77,15 +80,18 @@ public class BossAttack_HeavyLaser : BossAttackBase
         currentGroundTarget = GetGroundPointUnderTarget(target != null ? target.position : transform.position + transform.forward * 10f);
 
         // ==========================================
-        // 1. CHARGE TELEGRAPH (1.5s Thin Red Laser)
+        // 1. CHARGE TELEGRAPH (1.6s Total)
         // ==========================================
         laserBeam.enabled = true;
         laserBeam.startWidth = 0.04f;
         laserBeam.endWidth = 0.04f;
-        laserBeam.material.color = new Color(1f, 0.1f, 0.1f, 0.9f);
+        laserBeam.material.color = new Color(1f, 0.1f, 0.1f, 0.7f);
 
+        float trackingPhaseTime = chargeDuration - preFireLockDuration; // ~1.15s tracking
         float chargeTimer = 0f;
-        while (chargeTimer < chargeDuration)
+
+        // Phase 1A: Tracking you (1.15s)
+        while (chargeTimer < trackingPhaseTime)
         {
             chargeTimer += Time.deltaTime;
 
@@ -101,13 +107,31 @@ public class BossAttack_HeavyLaser : BossAttackBase
             yield return null;
         }
 
+        // Phase 1B: AIM LOCKED! (0.45s Dodge Window)
+        // Laser turns bright solid red and stops following you!
+        laserBeam.material.color = new Color(1f, 0f, 0f, 1f);
+        laserBeam.startWidth = 0.07f;
+        laserBeam.endWidth = 0.07f;
+
+        while (chargeTimer < chargeDuration)
+        {
+            chargeTimer += Time.deltaTime;
+
+            // Target stays FROZEN where you were standing!
+            Vector3 origin = GetMuzzlePosition();
+            laserBeam.SetPosition(0, origin);
+            laserBeam.SetPosition(1, currentGroundTarget);
+
+            yield return null;
+        }
+
         // ==========================================
-        // 2. SPAWN CONTINUOUS MAGMA RIBBON EMITTER
+        // 2. CONTINUOUS HEAVY BEAM + LAVA (6.0s)
         // ==========================================
         StartContinuousLavaRibbon();
 
         isFiringBeam = true;
-        laserBeam.startWidth = 0.45f; // Thick energy beam
+        laserBeam.startWidth = 0.45f;
         laserBeam.endWidth = 0.45f;
         laserBeam.material.color = new Color(1f, 0.4f, 0.05f, 1f);
 
@@ -116,6 +140,7 @@ public class BossAttack_HeavyLaser : BossAttackBase
         {
             beamTimer += Time.deltaTime;
 
+            // Chases moving player with lag
             if (target != null)
             {
                 Vector3 targetFloor = GetGroundPointUnderTarget(target.position);

@@ -61,7 +61,7 @@ public class BossAttack_MachineGun : BossAttackBase
 
             if (target != null)
             {
-                currentAimPoint = target.position;
+                currentAimPoint = target.position + Vector3.up * 1.1f;
                 if (telegraphLaser != null)
                 {
                     telegraphLaser.SetPosition(0, muzzlePoint.position);
@@ -91,7 +91,9 @@ public class BossAttack_MachineGun : BossAttackBase
             // 0.4s Damped Tracking Lag (Player sprints to dodge out of stream)
             if (target != null)
             {
-                currentAimPoint = Vector3.SmoothDamp(currentAimPoint, target.position, ref aimVelocity, trackingLag);
+                // Aims at human chest height (1.1m above feet)
+                Vector3 chestTarget = target.position + Vector3.up * 1.1f;
+                currentAimPoint = Vector3.SmoothDamp(currentAimPoint, chestTarget, ref aimVelocity, trackingLag);
             }
 
             if (burstTimer >= nextShotTime)
@@ -232,35 +234,37 @@ public class BossMGBullet : MonoBehaviour
     private Vector3 moveDir;
     private float speed;
     private float damage;
+    private LayerMask hitMask;
 
     public void Initialize(Vector3 dir, float spd, float dmg)
     {
         moveDir = dir;
         speed = spd;
         damage = dmg;
+        hitMask = LayerMask.GetMask("Player", "Default", "Floor");
         Destroy(gameObject, 3.5f);
     }
 
     private void Update()
     {
-        transform.position += moveDir * (speed * Time.deltaTime);
-    }
+        float step = speed * Time.deltaTime;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        // Ignore boss parts & core
-        if (other.gameObject.layer == LayerMask.NameToLayer("BossPart") ||
-            other.gameObject.layer == LayerMask.NameToLayer("BossCore"))
+        // Continuous raycast reliably hits CharacterController (Zero Rigidbody bugs)
+        if (Physics.Raycast(transform.position, moveDir, out RaycastHit hit, step, hitMask, QueryTriggerInteraction.Ignore))
         {
-            return;
+            // Ignore boss parts
+            if (hit.collider.gameObject.layer != LayerMask.NameToLayer("BossPart") &&
+                hit.collider.gameObject.layer != LayerMask.NameToLayer("BossCore"))
+            {
+                if (hit.collider.CompareTag("Player") || hit.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+                {
+                    hit.collider.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
+                }
+                Destroy(gameObject);
+                return;
+            }
         }
 
-        // Damage player or collateral Echo (GDD PDF 2)
-        if (other.CompareTag("Player") || other.gameObject.layer == LayerMask.NameToLayer("Echo"))
-        {
-            other.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
-        }
-
-        Destroy(gameObject);
+        transform.position += moveDir * step;
     }
 }
