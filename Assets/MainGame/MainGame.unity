@@ -4670,9 +4670,9 @@ MonoBehaviour:
   deathExplosionClip: {fileID: 8300000, guid: 854d65d346bac4237aea3b6f79c7ac5a, type: 3}
   stompJumpClip: {fileID: 0}
   stompImpactClip: {fileID: 0}
-  machineGunFireClip: {fileID: 0}
-  missileLaunchClip: {fileID: 0}
-  missileExplosionClip: {fileID: 0}
+  machineGunFireClip: {fileID: 8300000, guid: 1228c000445f69646b9ce0fc12b333f9, type: 3}
+  missileLaunchClip: {fileID: 8300000, guid: ef3e11dd28a87a642965c301e92553a8, type: 3}
+  missileExplosionClip: {fileID: 8300000, guid: 0396581eb7208c54fb048a7711e70be4, type: 3}
   laserChargeClip: {fileID: 0}
   laserLoopClip: {fileID: 0}
 --- !u!82 &735490965
